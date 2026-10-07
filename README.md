@@ -64,8 +64,11 @@ Quick start:
    shades where hits land on the chosen table.
 4. **Casualties**: add a name or load the war's example combatants (in *About this
    conflict*), mark one **Attacker** and one **Defender**, then **Apply hit to defender**.
-   Use **+1 round** / **+1 minute** to bleed them, and Bind / Tourniquet / Cauterise to
-   treat wounds. Their wound penalties feed into the attack roll automatically.
+   Press **Next round** (or **+1 minute** for ten rounds) to move the whole group on: everyone
+   bleeds, the round counter goes up, and a short log says who lost how much Blood and who
+   passed a threshold (pale and weak, faint, down, unconscious). **Reset count** starts the
+   count again without healing anyone. Bind / Tourniquet / Cauterise treat wounds; wound
+   penalties feed into the attack roll automatically.
 
 The roller warns when combatants come from different wars (a weapon not used in that
 fight, or armour the table already accounts for) and offers a one-click switch. Casualties

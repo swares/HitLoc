@@ -119,6 +119,15 @@ tr.hitrow td:first-child{box-shadow:inset 3px 0 0 var(--blood)}
 .notes{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:6px;max-width:75ch}
 .notes p{margin:0}
 .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.roundbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;border:1px solid var(--line);border-radius:4px;padding:8px;background:var(--bg)}
+.roundno{font:700 1rem var(--mono);min-width:6.5ch;color:var(--ink)}
+.roundbar .spacer{flex:1 1 auto}
+.roundlog{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:11rem;overflow-y:auto;font-size:.84rem}
+.roundlog:empty{display:none}
+.roundlog li{border-left:3px solid var(--line);padding:2px 0 2px 8px}
+.roundlog li b{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-right:6px}
+.roundlog .ev-bad{color:var(--crit);font-weight:700}
+.roundlog .ev-warn{color:var(--warn)}
 .muted{color:var(--muted);font-size:.85rem}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -203,10 +212,16 @@ tr.hitrow td:first-child{box-shadow:inset 3px 0 0 var(--blood)}
       </div>
       <div class="toolbar">
         <button id="btn-apply">Apply hit to defender</button>
-        <button id="btn-round">+1 round</button>
-        <button id="btn-minute">+1 minute</button>
       </div>
       <p class="muted" id="apply-msg" aria-live="polite" style="margin:0"></p>
+      <div class="roundbar" role="group" aria-label="Round tracker">
+        <span class="roundno" id="round-no" aria-live="polite">Round 1</span>
+        <button id="btn-round" title="End this round: every casualty bleeds one round">Next round</button>
+        <button id="btn-minute" title="Ten rounds pass for every casualty">+1 minute</button>
+        <span class="spacer"></span>
+        <button id="btn-reset-rounds" class="small" title="Start the count again at round 1 and clear the log; wounds stay">Reset count</button>
+      </div>
+      <ol class="roundlog" id="round-log" aria-label="What happened each round"></ol>
       <div id="chars" style="display:flex;flex-direction:column;gap:10px"></div>
       <p class="muted" style="margin:0" id="trk-rule"></p>
     </section>
@@ -236,7 +251,7 @@ const d100 = () => 1 + Math.floor(Math.random() * 100);
 const look = (ranges, n) => ranges.find(r => n >= r.lo && n <= r.hi).id;
 const shortName = w => DATA.weapons[w].short || DATA.weapons[w].name.split(" (")[0];
 
-const S = { table: null, weapon: null, hit: null, chars: [], active: 0, attacker: -1, seq: 1, mods: new Set(), called: "", armor: "none" };
+const S = { table: null, weapon: null, hit: null, chars: [], active: 0, attacker: -1, seq: 1, mods: new Set(), called: "", armor: "none", round: 1, log: [] };
 const CMB = DATA.combat;
 const MODS = DATA.modifiers, KITS = Object.fromEntries(DATA.armor.kits.map(k => [k.id, k]));
 const MATS = DATA.armor.materials, LADDER = ["stopped", "light", "serious", "critical"];
@@ -381,7 +396,7 @@ function sevTiers(mech, zone, wid){
 const isEvidence = () => DATA.tables[rtid()].armor !== "allowed";
 
 /* ---------- storage (per-viewer convenience only) ---------- */
-function save(){ try{ localStorage.setItem("hitloc-chars", JSON.stringify({chars:S.chars,active:S.active,attacker:S.attacker,seq:S.seq})) }catch(e){} }
+function save(){ try{ localStorage.setItem("hitloc-chars", JSON.stringify({chars:S.chars,active:S.active,attacker:S.attacker,seq:S.seq,round:S.round,log:S.log})) }catch(e){} }
 function restore(){ try{ const j = JSON.parse(localStorage.getItem("hitloc-chars")||"null"); if(j && j.chars && j.chars.length){ Object.assign(S, j); return true } }catch(e){} return false }
 
 /* ---------- body figure ---------- */
@@ -724,9 +739,29 @@ function treat(c, w, how){
   w.treated = (w.treated ? w.treated + ", " : "") + how;
   renderChars();
 }
+// Short name for a blood-loss threshold: "down", "unconscious", or the effect's first clause.
+const thLabel = th => !th ? "steady" : th.incapacitated ? "unconscious" : th.down ? "down" : th.effect.split(/[:;]/)[0].toLowerCase();
 function advance(rounds){
-  S.chars.forEach(c => { const st = charStats(c); c.blood = Math.max(0, +(c.blood - st.bleed * rounds).toFixed(1)); c.rounds += rounds });
+  const from = S.round, lines = [];
+  S.chars.forEach(c => {
+    const before = charStats(c), b0 = c.blood;
+    c.blood = Math.max(0, +(c.blood - before.bleed * rounds).toFixed(1)); c.rounds += rounds;
+    const after = charStats(c), lost = +(b0 - c.blood).toFixed(1);
+    if (!lost) return;
+    const changed = after.th !== before.th;
+    const cls = after.th && (after.th.down || after.th.incapacitated) ? "ev-bad" : changed ? "ev-warn" : "";
+    lines.push(`${c.name}: \u2212${lost} Blood (${c.blood}/${TRK.blood_pool})` +
+      (changed ? `, <span class="${cls}">now ${thLabel(after.th)}</span>` : ""));
+  });
+  S.round += rounds;
+  const label = rounds === 1 ? `Round ${from}` : `Rounds ${from}\u2013${S.round - 1}`;
+  S.log.unshift({ label, lines: lines.length ? lines : ["no bleeding"] });
+  S.log = S.log.slice(0, 12);
   renderChars();
+}
+function renderRounds(){
+  $("#round-no").textContent = `Round ${S.round}`;
+  $("#round-log").innerHTML = S.log.map(e => `<li><b>${e.label}</b><br>${e.lines.join("<br>")}</li>`).join("");
 }
 function renderChars(){
   $("#chars").innerHTML = S.chars.map((c, i) => {
@@ -753,7 +788,7 @@ function renderChars(){
     </div>`;
   }).join("") || `<p class="muted">Add a combatant to start tracking wounds.</p>`;
   save();
-  renderRoles(); renderMods(); shadeFigure(); renderTable();
+  renderRounds(); renderRoles(); renderMods(); shadeFigure(); renderTable();
 }
 $("#chars").addEventListener("click", e => {
   const b = e.target.closest("button"); if (!b) return;
@@ -812,6 +847,7 @@ function init(){
   };
   $("#btn-round").onclick = () => advance(1);
   $("#btn-minute").onclick = () => advance(10);
+  $("#btn-reset-rounds").onclick = () => { S.round = 1; S.log = []; renderChars() };
 
   if (!restore()){
     // Example combatants from this conflict so the tracker shows what it does; remove them any time.
