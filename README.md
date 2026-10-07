@@ -4,6 +4,31 @@ Data-driven d100 hit-location tables weighted by historical wound evidence, with
 system-agnostic wound effects and survival tracking. All outputs are generated from
 the YAML files in `data/`, so the printed tables and the web roller never drift apart.
 
+## Start in the browser (no install)
+
+Open `dist/roller.html` in any modern browser: double-click it, or drag it onto a browser
+window. Everything is inside that one file, so it works offline and needs no server or
+Python. (Only the fonts load from the web; without a connection it falls back to system
+fonts.) The same page is also published as a private Claude artifact, "Historical Wound
+Roller", which you can open from your Claude artifacts and share from its Share menu.
+
+Quick start:
+1. **Table** - pick the fight (grouped by war) and **Weapon**.
+2. Optional: **Situation** chips (they stack, one per group), **Called shot**, **Target
+   armour**, and an **Attack roll** (attacker %, defender %, and your own dice if you like).
+3. Press **Roll the hit** for location, wound type, severity and effects; the body figure
+   shades where hits land on the chosen table.
+4. **Casualties**: add a name or load the war's example combatants (in *About this
+   conflict*), mark one **Attacker** and one **Defender**, then **Apply hit to defender**.
+   Use **+1 round** / **+1 minute** to bleed them, and Bind / Tourniquet / Cauterise to
+   treat wounds. Their wound penalties feed into the attack roll automatically.
+
+The roller warns when combatants come from different wars (a weapon not used in that
+fight, or armour the table already accounts for) and offers a one-click switch. Casualties
+are kept in that browser between visits.
+
+The printable version of every table is `dist/tables.pdf` (`dist/tables.md` as Markdown).
+
 ## Layout
 
 ```
@@ -31,7 +56,7 @@ dist/
   hitloc-data.json     compiled data bundle (for other tools)
 ```
 
-## Use
+## Command line (Python)
 
 ```
 pip install pyyaml reportlab
