@@ -1,0 +1,41 @@
+# Shared body map. Every hit-location table weights these ids.
+# zone    - coarse group used by weapon location bias (head, torso, arms, legs)
+# class   - wound profile in wounds.yaml (left/right share a class)
+# armor   - armour slot covering it, for systems that track coverage
+# vital   - structures that justify the wound profile (reference only)
+# exposure - relative target size, used to split a source's coarse region totals
+#            (e.g. "upper extremities 36%") across locations. Design estimate.
+
+zones: [head, torso, arms, legs]
+
+locations:
+  # --- Head -------------------------------------------------------------
+  - {id: skull_l,      name: "Skull (left)",        zone: head,  side: L, class: skull,      armor: helm,     vital: [brain, temporal artery], exposure: 1}
+  - {id: skull_r,      name: "Skull (right)",       zone: head,  side: R, class: skull,      armor: helm,     vital: [brain, temporal artery], exposure: 1}
+  - {id: face,         name: "Face",                zone: head,  side: C, class: face,       armor: visor,    vital: [eyes, jaw, facial artery], exposure: 1.2}
+  - {id: neck,         name: "Neck",                zone: head,  side: C, class: neck,       armor: gorget,   vital: [carotid, jugular, trachea, spine], exposure: 0.8}
+  # --- Torso ------------------------------------------------------------
+  - {id: chest_l,      name: "Chest (left)",        zone: torso, side: L, class: chest,      armor: torso_upper,     vital: [heart, lung, subclavian], exposure: 2.2}
+  - {id: chest_r,      name: "Chest (right)",       zone: torso, side: R, class: chest,      armor: torso_upper,     vital: [lung, subclavian], exposure: 2.2}
+  - {id: abdomen,      name: "Abdomen",             zone: torso, side: C, class: abdomen,    armor: torso_lower,     vital: [gut, liver, spleen], exposure: 2.0}
+  - {id: groin,        name: "Groin / pelvis",      zone: torso, side: C, class: groin,      armor: skirt,    vital: [femoral artery, pelvis], exposure: 1.0}
+  - {id: back_upper,   name: "Upper back",          zone: torso, side: C, class: back_upper, armor: torso_upper,     vital: [spine, lungs, scapula], exposure: 1.4}
+  - {id: back_lower,   name: "Lower back",          zone: torso, side: C, class: back_lower, armor: torso_lower,     vital: [spine, kidneys], exposure: 1.2}
+  # --- Arms -------------------------------------------------------------
+  - {id: shoulder_l,   name: "Shoulder (left)",     zone: arms,  side: L, class: shoulder,   armor: pauldron, vital: [clavicle, joint], exposure: 1.0}
+  - {id: shoulder_r,   name: "Shoulder (right)",    zone: arms,  side: R, class: shoulder,   armor: pauldron, vital: [clavicle, joint], exposure: 1.0}
+  - {id: upper_arm_l,  name: "Upper arm (left)",    zone: arms,  side: L, class: upper_arm,  armor: arm,      vital: [humerus, brachial artery], exposure: 1.5}
+  - {id: upper_arm_r,  name: "Upper arm (right)",   zone: arms,  side: R, class: upper_arm,  armor: arm,      vital: [humerus, brachial artery], exposure: 1.5}
+  - {id: forearm_l,    name: "Forearm (left)",      zone: arms,  side: L, class: forearm,    armor: arm,      vital: [radius, ulna, radial artery, tendons], exposure: 1.5}
+  - {id: forearm_r,    name: "Forearm (right)",     zone: arms,  side: R, class: forearm,    armor: arm,      vital: [radius, ulna, radial artery, tendons], exposure: 1.5}
+  - {id: hand_l,       name: "Hand (left)",         zone: arms,  side: L, class: hand,       armor: gauntlet, vital: [fingers, tendons], exposure: 1.0}
+  - {id: hand_r,       name: "Hand (right)",        zone: arms,  side: R, class: hand,       armor: gauntlet, vital: [fingers, tendons], exposure: 1.0}
+  # --- Legs -------------------------------------------------------------
+  - {id: thigh_l,      name: "Thigh (left)",        zone: legs,  side: L, class: thigh,      armor: leg,      vital: [femur, femoral artery], exposure: 2.0}
+  - {id: thigh_r,      name: "Thigh (right)",       zone: legs,  side: R, class: thigh,      armor: leg,      vital: [femur, femoral artery], exposure: 2.0}
+  - {id: knee_l,       name: "Knee (left)",         zone: legs,  side: L, class: knee,       armor: leg,      vital: [patella, joint], exposure: 0.6}
+  - {id: knee_r,       name: "Knee (right)",        zone: legs,  side: R, class: knee,       armor: leg,      vital: [patella, joint], exposure: 0.6}
+  - {id: lower_leg_l,  name: "Lower leg (left)",    zone: legs,  side: L, class: lower_leg,  armor: greave,   vital: [tibia, fibula, tibial arteries], exposure: 1.7}
+  - {id: lower_leg_r,  name: "Lower leg (right)",   zone: legs,  side: R, class: lower_leg,  armor: greave,   vital: [tibia, fibula, tibial arteries], exposure: 1.7}
+  - {id: foot_l,       name: "Foot (left)",         zone: legs,  side: L, class: foot,       armor: sabaton,  vital: [tarsals, tendons], exposure: 0.7}
+  - {id: foot_r,       name: "Foot (right)",        zone: legs,  side: R, class: foot,       armor: sabaton,  vital: [tarsals, tendons], exposure: 0.7}

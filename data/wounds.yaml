@@ -1,0 +1,269 @@
+# System-agnostic wound effects.
+# A wound = location class x severity, then modified by the wound mechanism.
+# All effects describe an UNTREATED wound.
+
+severity:
+  # Pick severity from your own system's damage, or roll d100 on this table.
+  tiers:
+    - {id: light,    name: "Light",    d100: [1, 55],   guide: "Damage well under what your system treats as a serious hit (e.g. < 1/3 of a wound level / HP threshold)."}
+    - {id: serious,  name: "Serious",  d100: [56, 85],  guide: "A solid hit: about 1/3 to 2/3 of a threshold, or a hit that beat armour by a clear margin."}
+    - {id: critical, name: "Critical", d100: [86, 100], guide: "A crippling or killing blow: over 2/3 of a threshold, or a critical success."}
+
+  # Mechanism-specific severity tables, used when you roll severity (not when your
+  # system decides it). Chosen by the hit's body zone.
+  by_mechanism:
+    ballistic:
+      note: >
+        Used for every hit from a firearm or explosive (any weapon with a threat level),
+        including a blast's crush wounds. Calibrated to Bougainville 1944, where 38-42% of head, chest and abdomen hits
+        killed but only 0.3% of arm and 3.4% of leg hits did. If your own system sets
+        severity, give gunshots to the head and trunk its harshest damage.
+      tables:
+        - zones: [head, torso]
+          tiers:
+            - {id: light,    d100: [1, 25]}
+            - {id: serious,  d100: [26, 62]}
+            - {id: critical, d100: [63, 100]}
+        - zones: [arms, legs]
+          tiers:
+            - {id: light,    d100: [1, 55]}
+            - {id: serious,  d100: [56, 90]}
+            - {id: critical, d100: [91, 100]}
+
+vocabulary:
+  bleed:
+    0: "None"
+    1: "Slow - seeping; lose 1 Blood per minute"
+    2: "Heavy - lose 1 Blood per round; bind within minutes"
+    3: "Arterial - lose 3 Blood per round; tourniquet or pressure now"
+  pain:
+    0: "None"
+    1: "-10% to all actions"
+    2: "-20% to all actions"
+    3: "-30% to all actions"
+  lethal:  # untreated time to death, ordered from least to most dangerous
+    order: [none, days, hours, minutes, rounds, instant]
+    none: "Not life-threatening by itself"
+    days: "Fatal in days without care (infection, internal damage)"
+    hours: "Fatal in hours without care"
+    minutes: "Fatal in minutes without care"
+    rounds: "Fatal within a few rounds"
+    instant: "Killed outright"
+  infection:
+    order: [low, medium, high]
+  impair:
+    dazed:         "Stunned: lose next action, then -20% for 1d6 rounds"
+    unconscious:   "Knocked out (check each minute to wake)"
+    vision:        "Vision impaired: -30% to sight-based actions; blinded if both eyes"
+    speech:        "Cannot speak clearly"
+    breath:        "Winded: no sustained exertion; fatigue doubled"
+    collapse:      "Collapses; can only crawl or crouch"
+    grip:          "Drops anything held in that hand; cannot grip with it"
+    arm:           "That arm -20%; no two-handed use"
+    arm_useless:   "That arm useless"
+    hand_useless:  "That hand useless"
+    leg:           "Movement halved; -20% to footwork and dodging"
+    stand:         "Falls and cannot stand unaided"
+    move:          "Movement halved"
+  flags:
+    shock:    "Shock check: endurance roll or be stunned 1d6 rounds"
+    fracture: "Bone broken: no use of the part until set; pain +1 when used"
+    severed:  "Part severed: arterial bleeding until cauterised or tourniqueted"
+
+# Mechanism modifiers, applied after the class profile.
+mechanisms:
+  cut:
+    name: "Cut"
+    desc: "Edge blow: opens soft tissue; can sever limbs."
+    rules:
+      - {when: {severity: [serious, critical]}, bleed: +1}
+      - {when: {severity: [critical], severable: true}, severed: true, bleed_min: 3}
+  pierce:
+    name: "Pierce"
+    desc: "Point or spike: small entry, deep track; internal damage and infection."
+    rules:
+      - {when: {severity: [serious, critical], zone: [torso, head]}, lethal: +1}
+      - {when: {severity: [critical], zone: [torso]}, lethal: +1}
+      - {when: {zone: [arms]}, lethal_max: hours}
+      - {infection: +1}
+  crush:
+    name: "Crush"
+    desc: "Blunt impact: fractures and shock; less external bleeding."
+    rules:
+      - {bleed: -1}
+      - {when: {severity: [serious, critical], bony: true}, fracture: true}
+      - {when: {severity: [serious, critical]}, shock: true}
+      - {when: {severity: [critical], zone: [head]}, pain: +1}
+
+  ballistic:
+    name: "Ballistic"
+    desc: "Bullet, ball or shell fragment: shatters bone, carries cloth and dirt deep into the wound."
+    rules:
+      - {when: {severity: [serious, critical]}, bleed: +1}
+      - {when: {severity: [serious, critical], bony: true}, fracture: true}
+      - {when: {severity: [serious, critical]}, shock: true}
+      - {when: {severity: [serious, critical], zone: [torso, head]}, lethal: +1}
+      - {when: {severity: [critical], zone: [torso]}, lethal: +1}
+      - {when: {zone: [arms]}, lethal_max: hours}
+      - {infection: +1}
+
+# Location class profiles: light / serious / critical.
+# severable: a critical cut can take the part off.  bony: a crush can fracture it.
+classes:
+  skull:
+    bony: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, shock: true, impair: [dazed]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [unconscious], lethal: hours}
+  face:
+    bony: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 2, pain: 2, impair: [vision]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [vision, speech], lethal: days}
+  neck:
+    bony: false
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 2, pain: 2, shock: true, lethal: hours}
+    critical: {bleed: 3, pain: 3, shock: true, impair: [breath], lethal: rounds}
+  chest:
+    bony: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 2, pain: 2, shock: true, impair: [breath], lethal: days}
+    critical: {bleed: 3, pain: 3, shock: true, impair: [breath, collapse], lethal: minutes}
+  abdomen:
+    bony: false
+    infection: high
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, lethal: days}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [collapse], lethal: hours}
+  groin:
+    bony: true
+    infection: high
+    light:    {bleed: 1, pain: 2}
+    serious:  {bleed: 2, pain: 3, shock: true, impair: [leg]}
+    critical: {bleed: 3, pain: 3, shock: true, impair: [stand], lethal: minutes}
+  back_upper:
+    bony: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [arm]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [breath, collapse], lethal: hours}
+  back_lower:
+    bony: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [move]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [stand], lethal: days}
+  shoulder:
+    bony: true
+    infection: low
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [arm]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [arm_useless], lethal: days}
+  upper_arm:
+    bony: true
+    severable: true
+    infection: low
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [arm]}
+    critical: {bleed: 3, pain: 3, shock: true, impair: [arm_useless], lethal: minutes}
+  forearm:
+    bony: true
+    severable: true
+    infection: low
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [grip]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [arm_useless], lethal: hours}
+  hand:
+    bony: true
+    severable: true
+    infection: low
+    light:    {bleed: 0, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [grip]}
+    critical: {bleed: 2, pain: 3, impair: [hand_useless]}
+  thigh:
+    bony: true
+    severable: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 2, pain: 2, impair: [leg]}
+    critical: {bleed: 3, pain: 3, shock: true, impair: [stand], lethal: minutes}
+  knee:
+    bony: true
+    infection: medium
+    light:    {bleed: 0, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [leg]}
+    critical: {bleed: 1, pain: 3, shock: true, impair: [stand]}
+  lower_leg:
+    bony: true
+    severable: true
+    infection: medium
+    light:    {bleed: 1, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [leg]}
+    critical: {bleed: 2, pain: 3, shock: true, impair: [stand], lethal: hours}
+  foot:
+    bony: true
+    severable: true
+    infection: medium
+    light:    {bleed: 0, pain: 1}
+    serious:  {bleed: 1, pain: 2, impair: [leg]}
+    critical: {bleed: 1, pain: 3, impair: [stand]}
+
+# Survival tracking (used by the web roller; optional at the table).
+tracking:
+  blood_pool: 20          # Blood points; scale to your system
+  thresholds:
+    - {at: 0.75, penalty: 10, effect: "Pale and weak: -10% to all actions"}
+    - {at: 0.50, penalty: 20, effect: "Faint check each minute; -20% to all actions"}
+    - {at: 0.25, penalty: 40, down: true, effect: "Barely conscious: -40% to all actions, can only crawl"}
+    - {at: 0.0,  incapacitated: true, effect: "Unconscious and dying"}
+  treatment:
+    bind:       {bleed: -1, note: "Bandage / pressure: reduce bleed by 1 (min 0)"}
+    tourniquet: {bleed_to: 0, limbs_only: true, note: "Limb only: stops bleeding; limb lost if left on for hours"}
+    cauterise:  {bleed_to: 0, pain: +1, note: "Stops bleeding; pain +1"}
+  pain_cap: 3             # total pain penalty steps cap (-30%) before shock check each round
+
+# Fighting while wounded. Used when the roller (or CLI) makes the attack roll, and to
+# show each casualty's net penalties for your own system.
+#   attack  - subtracted from the attacker's attack chance (%)
+#   defence - subtracted from the defender's parry / dodge chance (%)
+# An impairment on an arm location counts against the WEAPON arm (the side of the
+# fighter's weapon hand, default right) or the SHIELD arm (the other side). A wound
+# not on an arm (e.g. upper back) counts against the weapon arm.
+# The same impairment counts once however many wounds cause it.
+combat:
+  cap: 60                    # total attack and total defence penalty are each capped here
+  pain_step: 10              # % per pain step (pain itself is capped at tracking.pain_cap)
+  critical_fraction: 0.1     # a roll at or under 10% of the effective chance is a critical: it cannot be defended
+  impair:
+    dazed:       {attack: 20, defence: 20}
+    vision:      {attack: 30, defence: 30}
+    breath:      {attack: 10, defence: 10}
+    collapse:    {attack: 20, defence: 30, down: true}
+    stand:       {attack: 20, defence: 30, down: true}
+    leg:         {defence: 20}
+    move:        {defence: 10}
+    unconscious: {incapacitated: true}
+    speech:      {}
+    arm:         {weapon_arm: {attack: 20}, shield_arm: {defence: 10}}
+    grip:        {weapon_arm: {attack: 30, off_hand: true}, shield_arm: {no_shield: true}}
+    hand_useless: {weapon_arm: {attack: 30, off_hand: true}, shield_arm: {no_shield: true}}
+    arm_useless: {weapon_arm: {attack: 40, off_hand: true}, shield_arm: {defence: 10, no_shield: true}}
+  # Situations switched on automatically by wounds (if the table offers them).
+  auto_situations:
+    defender_down: target_down      # defender cannot stand
+    defender_no_shield: no_shield   # defender's shield arm cannot hold a shield
+    attacker_down: attacker_lower   # attacker fights from the ground
+  # Margin of success (effective chance minus the roll) sets severity when the attack is
+  # rolled here. A critical is always Critical. Firearm bands match the calibrated
+  # (Bougainville) firearm severity table for an attack chance of about 60%; better shots
+  # wound worse, poor shots lighter.
+  margin_bands:
+    default: {serious: 20, critical: 50}
+    ballistic:
+      - {zones: [head, torso], serious: 10, critical: 35}
+      - {zones: [arms, legs], serious: 30, critical: 60}

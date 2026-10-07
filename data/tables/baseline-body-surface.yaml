@@ -1,0 +1,23 @@
+id: baseline-body-surface
+order: 79
+name: "Baseline - random hit (body surface area)"
+label: "Random hit: body surface area"
+battle: "Reference"
+context: "Each region's share of body surface area: where hits would land if every square inch were equally likely."
+variant: evidence
+armor: allowed
+weapon_bias: raw
+weapons: [rifle_service, rifle_assault, rifle_ap, machine_gun, pistol_smg, hand_grenade, mortar_artillery, rpg, mine_ied, rifle_musket, revolver, bow, crossbow, sling]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: fitted
+confidence_note: "Region totals are from the source. Extremities split 1/3 arms, 2/3 legs by surface (rule of nines: arms 18%, legs 36%). The split inside each region uses body exposure (design estimate)."
+armor_note: "Use to compare a war's table against pure chance (a head share above 12% means heads were exposed or aimed at), or as a neutral table when nothing else fits."
+sources:
+  - "Owens BD et al., 'Combat wounds in Operation Iraqi Freedom and Operation Enduring Freedom', J Trauma 2008, comparison table (reproduced in National Academies, Review of DoD Test Protocols for Combat Helmets, 2014, Table 3-2): body surface area - head and neck 12, thorax 16, abdomen 11, extremities 61."
+status: "Body surface area from the same source table. Not wound data: a neutral reference."
+regions:
+  - {label: "Head and neck", zone: head, pct: 12}
+  - {label: "Thorax", locs: [chest_l, chest_r, back_upper], pct: 16}
+  - {label: "Abdomen", locs: [abdomen, back_lower, groin], pct: 11}
+  - {label: "Upper extremities (1/3 of 61)", zone: arms, pct: 20.33}
+  - {label: "Lower extremities (2/3 of 61)", zone: legs, pct: 40.67}

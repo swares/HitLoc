@@ -1,0 +1,421 @@
+# Combat wounds tallied from the federal Revolutionary War invalid pension lists, 1792-95
+# (American State Papers, Claims vol. 1), as transcribed in: Daen L. et al., 'Federal
+# Revolutionary War Invalid Pension Claims, 1792-1795', Magazine of Early American Datasets
+# (MEAD), University of Pennsylvania, 2021. row = line number in that dataset (1-573).
+# Only wounds from enemy action are counted; sickness, ruptures, frostbite, falls, work
+# accidents and accidental discharges are left out. One row per body site named; a man hit
+# several times at one site counts once there. loc uses body.yaml ids; "_?" = side not
+# stated; arm_x = 'arm' (upper arm or forearm); torso_? = 'through the body'; back_? = back,
+# level not stated. weapon is as stated (unknown when the entry does not say).
+row,loc,weapon,text
+1,foot_?,unknown,ankle
+5,chest_?,musket,trunk and lungs; ball through his arms
+5,arm_?,musket,trunk and lungs; ball through his arms
+8,neck,musket,"neck, Fort Griswold"
+10,unspecified,unknown,"wounded, Monmouth"
+15,abdomen,sword,"cut to pieces boarding, entrails out"
+18,thigh_?,musket,thigh
+25,lower_leg_r,musket,"right leg, Bunker Hill"
+27,shoulder_r,unknown,right shoulder
+28,hand_l,unknown,left hand
+30,chest_?,musket,"below breast, rib, out at back"
+31,lower_leg_?,musket,below knee
+33,arm_l,unknown,left arm and both legs
+33,lower_leg_l,unknown,left arm and both legs
+33,lower_leg_r,unknown,left arm and both legs
+35,neck,unknown,back of neck; small of back
+35,back_lower,unknown,back of neck; small of back
+42,lower_leg_l,musket,left leg
+43,lower_leg_?,unknown,leg
+44,unspecified,unknown,wounded and beaten by Indians
+46,lower_leg_?,unknown,leg
+51,chest_r,musket,right breast to shoulder
+52,unspecified,unknown,"wounded, Germantown"
+56,shoulder_?,musket,"two balls, shoulder and side"
+56,chest_?,musket,"two balls, shoulder and side"
+58,face,blow,stroke of a musket in face; arm fractured
+58,arm_?,blow,stroke of a musket in face; arm fractured
+64,arm_r,musket,shot in right arm
+69,hand_r,unknown,right thumb and right shoulder
+69,shoulder_r,unknown,right thumb and right shoulder
+70,back_?,musket,"four balls, one through trunk near backbone"
+70,unspecified,musket,"four balls, one through trunk near backbone"
+70,unspecified,musket,"four balls, one through trunk near backbone"
+70,unspecified,musket,"four balls, one through trunk near backbone"
+71,hand_r,musket,two fingers right hand
+72,thigh_r,musket,right thigh
+77,thigh_?,artillery,grape shot in thigh
+78,arm_l,musket,left arm
+79,lower_leg_?,unknown,wound in his legs
+81,chest_l,bayonet musket,bayonet stabs near left breast; balls in arms and hands
+81,arm_?,bayonet musket,bayonet stabs near left breast; balls in arms and hands
+81,hand_?,bayonet musket,bayonet stabs near left breast; balls in arms and hands
+84,forearm_?,musket,"wrist, amputated"
+88,abdomen,artillery,"cannon ball, rim of belly"
+90,forearm_r,unknown,right wrist
+95,groin,musket,through hip
+97,unspecified,sword,"light horse, several places"
+100,lower_leg_?,artillery,"rolling cannon ball, leg"
+101,chest_?,musket,"breast and shoulder, lodged in shoulder blade"
+102,skull_?,unknown,head
+107,lower_leg_?,unknown,"leg, thigh, shoulder, back and front of head (scalped)"
+107,thigh_?,unknown,"leg, thigh, shoulder, back and front of head (scalped)"
+107,shoulder_?,unknown,"leg, thigh, shoulder, back and front of head (scalped)"
+107,skull_?,unknown,"leg, thigh, shoulder, back and front of head (scalped)"
+107,skull_?,unknown,"leg, thigh, shoulder, back and front of head (scalped)"
+108,unspecified,musket,Bunker Hill
+110,hand_r,unknown,right hand
+111,lower_leg_l,musket,left leg; near right hip
+111,groin,musket,left leg; near right hip
+113,thigh_r,musket,right thigh
+116,shoulder_?,musket,shoulder
+119,skull_?,musket,ball through head
+123,chest_l,unknown,left side
+127,lower_leg_l,blow,"wounds and blows, left leg and left shoulder"
+127,shoulder_l,blow,"wounds and blows, left leg and left shoulder"
+128,unspecified,unknown,Bunker Hill
+129,abdomen,unknown,rupture of left side from a wound
+130,unspecified,unknown,"two wounds, Saratoga"
+130,unspecified,unknown,"two wounds, Saratoga"
+131,torso_?,musket,through his body
+133,lower_leg_r,unknown,"lost his right leg, Monmouth"
+134,face,blow,"muzzle of a musket, lost right eye"
+136,chest_r,musket,right side through body
+139,unspecified,artillery,"cannon ball, White Plains"
+140,chest_l,bayonet,left breast through back
+142,foot_r,unknown,right ankle; left arm near wrist
+142,forearm_l,unknown,right ankle; left arm near wrist
+145,skull_?,unknown,head
+146,groin,artillery,"hip, cannon ball"
+149,hand_r,unknown,"right hand, fore-finger"
+150,thigh_?,musket,thigh
+152,chest_?,musket,ball in his side
+155,torso_?,musket,through his body
+156,neck,unknown,throat and shoulder
+156,shoulder_?,unknown,throat and shoulder
+158,unspecified,artillery,bursting of a shell
+161,neck,musket,jugular
+162,arm_l,unknown,left arm
+165,unspecified,musket,Penobscot
+166,thigh_?,unknown,thigh
+167,back_?,unknown,"back, side and groin"
+167,chest_?,unknown,"back, side and groin"
+167,groin,unknown,"back, side and groin"
+169,forearm_l,musket,left wrist
+171,shoulder_l,musket,left shoulder
+172,lower_leg_?,unknown,leg and thigh
+172,thigh_?,unknown,leg and thigh
+174,arm_l,unknown,left arm
+175,skull_?,unknown,head
+176,arm_?,musket,arm
+177,forearm_?,unknown,wrist
+178,shoulder_?,unknown,shoulder
+181,chest_?,musket,"breast, through body"
+182,arm_l,musket,left arm
+183,face,musket,"lower jaw right side, out back of neck"
+187,face,musket,upper jaw and mouth
+188,lower_leg_r,musket,right leg
+189,unspecified,unknown,Bennington
+190,arm_r,unknown,right arm
+192,back_upper,musket,shoulder blade
+193,arm_r,unknown,right arm
+195,chest_r,musket,"right breast, out under shoulder blade"
+196,chest_?,musket,breast
+200,arm_l,unknown,"left arm, bone fractured"
+201,lower_leg_l,unknown,left leg
+202,groin,musket,above the anus
+204,hand_r,unknown,right hand
+206,foot_?,musket,"foot, lost a toe"
+207,back_upper,musket,"back, broke a rib"
+208,hand_r,artillery,"nine-pound shot, right hand"
+209,back_?,musket,back
+210,neck,musket,"neck, Fort Griswold"
+211,thigh_?,musket,thigh
+212,back_lower,musket,small of the back
+213,hand_?,musket,hand and wrist
+214,shoulder_r,musket,right shoulder
+216,forearm_r,musket,right wrist to mid forearm
+217,lower_leg_?,musket,leg
+218,abdomen,bayonet,"right side near lower ribs, out left side"
+220,arm_?,sword,"broadsword, arm"
+221,lower_leg_?,unknown,leg
+226,chest_?,musket,"breast, out at right shoulder blade"
+227,unspecified,unknown,on a batteau
+228,shoulder_?,musket,shoulder
+229,unspecified,unknown,wound in service
+230,hand_l,musket,left hand fourth finger
+231,back_?,musket,back
+233,thigh_?,musket,thigh
+234,lower_leg_r,musket,right leg; mouth; thumb broken by shot
+234,face,musket,right leg; mouth; thumb broken by shot
+234,hand_?,musket,right leg; mouth; thumb broken by shot
+235,forearm_l,artillery,"cannon shot, left wrist and right hand"
+235,hand_r,artillery,"cannon shot, left wrist and right hand"
+236,skull_?,sword,broadsword through skull
+237,hand_r,musket,right hand two fingers
+239,chest_?,bayonet,breast
+240,shoulder_l,musket,left shoulder
+241,arm_?,musket,arm
+244,abdomen,musket,right side and intestines
+246,chest_r,musket,right breast
+247,groin,musket,hip
+248,abdomen,musket,"body, ribs and liver"
+250,chest_l,musket,"near left breast, out near navel"
+252,back_?,musket,back
+253,thigh_r,musket,right thigh
+254,lower_leg_l,artillery,"cannon ball, left leg"
+255,thigh_?,artillery,grape shot thigh to hip
+256,shoulder_?,musket,shoulder
+257,skull_r,musket,right temple
+258,lower_leg_?,unknown,"leg, Germantown"
+259,unspecified,unknown,"""in his left"", Germantown"
+265,foot_?,artillery,"cannon ball, foot"
+266,lower_leg_?,musket,leg; body
+266,torso_?,musket,leg; body
+267,groin,musket,testicles
+268,lower_leg_r,musket,lost right leg
+269,arm_l,musket,left arm fractured
+270,lower_leg_r,musket,right leg fractured
+271,upper_arm_r,musket,right arm near shoulder
+274,arm_r,unknown,"right arm, Germantown"
+275,arm_l,unknown,left arm
+276,unspecified,unknown,"four places, Woodbridge"
+276,unspecified,unknown,"four places, Woodbridge"
+276,unspecified,unknown,"four places, Woodbridge"
+276,unspecified,unknown,"four places, Woodbridge"
+277,arm_l,musket,shot in left arm
+278,groin,artillery,"cannon ball or grape, hip"
+279,hand_r,musket,right hand three fingers
+280,skull_?,musket,head
+281,arm_?,unknown,"arm, Hubbardton"
+283,shoulder_l,musket,left shoulder out back of neck
+284,torso_?,musket,through his body
+285,lower_leg_r,musket,right leg both bones
+286,forearm_l,musket,left wrist
+287,upper_arm_r,musket,right humerus
+288,arm_l,unknown,"left arm, Eutaw Springs"
+289,knee_?,unknown,"knee, Eutaw Springs"
+290,back_lower,musket,left side near kidneys
+291,hand_l,musket,left hand
+292,chest_r,musket,right breast
+293,chest_?,musket,side
+294,arm_r,musket,right arm
+295,foot_r,musket,right ankle
+296,shoulder_r,musket,right shoulder and breast
+300,back_lower,musket,small of back
+301,forearm_l,musket,left wrist
+304,groin,unknown,"left groin, Indians and tories"
+306,shoulder_l,musket,left shoulder
+307,hand_l,musket,left hand
+308,lower_leg_r,musket,right leg
+309,thigh_l,musket,"two balls, both thighs"
+309,thigh_r,musket,"two balls, both thighs"
+312,shoulder_l,musket,left shoulder
+314,lower_leg_r,musket,right leg
+316,skull_?,musket,head
+317,shoulder_?,unknown,shoulder
+318,lower_leg_l,musket,left leg
+319,thigh_l,musket,left thigh
+320,thigh_?,musket,"thigh, scouting"
+322,lower_leg_r,musket,right leg
+323,skull_r,musket,"behind right ear, out through cheek"
+324,arm_l,musket,left arm broken; breast
+324,chest_?,musket,left arm broken; breast
+325,shoulder_r,musket,right shoulder
+326,foot_r,musket,"two balls, right foot and ankle"
+326,foot_r,musket,"two balls, right foot and ankle"
+327,neck,musket,through neck
+328,groin,musket,"hip, upper left thigh"
+329,knee_l,musket,left knee
+330,thigh_r,musket,right thigh
+331,chest_?,musket,breast
+332,arm_r,musket,right arm
+333,thigh_r,musket,right thigh; hip (small ball)
+333,groin,musket,right thigh; hip (small ball)
+334,upper_arm_r,musket,right elbow joint
+335,thigh_?,musket,thigh out near groin
+336,lower_leg_?,musket,leg
+338,thigh_?,musket,thigh
+339,hand_r,unknown,lost right thumb
+340,arm_r,musket,"right arm, Indians"
+341,arm_r,musket,right arm fractured
+342,arm_r,unknown,right arm
+344,torso_?,musket,through his body
+345,thigh_l,musket,left thigh
+347,thigh_r,musket,right thigh
+348,upper_arm_r,musket,right arm above elbow
+349,torso_?,unknown,"body, Wyoming"
+350,skull_?,unknown,head and thigh
+350,thigh_?,unknown,head and thigh
+353,knee_?,musket,knee
+354,lower_leg_l,artillery,"bursting shell, left leg"
+355,chest_?,bayonet musket,bayonet in breast; ball in left thigh
+355,thigh_l,bayonet musket,bayonet in breast; ball in left thigh
+356,skull_?,unknown,"head, hand and leg"
+356,hand_?,unknown,"head, hand and leg"
+356,lower_leg_?,unknown,"head, hand and leg"
+357,arm_l,musket,left arm and belly
+357,abdomen,musket,left arm and belly
+359,arm_l,musket,buck shot left arm
+362,lower_leg_r,unknown,right leg
+363,forearm_r,sword,"horseman's sword, right wrist"
+364,lower_leg_l,unknown,through left leg
+366,lower_leg_l,unknown,"left leg, British and Indians"
+367,shoulder_l,musket,"left shoulder, fired upon landing"
+369,thigh_?,musket,thigh
+370,shoulder_l,unknown,"both shoulders, Indians"
+370,shoulder_r,unknown,"both shoulders, Indians"
+372,hand_r,musket,right hand
+374,chest_?,unknown,"side, Indians"
+375,skull_?,unknown,head; under left eye
+375,face,unknown,head; under left eye
+377,thigh_?,musket,thigh
+378,thigh_?,musket,thigh
+382,back_?,tomahawk,tomahawk in back
+383,lower_leg_?,unknown,"leg, British tender"
+384,groin,musket,"hip, gun shot"
+385,lower_leg_?,unknown,"leg, Herkimer"
+387,face,musket,head and eye
+388,chest_?,unknown,"breast, Fort Montgomery"
+389,chest_r,musket,right breast and shoulder joint
+390,foot_?,unknown,foot and nose
+390,face,unknown,foot and nose
+391,chest_l,unknown,"left side, Indians"
+392,unspecified,unknown,thirteen places (counted once)
+393,groin,unknown,left hip
+394,groin,musket,left hip
+397,unspecified,unknown,"several wounds, Minisink (counted once)"
+398,lower_leg_l,musket,left leg
+401,foot_l,unknown,"left heel, Indians"
+402,torso_?,musket,through his body
+403,thigh_r,musket,right thigh
+404,chest_l,unknown,"left side, Indians"
+405,lower_leg_?,unknown,leg
+407,arm_l,unknown,left arm
+408,lower_leg_?,unknown,"one of his legs, Stony Point"
+409,arm_l,unknown,left arm
+410,thigh_r,musket,"right thigh, Indians"
+415,arm_?,musket,arm broken by musket shot
+418,knee_r,musket,right knee
+419,skull_?,musket,forehead
+420,unspecified,unknown,Fort Montgomery
+421,hand_l,musket bayonet,left hand by ball; back by bayonet
+421,back_?,musket bayonet,left hand by ball; back by bayonet
+422,unspecified,unknown,"five places, ambuscade (counted once)"
+424,shoulder_?,unknown,shoulder
+426,hand_?,unknown,lost two fingers
+427,thigh_r,unknown,"right thigh, Indians"
+428,face,musket,face
+429,unspecified,musket,"""both his left"" (text garbled), two balls"
+429,unspecified,musket,"""both his left"" (text garbled), two balls"
+431,upper_arm_r,artillery,"splinter of gun carriage, right elbow"
+433,lower_leg_l,musket,left leg and thigh
+433,thigh_l,musket,left leg and thigh
+434,lower_leg_l,musket,left leg
+435,upper_arm_r,musket,right arm near shoulder
+438,skull_?,unknown,"head, collar, arm and throat"
+438,shoulder_?,unknown,"head, collar, arm and throat"
+438,arm_?,unknown,"head, collar, arm and throat"
+438,neck,unknown,"head, collar, arm and throat"
+439,chest_r,musket,"right breast out under shoulder blade, Indians"
+440,arm_?,artillery,shot from enemy boats: arm and two ribs
+440,chest_?,artillery,shot from enemy boats: arm and two ribs
+442,torso_?,unknown,body and head
+442,skull_?,unknown,body and head
+443,upper_arm_r,musket,right elbow joint
+444,hand_r,musket bayonet,right hand (buck shot); rib (bayonet)
+444,chest_?,musket bayonet,right hand (buck shot); rib (bayonet)
+445,hand_r,musket,right hand
+446,skull_r,musket,"through right ear, Indians"
+447,lower_leg_?,unknown,"leg, Brandywine"
+448,skull_?,unknown,head fractured; left shoulder joint
+448,shoulder_l,unknown,head fractured; left shoulder joint
+452,arm_r,musket,right arm fractured
+453,shoulder_?,musket,shoulder
+454,lower_leg_l,musket,left leg
+456,hand_?,unknown,"lost two fingers, Bunker Hill"
+458,lower_leg_l,unknown,"left leg, Quebec"
+459,skull_?,unknown,"head, lost eye and skull bone"
+460,hand_l,unknown,lost two fingers left hand
+461,arm_?,unknown,arm and leg
+461,lower_leg_?,unknown,arm and leg
+462,knee_?,unknown,"knee, skirmish"
+463,upper_arm_r,musket,"right arm near shoulder, through to left elbow"
+463,upper_arm_l,musket,"right arm near shoulder, through to left elbow"
+464,upper_arm_?,musket,elbow joint
+465,torso_?,musket,through his body
+467,upper_arm_?,musket,"back of arm near shoulder, into side"
+468,groin,bayonet,"three bayonet wounds in private parts, five in back (sites counted once)"
+468,back_?,bayonet,"three bayonet wounds in private parts, five in back (sites counted once)"
+469,unspecified,bayonet,"thirteen bayonet wounds, Paoli (counted once)"
+471,arm_l,unknown,left arm (Indians); left leg (Germantown)
+471,lower_leg_l,unknown,left arm (Indians); left leg (Germantown)
+472,neck,unknown,neck and right shoulder
+472,shoulder_r,unknown,neck and right shoulder
+474,skull_l,blow,"butt of a musket, lost left eye"
+476,shoulder_?,musket,armpit
+477,thigh_?,musket,thigh
+478,lower_leg_l,musket,"left leg, Fort Washington"
+479,groin,musket,"groin through left hip/buttock, Indians"
+480,arm_l,unknown,"left arm, Hyder Ally sea fight"
+483,shoulder_r,musket,"right shoulder, ball and buck shot"
+485,thigh_r,musket,"right thigh, Hessians"
+489,unspecified,unknown,Eutaw Springs
+490,chest_?,musket,through breast
+491,skull_?,unknown,head; right shoulder (three places); both thumbs
+491,shoulder_r,unknown,head; right shoulder (three places); both thumbs
+491,hand_l,unknown,head; right shoulder (three places); both thumbs
+491,hand_r,unknown,head; right shoulder (three places); both thumbs
+492,hand_l,musket,left hand
+493,arm_r,musket,right arm
+494,arm_l,musket,left arm
+495,torso_?,unknown,"body, Bunker Hill"
+496,thigh_r,musket,right thigh
+498,torso_?,musket,through his body
+500,chest_l,bayonet,"left side, boarding"
+502,unspecified,spear,"lance or spear, boarding"
+505,torso_?,musket,through his body
+506,lower_leg_l,musket,left leg fractured
+508,lower_leg_l,musket,left leg
+511,thigh_?,musket,thigh
+512,arm_r,musket sword,"right arm (ball); hand cut (earlier, Frankfort)"
+512,hand_?,musket sword,"right arm (ball); hand cut (earlier, Frankfort)"
+513,lower_leg_?,artillery,"stone driven by cannon ball, calf and knee"
+516,groin,musket,"hip, upper left thigh"
+518,lower_leg_r,musket,right leg
+519,arm_r,musket,right arm
+520,lower_leg_l,musket,left leg; right thigh
+520,thigh_r,musket,left leg; right thigh
+521,arm_l,artillery,grape shot left arm
+522,forearm_l,musket,left wrist
+523,foot_r,musket,right ankle
+524,chest_?,bayonet,breast and back
+524,back_?,bayonet,breast and back
+525,shoulder_r,musket,right shoulder
+530,arm_r,musket,right arm
+531,thigh_?,musket,ball in thigh
+533,thigh_r,musket,outside right thigh; two fingers
+533,hand_?,musket,outside right thigh; two fingers
+535,foot_r,musket,right foot
+537,unspecified,artillery,bursting shell
+541,skull_?,musket,head
+542,lower_leg_l,musket,"left leg and thigh; belly (two wounds after capture, counted once)"
+542,thigh_l,musket,"left leg and thigh; belly (two wounds after capture, counted once)"
+542,abdomen,musket,"left leg and thigh; belly (two wounds after capture, counted once)"
+543,lower_leg_?,bayonet,leg
+544,arm_l,musket,left arm
+547,chest_l,musket,breast out near left scapula
+548,face,musket,upper jaw and mouth
+552,thigh_r,musket,right thigh
+556,shoulder_l,musket,left shoulder
+559,arm_r,musket,right arm
+560,hand_r,musket,right hand
+561,neck,musket,"neck, on sentry"
+563,face,musket,lost right eye
+567,arm_l,musket,left arm
+568,skull_?,musket,head
+569,groin,musket,near left hip
+570,arm_l,musket,left arm
+571,chest_r,musket,right side
+572,arm_r,artillery,"cannon ball, right arm"
+573,hand_r,sword,"broadsword, right hand"

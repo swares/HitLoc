@@ -1,0 +1,407 @@
+# Weapons. Add a weapon by adding an entry; no code changes needed.
+# short        - column label for printed tables
+# mechanisms   - wound mechanism mix, percentages summing to 100 (cut, pierce, crush, ballistic)
+# threat       - for ballistic weapons: fragment | pistol | rifle | rifle_ap (armour.yaml)
+# melee        - armed | unarmed: a close-combat weapon. On a table whose own data is not
+#                that kind of fighting (e.g. a gunfire table), its location is rolled on the
+#                melee_fallback table below instead.
+# zone_bias    - multipliers on a table's weights by body zone (default 1.0)
+# loc_bias     - optional per-location multipliers, applied after zone_bias
+# armor_defeat - armour protection steps this weapon ignores, by mechanism
+# melee_table  - for a close-combat weapon: the table it rolls on whenever the current table
+#                is not its own (the table doesn't list it, or lists it but records another
+#                kind of fighting). Overrides melee_fallback below.
+# fallback_mods - situations applied automatically when it rolls on that other table and no
+#                defender is chosen (e.g. no_shield: the Visby tables assume a shield).
+#                With a defender chosen, their armour kit's `shield` flag decides instead.
+#
+# How biases are used depends on the table's weapon_bias setting:
+#   raw       - applied as written (melee tables, the baseline)
+#   recentred - adjusted so the table's weapon_mix still reproduces the source totals
+#   pooled    - ignored; every weapon uses the source's pooled odds (no mix to re-centre on)
+# Biases are design estimates (confidence: extrapolated) unless a source says otherwise.
+
+# Close-combat weapons offered on every table.
+melee_everywhere: [dagger, bayonet, sword, axe, spiked_club, spear, punch, kick, elbow_knee]
+
+# Where an off-table close-combat weapon rolls its location.
+melee_fallback:
+  armed: knife-assault
+  unarmed: unarmed-mma
+
+weapons:
+  # --- Medieval -------------------------------------------------------------
+  - id: sword
+    name: "Sword (arming sword)"
+    short: "Sword"
+    era: medieval
+    melee: armed
+    melee_table: visby-1361-adjusted
+    mechanisms: {cut: 70, pierce: 30}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Baseline weapon; the Visby tables are applied unchanged."
+
+  - id: axe
+    name: "Axe (hand or long-hafted)"
+    short: "Axe"
+    era: medieval
+    melee: armed
+    melee_table: visby-1361-adjusted
+    mechanisms: {cut: 85, crush: 15}
+    zone_bias: {head: 1.1, torso: 0.8, legs: 1.3}
+    armor_defeat: {cut: 1}
+    confidence: extrapolated
+    notes: "Visby work describes axes taking the legs out; leg bias reflects that. Heavy cuts bite through mail (ignores 1 step vs cut)."
+
+  - id: spiked_club
+    name: "Spiked club / morning star (knout)"
+    short: "Spiked club"
+    era: medieval
+    melee: armed
+    melee_table: visby-1361-adjusted
+    mechanisms: {crush: 55, pierce: 45}
+    zone_bias: {head: 1.4, legs: 0.8}
+    armor_defeat: {pierce: 1}
+    confidence: fitted
+    notes: "Square skull perforations at Visby match a spiked club (Randolph-Quinney et al., 2026); head bias reflects that. Spikes punch through mail (ignores 1 step vs pierce)."
+
+  - id: spear
+    name: "Spear / lance"
+    short: "Spear"
+    era: medieval
+    melee: armed
+    melee_table: visby-1361-adjusted
+    mechanisms: {pierce: 90, cut: 10}
+    zone_bias: {head: 0.8, torso: 1.4, arms: 0.9, legs: 0.9}
+    loc_bias: {face: 1.5}
+    confidence: extrapolated
+    notes: "Thrusting weapon aimed at the centre mass and face over the shield rim."
+
+  # --- Bows, crossbows, slings ---------------------------------------------
+  - id: bow
+    name: "Bow (war arrows)"
+    short: "Bow"
+    era: "ancient-1880s"
+    mechanisms: {pierce: 95, cut: 5}
+    zone_bias: {}
+    confidence: historical
+    notes: >
+      Its own table is the US Army's 1865-71 arrow-wound reports (Plains and Apache bows,
+      iron and flint heads). At Visby, 126 arrow and crossbow-bolt wounds fell much like the
+      blade wounds, mostly on the lower body, so on the Visby tables it uses their weights
+      unchanged. Arrows are pierce wounds, not gunfire: bleeding, deep tracks and infection;
+      a barbed head left inside causes trouble for months.
+
+  - id: crossbow
+    name: "Crossbow (bolts)"
+    short: "Crossbow"
+    era: "medieval"
+    mechanisms: {pierce: 100}
+    zone_bias: {}
+    loc_bias: {skull_l: 1.15, skull_r: 1.15, face: 1.15}
+    armor_defeat: {pierce: 1}
+    confidence: extrapolated
+    notes: >
+      Visby's arrow and bolt wounds are counted together (126), mostly on the lower body; the
+      Visby weights are used with a small head bias for aimed shots at the face and helmet.
+      Heavy bolts punch through mail (ignores 1 step vs pierce): design estimate.
+
+  - id: sling
+    name: "Sling (stones, lead bullets)"
+    short: "Sling"
+    era: "ancient-medieval"
+    mechanisms: {crush: 100}
+    zone_bias: {head: 1.5, torso: 1.0, arms: 0.9, legs: 0.8}
+    loc_bias: {face: 1.3}
+    confidence: extrapolated
+    notes: >
+      No battlefield tally separates sling wounds. Andean skeletons from the Wari era show
+      cranial trauma in about a quarter to a third of adults, much of it consistent with
+      sling stones, but the cause is not counted apart. Head bias is a design estimate.
+      Blunt: fractures and shock; a helmet takes the edge off (crush steps).
+
+  # --- Close combat, any era ------------------------------------------------
+  - id: dagger
+    name: "Dagger / knife"
+    short: "Dagger"
+    era: any
+    melee: armed
+    mechanisms: {pierce: 70, cut: 30}
+    zone_bias: {torso: 1.4, arms: 1.1, legs: 0.5}
+    loc_bias: {neck: 2.0, face: 1.5}
+    confidence: extrapolated
+    notes: "Grappling and finishing weapon. On medieval tables it seeks gaps at neck, face and armpit; elsewhere it uses the forensic knife-assault table as recorded."
+
+  - id: bayonet
+    name: "Bayonet (musket or rifle)"
+    short: "Bayonet"
+    era: "1700s-"
+    melee: armed
+    melee_table: peninsular-1808-14-officers
+    mechanisms: {pierce: 85, cut: 15}
+    zone_bias: {head: 0.7, torso: 1.5, arms: 0.8, legs: 0.8}
+    loc_bias: {abdomen: 1.3, groin: 1.2}
+    confidence: historical
+    notes: "Rolls on the Peninsular War table, which records where 97 bayonet wounds fell (thighs most, then arms and hands, then chest). Rare in every war with records: 3% of French officers' wounds in Spain, and under 1% of Civil War wounds (922 sabre and bayonet wounds together). The zone bias is used only on tables with raw weapon biases."
+
+  - id: entrenching_tool
+    name: "Sharpened entrenching tool (spade)"
+    short: "Spade"
+    era: "1915-"
+    melee: armed
+    melee_table: visby-1361-adjusted
+    fallback_mods: [no_shield]
+    mechanisms: {cut: 50, crush: 50}
+    zone_bias: {head: 1.3, torso: 0.9, arms: 1.1, legs: 0.6}
+    loc_bias: {neck: 1.8, shoulder_l: 1.4, shoulder_r: 1.4}
+    confidence: extrapolated
+    notes: "Edges sharpened from 1915 for trench raids; used at Stalingrad and taught to Soviet Spetsnaz. Short overhead chops in a confined space: head, neck and collarbone. No wound data exists; shaped on the Visby axe and club evidence."
+
+  - id: saber
+    name: "Sabre or broadsword"
+    short: "Sabre"
+    era: "1700s-1900s"
+    melee: armed
+    melee_table: peninsular-1808-14-officers
+    mechanisms: {cut: 80, pierce: 20}
+    zone_bias: {head: 1.4, arms: 1.3, legs: 0.5}
+    confidence: historical
+    notes: "Rolls on the Peninsular War table, which records where 284 sword wounds fell: a third on the head and face, then arms, hands and shoulders. Cuts from horseback. The zone bias is used only on tables with raw weapon biases."
+
+  - id: lance
+    name: "Cavalry lance"
+    short: "Lance"
+    era: "1800s-1900s"
+    melee: armed
+    melee_table: peninsular-1808-14-officers
+    mechanisms: {pierce: 90, cut: 10}
+    zone_bias: {head: 1.0, torso: 1.3, arms: 1.0, legs: 0.8}
+    confidence: historical
+    notes: "Polish and French lancers, British lancers after 1816. Rolls on the Peninsular War table (43 lance wounds: arms and hands, chest, head). Long reach against men on foot or fleeing."
+
+  - id: musket_butt
+    name: "Clubbed musket (butt stroke)"
+    short: "Musket butt"
+    era: "1700s-1900s"
+    melee: armed
+    melee_table: visby-1361-adjusted
+    fallback_mods: [no_shield]
+    mechanisms: {crush: 100}
+    zone_bias: {head: 1.5, torso: 1.0, arms: 1.0, legs: 0.6}
+    confidence: extrapolated
+    notes: "Swung like a club when there was no time to reload or no bayonet. Revolutionary War pensioners lost eyes and had skulls broken by it. Rolls on the Visby melee table with no shield; head bias is a design estimate."
+
+  - id: punch
+    name: "Punch"
+    short: "Punch"
+    era: any
+    melee: unarmed
+    mechanisms: {crush: 100}
+    zone_bias: {head: 1.25, torso: 0.8, legs: 0.0}
+    confidence: extrapolated
+    notes: "Punches land head and body; leg strikes are kicks."
+
+  - id: kick
+    name: "Kick"
+    short: "Kick"
+    era: any
+    melee: unarmed
+    mechanisms: {crush: 100}
+    zone_bias: {head: 0.35, torso: 1.4, legs: 3.0}
+    confidence: extrapolated
+    notes: "Most landed kicks are low kicks and body kicks."
+
+  - id: elbow_knee
+    name: "Elbow or knee"
+    short: "Elbow/knee"
+    era: any
+    melee: unarmed
+    mechanisms: {crush: 75, cut: 25}
+    zone_bias: {head: 1.2, torso: 1.3, legs: 0.3}
+    confidence: extrapolated
+    notes: "Clinch strikes; elbows split skin (cut)."
+
+  # --- Musket era, 1700s-1850s --------------------------------------------
+  - id: musket_smoothbore
+    name: "Smoothbore musket (Brown Bess, Charleville)"
+    short: "Musket"
+    era: "1700s-1850s"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: historical
+    notes: "Soft lead ball of about .69-.75 calibre. On the Peninsular table it uses the 3,331 recorded musket and rifle wounds; elsewhere the table's pooled odds."
+
+  - id: rifle_flintlock
+    name: "Flintlock rifle (Pennsylvania, Baker, Jäger)"
+    short: "Rifle"
+    era: "1700s-1840s"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {head: 1.15, legs: 0.9}
+    confidence: extrapolated
+    notes: "Riflemen and Jäger picked off officers and gunners at long range. No source records rifle wounds apart from musket wounds; the slight head bias is a design estimate and applies only on tables with raw weapon biases."
+
+  - id: pistol_flintlock
+    name: "Flintlock pistol"
+    short: "Pistol"
+    era: "1700s-1840s"
+    threat: pistol
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Cavalry and officers' sidearm; one shot, then the sword."
+
+  - id: artillery_smoothbore
+    name: "Smoothbore artillery (round shot, canister, grape, shell)"
+    short: "Artillery"
+    era: "1700s-1850s"
+    threat: fragment
+    mechanisms: {ballistic: 70, crush: 30}
+    zone_bias: {}
+    confidence: historical
+    notes: "Round shot took off limbs; canister and grape acted like giant shotgun loads; shells burst. On the Peninsular table it uses the 209 recorded ordnance wounds, which fell lower on the body than musket wounds (legs and feet). Three times as lethal as musketry there."
+
+  # --- American Civil War ---------------------------------------------------
+  - id: rifle_musket
+    name: "Rifle-musket (Minie ball)"
+    short: "Rifle-musket"
+    era: "1860s"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Soft lead .58 ball; shatters rather than drills bone."
+
+  - id: artillery_acw
+    name: "Artillery (canister, shell fragments)"
+    short: "Artillery"
+    era: "1860s"
+    threat: fragment
+    mechanisms: {ballistic: 80, crush: 20}
+    zone_bias: {head: 1.15, arms: 1.1}
+    confidence: extrapolated
+    notes: "Canister balls and jagged fragments; heavy fragments crush."
+
+  - id: revolver
+    name: "Revolver"
+    short: "Revolver"
+    era: "1850s-"
+    threat: pistol
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Cavalry and officers' sidearm."
+
+  # --- 20th / 21st century firearms -----------------------------------------
+  - id: rifle_service
+    name: "Service rifle (bolt or semi-auto, 1914-53)"
+    short: "Rifle"
+    era: "1914-1953"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Lee-Enfield, Mauser, Springfield, Garand, Mosin. Aimed fire at whatever shows."
+
+  - id: rifle_assault
+    name: "Assault rifle (M16, AK)"
+    short: "Assault rifle"
+    era: "1960s-"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Intermediate cartridge. Common steel-core AK rounds count as rifle, not armour-piercing."
+
+  - id: rifle_ap
+    name: "Rifle, armour-piercing ammunition"
+    short: "AP rifle"
+    era: "1990s-"
+    threat: rifle_ap
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Hardened-core rounds that defeat SAPI plates; ESAPI is rated against them."
+
+  - id: machine_gun
+    name: "Machine gun"
+    short: "MG"
+    era: "1914-"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {head: 0.9, legs: 1.15}
+    confidence: extrapolated
+    notes: "Grazing fire sweeps low across the ground."
+
+  - id: pistol_smg
+    name: "Pistol or submachine gun"
+    short: "Pistol/SMG"
+    era: "1900s-"
+    threat: pistol
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Handgun cartridges; soft armour stops them."
+
+  - id: hand_grenade
+    name: "Hand grenade"
+    short: "Grenade"
+    era: "1914-"
+    threat: fragment
+    mechanisms: {ballistic: 85, crush: 15}
+    zone_bias: {head: 0.85, legs: 1.3}
+    confidence: extrapolated
+    notes: "Bursts on or near the ground: legs and lower body take most fragments."
+
+  - id: mortar_artillery
+    name: "Mortar, rocket or artillery"
+    short: "Mortar"
+    era: "1914-"
+    threat: fragment
+    mechanisms: {ballistic: 85, crush: 15}
+    zone_bias: {head: 1.15, arms: 1.1}
+    confidence: extrapolated
+    notes: "Air and ground bursts; fragments come down onto the head, shoulders and back of prone men."
+
+  - id: rpg
+    name: "RPG (rocket-propelled grenade)"
+    short: "RPG"
+    era: "1960s-"
+    threat: fragment
+    mechanisms: {ballistic: 70, crush: 30}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Blast plus fragments; often aimed at vehicles and bunkers."
+
+  - id: mine_ied
+    name: "Mine, booby trap or IED"
+    short: "Mine/IED"
+    era: "1914-"
+    threat: fragment
+    mechanisms: {ballistic: 60, crush: 40}
+    zone_bias: {head: 0.6, torso: 0.8, arms: 0.7, legs: 3.0}
+    loc_bias: {foot_l: 2.0, foot_r: 2.0, groin: 1.5}
+    confidence: extrapolated
+    notes: "Buried and tripwire devices: feet, legs and groin. Crush covers blast and traumatic amputation."
+
+  - id: punji_stake
+    name: "Punji stake"
+    short: "Punji"
+    era: "Vietnam"
+    mechanisms: {pierce: 100}
+    zone_bias: {head: 0.0, torso: 0.0, arms: 0.0, legs: 1.0}
+    loc_bias: {foot_l: 3.0, foot_r: 3.0, lower_leg_l: 2.0, lower_leg_r: 2.0}
+    confidence: extrapolated
+    notes: "Sharpened, often fouled bamboo in pits and trails; 2% of Vietnam wounds. Pierce wounds carry high infection risk."
+
+  - id: explosive_fragment
+    name: "Fragments, unspecified (shell, grenade, mine)"
+    short: "Frags"
+    era: "1914-"
+    threat: fragment
+    mechanisms: {ballistic: 85, crush: 15}
+    zone_bias: {}
+    confidence: extrapolated
+    notes: "Used where a source only says 'fragments' or 'explosion'."

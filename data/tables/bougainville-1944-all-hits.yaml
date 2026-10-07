@@ -1,0 +1,34 @@
+id: bougainville-1944-all-hits
+order: 33
+name: "Bougainville 1944 - all hits"
+label: "Bougainville 1944: all hits"
+battle: "WWII"
+context: "Every single-region missile hit in the study, wounded and killed together (1,456 hits)."
+variant: adjusted
+armor: allowed
+weapon_bias: recentred
+weapons: [rifle_service, machine_gun, pistol_smg, hand_grenade, mortar_artillery, mine_ied, explosive_fragment, bayonet, entrenching_tool]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region counts are from the source (wounded + killed). The split inside each region uses body exposure (design estimate)."
+armor_note: >
+  The closest thing in the data set to 'where bullets and fragments land'. Unlike the
+  Civil War blend, this needs no assumed ratio: the study counted both groups.
+  Share of hits that killed: head/face/neck 37.5%, chest 37.7%, abdomen 42.1%,
+  arms 0.3%, legs 3.4%.
+sources:
+  - "Oughterson et al., Bougainville wound ballistics study (1944): totals by region - head, face, neck 384; chest 231; abdomen 114; upper extremities 320; lower extremities 407 (20.2% killed overall)."
+status: "Historical at region level. Still excludes multi-region and minor wounds."
+regions:
+  - {label: "Head, face, neck (384)", zone: head, count: 384}
+  - {label: "Chest (231)", locs: [chest_l, chest_r, back_upper], count: 231}
+  - {label: "Abdomen (114)", locs: [abdomen, back_lower, groin], count: 114}
+  - {label: "Upper extremities (320)", zone: arms, count: 320}
+  - {label: "Lower extremities (407)", zone: legs, count: 407}
+weapon_mix_source: "Borden Institute, Weapons Effects and War Wounds, Table 1-1: causes of battle injury, Bougainville"
+weapon_mix:
+  - {weapon: rifle_service, pct: 33}
+  - {weapon: mortar_artillery, pct: 50}
+  - {weapon: hand_grenade, pct: 12}
+  - {weapon: mine_ied, pct: 2}
+  - {label: "Other", pct: 3}

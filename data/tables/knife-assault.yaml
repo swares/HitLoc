@@ -1,0 +1,30 @@
+id: knife-assault
+order: 85
+name: "Knife assault - stab wounds (forensic)"
+label: "Knife assault (Stockholm homicides 1983-93)"
+battle: "Close combat"
+context: "Where stab and cut wounds were found on homicide victims, Stockholm 1983-1993. Used for knives and bayonets on any non-medieval table."
+variant: evidence
+native: armed
+weapon_bias: pooled
+armor: allowed
+weapons: [dagger, bayonet]
+modifiers: [attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding]
+confidence: historical
+confidence_note: "Region figures are from the source (share of victims wounded in each region; victims usually had several wounds, so they sum to more than 100 and are normalised). Arm wounds favour forearms and hands (defensive wounds); other splits use body exposure (design estimate)."
+armor_note: >
+  Victims were mostly unarmoured civilians, so these are hits before armour: armour can
+  be applied. 41% of victims had defensive wounds to the hands and forearms, already
+  included here, so 'warding' doubles up. Soft ballistic vests give little protection
+  against a stab (pierce 0); plates stop it.
+sources:
+  - "Karlsson T., 'Sharp force homicides in the Stockholm area, 1983-1992', Forensic Sci Int 1998, via forensicmed.co.uk 'Patterns of sharp force trauma': share of homicide victims with wounds by region - head 27%, neck 33%, upper extremity 46%, chest 34%, back 34%, abdomen 26%, lower extremity 19%; defensive injuries in 41% of victims."
+status: "Historical at region level. Homicide, not battle: single attacker, unarmoured victim, often surprised."
+regions:
+  - {label: "Head (27% of victims)", locs: [skull_l, skull_r, face], count: 27}
+  - {label: "Neck (33%)", locs: [neck], count: 33}
+  - {label: "Upper extremity (46%)", zone: arms, count: 46, split: {shoulder_l: 1, shoulder_r: 1, upper_arm_l: 2, upper_arm_r: 2, forearm_l: 3, forearm_r: 3, hand_l: 2, hand_r: 2}}
+  - {label: "Chest (34%)", locs: [chest_l, chest_r], count: 34}
+  - {label: "Back (34%)", locs: [back_upper, back_lower], count: 34}
+  - {label: "Abdomen (26%)", locs: [abdomen, groin], count: 26}
+  - {label: "Lower extremity (19%)", zone: legs, count: 19}

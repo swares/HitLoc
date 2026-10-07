@@ -1,0 +1,33 @@
+id: bougainville-1944-wounded
+order: 31
+name: "Bougainville 1944 - wounded"
+label: "Bougainville 1944: wounded"
+battle: "WWII"
+context: "US soldiers wounded by Japanese rifle, machine-gun, mortar, grenade and artillery fire, Bougainville, 1944 (1,162 single-region wounds)."
+variant: evidence
+weapon_bias: recentred
+weapons: [rifle_service, machine_gun, pistol_smg, hand_grenade, mortar_artillery, mine_ied, explosive_fragment, bayonet, entrenching_tool]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region counts are from the source. The split inside each region uses body exposure (design estimate)."
+armor_note: >
+  Survivors only: head and trunk are under-counted because those hits killed.
+  Pair with the killed table, or use the all-hits table. Steel helmets were worn.
+sources:
+  - "Oughterson et al., Wound Ballistics study of the Bougainville campaign (US Army Medical Department, 1944; NLM scan nlmuid-46921110R): living wounded by region - head, face, neck 240; chest 144; abdomen 66; upper extremities 319; lower extremities 393. Excludes 332 multi-region wounds and 547 minor wounds returned to duty."
+status: >
+  Historical at region level (counts quoted from the study via a secondary post;
+  the NLM scan is the primary). Abdomen is taken to include the lower back and pelvis.
+regions:
+  - {label: "Head, face, neck (240)", zone: head, count: 240}
+  - {label: "Chest (144)", locs: [chest_l, chest_r, back_upper], count: 144}
+  - {label: "Abdomen (66)", locs: [abdomen, back_lower, groin], count: 66}
+  - {label: "Upper extremities (319)", zone: arms, count: 319}
+  - {label: "Lower extremities (393)", zone: legs, count: 393}
+weapon_mix_source: "Borden Institute, Weapons Effects and War Wounds, Table 1-1: causes of battle injury, Bougainville"
+weapon_mix:
+  - {weapon: rifle_service, pct: 33}
+  - {weapon: mortar_artillery, pct: 50}
+  - {weapon: hand_grenade, pct: 12}
+  - {weapon: mine_ied, pct: 2}
+  - {label: "Other", pct: 3}

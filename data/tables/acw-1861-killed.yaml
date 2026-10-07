@@ -1,0 +1,25 @@
+id: acw-1861-killed
+order: 21
+name: "Civil War 1861-65 - killed in action"
+label: "Killed in action (1,173 men)"
+battle: "American Civil War"
+context: "Seat of the fatal wound in Union soldiers killed in action (n = 1,173)."
+variant: evidence
+weapon_bias: pooled
+weapons: [rifle_musket, artillery_acw, revolver, saber, bayonet]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region totals are from the source. The split inside each region uses body exposure (design estimate)."
+armor_note: >
+  Only the killing wound is recorded. Use it for 'where did the fatal shot land',
+  or for gunfire at men already exposed to aimed fire. Small sample.
+sources:
+  - "Medical and Surgical History of the War of the Rebellion (1883): seat of injury in 1,173 killed - head and neck 487 (41.6%), trunk 603 (51.4%), upper extremities 30 (2.6%), lower extremities 53 (4.5%) (via US Army, Wound Ballistics in WWII, ch. 6)."
+status: >
+  Historical at region level. The source notes that 'a thorough study of these
+  cases was not made': raw tallies only.
+regions:
+  - {label: "Head and neck", zone: head, pct: 41.6}
+  - {label: "Trunk", zone: torso, pct: 51.4}
+  - {label: "Upper extremities", zone: arms, pct: 2.6}
+  - {label: "Lower extremities", zone: legs, pct: 4.5}

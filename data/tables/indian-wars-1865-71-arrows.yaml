@@ -1,0 +1,47 @@
+id: indian-wars-1865-71-arrows
+order: 23
+name: "Indian Wars 1865-71 - arrow wounds (US Army surgeons)"
+label: "Arrow hits: Army surgeons' reports"
+battle: "American Indian Wars"
+context: "Soldiers, scouts and civilians hit by arrows on the Plains and in the Southwest, mostly 1866-70. Killed and wounded together."
+variant: evidence
+weapon_bias: raw
+armor: allowed
+weapons: [bow]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, flanked, behind_cover]
+confidence: historical
+confidence_note: >
+  Counts are tallied wound by wound from the report's 83 cases (122 arrow wounds whose
+  site is given; 12 more are not located). Left and right are pooled because the sample is
+  small, then split by body exposure (design estimate).
+armor_note: >
+  The men hit wore no armour, so these are hits before armour: armour can be applied.
+  A mounted man's legs are partly covered by the horse, and many of these men were
+  cavalry; that is one reason leg hits are rare here (9%) while Visby's arrow wounds
+  were mostly in the legs.
+sources:
+  - "US Surgeon General's Office, Circular No. 3: A Report of Surgical Cases Treated in the Army of the United States from 1865 to 1871 (Washington, 1871), 'Arrow-Wounds', pp. 144-161, cases 451-487. Full text: archive.org item reportofsurgical00unituoft."
+  - "Same report, p. 161: of 83 cases, 26 'proved fatal', including nearly all that entered the skull, chest or abdomen; 7 of 9 penetrating abdominal wounds were fatal."
+  - "Wound-by-wound tally: data/sources/indian-wars-arrows-1865-71.csv."
+status: >
+  Historical, but a collection of case reports, not a census: striking trunk and skull
+  cases were more likely to be written up. The 40 cases taken from routine casualty lists
+  (none fatal) are less biased and still show 40% of wounds in the trunk. Several of the
+  men had been hit by 3 to 9 arrows each.
+regions:
+  - {label: "Skull and scalp (8)", locs: [skull_l, skull_r], count: 8}
+  - {label: "Face (3)", locs: [face], count: 3}
+  - {label: "Neck (3)", locs: [neck], count: 3}
+  - {label: "Chest, front and sides (24)", locs: [chest_l, chest_r], count: 24}
+  - {label: "Upper back (13)", locs: [back_upper], count: 13}
+  - {label: "Lower back, lumbar (6)", locs: [back_lower], count: 6}
+  - {label: "Back, level not stated (2)", locs: [back_upper, back_lower], count: 2}
+  - {label: "Abdomen (7)", locs: [abdomen], count: 7}
+  - {label: "Groin, hip, buttock, pelvis (9)", locs: [groin], count: 9}
+  - {label: "Shoulders and armpit (7)", locs: [shoulder_l, shoulder_r], count: 7}
+  - {label: "Upper arms and elbows (16)", locs: [upper_arm_l, upper_arm_r], count: 16}
+  - {label: "Forearms (8)", locs: [forearm_l, forearm_r], count: 8}
+  - {label: "Hands (5)", locs: [hand_l, hand_r], count: 5}
+  - {label: "Thighs (6)", locs: [thigh_l, thigh_r], count: 6}
+  - {label: "Knees (2)", locs: [knee_l, knee_r], count: 2}
+  - {label: "Lower legs and feet (3)", locs: [lower_leg_l, lower_leg_r, foot_l, foot_r], count: 3}

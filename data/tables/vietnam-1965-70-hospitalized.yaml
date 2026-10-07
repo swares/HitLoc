@@ -1,0 +1,32 @@
+id: vietnam-1965-70-hospitalized
+order: 41
+name: "Vietnam 1965-70 - hospitalized wounded"
+label: "Hospitalized wounded 1965-70 (Neel 1973)"
+battle: "Vietnam"
+context: "Location of wounds in US Army casualties admitted to hospital in Vietnam (24-month sample)."
+variant: evidence
+weapon_bias: recentred
+weapons: [rifle_assault, machine_gun, pistol_smg, hand_grenade, mortar_artillery, rpg, mine_ied, punji_stake, explosive_fragment, bayonet, entrenching_tool]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+excluded_pct: 22
+confidence_note: "Region totals are from the source. The split inside each region uses body exposure (design estimate)."
+armor_note: "Hospitalized casualties: men killed outright are missing. Bullets killed (51% of deaths) far more than they wounded (16%), so for fatal shots lean on the head and thorax."
+sources:
+  - "Neel, S., Medical Support of the U.S. Army in Vietnam 1965-1970 (Dept of the Army, 1973), ch. 3, Table 7: location of wounds in hospitalized casualties (%): Vietnam - head and neck 14, thorax 7, abdomen 5, upper extremities 18, lower extremities 36, other/multiple 22."
+  - "Neel (1973) Table 6, Vietnam: deaths 51% small arms, 36% fragments, 11% booby traps/mines; wounds 16% small arms, 65% fragments, 15% booby traps/mines, 2% punji stakes."
+  - "Borden Institute, Weapons Effects and War Wounds, Table 1-1 (WDMET): causes of battle injury - bullet 30, mortar/rocket/artillery 22, grenade 11, RPG 12, booby trap 17, other 8."
+status: "Historical at region level. The source puts 22% of casualties under 'other/multiple sites' (several wounds); those are left out and the single-region rest normalised. The source's column sums to 102% (rounding)."
+regions:
+  - {label: "Head and neck", zone: head, pct: 14}
+  - {label: "Thorax", locs: [chest_l, chest_r, back_upper], pct: 7}
+  - {label: "Abdomen", locs: [abdomen, back_lower, groin], pct: 5}
+  - {label: "Upper extremities", zone: arms, pct: 18}
+  - {label: "Lower extremities", zone: legs, pct: 36}
+weapon_mix_source: "Neel (1973) Table 6: wounds by agent, Vietnam (the hospitalized population this table counts)"
+weapon_mix:
+  - {weapon: rifle_assault, pct: 16}
+  - {weapon: explosive_fragment, pct: 65}
+  - {weapon: mine_ied, pct: 15}
+  - {weapon: punji_stake, pct: 2}
+  - {label: "Other", pct: 2}

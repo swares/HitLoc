@@ -1,0 +1,163 @@
+id: peninsular-1808-14-officers
+order: 18
+name: "Peninsular War 1808-14 - French officers' wounds"
+label: "Wounded and killed: French officers' records"
+battle: "Napoleonic era & War of 1812"
+context: "Where French officers were hit in Spain and Portugal, 1808-1814, by musket, sabre, bayonet, lance and cannon. Mostly men who survived."
+variant: evidence
+armor: allowed
+native: gunfire
+also_native: [armed]
+weapon_bias: sourced
+weapons: [musket_smoothbore, rifle_flintlock, pistol_flintlock, artillery_smoothbore, saber, bayonet, lance]
+modifiers: [attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding, behind_cover]
+confidence: historical
+confidence_note: >
+  Location counts are from the source (3,995 wound events). Each weapon rolls on its own
+  recorded distribution (musket 2,848, sword 284, bayonet 97, lance 43, ordnance 209 wounds).
+  Left and right are not recorded and are split evenly; 'arm' (bras) is put on the upper
+  arm because wrist and forearm are listed apart. Rifles and pistols use the musket data.
+weapon_mix:
+  - {label: "Musket, rifle and pistol", weapon: musket_smoothbore, pct: 76.42}
+  - {label: "Artillery (shell, round shot, canister, grape)", weapon: artillery_smoothbore, pct: 8.05}
+  - {label: "Sabre and sword", weapon: saber, pct: 6.91}
+  - {label: "Bayonet", weapon: bayonet, pct: 3.19}
+  - {label: "Lance", weapon: lance, pct: 1.33}
+  - {label: "Contusion (spent ball, blow, fall)", pct: 4.10}
+armor_note: >
+  Almost no one wore body armour (cuirassiers and carabiniers had steel cuirasses, and
+  dragoons and heavy cavalry helmets), so armour can be applied. The records are of men who
+  survived far more often than of men killed (146 killed and 84 died of wounds against
+  4,129 wounded), so head and trunk hits from gunfire are under-counted: use the all-hits
+  table for gunfire in play. Edged weapons rarely killed (8 deaths among 424 sword, bayonet
+  and lance casualties), so their columns are close to every hit they made.
+sources:
+  - "Planas Campos J. and Grajal de Blas A., 'Wounds & Weapons in the Napoleonic War: a database of the Peninsular War', British Journal for Military History 7(3), Nov 2021, pp. 117-127: Table 1 (weapons, 4,359 entries), Table 2 (locations, 3,995 events), Tables 6-8 (location by firearm, edged weapon and ordnance). Source registers: French Army officer files, SHD 2Yb."
+  - "Same article, Table 11: 491 rank and file of the 100e de ligne - arms 22%, legs 40%, chest 6%, head 24%, abdomen 1%, shoulder 7% (officers: 26/44/4/14/3/9)."
+  - "Comparison quoted there: Austrian officers wounded at Austerlitz (Guiga 2021) - upper limbs 26%, lower limbs 45%, head 6%, upper body 9%, back 4%."
+status: >
+  Historical. French officers, so mounted officers and men in the front rank are
+  over-represented; the rank-and-file sample was hit in the head more often (24%). Tables
+  7 and 8 were read from the article's table images.
+regions:
+  - {label: "Arm (bras) (678)", locs: [upper_arm_l, upper_arm_r], count: 678}
+  - {label: "Hand (245)", locs: [hand_l, hand_r], count: 245}
+  - {label: "Wrist (35)", locs: [forearm_l, forearm_r], count: 35}
+  - {label: "Forearm (63)", locs: [forearm_l, forearm_r], count: 63}
+  - {label: "Leg below the knee (621)", locs: [lower_leg_l, lower_leg_r], count: 621}
+  - {label: "Thigh (687)", locs: [thigh_l, thigh_r], count: 687}
+  - {label: "Hip (99)", locs: [groin], count: 99}
+  - {label: "Foot (201)", locs: [foot_l, foot_r], count: 201}
+  - {label: "Knee (155)", locs: [knee_l, knee_r], count: 155}
+  - {label: "Chest (169)", locs: [chest_l, chest_r], count: 169}
+  - {label: "Head (390)", locs: [skull_l, skull_r], count: 390}
+  - {label: "Eye (3)", locs: [face], count: 3}
+  - {label: "Forehead (18)", locs: [skull_l, skull_r], count: 18}
+  - {label: "Neck (46)", locs: [neck], count: 46}
+  - {label: "Cheek (42)", locs: [face], count: 42}
+  - {label: "Jaw (41)", locs: [face], count: 41}
+  - {label: "Abdomen (102)", locs: [abdomen], count: 102}
+  - {label: "Shoulder (341)", locs: [shoulder_l, shoulder_r], count: 341}
+  - {label: "Buttock (16)", locs: [groin], count: 16}
+  - {label: "Back (10)", locs: [back_upper, back_lower], count: 10}
+  - {label: "Loins (kidneys) (33)", locs: [back_lower], count: 33}
+weapon_regions:
+  musket_smoothbore: &firearm
+    - {label: "Arm (bras) (469)", locs: [upper_arm_l, upper_arm_r], count: 469}
+    - {label: "Hand (156)", locs: [hand_l, hand_r], count: 156}
+    - {label: "Wrist (18)", locs: [forearm_l, forearm_r], count: 18}
+    - {label: "Forearm (49)", locs: [forearm_l, forearm_r], count: 49}
+    - {label: "Leg below the knee (466)", locs: [lower_leg_l, lower_leg_r], count: 466}
+    - {label: "Thigh (545)", locs: [thigh_l, thigh_r], count: 545}
+    - {label: "Hip (72)", locs: [groin], count: 72}
+    - {label: "Foot (145)", locs: [foot_l, foot_r], count: 145}
+    - {label: "Knee (115)", locs: [knee_l, knee_r], count: 115}
+    - {label: "Chest (121)", locs: [chest_l, chest_r], count: 121}
+    - {label: "Head (205)", locs: [skull_l, skull_r], count: 205}
+    - {label: "Eye (1)", locs: [face], count: 1}
+    - {label: "Forehead (10)", locs: [skull_l, skull_r], count: 10}
+    - {label: "Neck (36)", locs: [neck], count: 36}
+    - {label: "Cheek (28)", locs: [face], count: 28}
+    - {label: "Jaw (30)", locs: [face], count: 30}
+    - {label: "Abdomen (78)", locs: [abdomen], count: 78}
+    - {label: "Shoulder (255)", locs: [shoulder_l, shoulder_r], count: 255}
+    - {label: "Buttock (13)", locs: [groin], count: 13}
+    - {label: "Back (8)", locs: [back_upper, back_lower], count: 8}
+    - {label: "Loins (kidneys) (28)", locs: [back_lower], count: 28}
+  rifle_flintlock: *firearm
+  pistol_flintlock: *firearm
+  artillery_smoothbore:
+    - {label: "Arm (bras) (23)", locs: [upper_arm_l, upper_arm_r], count: 23}
+    - {label: "Hand (13)", locs: [hand_l, hand_r], count: 13}
+    - {label: "Forearm (1)", locs: [forearm_l, forearm_r], count: 1}
+    - {label: "Leg below the knee (37)", locs: [lower_leg_l, lower_leg_r], count: 37}
+    - {label: "Thigh (33)", locs: [thigh_l, thigh_r], count: 33}
+    - {label: "Hip (8)", locs: [groin], count: 8}
+    - {label: "Foot (18)", locs: [foot_l, foot_r], count: 18}
+    - {label: "Knee (7)", locs: [knee_l, knee_r], count: 7}
+    - {label: "Chest (6)", locs: [chest_l, chest_r], count: 6}
+    - {label: "Head (24)", locs: [skull_l, skull_r], count: 24}
+    - {label: "Forehead (1)", locs: [skull_l, skull_r], count: 1}
+    - {label: "Neck (3)", locs: [neck], count: 3}
+    - {label: "Cheek (1)", locs: [face], count: 1}
+    - {label: "Jaw (5)", locs: [face], count: 5}
+    - {label: "Abdomen (6)", locs: [abdomen], count: 6}
+    - {label: "Shoulder (19)", locs: [shoulder_l, shoulder_r], count: 19}
+    - {label: "Buttock (1)", locs: [groin], count: 1}
+    - {label: "Back (1)", locs: [back_upper, back_lower], count: 1}
+    - {label: "Loins (kidneys) (2)", locs: [back_lower], count: 2}
+  saber:
+    - {label: "Arm (bras) (54)", locs: [upper_arm_l, upper_arm_r], count: 54}
+    - {label: "Hand (43)", locs: [hand_l, hand_r], count: 43}
+    - {label: "Wrist (10)", locs: [forearm_l, forearm_r], count: 10}
+    - {label: "Forearm (8)", locs: [forearm_l, forearm_r], count: 8}
+    - {label: "Leg below the knee (4)", locs: [lower_leg_l, lower_leg_r], count: 4}
+    - {label: "Thigh (10)", locs: [thigh_l, thigh_r], count: 10}
+    - {label: "Foot (4)", locs: [foot_l, foot_r], count: 4}
+    - {label: "Knee (4)", locs: [knee_l, knee_r], count: 4}
+    - {label: "Chest (7)", locs: [chest_l, chest_r], count: 7}
+    - {label: "Head (95)", locs: [skull_l, skull_r], count: 95}
+    - {label: "Forehead (4)", locs: [skull_l, skull_r], count: 4}
+    - {label: "Neck (3)", locs: [neck], count: 3}
+    - {label: "Cheek (6)", locs: [face], count: 6}
+    - {label: "Jaw (2)", locs: [face], count: 2}
+    - {label: "Abdomen (4)", locs: [abdomen], count: 4}
+    - {label: "Shoulder (25)", locs: [shoulder_l, shoulder_r], count: 25}
+    - {label: "Loins (kidneys) (1)", locs: [back_lower], count: 1}
+  bayonet:
+    - {label: "Arm (bras) (14)", locs: [upper_arm_l, upper_arm_r], count: 14}
+    - {label: "Hand (10)", locs: [hand_l, hand_r], count: 10}
+    - {label: "Wrist (2)", locs: [forearm_l, forearm_r], count: 2}
+    - {label: "Leg below the knee (6)", locs: [lower_leg_l, lower_leg_r], count: 6}
+    - {label: "Thigh (23)", locs: [thigh_l, thigh_r], count: 23}
+    - {label: "Hip (4)", locs: [groin], count: 4}
+    - {label: "Foot (1)", locs: [foot_l, foot_r], count: 1}
+    - {label: "Knee (6)", locs: [knee_l, knee_r], count: 6}
+    - {label: "Chest (7)", locs: [chest_l, chest_r], count: 7}
+    - {label: "Head (7)", locs: [skull_l, skull_r], count: 7}
+    - {label: "Forehead (2)", locs: [skull_l, skull_r], count: 2}
+    - {label: "Neck (1)", locs: [neck], count: 1}
+    - {label: "Cheek (1)", locs: [face], count: 1}
+    - {label: "Jaw (1)", locs: [face], count: 1}
+    - {label: "Abdomen (4)", locs: [abdomen], count: 4}
+    - {label: "Shoulder (5)", locs: [shoulder_l, shoulder_r], count: 5}
+    - {label: "Buttock (1)", locs: [groin], count: 1}
+    - {label: "Back (1)", locs: [back_upper, back_lower], count: 1}
+    - {label: "Loins (kidneys) (1)", locs: [back_lower], count: 1}
+  lance:
+    - {label: "Arm (bras) (8)", locs: [upper_arm_l, upper_arm_r], count: 8}
+    - {label: "Hand (4)", locs: [hand_l, hand_r], count: 4}
+    - {label: "Wrist (1)", locs: [forearm_l, forearm_r], count: 1}
+    - {label: "Forearm (1)", locs: [forearm_l, forearm_r], count: 1}
+    - {label: "Leg below the knee (1)", locs: [lower_leg_l, lower_leg_r], count: 1}
+    - {label: "Thigh (2)", locs: [thigh_l, thigh_r], count: 2}
+    - {label: "Hip (2)", locs: [groin], count: 2}
+    - {label: "Foot (1)", locs: [foot_l, foot_r], count: 1}
+    - {label: "Knee (3)", locs: [knee_l, knee_r], count: 3}
+    - {label: "Chest (6)", locs: [chest_l, chest_r], count: 6}
+    - {label: "Head (6)", locs: [skull_l, skull_r], count: 6}
+    - {label: "Neck (1)", locs: [neck], count: 1}
+    - {label: "Cheek (2)", locs: [face], count: 2}
+    - {label: "Shoulder (3)", locs: [shoulder_l, shoulder_r], count: 3}
+    - {label: "Back (1)", locs: [back_upper, back_lower], count: 1}
+    - {label: "Loins (kidneys) (1)", locs: [back_lower], count: 1}

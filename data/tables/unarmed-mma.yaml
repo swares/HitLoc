@@ -1,0 +1,27 @@
+id: unarmed-mma
+order: 90
+name: "Unarmed - landed strikes (MMA)"
+label: "MMA landed strikes (UFC 2005-26)"
+battle: "Unarmed"
+context: "Where landed significant strikes go in professional MMA: all UFC divisions, 2005-2026, 648,783 strikes."
+variant: evidence
+armor: allowed
+weapon_bias: raw
+native: unarmed
+weapons: [punch, kick, elbow_knee]
+modifiers: [target_down]
+confidence: historical
+confidence_note: "Head / body / legs totals are from the source. The split inside each region is a design estimate (orthodox stance, legal targets only)."
+armor_note: >
+  Sport rules: no strikes to the groin, spine or back of the head, and blocked
+  strikes on the arms are not counted. A street fight would add groin, back and
+  arm hits. Totals pool all strike types; the weapon columns are design estimates.
+sources:
+  - "Fightshow, UFC Strike Map (UFC round statistics 2005-2026, data through 3 Oct 2026): head 64%, body 21%, legs 15% of 648,783 landed significant strikes."
+status: >
+  Historical at head / body / legs level. Within-region split favours the face and
+  the target's lead (left) side and liver (right) side.
+regions:
+  - {label: "Head", zone: head, pct: 64, split: {face: 6, skull_l: 2, skull_r: 1.5, neck: 0.3}}
+  - {label: "Body", zone: torso, pct: 21, split: {chest_l: 2, chest_r: 2.5, abdomen: 3, back_upper: 0.3, groin: 0, back_lower: 0}}
+  - {label: "Legs", zone: legs, pct: 15, split: {thigh_l: 3, thigh_r: 2.5, knee_l: 0.3, knee_r: 0.3, lower_leg_l: 1.5, lower_leg_r: 1, foot_l: 0, foot_r: 0}}

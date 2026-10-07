@@ -1,0 +1,38 @@
+id: oif-oef-2001-wounds
+order: 60
+name: "Iraq & Afghanistan 2001-05 - combat wounds"
+label: "Combat wounds 2001-05 (Owens 2008)"
+battle: "Iraq & Afghanistan"
+context: "6,609 combat wounds on 1,566 US soldiers, Operations Iraqi Freedom and Enduring Freedom, Oct 2001 - Jan 2005."
+variant: evidence
+weapon_bias: recentred
+weapons: [rifle_assault, rifle_ap, machine_gun, pistol_smg, hand_grenade, mortar_artillery, rpg, mine_ied, explosive_fragment, bayonet]
+modifiers: [attacker_higher, attacker_lower, behind_cover]
+confidence: historical
+confidence_note: "Region totals are from the source. Extremities are split evenly between arms and legs (the companion study found fractures 50/50); the split inside each region uses body exposure (design estimate)."
+armor_note: >
+  Soldiers wore helmets and plate body armour, so the torso is already protected in
+  these numbers (thorax only 6%). Don't apply armour again. Counts all wounds,
+  wounded and killed, several per soldier.
+sources:
+  - "Owens BD et al., 'Combat wounds in Operation Iraqi Freedom and Operation Enduring Freedom', J Trauma 2008: head 8%, eyes 6%, ears 3%, face 10%, neck 3%, thorax 6%, abdomen 11%, extremity 54%; explosions 78%, gunshot 18%."
+  - "Owens BD et al., 'Characterization of extremity wounds in OIF and OEF', J Orthop Trauma 2007: 915 extremity fractures, 461 upper (50%) and 454 lower (50%)."
+status: >
+  Historical at region level. Eyes are folded into face and ears into the skull.
+  Abdomen is taken to include the lower back and pelvis.
+regions:
+  - {label: "Head and ears (8 + 3)", locs: [skull_l, skull_r], pct: 11}
+  - {label: "Face and eyes (10 + 6)", locs: [face], pct: 16}
+  - {label: "Neck", locs: [neck], pct: 3}
+  - {label: "Thorax", locs: [chest_l, chest_r, back_upper], pct: 6}
+  - {label: "Abdomen", locs: [abdomen, back_lower, groin], pct: 11}
+  - {label: "Upper extremity (half of 54)", zone: arms, pct: 27}
+  - {label: "Lower extremity (half of 54)", zone: legs, pct: 27}
+weapon_mix_source: "Owens et al. 2008: gunshot 18%, explosion 78%; explosions split by the DoD Trauma Registry 2007-17 shares (Borden Table 1-1: IED 60.4, mortar/rocket/artillery 7.8, grenade 4.6, RPG 4.5)"
+weapon_mix:
+  - {weapon: rifle_assault, pct: 18}
+  - {weapon: mine_ied, pct: 60.9}
+  - {weapon: mortar_artillery, pct: 7.9}
+  - {weapon: hand_grenade, pct: 4.6}
+  - {weapon: rpg, pct: 4.6}
+  - {label: "Other", pct: 4}

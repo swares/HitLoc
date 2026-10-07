@@ -1,0 +1,22 @@
+id: northern-ireland-wounds
+order: 45
+name: "Northern Ireland - penetrating wounds"
+label: "Northern Ireland (The Troubles)"
+battle: "Late 20th century"
+context: "Primary penetrating wounds, British forces and casualties in Northern Ireland (gunshot and bombs)."
+variant: evidence
+weapon_bias: pooled
+weapons: [rifle_assault, machine_gun, pistol_smg, hand_grenade, mortar_artillery, rpg, mine_ied, bayonet]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region totals are from the source. The split inside each region uses body exposure (design estimate). Extremities are split 40% arms / 60% legs, the average of the WWII, Korea and Vietnam hospital figures in Neel (1973) Table 7 (design estimate)."
+armor_note: "Primary penetrating wound of casualties; mostly survivors who reached care, so instant kills are under-counted."
+sources:
+  - "Borden Institute, Weapons Effects and War Wounds, ch. 1, Table 1-2: anatomical distribution of primary penetrating wounds (%): head/neck/face 20, thorax 15, abdomen 15, extremity 50."
+status: "Historical at region level (primary penetrating wounds)."
+regions:
+  - {label: "Head, neck, face", zone: head, pct: 20}
+  - {label: "Thorax", locs: [chest_l, chest_r, back_upper], pct: 15}
+  - {label: "Abdomen", locs: [abdomen, back_lower, groin], pct: 15}
+  - {label: "Upper extremities (40% of extremity)", zone: arms, pct: 20.0}
+  - {label: "Lower extremities (60% of extremity)", zone: legs, pct: 30.0}

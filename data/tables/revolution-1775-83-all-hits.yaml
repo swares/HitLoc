@@ -1,0 +1,49 @@
+id: revolution-1775-83-all-hits
+order: 16
+name: "American Revolution 1775-83 - all hits (gameplay)"
+label: "All hits: gameplay blend"
+battle: "American Revolution"
+context: "Where musket balls and shot land on a man in the open, before survival sorts the records."
+variant: adjusted
+armor: allowed
+weapon_bias: pooled
+weapons: [musket_smoothbore, rifle_flintlock, pistol_flintlock, artillery_smoothbore, bayonet, saber, musket_butt]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, flanked, behind_cover]
+confidence: extrapolated
+confidence_note: "Blend of a historical wounded table and a stand-in killed table; the mix is from casualty totals."
+armor_note: "Use this table for play. Nobody wore armour; a kit from another era can be applied."
+sources:
+  - "Derived (tools/blend_tables.py): 53.5% revolution-1775-83-pensioners + 46.5% acw-1861-killed, location by location."
+  - "Killed share: Peckham, The Toll of Independence (1974), 7,174 Americans killed and 8,241 wounded in 1,331 land and 218 naval engagements (via Journal of the American Revolution, 'The 25 Deadliest Battles of the Revolutionary War', 2014)."
+status: >
+  Estimated. No count of where the Revolution's dead were hit survives, so the Civil War
+  killed-in-action table (also soft lead balls, 1,173 men) stands in for them. Peckham's
+  killed count includes men killed after surrendering or in massacres, which raises the
+  killed share; edit the share in tools/blend_tables.py if you prefer another.
+weights:
+  skull_l: 6.525
+  skull_r: 6.525
+  face: 7.35
+  neck: 5.135
+  chest_l: 8.208
+  chest_r: 8.208
+  abdomen: 6.281
+  groin: 4.929
+  back_upper: 4.573
+  back_lower: 4.242
+  shoulder_l: 2.379
+  shoulder_r: 2.379
+  upper_arm_l: 2.687
+  upper_arm_r: 2.687
+  forearm_l: 2.687
+  forearm_r: 2.687
+  hand_l: 2.379
+  hand_r: 2.379
+  thigh_l: 3.241
+  thigh_r: 3.241
+  knee_l: 0.478
+  knee_r: 0.478
+  lower_leg_l: 4.237
+  lower_leg_r: 4.237
+  foot_l: 0.923
+  foot_r: 0.923

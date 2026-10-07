@@ -1,0 +1,229 @@
+# Armour. A hit on a covered location has its severity reduced by the material's
+# protection against the wound mechanism, in steps:
+#   Critical -> Serious -> Light -> Stopped (bruise, no wound).
+# Weapons can defeat armour (weapons.yaml: armor_defeat), removing steps.
+#
+# Gunfire: ballistic weapons carry a THREAT level (weapons.yaml: threat) and each
+# material lists steps per threat:
+#   fragment  - grenade, mortar, artillery, IED fragments
+#   pistol    - handgun and submachine-gun rounds
+#   rifle     - rifle and machine-gun ball
+#   rifle_ap  - armour-piercing rifle rounds
+# A material without a `threats` entry falls back to its `ballistic` value.
+#
+# Use armour only on tables that allow it (adjusted / all-hits tables, the baseline,
+# the knife and unarmed tables). Evidence tables of armoured armies already show the
+# effect of what those soldiers wore.
+#
+# shield: true if the kit includes a shield. On tables that assume a shield (the Visby
+# tables), a chosen defender whose kit has no shield gets the No shield situation
+# automatically. Kits without the flag carry no shield.
+#
+# Kit slots match body.yaml armour slots. A slot is:
+#   a material id                              - covers every hit there
+#   {material: id, cover: N}                   - d100 01-N meets armour, the rest is a gap
+#   [{material: a, cover: N}, {material: b}]   - layers: 01-N hits material a, the next
+#                                                band (default: all the rest) hits b
+
+materials:
+  # --- medieval -------------------------------------------------------------
+  padded:      {name: "Padded (gambeson)",          cut: 1, pierce: 0, crush: 1, ballistic: 0, threats: {fragment: 0, pistol: 0, rifle: 0, rifle_ap: 0}}
+  leather:     {name: "Hardened leather",            cut: 1, pierce: 0, crush: 0, ballistic: 0, threats: {fragment: 0, pistol: 0, rifle: 0, rifle_ap: 0}}
+  mail:        {name: "Mail",                        cut: 2, pierce: 1, crush: 0, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
+  mail_padded: {name: "Mail over padding",           cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
+  plates:      {name: "Coat of plates / brigandine", cut: 2, pierce: 2, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
+  plate:       {name: "Plate",                       cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 2, pistol: 1, rifle: 0, rifle_ap: 0}}
+  # --- musket era ------------------------------------------------------------
+  cuirass:       {name: "Steel cuirass (cuirassier, carabinier)", cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 1, pistol: 2, rifle: 1, rifle_ap: 0}}
+  cavalry_helmet: {name: "Cavalry helmet (brass or steel, with crest)", cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
+  # --- 20th / 21st century --------------------------------------------------
+  steel_vest:    {name: "Thin steel vest (private purchase)", cut: 2, pierce: 1, crush: 1, ballistic: 1, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
+  sappenpanzer:  {name: "Heavy steel plate (Sappenpanzer)",    cut: 3, pierce: 2, crush: 1, ballistic: 2, threats: {fragment: 2, pistol: 2, rifle: 1, rifle_ap: 0}}
+  flak_steel:    {name: "Steel plates in fabric (aircrew flak vest)", cut: 2, pierce: 1, crush: 1, ballistic: 1, threats: {fragment: 2, pistol: 1, rifle: 0, rifle_ap: 0}}
+  steel_helmet:  {name: "Steel helmet (M1, Brodie)",        cut: 2, pierce: 1, crush: 1, ballistic: 1, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
+  nylon_flak:    {name: "Nylon flak vest (M1952, M69)",     cut: 1, pierce: 0, crush: 0, ballistic: 1, threats: {fragment: 2, pistol: 1, rifle: 0, rifle_ap: 0}}
+  doron:         {name: "Doron fibreglass plates (M1955)",  cut: 2, pierce: 1, crush: 1, ballistic: 1, threats: {fragment: 2, pistol: 2, rifle: 0, rifle_ap: 0}}
+  kevlar_soft:   {name: "Soft Kevlar (PASGT, IIIA vest)",   cut: 1, pierce: 0, crush: 0, ballistic: 2, threats: {fragment: 2, pistol: 2, rifle: 0, rifle_ap: 0}}
+  kevlar_helmet: {name: "Kevlar helmet (PASGT, ACH)",       cut: 2, pierce: 2, crush: 1, ballistic: 2, threats: {fragment: 2, pistol: 2, rifle: 0, rifle_ap: 0}}
+  sapi:          {name: "Rifle plate (SAPI)",               cut: 3, pierce: 3, crush: 1, ballistic: 3, threats: {fragment: 3, pistol: 3, rifle: 2, rifle_ap: 0}}
+  esapi:         {name: "AP rifle plate (ESAPI)",           cut: 3, pierce: 3, crush: 1, ballistic: 3, threats: {fragment: 3, pistol: 3, rifle: 2, rifle_ap: 2}}
+
+slots:
+  helm: "Skull"
+  visor: "Face"
+  gorget: "Neck"
+  torso_upper: "Chest, upper back"
+  torso_lower: "Abdomen, lower back"
+  skirt: "Groin / pelvis"
+  pauldron: "Shoulders"
+  arm: "Upper arms, forearms"
+  gauntlet: "Hands"
+  leg: "Thighs, knees"
+  greave: "Lower legs"
+  sabaton: "Feet"
+
+kits:
+  - id: none
+    name: "Unarmoured"
+    group: generic
+    slots: {}
+
+  - id: rawhide_shield
+    name: "Rawhide shield, no armour (Plains warrior)"
+    group: generic
+    shield: true
+    slots: {}
+    notes: "Round shield of thick, shrunken buffalo hide. It could turn arrows and glancing balls, but covered nothing by itself: use the shield situations."
+
+  # --- generic medieval -----------------------------------------------------
+  - id: gambeson
+    name: "Gambeson and cap"
+    group: generic
+    shield: true
+    slots: {helm: padded, torso_upper: padded, torso_lower: padded, skirt: padded, pauldron: padded,
+            arm: {material: padded, cover: 70}, leg: {material: padded, cover: 40}}
+
+  - id: leather
+    name: "Hardened leather"
+    group: generic
+    shield: true
+    slots: {helm: leather, torso_upper: leather, torso_lower: leather, pauldron: leather, arm: leather, greave: leather}
+
+  - id: hauberk
+    name: "Mail hauberk and helm (c.1100-1300)"
+    group: generic
+    shield: true
+    slots: {helm: plate, gorget: mail, torso_upper: mail_padded, torso_lower: mail_padded, skirt: mail, pauldron: mail_padded,
+            arm: mail_padded, gauntlet: {material: mail, cover: 70}, leg: {material: mail, cover: 50}}
+
+  - id: transitional
+    name: "Coat of plates and mail (c.1350)"
+    group: generic
+    shield: true
+    slots: {helm: plate, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: mail_padded,
+            arm: mail_padded, gauntlet: plates, leg: mail_padded, greave: {material: plate, cover: 50}, sabaton: mail}
+
+  - id: full_plate
+    name: "Full plate harness (c.1450)"
+    group: generic
+    shield: false
+    slots: {helm: plate, visor: plate, gorget: plate, torso_upper: plate, torso_lower: plate, skirt: mail_padded,
+            pauldron: plate, arm: plate, gauntlet: plate, leg: plate, greave: plate, sabaton: plate}
+
+  # --- Visby 1361 -----------------------------------------------------------
+  - id: gotland_levy
+    name: "Gotland levy: mail coif, padded coat"
+    group: visby
+    shield: true
+    slots: {helm: mail, gorget: mail, torso_upper: padded, torso_lower: padded, skirt: padded, pauldron: padded,
+            arm: {material: padded, cover: 60}}
+    notes: "Many Visby dead were buried wearing mail coifs."
+
+  - id: gotland_armoured
+    name: "Gotland, better equipped: coif, coat of plates"
+    group: visby
+    shield: true
+    slots: {helm: mail_padded, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: mail,
+            arm: {material: mail, cover: 70}, gauntlet: {material: plates, cover: 50}}
+    notes: "Coats of plates and plate gauntlets were recovered from the Visby graves."
+
+  - id: danish_maa
+    name: "Danish man-at-arms (1361)"
+    group: visby
+    shield: true
+    slots: {helm: plate, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: mail_padded,
+            arm: mail_padded, gauntlet: plates, leg: mail_padded, greave: {material: plate, cover: 50}, sabaton: mail}
+    notes: "Professional kit of the period; face left open (visors uncertain for 1361)."
+
+  # --- musket era (1775-1815) ----------------------------------------------
+  - id: cuirassier
+    name: "Cuirassier: steel cuirass and helmet"
+    group: musket
+    slots: {helm: cavalry_helmet, torso_upper: cuirass, torso_lower: {material: cuirass, cover: 70}}
+    notes: "French cuirassiers and carabiniers; breast and back plates were proofed against musket balls at range (1 step), better against pistols. The skirt of the cuirass left the belly partly open."
+
+  - id: dragoon_helmet
+    name: "Dragoon or light dragoon helmet"
+    group: musket
+    slots: {helm: cavalry_helmet}
+    notes: "Brass, steel or leather helmet with a crest, worn by dragoons on both sides; turned sabre cuts."
+
+  # --- modern ---------------------------------------------------------------
+  - id: acw_steel_vest
+    name: "Private steel vest (Civil War, 1862)"
+    group: modern
+    slots: {torso_upper: {material: steel_vest, cover: 85}, torso_lower: {material: steel_vest, cover: 50}}
+    notes: "Atwater and G&D Cook vests, sold by the thousand in 1862; about 8 lb, most were thrown away on the march."
+
+  - id: ww1_sentry
+    name: "Steel helmet and Sappenpanzer (WWI German sentry)"
+    group: modern
+    slots: {helm: steel_helmet, torso_upper: sappenpanzer, torso_lower: {material: sappenpanzer, cover: 70}}
+    notes: "Heavy plate issued to sentries and machine gunners in static positions; too heavy for the attack."
+
+  - id: aircrew_flak
+    name: "Aircrew flak vest and helmet (WWII bomber crew)"
+    group: modern
+    slots: {helm: steel_helmet, torso_upper: flak_steel, torso_lower: {material: flak_steel, cover: 70}, skirt: {material: flak_steel, cover: 60}}
+    notes: "Steel plates sewn into fabric against flak fragments; worn by US bomber crews from 1943."
+
+  - id: ww2_rifleman
+    name: "Steel helmet only (1915-1950s rifleman)"
+    group: modern
+    slots: {helm: steel_helmet}
+    notes: "Most infantry from 1915 to the early 1950s wore a steel helmet and no body armour."
+
+  - id: vietnam_army
+    name: "M1 helmet, nylon flak vest (US Army M1952/M69, 1952-75)"
+    group: modern
+    slots: {helm: steel_helmet, gorget: {material: nylon_flak, cover: 30}, torso_upper: nylon_flak,
+            torso_lower: {material: nylon_flak, cover: 70}}
+    notes: "M69 nylon vest stopped fragments and low-velocity pistol rounds, not an AK-47 round."
+
+  - id: vietnam_usmc
+    name: "M1 helmet, Doron vest (USMC M1951/M1955, 1951-75)"
+    group: modern
+    slots: {helm: steel_helmet, torso_upper: [{material: doron, cover: 75}, {material: nylon_flak}],
+            torso_lower: {material: doron, cover: 70}}
+    notes: "Doron fibreglass plates over the chest, sides and back; nylon over the upper torso. Stopped .45 ACP at the muzzle, not rifle rounds."
+
+  - id: pasgt
+    name: "PASGT vest and helmet (1980s-90s)"
+    group: modern
+    slots: {helm: kevlar_helmet, gorget: {material: kevlar_soft, cover: 50}, torso_upper: kevlar_soft,
+            torso_lower: {material: kevlar_soft, cover: 80}, pauldron: {material: kevlar_soft, cover: 40}}
+    notes: "Kevlar against fragments and handgun rounds; no rifle plates."
+
+  - id: ranger_1993
+    name: "Ranger Body Armor, front plate only (Mogadishu 1993)"
+    group: modern
+    slots: {helm: kevlar_helmet, torso_upper: [{material: sapi, cover: 35}, {material: kevlar_soft}],
+            torso_lower: {material: kevlar_soft, cover: 70}}
+    notes: "IIIA soft vest with a single ceramic plate in front; the first version had no back plate, so only about half the usual plate coverage."
+
+  - id: interceptor
+    name: "Interceptor vest, SAPI plates, ACH (2000s)"
+    group: modern
+    slots: {helm: kevlar_helmet, gorget: {material: kevlar_soft, cover: 60},
+            torso_upper: [{material: sapi, cover: 65}, {material: kevlar_soft}],
+            torso_lower: {material: kevlar_soft, cover: 70}, skirt: {material: kevlar_soft, cover: 50},
+            pauldron: {material: kevlar_soft, cover: 50}}
+    notes: "Plates cover the centre of the chest and back (about 65% of upper-torso hits); soft Kevlar elsewhere on the vest. Neck, groin and shoulder pieces were not always worn."
+
+  - id: plate_carrier
+    name: "Plate carrier, ESAPI plates, helmet (2010s-)"
+    group: modern
+    slots: {helm: kevlar_helmet, torso_upper: {material: esapi, cover: 65}, torso_lower: {material: kevlar_soft, cover: 25}}
+    notes: "Lighter than a full vest: plates over the vital area, soft side panels only. Outside the plates is a gap."
+
+  - id: police_iiia
+    name: "Concealable soft vest (police IIIA)"
+    group: modern
+    slots: {torso_upper: kevlar_soft, torso_lower: {material: kevlar_soft, cover: 70}}
+    notes: "Stops handgun rounds, not rifles. Soft Kevlar gives little protection against a knife (pierce 0)."
+
+confidence: extrapolated
+sources:
+  - "Visby kit contents follow the finds summarised in Thordeman (1939): mail coifs, coats of plates, gauntlets. Not yet checked against the text."
+  - "Vietnam vests: M1952/M69 nylon stopped fragments and low-velocity pistol rounds but not rifle rounds; M1955 Doron plates stopped .45 ACP at the muzzle (Wikipedia, 'Flak jacket')."
+  - "Protection steps and coverage percentages are design estimates."

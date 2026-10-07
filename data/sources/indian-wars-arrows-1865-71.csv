@@ -1,0 +1,142 @@
+# Arrow wounds tallied wound-by-wound from: US Surgeon General's Office, Circular No. 3,
+# "A Report of Surgical Cases Treated in the Army of the United States from 1865 to 1871"
+# (Washington, 1871), section "Arrow-Wounds", pp. 144-161, cases CCCCLI-CCCCLXXXVII.
+# Text: archive.org item reportofsurgical00unituoft. One row per arrow wound (gunshot,
+# club and scalping wounds in the same men are left out). loc uses body.yaml ids; a
+# trailing "_?" means the side is not stated. fatal = the man died (case-level).
+# "unspecified" = the report gives the wound but not where it was.
+case,person,loc,fatal,text
+451,Imbler,neck,0,entered above left scapula and transfixed posterior triangle of neck
+451,Imbler,forearm_r,0,fleshy part of right fore-arm
+451,Imbler,forearm_l,0,ulnar side of left fore-arm near elbow
+452,Nix,skull_l,1,slight cut in left ear
+452,Nix,unspecified,1,flesh-wound
+452,Nix,unspecified,1,flesh-wound
+452,Nix,knee_r,1,right knee (synovial membrane penetrated)
+452,Nix,knee_r,1,right knee
+453,Queswelle,back_upper,1,through eighth dorsal vertebra
+453,Queswelle,back_upper,1,through ninth dorsal vertebra
+453,Queswelle,forearm_?,1,through the fore-arm
+453,Queswelle,forearm_?,1,through the fore-arm
+453,Queswelle,forearm_?,1,through the fore-arm
+453,Queswelle,chest_r,1,between fifth and sixth ribs right side
+453,Queswelle,hand_r,1,palmar surface of right hand
+454,Crabtree,groin,1,post gluteal region
+454,Crabtree,chest_l,1,left lung
+454,Crabtree,abdomen,1,abdomen
+454,Crabtree,upper_arm_?,1,penetrating the humerus
+454,Crabtree,hand_?,1,hand
+454,Crabtree,groin,1,testicle
+454,Crabtree,back_upper,1,back to left of dorsal vertebra
+454,Crabtree,groin,1,bladder
+454,Crabtree,abdomen,1,glance-shot below ninth rib
+455,Osborn,back_upper,0,outer lower margin of right scapula into lung
+455,Osborn,unspecified,0,seven other arrows (sites not given)
+455,Osborn,unspecified,0,
+455,Osborn,unspecified,0,
+455,Osborn,unspecified,0,
+455,Osborn,unspecified,0,
+455,Osborn,unspecified,0,
+455,Osborn,unspecified,0,
+456,Smith,back_lower,1,right side below region of kidney
+456,Smith,chest_r,1,cartilage of first rib at sternum; right lung and vena cava
+456,Smith,unspecified,1,three other arrows (sites not given)
+456,Smith,unspecified,1,
+456,Smith,unspecified,1,
+457,Spillman,shoulder_r,1,right shoulder
+457,Spillman,chest_r,1,right side glancing from a rib
+457,Spillman,back_lower,1,right lumbar region penetrating abdominal cavity
+458,Krumholz,face,0,outer canthus of left eye; penetrated skull
+459,Snowdon,skull_l,1,back of head over left occipito-parietal suture
+460,Mexican (Concho),skull_l,1,frontal through left superciliary ridge
+461,Drum,face,0,over left malar bone
+461,Drum,chest_r,0,tendon of latissimus dorsi right side
+462,Rosback,skull_?,0,scalp
+462,Rosback,lower_leg_l,0,left leg three inches below knee
+463,Button,neck,0,posterior portion of neck
+464,J.C.,skull_r,1,side of head; arrow-head in right temporal bone
+464,Martin W.,skull_l,1,squamous portion of left temporal bone
+465,Duggan,back_upper,1,posterior side of right chest above diaphragm
+466,McCasey,chest_l,1,left side fourth intercostal space
+467,Stables,back_upper,1,left chest posteriorly transfixing thorax
+467,Stables,chest_l,1,through chest left of median line
+467,Fitzpatrick,chest_l,1,left axilla into chest
+467,Fitzpatrick,chest_r,1,under right nipple to vertebral column
+467,Fitzpatrick,upper_arm_l,1,perforated left elbow-joint
+467,Fitzpatrick,back_upper,1,thorax posteriorly above scapula
+467,Fitzpatrick,back_upper,1,thorax posteriorly below scapula
+468,Fenske,back_upper,0,back between third and fourth ribs left side near vertebrae
+469,Livingston,chest_r,0,right side of thorax between first and second ribs
+470,unknown (Concho),chest_?,1,lungs and heart (four arrow-heads)
+470,unknown (Concho),chest_?,1,
+470,unknown (Concho),chest_?,1,
+470,unknown (Concho),chest_?,1,
+470,unknown (Concho),back_upper,1,fourth dorsal vertebra and rib
+471,Brown,abdomen,1,left hypochondriac region
+472,Train,abdomen,1,liver
+473,Locke,back_lower,0,back three inches right of fifth lumbar vertebra
+474,Cooper,abdomen,0,over eighth rib right side passing to umbilicus
+475,Tragesor,back_lower,1,left side four inches from spine above iliac crest (kidney)
+476,To-Kah K-teu,groin,1,between right ischium and anus into pelvis
+477,Monaghan,back_upper,0,below inferior angle of right scapula
+478,Heyl,back_lower,0,left lumbar region
+479,Burridge,upper_arm_?,0,arm two inches above elbow
+480,Detterer,hand_r,0,metacarpal of right thumb
+481,Hardwick,thigh_l,0,left thigh rectus femoris
+481,Hardwick,upper_arm_r,0,right arm biceps
+482,Tompkins,thigh_l,0,lower third of left thigh
+483,Murray J.,upper_arm_r,0,anterior surface of right arm
+483,Murray J.,upper_arm_r,0,anterior surface of right arm
+483,Murray J.,shoulder_r,0,right axilla
+483,Murray J.,chest_r,0,right side of chest near axilla
+483,Murray J.,upper_arm_l,0,left arm posterior near elbow
+483,Murray J.,upper_arm_l,0,left arm posterior near elbow
+483,Murray J.,skull_l,0,left temple
+484,Mexican herdsman,groin,0,testis
+485,Ahern,back_?,0,back
+485,Ahern,shoulder_l,0,left shoulder
+485,Aldrich,back_lower,0,right lumbar region
+485,Arkee,shoulder_r,0,right shoulder below deltoid
+485,Pa-yan-za,upper_arm_?,0,arm
+485,Big Mack,upper_arm_?,0,arm
+485,Burr,forearm_r,0,right fore-arm
+485,Butler,forearm_l,0,upper third of left fore-arm
+485,Clinton,back_upper,0,back below spine of scapula
+485,Cooley,chest_l,0,left side of thorax
+485,Craig,hand_l,0,left hand
+485,Creeden,upper_arm_l,0,left arm
+485,Daily,thigh_r,0,right thigh above patella
+485,Fee,abdomen,0,muscles of right side of abdomen
+485,Harr,thigh_l,0,anterior left thigh
+485,Hilmer,upper_arm_r,0,right arm inferior third
+485,Hoffman,thigh_l,0,upper third of left thigh
+485,Johnson,back_upper,0,chest over shoulder-blade
+485,Kinten,lower_leg_r,0,right leg
+485,Kinten,shoulder_r,0,right shoulder
+485,Ludlow,chest_?,0,behind junction of ninth rib with cartilage
+485,Malone,groin,0,above the hip
+485,March,hand_l,0,left hand
+485,Marshall,groin,0,right hip
+485,Miller,shoulder_?,0,over external edge of scapula into arm
+485,Morgan,upper_arm_r,0,right arm
+485,Morrell,groin,0,right groin
+485,Morrell,abdomen,0,side
+485,Morrell,back_?,0,back
+485,Morrison,skull_?,0,scalp
+485,Murphy,chest_r,0,right side
+485,Murray C.,lower_leg_l,0,left leg
+485,O'Brien,chest_?,0,chest two inches above nipple
+485,Owine,upper_arm_l,0,left arm
+485,Rigby,forearm_?,0,through the fore-arm
+485,Ryan,face,0,lip
+485,Schreyer,thigh_l,0,left thigh
+485,Sheppard,neck,0,neck
+485,Silence,shoulder_l,0,left shoulder
+485,Stall,chest_r,0,right breast
+485,Stockford,upper_arm_l,0,internal condyle of left humerus
+485,Wagerle,chest_r,0,right chest into pleural cavity
+485,White,chest_l,0,sixth rib left side seven inches from spine
+485,Zuch,groin,0,left hip
+486,Ford,chest_?,1,arrow penetrating thorax
+486,Stone,chest_?,1,arrow penetrating thorax
+487,Devine,upper_arm_?,1,brachial artery severed

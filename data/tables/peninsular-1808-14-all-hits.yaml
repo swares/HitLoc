@@ -1,0 +1,51 @@
+id: peninsular-1808-14-all-hits
+order: 19
+name: "Napoleonic era - all hits (gameplay)"
+label: "All hits: gameplay blend"
+battle: "Napoleonic era & War of 1812"
+context: "Where musket balls and shot land on a man in the open, before survival sorts the records. Use for the Peninsula, Waterloo and the War of 1812."
+variant: adjusted
+armor: allowed
+weapon_bias: pooled
+weapons: [musket_smoothbore, rifle_flintlock, pistol_flintlock, artillery_smoothbore, saber, bayonet, lance]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, flanked, behind_cover]
+confidence: extrapolated
+confidence_note: "Blend of a historical wounded table and a stand-in killed table; the mix is from casualty totals."
+armor_note: >
+  Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets).
+  Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely
+  killed, so those records already include nearly every edged hit.
+sources:
+  - "Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers + 25.5% acw-1861-killed, location by location."
+  - "Killed share: about one killed for every three wounded in the Anglo-allied army at Waterloo (about 3,500 killed and 10,200 wounded; approximate, commonly cited totals)."
+status: >
+  Estimated. The Peninsular records hold only 146 killed outright (head and chest most
+  often), too few to use, so the Civil War killed-in-action table (also soft lead balls)
+  stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another.
+weights:
+  skull_l: 6.454
+  skull_r: 6.454
+  face: 4.783
+  neck: 2.977
+  chest_l: 4.456
+  chest_r: 4.456
+  abdomen: 4.521
+  groin: 3.454
+  back_upper: 1.934
+  back_lower: 2.273
+  shoulder_l: 3.246
+  shoulder_r: 3.246
+  upper_arm_l: 6.421
+  upper_arm_r: 6.421
+  forearm_l: 1.013
+  forearm_r: 1.013
+  hand_l: 2.351
+  hand_r: 2.351
+  thigh_l: 6.635
+  thigh_r: 6.635
+  knee_l: 1.514
+  knee_r: 1.514
+  lower_leg_l: 5.985
+  lower_leg_r: 5.985
+  foot_l: 1.954
+  foot_r: 1.954

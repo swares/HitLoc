@@ -1,0 +1,57 @@
+id: revolution-1775-83-pensioners
+order: 15
+name: "American Revolution 1775-83 - disabled veterans' wounds"
+label: "Wounded: invalid pension lists 1792-95"
+battle: "American Revolution"
+context: "Where Continental soldiers, militiamen and seamen were wounded, from the federal invalid pension lists of 1792-95. Men disabled for life who survived."
+variant: evidence
+armor: allowed
+weapon_bias: pooled
+weapons: [musket_smoothbore, rifle_flintlock, pistol_flintlock, artillery_smoothbore, bayonet, saber, musket_butt]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, flanked, behind_cover]
+confidence: historical
+confidence_note: >
+  Counted wound by wound from 344 men's entries (379 wounds whose site is named; 32 more
+  not located). Sides are recorded for about half and were close to even (85 left, 99
+  right), so left and right are pooled and split by body exposure (design estimate).
+  'Arm' without more detail is shared between upper arm and forearm.
+weapon_mix:
+  - {label: "Musket or rifle ball, buck shot", weapon: musket_smoothbore, pct: 82.4}
+  - {label: "Cannon ball, grape, shell", weapon: artillery_smoothbore, pct: 7.6}
+  - {label: "Bayonet", weapon: bayonet, pct: 4.8}
+  - {label: "Sword, broadsword, horseman's sword", weapon: saber, pct: 2.8}
+  - {label: "Musket butt or muzzle, blows", weapon: musket_butt, pct: 1.6}
+  - {label: "Tomahawk", weapon: axe, pct: 0.4}
+  - {label: "Lance or spear (boarding)", weapon: spear, pct: 0.4}
+armor_note: >
+  Nobody wore armour, so these are hits before armour. But they are survivors with a
+  lasting disability: wounds that killed (most head, chest and belly wounds) are missing,
+  and limb wounds that left a man lame are over-represented. Use the all-hits table for play.
+sources:
+  - "Federal Revolutionary War Invalid Pension Claims, 1792-1795 (573 veterans), Magazine of Early American Datasets, University of Pennsylvania, 2021; from the Secretary of War's lists printed in American State Papers, Claims, vol. 1."
+  - "Wound-by-wound tally: data/sources/revolution-invalid-pensions-1792-95.csv. The weapon mix counts the 251 wounds whose cause is stated."
+status: >
+  Historical, from a pension roll rather than a battlefield count. Entries for sickness,
+  ruptures, frostbite, falls, work accidents and accidental discharges were left out.
+  The pattern (head and neck 12%, trunk 23%, arms 36%, legs 29%) is close to the Civil
+  War wounded (11/18/36/35), which suggests the same survivor effect.
+regions:
+  - {label: "Head and scalp (24)", locs: [skull_l, skull_r], count: 24}
+  - {label: "Face, eye, jaw (11)", locs: [face], count: 11}
+  - {label: "Neck and throat (9)", locs: [neck], count: 9}
+  - {label: "Chest, breast and side (36)", locs: [chest_l, chest_r], count: 36}
+  - {label: "Through the body (level not stated) (12)", locs: [chest_l, chest_r, abdomen, back_upper, back_lower], count: 12}
+  - {label: "Belly (8)", locs: [abdomen], count: 8}
+  - {label: "Hip, groin, testicles (18)", locs: [groin], count: 18}
+  - {label: "Back, shoulder blade (2)", locs: [back_upper], count: 2}
+  - {label: "Small of the back, loins (4)", locs: [back_lower], count: 4}
+  - {label: "Back, level not stated (9)", locs: [back_upper, back_lower], count: 9}
+  - {label: "Shoulder and armpit (32)", locs: [shoulder_l, shoulder_r], count: 32}
+  - {label: "Arm (not said which part) (49)", locs: [upper_arm_l, upper_arm_r, forearm_l, forearm_r], count: 49}
+  - {label: "Upper arm and elbow (11)", locs: [upper_arm_l, upper_arm_r], count: 11}
+  - {label: "Wrist and forearm (11)", locs: [forearm_l, forearm_r], count: 11}
+  - {label: "Hand, fingers, thumb (32)", locs: [hand_l, hand_r], count: 32}
+  - {label: "Thigh (40)", locs: [thigh_l, thigh_r], count: 40}
+  - {label: "Knee (5)", locs: [knee_l, knee_r], count: 5}
+  - {label: "Leg below the knee (55)", locs: [lower_leg_l, lower_leg_r], count: 55}
+  - {label: "Foot, ankle, heel (11)", locs: [foot_l, foot_r], count: 11}

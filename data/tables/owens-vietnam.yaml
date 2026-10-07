@@ -1,0 +1,26 @@
+id: owens-vietnam
+order: 41.5
+name: "Vietnam 1965-73 - hospitalized (Owens comparison set)"
+label: "Hospitalized (Owens comparison set)"
+battle: "Vietnam"
+context: "US casualties hospitalized in the Vietnam War."
+variant: evidence
+weapon_bias: recentred
+weapons: [rifle_assault, machine_gun, pistol_smg, hand_grenade, mortar_artillery, rpg, mine_ied, punji_stake, explosive_fragment, bayonet, entrenching_tool]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region totals are from the source. Extremities split 40% arms / 60% legs, the average of the WWII, Korea and Vietnam hospital figures in Neel (1973) Table 7 (design estimate), the same rule for every table in this set. The split inside each region uses body exposure (design estimate)."
+armor_note: "Hospitalized casualties including those who later died of wounds; men killed outright are not counted, so head and trunk are still under-counted."
+sources:
+  - "Owens BD et al., 'Combat wounds in Operation Iraqi Freedom and Operation Enduring Freedom', J Trauma 2008, comparison table (reproduced in National Academies, Review of DoD Test Protocols for Combat Helmets, 2014, Table 3-2): head and neck 16, thorax 13, abdomen 10, extremities 61."
+status: "Historical at region level. One of four tables from the same source with the same counting rule (see the comparison on the Reference page) (hospitalizations, including men who later died of wounds), same extremity split."
+regions:
+  - {label: "Head and neck", zone: head, pct: 16}
+  - {label: "Thorax", locs: [chest_l, chest_r, back_upper], pct: 13}
+  - {label: "Abdomen", locs: [abdomen, back_lower, groin], pct: 10}
+  - {label: "Upper extremities (40% of 61)", zone: arms, pct: 24.4}
+  - {label: "Lower extremities (60% of 61)", zone: legs, pct: 36.6}
+weapon_mix_source: "Owens et al. 2008 (National Academies 2014, Table 3-4): share of injuries from gunshot vs explosion"
+weapon_mix:
+  - {weapon: rifle_assault, pct: 35}
+  - {weapon: explosive_fragment, pct: 65}

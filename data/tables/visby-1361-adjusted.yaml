@@ -1,0 +1,55 @@
+id: visby-1361-adjusted
+order: 11
+name: "Visby 1361 - gameplay-adjusted"
+label: "Gameplay-adjusted (before armour)"
+context: "Same fight as the evidence table, re-weighted to where blows land before armour."
+variant: adjusted
+weapon_bias: raw
+native: armed
+assumes_shield: true
+derived_from: visby-1361-evidence
+battle: "Visby 1361"
+weapons: [sword, axe, spiked_club, spear, dagger, bow, crossbow, sling]
+modifiers: [shield_side, weapon_side, attacker_higher, attacker_lower, target_down, target_fleeing, flanked, no_shield, target_warding]
+confidence: extrapolated
+armor_note: >
+  These weights are where blows LAND. Resolve armour separately using the
+  location's armour slot (body.yaml). Use this table when your system tracks
+  armour coverage.
+sources:
+  - "Derived from visby-1361-evidence."
+status: >
+  Corrections applied to the bone evidence:
+  (1) Torso raised to ~27%: blows that mail stopped, and soft-tissue belly and
+  chest wounds, leave no bone marks.
+  (2) Thighs raised: deep muscle wounds often miss the femur.
+  (3) Lower-leg dominance kept but reduced; the shield-side (left) bias kept.
+  (4) Head lowered slightly: some skull wounds are blows struck after a man fell.
+
+weights:
+  skull_l: 8
+  skull_r: 7
+  face: 4
+  neck: 2
+  chest_l: 7
+  chest_r: 6
+  abdomen: 7
+  groin: 2
+  back_upper: 3
+  back_lower: 2
+  shoulder_l: 3
+  shoulder_r: 3
+  upper_arm_l: 2
+  upper_arm_r: 2
+  forearm_l: 3
+  forearm_r: 3
+  hand_l: 1
+  hand_r: 1
+  thigh_l: 7
+  thigh_r: 5
+  knee_l: 3
+  knee_r: 2
+  lower_leg_l: 9
+  lower_leg_r: 5
+  foot_l: 2
+  foot_r: 1

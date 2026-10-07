@@ -1,0 +1,418 @@
+# Conflict background, keyed by each table's `battle` group.
+# sides    - who fought and how each side used armour (prose; facts as sourced)
+# examples - ready-made combatants: an armour kit (armor.yaml) and a typical weapon
+#            (weapons.yaml) for that side. The kit is what they wear as a TARGET;
+#            the weapon is what they use when they ATTACK.
+#            elsewhere: true - the weapon is recorded only in another group's tables (no
+#            data for it in this war); the roller offers to switch tables when he attacks.
+
+conflicts:
+  "Visby 1361":
+    period: "27 July 1361"
+    summary: >
+      King Valdemar IV Atterdag of Denmark invaded Gotland, then a rich trading island,
+      and met its rural defenders outside the walls of Visby. The Gotlanders were a
+      peasant levy facing professional troops, and the fight became a slaughter. The
+      dead were buried quickly in mass graves, many still in their armour, which is why
+      Visby gives the best picture of medieval battle wounds: 1,185 skeletons were
+      recovered from three graves.
+    sides:
+      - name: "Danish army"
+        who: "Professional soldiers of Valdemar IV."
+        armour: "Mail, coats of plates and plate helmets; the best-equipped wore gauntlets and leg harness. Few of their dead are in the graves."
+      - name: "Gotlandic levy"
+        who: "Farmers and freeholders of rural Gotland, called out to defend the island."
+        armour: "Uneven. Many wore mail coifs and padded coats; some had coats of plates and gauntlets; many had little or nothing on the legs, which took most of the blade wounds."
+    examples:
+      - {name: "Gotland levy", side: "Gotlandic levy", kit: gotland_levy, weapon: spear, notes: "Coif and padded coat; legs bare."}
+      - {name: "Gotland freeholder", side: "Gotlandic levy", kit: gotland_armoured, weapon: axe, notes: "Wealthier farmer in a coat of plates."}
+      - {name: "Danish man-at-arms", side: "Danish army", kit: danish_maa, weapon: sword, notes: "Fully harnessed professional."}
+      - {name: "Danish sergeant", side: "Danish army", kit: transitional, weapon: spiked_club, notes: "Coat of plates and mail; the spiked club matches square holes in Visby skulls."}
+      - {name: "Danish crossbowman", side: "Danish army", kit: transitional, weapon: crossbow, notes: "126 arrow and bolt wounds were found among the Gotland dead."}
+    sources:
+      - "Swedish History Museum, 'Skull from the Battle of Visby'."
+      - "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
+
+  "American Revolution":
+    period: "1775-1783"
+    summary: >
+      The thirteen colonies, joined by France from 1778 and later Spain and the Dutch
+      Republic, fought Britain for independence. Battles were fought with smoothbore
+      muskets and bayonets at close range, with artillery firing round shot, grape and
+      canister; riflemen picked off officers from cover; dragoons fought with the sabre.
+      Bayonet charges decided many fights, and some ended in killings of men trying to
+      surrender, such as Paoli (1777) and Waxhaws (1780). Peckham counted 7,174 Americans
+      killed and 8,241 wounded in action. The tables here are tallied from the men
+      disabled for life who claimed federal invalid pensions in 1792-95.
+    sides:
+      - name: "Continental Army and militia"
+        who: "Continental regulars, state militia, riflemen, light dragoons, and the Continental Navy and privateers."
+        armour: "None. Officers wore a small gorget as a mark of rank; light dragoons wore leather helmets."
+      - name: "British Army and Loyalists"
+        who: "British regulars and marines, Loyalist provincial regiments and rangers, and the Royal Navy."
+        armour: "None. Grenadiers' bearskin caps and light infantry caps gave no protection; light dragoons wore crested leather helmets."
+      - name: "German auxiliaries"
+        who: "Regiments hired from Hesse-Kassel, Brunswick and other German states ('Hessians'), including Jäger riflemen."
+        armour: "None; grenadiers wore brass-fronted mitre caps, which were not armour."
+      - name: "French forces"
+        who: "Rochambeau's expeditionary army and the French navy, from 1778; decisive at Yorktown in 1781."
+        armour: "None."
+      - name: "Native nations"
+        who: "Warriors on both sides: most of the Mohawk, Seneca and Cherokee fought with Britain; the Oneida and Tuscarora with the Americans."
+        armour: "None. Musket, tomahawk and knife; raids and ambushes on the frontier."
+    examples:
+      - {name: "Continental infantryman", side: "Continental Army and militia", kit: none, weapon: musket_smoothbore, notes: "Musket and bayonet."}
+      - {name: "Morgan's rifleman", side: "Continental Army and militia", kit: none, weapon: rifle_flintlock, notes: "Long rifle, slow to load, deadly at range; no bayonet."}
+      - {name: "Continental light dragoon", side: "Continental Army and militia", kit: dragoon_helmet, weapon: saber, notes: "Leather helmet and sabre."}
+      - {name: "British grenadier", side: "British Army and Loyalists", kit: none, weapon: bayonet, notes: "The bayonet charge was the British infantry's favoured tactic."}
+      - {name: "Loyalist ranger", side: "British Army and Loyalists", kit: none, weapon: musket_smoothbore, notes: "Frontier raids alongside Native allies."}
+      - {name: "British light dragoon", side: "British Army and Loyalists", kit: dragoon_helmet, weapon: saber, notes: "Tarleton's British Legion fought with sabres at Waxhaws."}
+      - {name: "Hessian Jäger", side: "German auxiliaries", kit: none, weapon: rifle_flintlock, notes: "German hunters' rifle, short and accurate."}
+      - {name: "Hessian musketeer", side: "German auxiliaries", kit: none, weapon: musket_smoothbore, notes: "Line infantry; musket and bayonet."}
+      - {name: "French fusilier", side: "French forces", kit: none, weapon: musket_smoothbore, notes: "Charleville musket; Yorktown 1781."}
+      - {name: "Mohawk warrior", side: "Native nations", kit: none, weapon: axe, notes: "Tomahawk and musket."}
+      - {name: "Oneida scout", side: "Native nations", kit: none, weapon: musket_smoothbore, notes: "Allied with the Americans."}
+    sources:
+      - "Peckham, The Toll of Independence (1974), via Journal of the American Revolution, 'The 25 Deadliest Battles of the Revolutionary War' (2014): 7,174 killed and 8,241 wounded."
+      - "Federal Revolutionary War Invalid Pension Claims, 1792-1795, Magazine of Early American Datasets (Penn, 2021)."
+      - "Sides, alliances and dress: general historical knowledge, not from the pension data."
+
+  "Napoleonic era & War of 1812":
+    period: "1803-1815"
+    summary: >
+      France under Napoleon against shifting coalitions of Britain, Austria, Prussia,
+      Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and
+      Portuguese army under Wellington, with Spanish armies and guerrillas, drove the French
+      out of Spain; the wound tables come from French officers' files of that war. At the
+      same time (1812-1815) the United States fought Britain in North America, with the
+      same weapons: smoothbore muskets and bayonets, rifles, sabres and smoothbore
+      artillery. Many British regulars in the later War of 1812 were Peninsular veterans.
+      No region-by-region wound count survives for the War of 1812, so it uses these
+      tables.
+    sides:
+      - name: "French Empire and allies"
+        who: "French line and light infantry, cavalry and artillery, with Polish, German and Italian allies."
+        armour: "Cuirassiers and carabiniers wore steel breastplates and backplates and helmets; dragoons wore brass helmets; infantry wore none."
+      - name: "Britain and Peninsular allies"
+        who: "Wellington's British and Portuguese army (including the 95th Rifles), Spanish regular armies and guerrillas."
+        armour: "None for infantry; heavy and light dragoons wore helmets. British Household Cavalry wore cuirasses only after 1815."
+      - name: "United States (1812-15)"
+        who: "US regulars, state militia (including Kentucky riflemen), US Navy and Marines."
+        armour: "None; some light dragoons wore leather helmets."
+      - name: "British North America (1812-15)"
+        who: "British regulars, Canadian fencibles and militia, the Royal Navy, and the Provincial Marine."
+        armour: "None."
+      - name: "Tecumseh's confederacy"
+        who: "Shawnee, Potawatomi, Kickapoo and other nations under Tecumseh, allied with Britain until his death at the Thames (1813)."
+        armour: "None. Musket, rifle, tomahawk and war club."
+    examples:
+      - {name: "French line infantryman", side: "French Empire and allies", kit: none, weapon: musket_smoothbore, notes: "Charleville musket and bayonet."}
+      - {name: "French cuirassier", side: "French Empire and allies", kit: cuirassier, weapon: saber, notes: "Heavy cavalry: straight sword, breastplate and helmet."}
+      - {name: "Polish lancer", side: "French Empire and allies", kit: none, weapon: lance, notes: "Vistula Legion lancers, feared at Albuera (1811)."}
+      - {name: "British redcoat", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Brown Bess and bayonet, firing in two-deep line."}
+      - {name: "95th rifleman", side: "Britain and Peninsular allies", kit: none, weapon: rifle_flintlock, notes: "Baker rifle; skirmisher and sniper."}
+      - {name: "British heavy dragoon", side: "Britain and Peninsular allies", kit: dragoon_helmet, weapon: saber, notes: "1796 heavy cavalry sword."}
+      - {name: "Spanish guerrilla", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Ambushes of convoys and couriers."}
+      - {name: "US regular, 1814", side: "United States (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Chippawa and Lundy's Lane; Springfield musket."}
+      - {name: "Kentucky militia rifleman", side: "United States (1812-15)", kit: none, weapon: rifle_flintlock, notes: "River Raisin, the Thames, New Orleans."}
+      - {name: "British regular, 1814", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Often a Peninsular veteran."}
+      - {name: "Canadian militiaman", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Sedentary or embodied militia."}
+      - {name: "Shawnee warrior", side: "Tecumseh's confederacy", kit: none, weapon: axe, notes: "Tomahawk and musket."}
+    sources:
+      - "Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database)."
+      - "Sides, armour and dress: general historical knowledge, not from the wound data."
+
+  "American Civil War":
+    period: "1861-1865"
+    summary: >
+      The United States (Union) against the seceded Confederate States. Most wounds came
+      from the rifle-musket firing soft lead conoidal balls, which shattered bone and led
+      to the war's many amputations. Artillery, especially canister at close range, did
+      the rest; sabre and bayonet wounds were rare.
+    sides:
+      - name: "Union"
+        who: "US Regular Army and state volunteer regiments."
+        armour: "None issued. In 1862 private 'bullet-proof vests' (Atwater, G&D Cook) sold by the thousand; at about 8 lb most were thrown away on the march, and wearing one was thought unmanly."
+      - name: "Confederacy"
+        who: "Confederate States Army and state troops."
+        armour: "None issued; private vests were rarer still."
+    examples:
+      - {name: "Union infantryman", side: "Union", kit: none, weapon: rifle_musket, notes: "Springfield rifle-musket, no armour."}
+      - {name: "Union volunteer with steel vest, 1862", side: "Union", kit: acw_steel_vest, weapon: rifle_musket, notes: "One of the few who kept his vest."}
+      - {name: "Confederate cavalryman", side: "Confederacy", kit: none, weapon: revolver, notes: "Revolver and sabre."}
+      - {name: "Confederate infantryman", side: "Confederacy", kit: none, weapon: rifle_musket, notes: "Enfield or Springfield rifle-musket, no armour."}
+      - {name: "Union cavalryman", side: "Union", kit: none, weapon: saber, notes: "Sabre charge; carbine and revolver as well."}
+    sources:
+      - "Antietam on the Web, 'Saved by his steel vest' (2018): Atwater and G&D Cook vests, sales and use."
+
+  "American Indian Wars":
+    period: "1862-1871 (arrow reports)"
+    summary: >
+      After the Civil War the US Army garrisoned the Plains and the Southwest and fought a
+      long series of campaigns against the nations whose land the railways and settlers
+      were entering: on the Plains the Lakota (Sioux), Cheyenne, Arapaho, Kiowa and Comanche;
+      in Arizona, New Mexico and Texas the Apache, Navajo and Lipan. Most fights were raids,
+      ambushes of herders, mail escorts and wagon trains, and skirmishes between small
+      parties. Warriors used firearms when they could get them; younger and poorer men
+      still fought with the bow, which in skilled hands loosed several arrows in the time a
+      soldier reloaded. The Army's surgeons wrote up 83 arrow cases from 1865-71; the table
+      here is tallied from them.
+    sides:
+      - name: "US Army"
+        who: "Regular cavalry and infantry posted to frontier forts, with Indian scouts and civilian herders, teamsters and settlers."
+        armour: "None. Wool uniform; the cavalry fought mounted or dismounted with carbine, revolver and sabre."
+      - name: "Plains and Southwest nations"
+        who: "Lakota, Cheyenne, Arapaho, Kiowa, Comanche, Apache, Navajo and Lipan warriors, in raiding and war parties."
+        armour: "None worn. Many warriors carried a round shield of thick rawhide (buffalo hide on the Plains), which could turn an arrow or a glancing ball."
+    examples:
+      - {name: "Plains warrior with bow", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: bow, notes: "Iron trade-hoop or flint arrowheads; several arrows in quick succession."}
+      - {name: "Comanche lancer", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: spear, notes: "Mounted with lance and shield."}
+      - {name: "Apache raider", side: "Plains and Southwest nations", kit: none, weapon: bow, notes: "Ambush from cover; hoop-iron arrowheads."}
+      - {name: "US cavalry trooper", side: "US Army", kit: none, weapon: revolver, elsewhere: true, notes: "No arrow-era gunshot table exists; his revolver rolls on a Civil War table."}
+      - {name: "US infantryman", side: "US Army", kit: none, weapon: rifle_musket, elsewhere: true, notes: "Springfield rifle (rolls on a Civil War table)."}
+      - {name: "Indian scout", side: "US Army", kit: none, weapon: bow, notes: "Several scouts in the reports were themselves hit by arrows."}
+    sources:
+      - "US Surgeon General's Office, Circular No. 3 (1871), 'Arrow-Wounds', pp. 144-161 (archive.org: reportofsurgical00unituoft). Places, tribes, units and the note on firearms and bows are from the case reports and Dr. Muller's note there."
+      - "Rawhide shields: general ethnographic description, not from the report."
+
+  "WWI":
+    period: "1914-1918"
+    summary: >
+      The Allied powers (France, the British Empire, Russia, Italy, and from 1917 the
+      United States) against the Central Powers (Germany, Austria-Hungary, the Ottoman
+      Empire and Bulgaria). Trench warfare made artillery the main killer and the head
+      the most exposed target, which drove the return of the steel helmet.
+    sides:
+      - name: "Allies"
+        who: "French, British Empire, Russian, Italian and American armies."
+        armour: "Cloth caps and kepis in 1914. Steel helmets from 1915-16: the French Adrian, then the British Brodie. A little private-purchase body armour; Italian assault engineers used heavy plate."
+      - name: "Central Powers"
+        who: "German, Austro-Hungarian, Ottoman and Bulgarian armies."
+        armour: "German Stahlhelm from 1916. Heavy Sappenpanzer breastplates for sentries and machine gunners in fixed positions."
+    examples:
+      - {name: "French poilu, 1914", side: "Allies", kit: none, weapon: rifle_service, notes: "Kepi, no helmet yet."}
+      - {name: "British infantryman, 1916", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield."}
+      - {name: "German machine gunner", side: "Central Powers", kit: ww1_sentry, weapon: machine_gun, notes: "Stahlhelm and Sappenpanzer in a fixed position."}
+      - {name: "Trench raider, 1917", side: "Allies", kit: ww2_rifleman, weapon: entrenching_tool, notes: "Night raid: sharpened spade, revolver and grenades; no rifle in the trench."}
+      - {name: "Russian infantryman, 1915", side: "Allies", kit: none, weapon: bayonet, notes: "Most Russian soldiers had no steel helmet; the army set great store by the bayonet."}
+      - {name: "Italian Ardito, 1918", side: "Allies", kit: ww2_rifleman, weapon: hand_grenade, notes: "Assault trooper: Adrian helmet, grenades and dagger."}
+      - {name: "American doughboy, 1918", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1917 (Brodie-pattern) helmet, Springfield rifle."}
+      - {name: "German stormtrooper, 1918", side: "Central Powers", kit: ww2_rifleman, weapon: hand_grenade, notes: "Stahlhelm; grenades, carbine and sharpened spade."}
+      - {name: "Austro-Hungarian infantryman", side: "Central Powers", kit: ww2_rifleman, weapon: rifle_service, notes: "Steel helmet from 1916-17; Mannlicher rifle."}
+      - {name: "Ottoman infantryman, Gallipoli", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Cloth headgear, no steel helmet; Mauser rifle."}
+      - {name: "Bulgarian infantryman", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Mostly without steel helmets; Mannlicher rifle."}
+    sources:
+      - "Military Wiki, 'Stahlhelm' (introduction of German and Allied steel helmets)."
+
+  "WWII":
+    period: "1939-1945 (Bougainville 1943-45; Italy 1943-45)"
+    summary: >
+      The Allies against the Axis. This group's tables come from two theatres: the
+      jungle campaign on Bougainville in the Solomon Islands (US Marines and Army against
+      the Imperial Japanese Army) and the Italian campaign (US, British and Commonwealth
+      forces against the German army). Mortars and artillery caused half of the
+      Bougainville wounds.
+    sides:
+      - name: "Allies"
+        who: "US Army and Marine Corps; British and Commonwealth armies in Italy; the Australian army, which took over Bougainville from late 1944."
+        armour: "Steel helmets (M1, Brodie) for all infantry, no body armour. Bomber crews wore steel-plate flak vests from 1943."
+      - name: "Axis"
+        who: "Imperial Japanese Army; German Wehrmacht."
+        armour: "Steel helmets (Japanese Type 90, German Stahlhelm); no infantry body armour."
+    examples:
+      - {name: "US Marine, Bougainville", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, M1 Garand."}
+      - {name: "Japanese infantryman", side: "Axis", kit: ww2_rifleman, weapon: hand_grenade, notes: "Type 90 helmet; grenades and knee mortars at close range."}
+      - {name: "German MG gunner, Italy", side: "Axis", kit: ww2_rifleman, weapon: machine_gun, notes: "Stahlhelm, MG 42."}
+      - {name: "US bomber waist gunner", side: "Allies", kit: aircrew_flak, weapon: machine_gun, notes: "Flak vest and helmet; not an infantry kit."}
+      - {name: "British infantryman, Italy", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield; Eighth Army."}
+      - {name: "Australian infantryman, Bougainville 1945", side: "Allies", kit: none, weapon: pistol_smg, notes: "Often a slouch hat rather than a helmet in the jungle; Owen submachine gun."}
+      - {name: "German paratrooper, Cassino", side: "Axis", kit: ww2_rifleman, weapon: pistol_smg, notes: "Rimless paratrooper helmet, MP 40; fought as infantry."}
+    sources:
+      - "Borden Institute, Weapons Effects and War Wounds, Table 1-1 (Bougainville causes of injury)."
+
+  "Korea":
+    period: "1950-1953"
+    summary: >
+      The United Nations Command, led by the United States with South Korea, the British
+      Commonwealth and others, against North Korea and, from late 1950, the Chinese
+      People's Volunteer Army. Fighting swung from mobile war to static trench lines,
+      where body armour first came into general use.
+    sides:
+      - name: "UN Command"
+        who: "US, South Korean, British Commonwealth and other UN forces."
+        armour: "Steel helmets. The US Marines fielded the M1951 vest with Doron plates; the Army's nylon M-1952 reached front-line troops in late 1952, in small numbers."
+      - name: "North Korea and China"
+        who: "Korean People's Army; Chinese People's Volunteer Army."
+        armour: "No body armour; many Chinese soldiers had no steel helmet."
+    examples:
+      - {name: "US Army rifleman, 1950", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, no vest."}
+      - {name: "US Marine, 1952", side: "UN Command", kit: vietnam_usmc, weapon: rifle_service, notes: "M1951 Doron vest."}
+      - {name: "South Korean infantryman", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "ROK Army: M1 helmet, M1 Garand."}
+      - {name: "British infantryman, Imjin 1951", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "Commonwealth brigade: steel helmet, Lee-Enfield."}
+      - {name: "North Korean infantryman, 1950", side: "North Korea and China", kit: none, weapon: rifle_service, notes: "Korean People's Army: Soviet-pattern kit, often no steel helmet; Mosin rifle or PPSh."}
+      - {name: "Chinese infantryman", side: "North Korea and China", kit: none, weapon: pistol_smg, notes: "Quilted uniform, PPSh submachine gun, grenades."}
+    sources:
+      - "Wikipedia, 'M-1952 Flak Jacket'."
+
+  "Vietnam":
+    period: "1965-1973 (major US involvement)"
+    summary: >
+      South Vietnam, the United States and allies (Australia, New Zealand, South Korea,
+      Thailand) against North Vietnam's army (PAVN) and the southern Viet Cong. Most
+      wounds came from fragments; mines and booby traps caused 15% of wounds and punji
+      stakes 2%, while bullets killed far more often than they wounded.
+    sides:
+      - name: "US and allies"
+        who: "South Vietnamese army (ARVN), US Army and Marine Corps, and Australian, New Zealand, South Korean and Thai contingents."
+        armour: "M1 steel helmet; Army M69 nylon vest, Marine M1955 vest with Doron plates. Both stopped fragments, not AK rounds, and in the heat they were often left behind on patrol."
+      - name: "PAVN and Viet Cong"
+        who: "People's Army of Vietnam regulars; Viet Cong guerrillas."
+        armour: "None. The PAVN pith helmet gave no ballistic protection. They relied on concealment, mines and booby traps."
+    examples:
+      - {name: "US Army infantryman, 1968", side: "US and allies", kit: vietnam_army, weapon: rifle_assault, notes: "M1 helmet, M69 vest, M16."}
+      - {name: "US Marine, Hue 1968", side: "US and allies", kit: vietnam_usmc, weapon: rifle_assault, notes: "M1955 vest, urban fighting."}
+      - {name: "ARVN infantryman", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before."}
+      - {name: "Australian infantryman, 1968", side: "US and allies", kit: none, weapon: rifle_assault, notes: "Bush hat, no body armour; L1A1 SLR."}
+      - {name: "South Korean marine", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "ROK Marine Corps: M1 helmet."}
+      - {name: "PAVN regular", side: "PAVN and Viet Cong", kit: none, weapon: rifle_assault, notes: "Pith helmet, AK-47."}
+      - {name: "Viet Cong guerrilla", side: "PAVN and Viet Cong", kit: none, weapon: mine_ied, notes: "Booby traps, mines and punji pits."}
+    sources:
+      - "Neel, Medical Support of the U.S. Army in Vietnam (1973), ch. 3, Table 6."
+      - "Wikipedia, 'Flak jacket' (M69 and M1955 protection)."
+
+  "Late 20th century":
+    period: "1969-1996"
+    summary: >
+      Six smaller wars with very different fighting. Northern Ireland (1969-98): the
+      British Army and police against the Provisional IRA, mostly sniping and bombs.
+      The Falklands (1982): Britain against Argentina, infantry fighting over open
+      hills. The Gulf War (1991): a US-led coalition against Iraq. Somalia (1993): US
+      Rangers and special forces against Somali militia in Mogadishu. Chechnya (1994-96
+      and later): Russia against Chechen separatists, with urban battles in Grozny.
+    sides:
+      - name: "Northern Ireland"
+        who: "British Army and RUC; Provisional IRA and other paramilitaries."
+        armour: "British patrols wore helmets and soft body armour; the IRA wore none and used rifles, snipers and bombs."
+      - name: "Falklands 1982"
+        who: "British paratroopers, Royal Marines and infantry; Argentine conscripts and marines."
+        armour: "Steel helmets on both sides; little body armour."
+      - name: "Gulf War 1991"
+        who: "US-led coalition; Iraqi army."
+        armour: "US troops in PASGT Kevlar helmets and vests (fragments and pistol rounds); Iraqi troops in steel helmets."
+      - name: "Somalia 1993"
+        who: "US Task Force Ranger; Somali National Alliance militia."
+        armour: "Rangers wore IIIA soft vests with a single ceramic front plate and no back plate; militia were unarmoured, with AKs and RPGs."
+      - name: "Chechnya"
+        who: "Russian army and interior troops; Chechen separatist fighters."
+        armour: "Russian helmets and body armour, unevenly issued; Chechen fighters largely unarmoured."
+    examples:
+      - {name: "British soldier, Belfast", side: "Northern Ireland", kit: pasgt, weapon: rifle_assault, notes: "Soft body armour and helmet (PASGT used as the nearest kit)."}
+      - {name: "IRA sniper", side: "Northern Ireland", kit: none, weapon: rifle_assault, notes: "Armalite, no armour."}
+      - {name: "British Guardsman, Tumbledown", side: "Falklands 1982", kit: ww2_rifleman, weapon: bayonet, notes: "Steel helmet; the final assaults on the mountains ended with the bayonet."}
+      - {name: "Argentine conscript", side: "Falklands 1982", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, FN FAL."}
+      - {name: "US soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "PASGT helmet and vest, M16."}
+      - {name: "British soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "Soft body armour and helmet (PASGT used as the nearest kit)."}
+      - {name: "Iraqi conscript", side: "Gulf War 1991", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, AK-47."}
+      - {name: "US Ranger, Mogadishu", side: "Somalia 1993", kit: ranger_1993, weapon: rifle_assault, notes: "Front plate only."}
+      - {name: "Somali militiaman", side: "Somalia 1993", kit: none, weapon: rpg, notes: "No armour; AK-47 and RPG-7."}
+      - {name: "Russian conscript, Grozny 1995", side: "Chechnya", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet; body armour often missing."}
+      - {name: "Chechen fighter, Grozny", side: "Chechnya", kit: none, weapon: rpg, notes: "Urban ambush teams."}
+    sources:
+      - "Wikipedia, 'Ranger Body Armor' (front plate only in 1993)."
+      - "Borden Institute, Weapons Effects and War Wounds, Table 1-2 (wound distributions)."
+
+  "Iraq & Afghanistan":
+    period: "2001-2021"
+    summary: >
+      US-led coalitions in Afghanistan from 2001 (against the Taliban and al-Qaeda) and
+      in Iraq from 2003 (against the Iraqi army, then insurgents and militias). Roadside
+      bombs became the main weapon against coalition troops, and modern body armour
+      moved wounds from the torso to the head, face and limbs.
+    sides:
+      - name: "Coalition"
+        who: "US, British and other allied forces; the Afghan and new Iraqi security forces they trained."
+        armour: "Interceptor vests with SAPI rifle plates and Kevlar helmets from the start of the Iraq war; ESAPI plates against armour-piercing rounds by the mid-2000s; lighter plate carriers later, especially in Afghanistan."
+      - name: "Iraqi army, 2003"
+        who: "Iraqi regular army and Republican Guard during the invasion."
+        armour: "Steel helmets for some; little body armour."
+      - name: "Insurgents and Taliban"
+        who: "Iraqi insurgents and militias; Taliban fighters."
+        armour: "Largely unarmoured. IEDs, RPGs, rifles and mortars."
+    examples:
+      - {name: "US soldier, Iraq 2004", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Interceptor vest, SAPI plates, ACH."}
+      - {name: "US soldier, Afghanistan 2011", side: "Coalition", kit: plate_carrier, weapon: rifle_assault, notes: "Plate carrier with ESAPI."}
+      - {name: "British soldier, Helmand 2009", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Osprey vest with plates (Interceptor used as the nearest kit)."}
+      - {name: "Afghan National Army soldier", side: "Coalition", kit: pasgt, weapon: rifle_assault, notes: "Helmet and vest when issued (PASGT used as the nearest kit)."}
+      - {name: "Iraqi soldier, 2003", side: "Iraqi army, 2003", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, AK-47."}
+      - {name: "Insurgent, Iraq", side: "Insurgents and Taliban", kit: none, weapon: mine_ied, notes: "Roadside bombs."}
+      - {name: "Taliban fighter", side: "Insurgents and Taliban", kit: none, weapon: rifle_assault, notes: "AK-47, no armour."}
+    sources:
+      - "Owens et al., J Trauma 2008; Borden Institute, Table 1-1 (DoD Trauma Registry 2007-17)."
+
+  "Reference":
+    period: ""
+    summary: >
+      Not a war. The random-hit table shows where hits would land if every square inch
+      of the body were equally likely: use it as a neutral table with any armour, or to
+      see how far a real war's pattern moves away from chance. Below it, the four-war
+      comparison shows how American wound patterns changed from WWII to Iraq and
+      Afghanistan, counted the same way each time; each of those four tables is listed
+      under its own war as the Owens comparison set.
+    sides: []
+    examples:
+      - {name: "Modern soldier", side: "-", kit: plate_carrier, weapon: rifle_assault, notes: "Plate carrier and helmet."}
+      - {name: "Police officer", side: "-", kit: police_iiia, weapon: pistol_smg, notes: "Concealable IIIA vest."}
+      - {name: "Civilian", side: "-", kit: none, weapon: pistol_smg, notes: "No armour."}
+    comparison:
+      title: "US wars compared: where hospitalized wounded were hit"
+      note: >
+        Same source and counting rule for every row: hospitalized casualties, including
+        men who later died of wounds. With modern body armour the thorax share fell to
+        6% and the head and neck rose to 30%, because plates cover the chest and nothing
+        covers the face and neck. Gunshot vs explosion shows how the weapon mix shifted.
+      columns: ["Head & neck", "Thorax", "Abdomen", "Extremities", "Gunshot / explosion"]
+      rows:
+        - ["Body surface area (chance)", "12%", "16%", "11%", "61%", "-"]
+        - ["WWII", "21%", "14%", "8%", "58%", "27 / 73"]
+        - ["Korea", "21%", "10%", "9%", "60%", "31 / 69"]
+        - ["Vietnam", "16%", "13%", "10%", "61%", "35 / 65"]
+        - ["Iraq & Afghanistan", "30%", "6%", "9%", "55%", "19 / 81"]
+      source: "Owens et al., 'Combat wounds in Operation Iraqi Freedom and Operation Enduring Freedom', J Trauma 2008 (National Academies 2014, Tables 3-2 and 3-4)."
+    sources: []
+
+  "Close combat":
+    period: "Stockholm, 1983-1993"
+    summary: >
+      Knife killings recorded by forensic pathologists: usually one attacker against an
+      unarmoured, often surprised victim, with several wounds each. The table stands in
+      for knives and bayonets on every non-medieval table.
+    sides:
+      - name: "Attacker"
+        who: "Single assailant with a knife."
+        armour: "None."
+      - name: "Victim"
+        who: "Usually unarmoured civilians; 41% had defensive wounds on the hands and arms."
+        armour: "None. Soft ballistic vests give little protection against a stab; plates stop one."
+    examples:
+      - {name: "Knife attacker", side: "Attacker", kit: none, weapon: dagger, notes: "Single assailant."}
+      - {name: "Police officer", side: "Victim", kit: police_iiia, weapon: dagger, notes: "IIIA vest: stops bullets, not knives."}
+      - {name: "Soldier in plates", side: "Victim", kit: plate_carrier, weapon: bayonet, notes: "Plates stop most stabs to the chest."}
+      - {name: "Civilian", side: "Victim", kit: none, weapon: dagger, notes: "No armour."}
+    sources:
+      - "Karlsson 1998, via forensicmed.co.uk."
+
+  "Unarmed":
+    period: "UFC, 2005-2026"
+    summary: >
+      Professional mixed martial arts under the Unified Rules: four-ounce gloves, no
+      strikes to the groin, spine or back of the head. The table also stands in for
+      punches, kicks, elbows and knees on every other table.
+    sides:
+      - name: "Fighters"
+        who: "Professional MMA fighters."
+        armour: "Gloves, mouthguard and groin cup only."
+    examples:
+      - {name: "Striker", side: "Fighters", kit: none, weapon: punch, notes: "Boxer-style; head hunter."}
+      - {name: "Kickboxer", side: "Fighters", kit: none, weapon: kick, notes: "Low kicks to the lead leg."}
+    sources:
+      - "Fightshow, UFC Strike Map."

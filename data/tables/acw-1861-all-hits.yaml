@@ -1,0 +1,26 @@
+id: acw-1861-all-hits
+order: 22
+name: "Civil War 1861-65 - all hits (gameplay)"
+label: "All hits: gameplay blend"
+battle: "American Civil War"
+context: "Where shots land on a man in the open, before survival sorts the records."
+variant: adjusted
+armor: allowed
+weapon_bias: pooled
+weapons: [rifle_musket, artillery_acw, revolver, saber, bayonet]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: extrapolated
+confidence_note: "Blend of the two historical tables."
+armor_note: >
+  Use this table for play. Armour is mostly irrelevant against a rifle ball; only
+  plate gives a step.
+sources:
+  - "Derived: 80% wounded table + 20% killed table, roughly one man killed outright for every four wounded in Union totals (approximate)."
+status: >
+  Blend of acw-1861-wounded and acw-1861-killed. The 4:1 ratio is approximate;
+  edit the region totals here if you prefer another ratio.
+regions:
+  - {label: "Head and neck", zone: head, pct: 17.1}
+  - {label: "Trunk", zone: torso, pct: 24.7}
+  - {label: "Upper extremities", zone: arms, pct: 29.0}
+  - {label: "Lower extremities", zone: legs, pct: 29.1}

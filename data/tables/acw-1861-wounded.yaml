@@ -1,0 +1,27 @@
+id: acw-1861-wounded
+order: 20
+name: "Civil War 1861-65 - wounded (surgeon's records)"
+label: "Wounded: surgeons' records"
+battle: "American Civil War"
+context: "Union soldiers treated for gunshot and shell wounds. Men who reached a surgeon alive."
+variant: evidence
+weapon_bias: pooled
+weapons: [rifle_musket, artillery_acw, revolver, saber, bayonet]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, behind_cover]
+confidence: historical
+confidence_note: "Region totals are from the source. The split inside each region uses body exposure (design estimate)."
+armor_note: >
+  Records of the wounded, so instant kills are missing: head and trunk hits are
+  heavily under-counted. Pair with the killed table, or use the all-hits table.
+sources:
+  - "Medical and Surgical History of the War of the Rebellion (1870-88), vol. 3, p. 392: head and neck 11%, chest and abdomen 18%, arms and hands 36%, legs and feet 35% of wounds (via Encyclopedia.com, 'Battlefield Wounds')."
+  - "Same work: 35.6% upper extremities, 35.2% lower extremities (via Civil War Monitor, 'Wounded Warriors: Civil War Amputation')."
+status: >
+  Historical at region level. One teaching source (Mutter Museum) gives different
+  figures (head 15%, trunk 23%, upper extremities 31%) without a citation; the
+  Medical and Surgical History figures are used here.
+regions:
+  - {label: "Head, face, neck", zone: head, pct: 11}
+  - {label: "Trunk (chest, abdomen, back, pelvis)", zone: torso, pct: 18}
+  - {label: "Upper extremities", zone: arms, pct: 35.6}
+  - {label: "Lower extremities", zone: legs, pct: 35.2}

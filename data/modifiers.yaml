@@ -1,0 +1,108 @@
+# Situation modifiers. They STACK: every selected modifier multiplies the
+# location weights, after the weapon bias, then the table is re-normalised to d100.
+#
+# zone  - multiplier by body zone (head, torso, arms, legs)
+# side  - multiplier by the TARGET's side (L = target's left, R = target's right)
+# loc   - multiplier for specific locations (applied last)
+# short - column label for printed tables
+# group - modifiers in the same group are alternatives; pick at most one
+# A table can limit which modifiers make sense for it with `modifiers: [ids]`.
+#
+# Multipliers are design estimates unless a source is given.
+
+modifiers:
+  - id: shield_side
+    short: "Shield side"
+    name: "Attacker on target's shield side"
+    group: facing
+    desc: "Attacker works round to the target's left (shield) side."
+    side: {L: 1.8, R: 0.5}
+    confidence: extrapolated
+
+  - id: weapon_side
+    short: "Weapon side"
+    name: "Attacker on target's weapon side"
+    group: facing
+    desc: "Attacker is off the target's right (weapon-arm) side."
+    side: {L: 0.5, R: 1.8}
+    confidence: extrapolated
+
+  - id: attacker_higher
+    short: "Higher"
+    name: "Attacker higher (mounted, uphill, on a wall)"
+    group: height
+    desc: "Blows come down onto the head and shoulders; legs out of reach."
+    zone: {head: 1.6, arms: 1.2, legs: 0.4}
+    loc: {shoulder_l: 1.3, shoulder_r: 1.3}
+    confidence: extrapolated
+
+  - id: attacker_lower
+    short: "Lower"
+    name: "Attacker lower (in a ditch, kneeling, vs. rider)"
+    group: height
+    desc: "Blows come up into the legs, groin and belly."
+    zone: {head: 0.5, legs: 1.6}
+    loc: {groin: 1.8, abdomen: 1.3}
+    confidence: extrapolated
+
+  - id: target_down
+    short: "Down"
+    name: "Target down (fallen, kneeling, helpless)"
+    group: posture
+    desc: "Towton pattern: repeated blows to the head and back; arms raised to ward."
+    zone: {head: 2.0, torso: 0.6, legs: 0.6}
+    loc: {back_upper: 3.0, back_lower: 2.0, forearm_l: 1.6, forearm_r: 1.6, hand_l: 1.6, hand_r: 1.6, face: 0.7}
+    confidence: extrapolated
+    notes: "Shaped on Towton (1461): 96% of crania with weapon wounds, far fewer below the skull."
+
+  - id: target_fleeing
+    short: "Fleeing"
+    name: "Target fleeing (back turned)"
+    group: posture
+    desc: "Rout: back, back of the head and legs exposed; front almost unreachable."
+    zone: {head: 1.2, arms: 0.6, legs: 1.3}
+    loc: {back_upper: 4.0, back_lower: 3.0, face: 0.1, chest_l: 0.15, chest_r: 0.15, abdomen: 0.15, groin: 0.2}
+    confidence: extrapolated
+
+  - id: flanked
+    short: "Flanked"
+    name: "Target flanked (two or more attackers)"
+    desc: "Visby team-fighting: one engages the front while others strike from behind and low."
+    zone: {legs: 1.3}
+    loc: {back_upper: 2.5, back_lower: 2.5, skull_l: 1.2, skull_r: 1.2}
+    confidence: extrapolated
+    notes: "From the Visby reading of attackers working in teams (Randolph-Quinney et al., 2026)."
+
+  - id: no_shield
+    short: "No shield"
+    name: "Target has no shield"
+    desc: "Tables assume a shield. Without one the body and head are more open."
+    zone: {head: 1.1, torso: 1.4}
+    loc: {forearm_l: 0.7, hand_l: 0.7}
+    confidence: extrapolated
+
+  - id: target_warding
+    short: "Warding"
+    name: "Target warding with arms (unarmed or disarmed)"
+    desc: "Defensive wounds: forearms and hands raised to block."
+    zone: {arms: 1.5}
+    loc: {forearm_l: 1.6, forearm_r: 1.6, hand_l: 1.6, hand_r: 1.6}
+    confidence: extrapolated
+    notes: "Defensive forearm and hand wounds are recorded at Towton and in modern sharp-force forensics."
+
+  - id: behind_cover
+    short: "Cover"
+    name: "Target behind cover (breastwork, wall, trench)"
+    group: cover
+    desc: "Only head, shoulders and arms show over the parapet."
+    zone: {head: 1.5, torso: 0.3, legs: 0.05}
+    loc: {shoulder_l: 1.5, shoulder_r: 1.5, abdomen: 0.3, groin: 0.2, back_lower: 0.3}
+    confidence: extrapolated
+    notes: "For entrenched or firing-line fighting. Gunfire tables only by default."
+
+# Called shot: not a multiplier. Roll the location twice on the (modified) table and
+# keep whichever result lands in the called zone; if both or neither do, keep the first.
+# Your own system decides any to-hit penalty for calling a shot.
+called_shot:
+  zones: [head, torso, arms, legs]
+  rule: "Roll location twice; keep the roll in the called zone. If both or neither land there, keep the first."
