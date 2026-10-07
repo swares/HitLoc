@@ -1,10 +1,12 @@
 """Build every output from the data folder.
 
     python build.py            -> dist/tables.pdf, dist/tables.md,
-                                  dist/hitloc-data.json, dist/roller.html
+                                  dist/hitloc-data.json, dist/roller.html,
+                                  index.html (start page for GitHub Pages)
 """
 from __future__ import annotations
 
+import html as htmllib
 import json
 import re
 import sys
@@ -647,6 +649,41 @@ def pdf(d, path: Path) -> None:
 
 
 # --------------------------------------------------------------------------
+# Start page (GitHub Pages serves index.html from the repository root)
+# --------------------------------------------------------------------------
+REPO_URL = "https://github.com/swares/HitLoc"
+
+
+def index_page(d) -> str:
+    esc = htmllib.escape
+    groups = {}
+    for t in d.tables.values():                       # tables are already in display order
+        groups.setdefault(t.get("battle", "Other"), []).append(t)
+    items = []
+    for battle, ts in groups.items():
+        period = (d.conflicts.get(battle) or {}).get("period", "")
+        n = len(ts)
+        labels = " · ".join(esc(t.get("label", t["name"])) for t in ts)
+        items.append(
+            f'      <li><span class="name">{esc(battle)}</span>'
+            f'<span class="period">{esc(str(period))}</span>'
+            f'<span class="tables">{n} table{"s" if n != 1 else ""}: {labels}</span></li>')
+    kits = [k for k in d.armor["kits"] if k != "none"]
+    fill = {
+        "TABLES": len(d.tables), "WARS": len(groups), "WEAPONS": len(d.weapons), "KITS": len(kits),
+        "LOCS": len(d.locations), "WAR_LIST": "\n".join(items),
+        "GENERATED": date.today().isoformat(), "REPO": REPO_URL,
+    }
+    out = (ROOT / "templates" / "index.html").read_text(encoding="utf-8")
+    for k, v in fill.items():
+        out = out.replace("{{" + k + "}}", str(v))
+    leftover = re.findall(r"\{\{[A-Z_]+\}\}", out)
+    if leftover:
+        raise ValueError(f"templates/index.html: unfilled placeholders {leftover}")
+    return out
+
+
+# --------------------------------------------------------------------------
 def main() -> int:
     try:
         d = load(ROOT / "data")
@@ -663,7 +700,8 @@ def main() -> int:
     tpl = (ROOT / "templates" / "roller.html").read_text(encoding="utf-8")
     html = tpl.replace("/*__HITLOC_DATA__*/null", json.dumps(b, separators=(",", ":")))
     (DIST / "roller.html").write_text(html, encoding="utf-8")
-    print("Built:", ", ".join(p.name for p in sorted(DIST.iterdir())))
+    (ROOT / "index.html").write_text(index_page(d), encoding="utf-8")
+    print("Built:", ", ".join(p.name for p in sorted(DIST.iterdir())), "+ index.html")
     return 0
 
 

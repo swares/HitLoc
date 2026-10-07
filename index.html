@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HitLoc - Historical Hit Locations for RPGs</title>
+<meta name="description" content="d100 hit-location tables for tabletop RPGs, weighted by real wound records from Visby 1361 to Iraq and Afghanistan. Free web roller, printable tables and data.">
+<meta property="og:title" content="HitLoc - Historical Hit Locations for RPGs">
+<meta property="og:description" content="d100 hit locations weighted by real wound records, with wound effects, armour and wounded-fighter tracking.">
+<meta property="og:image" content="docs/screenshots/roller.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%238e1b2c'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3Ed%25%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Same field-ledger palette as the roller */
+:root{
+  --bg:#e9ecee; --panel:#f6f7f8; --ink:#1b2127; --muted:#5b6670; --line:#c5ccd2;
+  --steel:#3f4f5d; --blood:#8e1b2c; --blood-soft:#f1d9dc; --on-blood:#fff;
+  --display:"Alegreya SC",Georgia,serif; --body:"Alegreya Sans","Gill Sans","Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161a; --panel:#1a2026; --ink:#e2e6e9; --muted:#97a3ad; --line:#2f3942;
+  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --on-blood:#12161a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161a; --panel:#1a2026; --ink:#e2e6e9; --muted:#97a3ad; --line:#2f3942;
+  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --on-blood:#12161a; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 var(--body);padding:24px 16px 48px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+a{color:var(--blood)}
+header{border-bottom:2px solid var(--ink);padding-bottom:14px;display:flex;flex-direction:column;gap:8px}
+.eyebrow{font:500 .75rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font:700 clamp(2rem,6vw,3.2rem)/1.05 var(--display);margin:0;letter-spacing:.01em}
+h2{font:700 1.3rem/1.2 var(--display);margin:0 0 10px;letter-spacing:.03em;color:var(--steel)}
+.lede{margin:0;max-width:62ch;font-size:1.12rem;color:var(--ink)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:28px;align-items:center}
+@media (max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}}
+.actions{display:flex;flex-direction:column;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 1.05rem var(--body);text-decoration:none;
+  border-radius:4px;padding:13px 20px;border:1px solid var(--blood)}
+.btn.primary{background:var(--blood);color:var(--on-blood)}
+.btn.primary:hover{filter:brightness(1.08)}
+.downloads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.downloads a{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink);background:var(--panel);
+  border:1px solid var(--line);border-radius:4px;padding:10px 12px}
+.downloads a:hover{border-color:var(--blood)}
+.downloads b{font-size:.95rem}
+.downloads span{font:500 .72rem var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.stats{display:flex;flex-wrap:wrap;gap:6px 18px;font:500 .8rem var(--mono);color:var(--muted);margin:0;padding:0;list-style:none}
+.stats b{color:var(--ink);font-size:1rem}
+.shot{margin:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--panel)}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{font-size:.82rem;color:var(--muted);padding:8px 12px;border-top:1px solid var(--line)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px 20px}
+.how{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;counter-reset:step;margin:0;padding:0;list-style:none}
+@media (max-width:820px){.how{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.how{grid-template-columns:minmax(0,1fr)}}
+.how li{counter-increment:step;font-size:.95rem}
+.how li::before{content:counter(step,decimal-leading-zero);display:block;font:700 1.4rem var(--mono);color:var(--blood);margin-bottom:2px}
+.how b{display:block;font-family:var(--display);font-size:1.02rem}
+.wars{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+@media (max-width:720px){.wars{grid-template-columns:minmax(0,1fr)}}
+.wars li{border-top:1px dashed var(--line);padding:10px 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px}
+.wars .name{font:700 1.02rem var(--display)}
+.wars .period{font:500 .78rem var(--mono);color:var(--muted);text-align:right;max-width:24ch}
+@media (max-width:480px){.wars li{grid-template-columns:minmax(0,1fr)}.wars .period{text-align:left;max-width:none}}
+.wars .tables{grid-column:1/-1;font-size:.86rem;color:var(--muted)}
+.note{font-size:.9rem;color:var(--muted);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding-top:14px;font-size:.88rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Tabletop RPG tool · free and open data</span>
+    <h1>HitLoc</h1>
+    <p class="lede">d100 hit-location tables weighted by real wound records, from the Visby skeletons of 1361 to Iraq and Afghanistan, with wound effects, armour and wounded-fighter tracking for any game system.</p>
+  </header>
+
+  <section class="hero" aria-label="Get started">
+    <div class="actions">
+      <a class="btn primary" href="dist/roller.html">Open the roller &rarr;</a>
+      <div class="downloads">
+        <a href="dist/tables.pdf" download><b>Printable tables</b><span>PDF</span></a>
+        <a href="dist/tables.md"><b>Tables as text</b><span>Markdown</span></a>
+        <a href="dist/hitloc-data.json" download><b>Data bundle</b><span>JSON</span></a>
+      </div>
+      <ul class="stats">
+        <li><b>31</b> tables</li>
+        <li><b>14</b> wars and fights</li>
+        <li><b>34</b> weapons</li>
+        <li><b>22</b> armour kits</li>
+        <li><b>26</b> body locations</li>
+      </ul>
+      <p class="note">Runs entirely in your browser; nothing to install. Casualties you track are kept in your own browser only.</p>
+    </div>
+    <figure class="shot">
+      <a href="dist/roller.html"><img src="docs/screenshots/roller.png" width="2040" height="1500" alt="The Historical Wound Roller: on the Visby 1361 table, a Danish man-at-arms has cut a Gotland levy's left leg; the body chart shades where blows land and the casualty card shows bleeding and penalties."></a>
+      <figcaption>A Danish man-at-arms cuts a Gotland levy's left leg at Visby, 1361. The levy now fights at &minus;20% attack, &minus;40% defence.</figcaption>
+    </figure>
+  </section>
+
+  <section class="panel" aria-labelledby="h-how">
+    <h2 id="h-how">How it works</h2>
+    <ol class="how">
+      <li><b>Pick a fight</b>Choose a war's table and a weapon. Each table comes from a real record: skeletons, surgeons' reports, pension rolls, medical studies.</li>
+      <li><b>Set the scene</b>Optional situations (higher ground, fleeing, flanked, cover), a called shot, target armour, and an attack and defence roll.</li>
+      <li><b>Roll the hit</b>Get the location (down to the left forearm), wound type and severity, and its effects: bleeding, pain, impairment, time to death untreated.</li>
+      <li><b>Track the wounded</b>Apply hits to casualties, bleed them by round or minute, bind and tourniquet, and let their wounds cut their attack and defence.</li>
+    </ol>
+  </section>
+
+  <section class="panel" aria-labelledby="h-wars">
+    <h2 id="h-wars">What's covered</h2>
+    <ul class="wars">
+      <li><span class="name">Visby 1361</span><span class="period">27 July 1361</span><span class="tables">2 tables: Bone evidence (skeletons) · Gameplay-adjusted (before armour)</span></li>
+      <li><span class="name">American Revolution</span><span class="period">1775-1783</span><span class="tables">2 tables: Wounded: invalid pension lists 1792-95 · All hits: gameplay blend</span></li>
+      <li><span class="name">Napoleonic era &amp; War of 1812</span><span class="period">1803-1815</span><span class="tables">2 tables: Wounded and killed: French officers&#x27; records · All hits: gameplay blend</span></li>
+      <li><span class="name">American Civil War</span><span class="period">1861-1865</span><span class="tables">3 tables: Wounded: surgeons&#x27; records · Killed in action (1,173 men) · All hits: gameplay blend</span></li>
+      <li><span class="name">American Indian Wars</span><span class="period">1862-1871 (arrow reports)</span><span class="tables">1 table: Arrow hits: Army surgeons&#x27; reports</span></li>
+      <li><span class="name">WWI</span><span class="period">1914-1918</span><span class="tables">1 table: Penetrating wounds, 1914-18</span></li>
+      <li><span class="name">WWII</span><span class="period">1939-1945 (Bougainville 1943-45; Italy 1943-45)</span><span class="tables">5 tables: Italy 1944: killed in action · Bougainville 1944: wounded · Bougainville 1944: killed · Bougainville 1944: all hits · Hospitalized (Owens comparison set)</span></li>
+      <li><span class="name">Korea</span><span class="period">1950-1953</span><span class="tables">2 tables: Hospitalized wounded (Neel 1973) · Hospitalized (Owens comparison set)</span></li>
+      <li><span class="name">Vietnam</span><span class="period">1965-1973 (major US involvement)</span><span class="tables">2 tables: Hospitalized wounded 1965-70 (Neel 1973) · Hospitalized (Owens comparison set)</span></li>
+      <li><span class="name">Late 20th century</span><span class="period">1969-1996</span><span class="tables">6 tables: Northern Ireland (The Troubles) · Falklands War 1982 · Gulf War 1991: US forces · Gulf War 1991: UK forces · Somalia 1993: Mogadishu · Chechnya: Russian forces</span></li>
+      <li><span class="name">Iraq &amp; Afghanistan</span><span class="period">2001-2021</span><span class="tables">2 tables: Combat wounds 2001-05 (Owens 2008) · Hospitalized (Owens comparison set)</span></li>
+      <li><span class="name">Reference</span><span class="period"></span><span class="tables">1 table: Random hit: body surface area</span></li>
+      <li><span class="name">Close combat</span><span class="period">Stockholm, 1983-1993</span><span class="tables">1 table: Knife assault (Stockholm homicides 1983-93)</span></li>
+      <li><span class="name">Unarmed</span><span class="period">UFC, 2005-2026</span><span class="tables">1 table: MMA landed strikes (UFC 2005-26)</span></li>
+    </ul>
+    <p class="note">Every table says how directly it comes from its source (historical, fitted or extrapolated), and every war has a history panel with the sides, how each used armour, and example combatants. Sources are listed in the roller and the PDF.</p>
+  </section>
+
+  <footer>
+    <span>Generated 2026-10-07 from the YAML data in the repository.</span>
+    <span><a href="https://github.com/swares/HitLoc">Source on GitHub</a> · <a href="https://github.com/swares/HitLoc#readme">README</a> · <a href="https://github.com/swares/HitLoc/issues">Report an issue</a></span>
+  </footer>
+</div>
+</body>
+</html>
