@@ -222,6 +222,27 @@ weapons:
     confidence: extrapolated
     notes: "Clinch strikes; elbows split skin (cut)."
 
+  # --- Pike and shot, 1500s-1690s -----------------------------------------
+  - id: matchlock_musket
+    name: "Matchlock musket"
+    short: "Matchlock"
+    era: "1500s-1690s"
+    threat: rifle
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: historical
+    notes: "Heavy infantry musket fired from a rest or the shoulder; a lead ball of about .70-.80 calibre. On the Lützen table it uses the 32 recorded gunshot injuries (mostly carbines and pistols; no source separates musket hits)."
+
+  - id: wheellock_pistol
+    name: "Wheellock pistol or carbine (cavalry)"
+    short: "Pistol/carbine"
+    era: "1530s-1690s"
+    threat: pistol
+    mechanisms: {ballistic: 100}
+    zone_bias: {}
+    confidence: historical
+    notes: "Cuirassiers and harquebusiers fired pistols and carbines at close range, aimed at the head and the left side of the chest. On the Lützen table it uses the 32 recorded gunshot injuries, 22 of them to the skull."
+
   # --- Musket era, 1700s-1850s --------------------------------------------
   - id: musket_smoothbore
     name: "Smoothbore musket (Brown Bess, Charleville)"

@@ -1,7 +1,7 @@
 # HitLoc - historical hit locations & wounds for RPGs
 
 Data-driven **d100 hit-location tables** weighted by real wound records - from the
-Visby skeletons of 1361 through the American Revolution, the Napoleonic Wars, the Civil
+Visby skeletons of 1361 and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
 War and the Indian Wars to both World Wars, Korea, Vietnam, Iraq and Afghanistan - with
 **system-agnostic wound effects**, armour, and wounded-fighter tracking for any tabletop
 RPG. All outputs are generated from the YAML files in `data/`, so the printed tables and
@@ -12,7 +12,7 @@ the web roller never drift apart.
 ![The Historical Wound Roller: a Danish man-at-arms has just cut a Gotland levy's left leg on the Visby 1361 table](docs/screenshots/roller.png)
 
 **Features**
-- 31 hit-location tables, down to locations like *left forearm*, each
+- 33 hit-location tables, down to locations like *left forearm*, each
   tagged with how directly it comes from the source (historical, fitted, extrapolated).
 - Weapons by era (sword, axe, spiked club, bow, crossbow, sling, musket, sabre, lance,
   bayonet, rifles, machine guns, grenades, mines, IEDs...) with their own wound mechanisms.
@@ -25,7 +25,7 @@ the web roller never drift apart.
   attack and defence roll.
 - A history page for every war: who fought, how each side used armour, and ready-made
   example combatants.
-- A self-contained web roller, a 115-page printable PDF, Markdown tables, a Python CLI,
+- A self-contained web roller, a 120-page printable PDF, Markdown tables, a Python CLI,
   and a JSON data bundle.
 
 <details>
@@ -218,6 +218,20 @@ Firearms and explosives (any weapon with a `threat`) roll severity on the firear
   Check: on the arrow table, 32% of bow hits are fatal untreated (lethal in days or less);
   the report gives 26 deaths in 83 cases (31%), many of them men hit several times.
 
+## Thirty Years' War (pike and shot)
+
+- *Lützen 1632 - mass grave*: battle injuries on 47 men buried together, most likely the
+  Swedish Blue Brigade caught by imperial cavalry (Nicklisch et al., PLoS ONE 2017, open
+  access). 69 reliable injuries with sides recorded: 32 from lead balls (22 to the skull),
+  21 blunt, 16 sharp; each weapon rolls on its own mechanism's injuries
+  (`data/sources/lutzen-1632-mass-grave.csv`). Killed only, bone only: the trunk is
+  under-counted and the head dominates (69% of gunshot hits).
+- *All hits* blend (estimated): 25.5% the Lützen dead + 74.5% the Peninsular wounded as a
+  stand-in (no wounded records survive for this war).
+- Weapons: matchlock musket, wheellock pistol or carbine. Armour: cuirassier
+  (three-quarter plate), harquebusier (buff coat, breastplate, pot helmet), pikeman
+  (morion and corslet); new material: buff coat.
+
 ## Musket era: American Revolution, Napoleonic Wars, War of 1812
 
 - **American Revolution** - *disabled veterans' wounds*, tallied wound by wound from the
@@ -295,6 +309,8 @@ Locations whose weight rounds to 0% are left off that d100 column.
 |---|---|---|---|
 | Visby 1361 - bone evidence | evidence | fitted | Ingelmark summaries (placeholder for per-bone counts) |
 | Visby 1361 - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table |
+| Lützen 1632 - mass grave | evidence, armour allowed | historical (per weapon) | Nicklisch et al., PLoS ONE 2017, 47 men, 69 injuries |
+| Thirty Years' War - all hits | adjusted | extrapolated | 74.5% Peninsular wounded + 25.5% Lützen killed |
 | American Revolution - disabled veterans' wounds | evidence, armour allowed | historical (regions; sides pooled) | Federal invalid pension lists 1792-95 (MEAD dataset, Penn 2021), 344 men |
 | American Revolution - all hits | adjusted | extrapolated | 53.5% pension table + 46.5% Civil War killed (Peckham's killed:wounded) |
 | Peninsular War 1808-14 - French officers | evidence, armour allowed | historical (per weapon) | Planas Campos & Grajal de Blas, BJMH 2021, 3,995 wound events |

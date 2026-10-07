@@ -868,6 +868,48 @@
     }
    ]
   },
+  "matchlock_musket": {
+   "id": "matchlock_musket",
+   "name": "Matchlock musket",
+   "short": "Matchlock",
+   "era": "1500s-1690s",
+   "threat": "rifle",
+   "mechanisms": {
+    "ballistic": 100
+   },
+   "zone_bias": {},
+   "confidence": "historical",
+   "notes": "Heavy infantry musket fired from a rest or the shoulder; a lead ball of about .70-.80 calibre. On the L\u00fctzen table it uses the 32 recorded gunshot injuries (mostly carbines and pistols; no source separates musket hits).",
+   "mech_ranges": [
+    {
+     "id": "ballistic",
+     "pct": 100,
+     "lo": 1,
+     "hi": 100
+    }
+   ]
+  },
+  "wheellock_pistol": {
+   "id": "wheellock_pistol",
+   "name": "Wheellock pistol or carbine (cavalry)",
+   "short": "Pistol/carbine",
+   "era": "1530s-1690s",
+   "threat": "pistol",
+   "mechanisms": {
+    "ballistic": 100
+   },
+   "zone_bias": {},
+   "confidence": "historical",
+   "notes": "Cuirassiers and harquebusiers fired pistols and carbines at close range, aimed at the head and the left side of the chest. On the L\u00fctzen table it uses the 32 recorded gunshot injuries, 22 of them to the skull.",
+   "mech_ranges": [
+    {
+     "id": "ballistic",
+     "pct": 100,
+     "lo": 1,
+     "hi": 100
+    }
+   ]
+  },
   "musket_smoothbore": {
    "id": "musket_smoothbore",
    "name": "Smoothbore musket (Brown Bess, Charleville)",
@@ -2009,6 +2051,537 @@
     "lower_leg_r": 5.0,
     "foot_l": 2.0,
     "foot_r": 1.0
+   }
+  },
+  "lutzen-1632-mass-grave": {
+   "id": "lutzen-1632-mass-grave",
+   "name": "L\u00fctzen 1632 - mass grave (bone evidence)",
+   "label": "Bone evidence: mass grave of 47",
+   "variant": "evidence",
+   "context": "Battle injuries on 47 men buried in one grave at L\u00fctzen, most likely infantry of the Swedish Blue Brigade cut down by imperial cavalry. Killed only.",
+   "confidence": "historical",
+   "armor_note": "The men wore little or no armour ('insufficient head protection', the authors note), so armour can be applied. This is bone evidence: wounds to soft tissue, above all the belly and chest, left no mark, so the trunk is under-counted. Some blunt facial fractures may come from the burial rather than the battle. For play, use the all-hits table.",
+   "status": "Historical, from one small grave (47 men, 69 reliable injuries) and one moment of the battle: a cavalry charge with pistols and carbines aimed at the head, as contemporary instructions advised. Not a picture of the whole war.",
+   "sources": [
+    "Nicklisch N., Ramsthaler F., Meller H., Friederich S., Alt K.W., 'The face of war: Trauma analysis of a mass grave from the Battle of L\u00fctzen (1632)', PLoS ONE 12(5): e0178252 (2017), open access (PMC5439951): Tables 1, 3 and 4.",
+    "Same study: lead balls in the grave were mostly from carbines (12-14), then muskets (5) and pistols (1-3); 21 men had gunshot wounds to the head; the attack came mainly from the front and side.",
+    "Injury tally: data/sources/lutzen-1632-mass-grave.csv."
+   ],
+   "weapons": [
+    "wheellock_pistol",
+    "matchlock_musket",
+    "saber",
+    "musket_butt",
+    "dagger",
+    "bayonet",
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "wheellock_pistol",
+    "matchlock_musket",
+    "saber",
+    "musket_butt"
+   ],
+   "resolve": {
+    "wheellock_pistol": "lutzen-1632-mass-grave",
+    "matchlock_musket": "lutzen-1632-mass-grave",
+    "saber": "lutzen-1632-mass-grave",
+    "musket_butt": "lutzen-1632-mass-grave",
+    "dagger": "knife-assault",
+    "bayonet": "peninsular-1808-14-officers",
+    "sword": "visby-1361-adjusted",
+    "axe": "visby-1361-adjusted",
+    "spiked_club": "visby-1361-adjusted",
+    "spear": "visby-1361-adjusted",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "matchlock_musket": [
+     1.5093750000000001,
+     1.7415865384615383,
+     0.1796875,
+     0.0,
+     1.2261029411764706,
+     1.2261029411764706,
+     0.0,
+     1.3861607142857144,
+     0.9945767429530793,
+     0.5544642857142856,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.5390625,
+     0.0,
+     0.0,
+     2.15625,
+     1.4375,
+     0.0,
+     0.0
+    ],
+    "musket_butt": [
+     0.6571428571428571,
+     0.25274725274725274,
+     2.4642857142857144,
+     0.0,
+     1.4173669467787113,
+     1.4173669467787113,
+     0.0,
+     0.0,
+     0.23778386498188558,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     2.1904761904761902,
+     1.6428571428571428,
+     3.2857142857142856,
+     0.0,
+     3.2857142857142856,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.2857142857142856
+    ],
+    "saber": [
+     0.43125,
+     0.49759615384615385,
+     0.71875,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.5401785714285716,
+     2.011255191305116,
+     3.2035714285714283,
+     0.0,
+     0.0,
+     4.3125,
+     0.0,
+     1.4375,
+     2.15625,
+     0.0,
+     0.0,
+     0.0,
+     3.234375,
+     0.0,
+     0.0,
+     0.0,
+     1.4375,
+     0.0,
+     0.0
+    ],
+    "wheellock_pistol": [
+     1.5093750000000001,
+     1.7415865384615383,
+     0.1796875,
+     0.0,
+     1.2261029411764706,
+     1.2261029411764706,
+     0.0,
+     1.3861607142857144,
+     0.9945767429530793,
+     0.5544642857142856,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.5390625,
+     0.0,
+     0.0,
+     2.15625,
+     1.4375,
+     0.0,
+     0.0
+    ]
+   },
+   "armor": "allowed",
+   "native": "gunfire",
+   "weapon_bias": "sourced",
+   "assumes_shield": false,
+   "battle": "Thirty Years' War",
+   "confidence_note": "Counted from the study's tables of reliable battle injuries (69: 32 projectile, 21 blunt, 16 sharp), each weapon rolling on its own mechanism's injuries. Sides are as recorded; injuries the authors only call probable are left out. Where a bone could belong to more than one location (vertebra, ribcage, cranial base), it is shared by body exposure.\n",
+   "regions": [
+    {
+     "label": "frontal R; parietal R; occipital R (11)",
+     "locs": [
+      "skull_r"
+     ],
+     "count": 11
+    },
+    {
+     "label": "frontal L; parietal L; occipital L (13)",
+     "locs": [
+      "skull_l"
+     ],
+     "count": 13
+    },
+    {
+     "label": "facial L; facial centre; facial R (12)",
+     "locs": [
+      "face"
+     ],
+     "count": 12
+    },
+    {
+     "label": "cranial base; parietal centre; occipital centre (4)",
+     "locs": [
+      "skull_l",
+      "skull_r"
+     ],
+     "count": 4
+    },
+    {
+     "label": "lower limb R (4)",
+     "locs": [
+      "thigh_r"
+     ],
+     "count": 4
+    },
+    {
+     "label": "lower limb R (3)",
+     "locs": [
+      "lower_leg_r"
+     ],
+     "count": 3
+    },
+    {
+     "label": "lower limb L (2)",
+     "locs": [
+      "lower_leg_l"
+     ],
+     "count": 2
+    },
+    {
+     "label": "torso (1)",
+     "locs": [
+      "chest_l",
+      "chest_r"
+     ],
+     "count": 1
+    },
+    {
+     "label": "torso (1)",
+     "locs": [
+      "back_upper"
+     ],
+     "count": 1
+    },
+    {
+     "label": "torso (1)",
+     "locs": [
+      "back_upper",
+      "back_lower"
+     ],
+     "count": 1
+    },
+    {
+     "label": "torso (2)",
+     "locs": [
+      "groin"
+     ],
+     "count": 2
+    },
+    {
+     "label": "upper limb R (2)",
+     "locs": [
+      "forearm_r"
+     ],
+     "count": 2
+    },
+    {
+     "label": "upper limb L (3)",
+     "locs": [
+      "forearm_l"
+     ],
+     "count": 3
+    },
+    {
+     "label": "upper limb L (1)",
+     "locs": [
+      "hand_l"
+     ],
+     "count": 1
+    },
+    {
+     "label": "lower limb R (1)",
+     "locs": [
+      "foot_r"
+     ],
+     "count": 1
+    },
+    {
+     "label": "lower limb L (2)",
+     "locs": [
+      "thigh_l"
+     ],
+     "count": 2
+    },
+    {
+     "label": "torso (1)",
+     "locs": [
+      "chest_l",
+      "chest_r",
+      "back_upper"
+     ],
+     "count": 1
+    },
+    {
+     "label": "upper limb L (1)",
+     "locs": [
+      "upper_arm_l"
+     ],
+     "count": 1
+    },
+    {
+     "label": "torso (4)",
+     "locs": [
+      "back_upper",
+      "back_lower",
+      "groin"
+     ],
+     "count": 4
+    }
+   ],
+   "regions_text": "frontal R; parietal R; occipital R (11) = 15.9%; frontal L; parietal L; occipital L (13) = 18.8%; facial L; facial centre; facial R (12) = 17.4%; cranial base; parietal centre; occipital centre (4) = 5.8%; lower limb R (4) = 5.8%; lower limb R (3) = 4.3%; lower limb L (2) = 2.9%; torso (1) = 1.4%; torso (1) = 1.4%; torso (1) = 1.4%; torso (2) = 2.9%; upper limb R (2) = 2.9%; upper limb L (3) = 4.3%; upper limb L (1) = 1.4%; lower limb R (1) = 1.4%; lower limb L (2) = 2.9%; torso (1) = 1.4%; upper limb L (1) = 1.4%; torso (4) = 5.8% (n = 69)",
+   "modifiers": [
+    "attacker_higher",
+    "attacker_lower",
+    "target_down",
+    "target_fleeing",
+    "flanked",
+    "target_warding",
+    "behind_cover"
+   ],
+   "weapon_mix": [
+    {
+     "id": "0",
+     "pct": 47,
+     "lo": 1,
+     "hi": 47,
+     "weapon": "wheellock_pistol",
+     "label": "Lead ball (pistol, carbine, musket)"
+    },
+    {
+     "id": "1",
+     "pct": 30,
+     "lo": 48,
+     "hi": 77,
+     "weapon": "musket_butt",
+     "label": "Blunt force (musket butt, hilt, horse)"
+    },
+    {
+     "id": "2",
+     "pct": 23,
+     "lo": 78,
+     "hi": 100,
+     "weapon": "saber",
+     "label": "Sharp force (sword, rapier, halberd)"
+    }
+   ],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 15.0,
+    "skull_r": 13.0,
+    "face": 12.0,
+    "neck": 0.0,
+    "chest_l": 0.8793103448275862,
+    "chest_r": 0.8793103448275862,
+    "abdomen": 0.0,
+    "groin": 3.111111111111111,
+    "back_upper": 3.335396404361922,
+    "back_lower": 1.7948717948717952,
+    "shoulder_l": 0.0,
+    "shoulder_r": 0.0,
+    "upper_arm_l": 1.0,
+    "upper_arm_r": 0.0,
+    "forearm_l": 3.0,
+    "forearm_r": 2.0,
+    "hand_l": 1.0,
+    "hand_r": 0.0,
+    "thigh_l": 2.0,
+    "thigh_r": 4.0,
+    "knee_l": 0.0,
+    "knee_r": 0.0,
+    "lower_leg_l": 2.0,
+    "lower_leg_r": 3.0,
+    "foot_l": 0.0,
+    "foot_r": 1.0
+   }
+  },
+  "thirty-years-war-all-hits": {
+   "id": "thirty-years-war-all-hits",
+   "name": "Thirty Years' War - all hits (gameplay)",
+   "label": "All hits: gameplay blend",
+   "variant": "adjusted",
+   "context": "Where shot and blows land on a man in the open, before death and burial sort the evidence. For pike-and-shot battles of the 1600s.",
+   "confidence": "extrapolated",
+   "armor_note": "Use this table for gunfire in play; armour applies (cuirassier, harquebusier and pikeman kits). Sabres and clubbed muskets roll on their own tables (the Peninsular records and the Visby melee table).",
+   "status": "Estimated. The killed part is real 1632 evidence but bone-only, so it under-counts trunk wounds; the wounded part is borrowed from a later war. Edit the share in tools/blend_tables.py if you prefer another.",
+   "sources": [
+    "Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers (wounded) + 25.5% lutzen-1632-mass-grave (killed), location by location.",
+    "No wounded records survive for the Thirty Years' War; the Peninsular War officers' wounds (same smoothbore lead balls and swords, 180 years later) stand in. Killed share as for the Napoleonic blend (about 1 killed to 3 wounded)."
+   ],
+   "weapons": [
+    "matchlock_musket",
+    "wheellock_pistol",
+    "saber",
+    "musket_butt",
+    "dagger",
+    "bayonet",
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "matchlock_musket",
+    "wheellock_pistol",
+    "saber",
+    "musket_butt"
+   ],
+   "resolve": {
+    "matchlock_musket": "thirty-years-war-all-hits",
+    "wheellock_pistol": "thirty-years-war-all-hits",
+    "saber": "peninsular-1808-14-officers",
+    "musket_butt": "visby-1361-adjusted",
+    "dagger": "knife-assault",
+    "bayonet": "peninsular-1808-14-officers",
+    "sword": "visby-1361-adjusted",
+    "axe": "visby-1361-adjusted",
+    "spiked_club": "visby-1361-adjusted",
+    "spear": "visby-1361-adjusted",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "matchlock_musket": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "wheellock_pistol": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "armor": "allowed",
+   "native": "gunfire",
+   "weapon_bias": "pooled",
+   "assumes_shield": false,
+   "battle": "Thirty Years' War",
+   "confidence_note": "Blend of the L\u00fctzen dead and a stand-in for the wounded; the mix is from casualty totals of a later war.",
+   "regions": [],
+   "regions_text": "",
+   "modifiers": [
+    "attacker_higher",
+    "attacker_lower",
+    "target_fleeing",
+    "flanked",
+    "behind_cover"
+   ],
+   "weapon_mix": [],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 9.348,
+    "skull_r": 8.609,
+    "face": 6.039,
+    "neck": 0.858,
+    "chest_l": 1.901,
+    "chest_r": 1.901,
+    "abdomen": 1.902,
+    "groin": 3.294,
+    "back_upper": 1.333,
+    "back_lower": 1.365,
+    "shoulder_l": 3.18,
+    "shoulder_r": 3.18,
+    "upper_arm_l": 6.691,
+    "upper_arm_r": 6.322,
+    "forearm_l": 2.022,
+    "forearm_r": 1.653,
+    "hand_l": 2.654,
+    "hand_r": 2.284,
+    "thigh_l": 7.145,
+    "thigh_r": 7.884,
+    "knee_l": 1.445,
+    "knee_r": 1.445,
+    "lower_leg_l": 6.529,
+    "lower_leg_r": 6.899,
+    "foot_l": 1.874,
+    "foot_r": 2.244
    }
   },
   "revolution-1775-83-pensioners": {
@@ -14535,6 +15108,19 @@
      "rifle_ap": 0
     }
    },
+   "buff_coat": {
+    "name": "Buff coat (thick oiled leather)",
+    "cut": 1,
+    "pierce": 1,
+    "crush": 1,
+    "ballistic": 0,
+    "threats": {
+     "fragment": 1,
+     "pistol": 0,
+     "rifle": 0,
+     "rifle_ap": 0
+    }
+   },
    "cuirass": {
     "name": "Steel cuirass (cuirassier, carabinier)",
     "cut": 3,
@@ -15402,6 +15988,252 @@
     }
    },
    {
+    "id": "cuirassier_1630",
+    "name": "Cuirassier, three-quarter armour (1630s)",
+    "group": "musket",
+    "slots": {
+     "helm": "plate",
+     "visor": {
+      "material": "plate",
+      "cover": 70
+     },
+     "gorget": "plate",
+     "torso_upper": "cuirass",
+     "torso_lower": "cuirass",
+     "skirt": "plate",
+     "pauldron": "plate",
+     "arm": "plate",
+     "gauntlet": {
+      "material": "plate",
+      "cover": 50
+     },
+     "leg": {
+      "material": "plate",
+      "cover": 70
+     }
+    },
+    "notes": "Closed helmet, proofed breastplate, arm defences and tassets to the knee; one gauntlet (the bridle hand). Heavy, and going out of use by the 1640s.",
+    "layers": {
+     "helm": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "visor": [
+      [
+       "plate",
+       1,
+       70
+      ]
+     ],
+     "gorget": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "torso_upper": [
+      [
+       "cuirass",
+       1,
+       100
+      ]
+     ],
+     "torso_lower": [
+      [
+       "cuirass",
+       1,
+       100
+      ]
+     ],
+     "skirt": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "pauldron": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "arm": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "gauntlet": [
+      [
+       "plate",
+       1,
+       50
+      ]
+     ],
+     "leg": [
+      [
+       "plate",
+       1,
+       70
+      ]
+     ]
+    }
+   },
+   {
+    "id": "harquebusier_1630",
+    "name": "Harquebusier: buff coat, breastplate, pot helmet",
+    "group": "musket",
+    "slots": {
+     "helm": {
+      "material": "plate",
+      "cover": 80
+     },
+     "torso_upper": [
+      {
+       "material": "cuirass",
+       "cover": 80
+      },
+      {
+       "material": "buff_coat"
+      }
+     ],
+     "torso_lower": "buff_coat",
+     "skirt": "buff_coat",
+     "pauldron": "buff_coat",
+     "arm": "buff_coat",
+     "gauntlet": {
+      "material": "plate",
+      "cover": 50
+     },
+     "leg": {
+      "material": "buff_coat",
+      "cover": 50
+     }
+    },
+    "notes": "Lighter cavalry of the Thirty Years' War and the English Civil War: 'lobster-tail' pot helmet, breast and back plate over a buff coat, a gauntlet on the bridle arm.",
+    "layers": {
+     "helm": [
+      [
+       "plate",
+       1,
+       80
+      ]
+     ],
+     "torso_upper": [
+      [
+       "cuirass",
+       1,
+       80
+      ],
+      [
+       "buff_coat",
+       81,
+       100
+      ]
+     ],
+     "torso_lower": [
+      [
+       "buff_coat",
+       1,
+       100
+      ]
+     ],
+     "skirt": [
+      [
+       "buff_coat",
+       1,
+       100
+      ]
+     ],
+     "pauldron": [
+      [
+       "buff_coat",
+       1,
+       100
+      ]
+     ],
+     "arm": [
+      [
+       "buff_coat",
+       1,
+       100
+      ]
+     ],
+     "gauntlet": [
+      [
+       "plate",
+       1,
+       50
+      ]
+     ],
+     "leg": [
+      [
+       "buff_coat",
+       1,
+       50
+      ]
+     ]
+    }
+   },
+   {
+    "id": "pikeman_1630",
+    "name": "Pikeman: morion and corslet",
+    "group": "musket",
+    "slots": {
+     "helm": {
+      "material": "plate",
+      "cover": 85
+     },
+     "torso_upper": "cuirass",
+     "torso_lower": {
+      "material": "cuirass",
+      "cover": 60
+     },
+     "leg": {
+      "material": "plate",
+      "cover": 35
+     }
+    },
+    "notes": "Open helmet, breast and back plates and short tassets. Many pikemen left the armour behind on campaign.",
+    "layers": {
+     "helm": [
+      [
+       "plate",
+       1,
+       85
+      ]
+     ],
+     "torso_upper": [
+      [
+       "cuirass",
+       1,
+       100
+      ]
+     ],
+     "torso_lower": [
+      [
+       "cuirass",
+       1,
+       60
+      ]
+     ],
+     "leg": [
+      [
+       "plate",
+       1,
+       35
+      ]
+     ]
+    }
+   },
+   {
     "id": "cuirassier",
     "name": "Cuirassier: steel cuirass and helmet",
     "group": "musket",
@@ -16019,6 +16851,70 @@
    "sources": [
     "Swedish History Museum, 'Skull from the Battle of Visby'.",
     "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
+   ]
+  },
+  "Thirty Years' War": {
+   "period": "1618-1648",
+   "summary": "A war of religion and power across the Holy Roman Empire: the Catholic Emperor and the Catholic League against Protestant princes, joined by Denmark, then Sweden under Gustavus Adolphus, and finally France. It was the age of pike and shot: squares of pikemen with musketeers on their flanks, and cavalry that fought with pistols and carbines as much as swords. At L\u00fctzen, near Leipzig, on 16 November 1632 the Swedes beat Wallenstein's imperial army but Gustavus Adolphus was killed. A mass grave of 47 men found there in 2011 is most likely part of the Swedish 'Blue Brigade', surprised in the flank by imperial cavalry; it is the source of this group's table.\n",
+   "sides": [
+    {
+     "name": "Sweden and Protestant allies",
+     "who": "Swedish and Finnish troops and many German and Scottish mercenaries in Swedish pay, with Saxony and other Protestant states.",
+     "armour": "Pikemen wore helmets and corslets when they kept them; musketeers wore none; cavalry rode in buff coats with helmets and breastplates."
+    },
+    {
+     "name": "Imperial army and Catholic League",
+     "who": "The Emperor's army under Wallenstein and Pappenheim, Bavaria and the Catholic League, and Croat light horse.",
+     "armour": "Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured."
+    }
+   ],
+   "examples": [
+    {
+     "name": "Blue Brigade musketeer",
+     "side": "Sweden and Protestant allies",
+     "kit": "none",
+     "weapon": "matchlock_musket",
+     "notes": "Matchlock and bandolier; clubs the musket in the press."
+    },
+    {
+     "name": "Swedish pikeman",
+     "side": "Sweden and Protestant allies",
+     "kit": "pikeman_1630",
+     "weapon": "spear",
+     "notes": "Pike about 5 m long."
+    },
+    {
+     "name": "Finnish hakkapeliitta",
+     "side": "Sweden and Protestant allies",
+     "kit": "harquebusier_1630",
+     "weapon": "saber",
+     "notes": "Light cavalry: pistols, then swords at the gallop."
+    },
+    {
+     "name": "Imperial cuirassier",
+     "side": "Imperial army and Catholic League",
+     "kit": "cuirassier_1630",
+     "weapon": "wheellock_pistol",
+     "notes": "Pappenheim's heavy horse; pistols at close range, aimed at the head."
+    },
+    {
+     "name": "Imperial harquebusier",
+     "side": "Imperial army and Catholic League",
+     "kit": "harquebusier_1630",
+     "weapon": "wheellock_pistol",
+     "notes": "Carbine and pistols; most of the balls in the L\u00fctzen grave are carbine shot."
+    },
+    {
+     "name": "Croat light horseman",
+     "side": "Imperial army and Catholic League",
+     "kit": "none",
+     "weapon": "saber",
+     "notes": "Raiders and skirmishers."
+    }
+   ],
+   "sources": [
+    "Nicklisch et al., PLoS ONE 12(5): e0178252 (2017): the L\u00fctzen mass grave, the Blue Brigade, and contemporary advice to aim for the head and left chest.",
+    "Sides, armour and dress: general historical knowledge, not from the grave study."
    ]
   },
   "American Revolution": {

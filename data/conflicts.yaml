@@ -33,6 +33,35 @@ conflicts:
       - "Swedish History Museum, 'Skull from the Battle of Visby'."
       - "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
 
+  "Thirty Years' War":
+    period: "1618-1648"
+    summary: >
+      A war of religion and power across the Holy Roman Empire: the Catholic Emperor and the
+      Catholic League against Protestant princes, joined by Denmark, then Sweden under
+      Gustavus Adolphus, and finally France. It was the age of pike and shot: squares of
+      pikemen with musketeers on their flanks, and cavalry that fought with pistols and
+      carbines as much as swords. At Lützen, near Leipzig, on 16 November 1632 the Swedes
+      beat Wallenstein's imperial army but Gustavus Adolphus was killed. A mass grave of 47
+      men found there in 2011 is most likely part of the Swedish 'Blue Brigade', surprised
+      in the flank by imperial cavalry; it is the source of this group's table.
+    sides:
+      - name: "Sweden and Protestant allies"
+        who: "Swedish and Finnish troops and many German and Scottish mercenaries in Swedish pay, with Saxony and other Protestant states."
+        armour: "Pikemen wore helmets and corslets when they kept them; musketeers wore none; cavalry rode in buff coats with helmets and breastplates."
+      - name: "Imperial army and Catholic League"
+        who: "The Emperor's army under Wallenstein and Pappenheim, Bavaria and the Catholic League, and Croat light horse."
+        armour: "Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured."
+    examples:
+      - {name: "Blue Brigade musketeer", side: "Sweden and Protestant allies", kit: none, weapon: matchlock_musket, notes: "Matchlock and bandolier; clubs the musket in the press."}
+      - {name: "Swedish pikeman", side: "Sweden and Protestant allies", kit: pikeman_1630, weapon: spear, notes: "Pike about 5 m long."}
+      - {name: "Finnish hakkapeliitta", side: "Sweden and Protestant allies", kit: harquebusier_1630, weapon: saber, notes: "Light cavalry: pistols, then swords at the gallop."}
+      - {name: "Imperial cuirassier", side: "Imperial army and Catholic League", kit: cuirassier_1630, weapon: wheellock_pistol, notes: "Pappenheim's heavy horse; pistols at close range, aimed at the head."}
+      - {name: "Imperial harquebusier", side: "Imperial army and Catholic League", kit: harquebusier_1630, weapon: wheellock_pistol, notes: "Carbine and pistols; most of the balls in the Lützen grave are carbine shot."}
+      - {name: "Croat light horseman", side: "Imperial army and Catholic League", kit: none, weapon: saber, notes: "Raiders and skirmishers."}
+    sources:
+      - "Nicklisch et al., PLoS ONE 12(5): e0178252 (2017): the Lützen mass grave, the Blue Brigade, and contemporary advice to aim for the head and left chest."
+      - "Sides, armour and dress: general historical knowledge, not from the grave study."
+
   "American Revolution":
     period: "1775-1783"
     summary: >
