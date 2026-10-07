@@ -1,8 +1,49 @@
-# hitloc - historical hit locations & wounds for RPGs
+# HitLoc - historical hit locations & wounds for RPGs
 
-Data-driven d100 hit-location tables weighted by historical wound evidence, with
-system-agnostic wound effects and survival tracking. All outputs are generated from
-the YAML files in `data/`, so the printed tables and the web roller never drift apart.
+Data-driven **d100 hit-location tables** weighted by real wound records - from the
+Visby skeletons of 1361 through the American Revolution, the Napoleonic Wars, the Civil
+War and the Indian Wars to both World Wars, Korea, Vietnam, Iraq and Afghanistan - with
+**system-agnostic wound effects**, armour, and wounded-fighter tracking for any tabletop
+RPG. All outputs are generated from the YAML files in `data/`, so the printed tables and
+the web roller never drift apart.
+
+![The Historical Wound Roller: a Danish man-at-arms has just cut a Gotland levy's left leg on the Visby 1361 table](docs/screenshots/roller.png)
+
+**Features**
+- 31 hit-location tables, down to locations like *left forearm*, each
+  tagged with how directly it comes from the source (historical, fitted, extrapolated).
+- Weapons by era (sword, axe, spiked club, bow, crossbow, sling, musket, sabre, lance,
+  bayonet, rifles, machine guns, grenades, mines, IEDs...) with their own wound mechanisms.
+- Situations that stack (higher ground, fleeing, flanked, behind cover, no shield...)
+  and called shots.
+- Armour from mail and coats of plates to steel cuirasses, flak vests, Kevlar and
+  rifle plates, resolved per location with partial coverage.
+- Wound effects: bleeding, pain, impairment, time to death untreated, infection; a
+  casualty tracker with blood loss, treatment, and penalties that feed an optional
+  attack and defence roll.
+- A history page for every war: who fought, how each side used armour, and ready-made
+  example combatants.
+- A self-contained web roller, a 115-page printable PDF, Markdown tables, a Python CLI,
+  and a JSON data bundle.
+
+<details>
+<summary>More screenshots</summary>
+
+Dark mode, Peninsular War table: a French cuirassier's sabre cuts a British redcoat's
+right hand, so he now fights off-hand.
+
+![Dark mode: sabre hit on the Peninsular War table](docs/screenshots/roller-dark.png)
+
+Every war has a history panel with sides, armour use and example combatants to add.
+
+![About this conflict: Visby 1361](docs/screenshots/conflict-history.png)
+
+One page of the printable tables (`dist/tables.pdf`): each weapon column is that
+weapon's own recorded wounds.
+
+![Printed table: Peninsular War, French officers' wounds](docs/screenshots/printed-table.png)
+
+</details>
 
 ## Start in the browser (no install)
 
@@ -54,12 +95,14 @@ dist/
   tables.md            same tables as Markdown
   roller.html          self-contained web roller with wound tracker
   hitloc-data.json     compiled data bundle (for other tools)
+docs/screenshots/      images used in this README
+requirements.txt       Python packages (PyYAML; reportlab for the PDF)
 ```
 
 ## Command line (Python)
 
 ```
-pip install pyyaml reportlab
+pip install -r requirements.txt
 python build.py                                   # rebuild everything in dist/
 python -m hitloc check                            # validate data
 python -m hitloc list
