@@ -112,6 +112,123 @@ Confidence: **Extrapolated - design estimate from analogous evidence** · Armour
 Sources:
 - Derived from visby-1361-evidence.
 
+# Thirty Years' War (1618-1648)
+
+A war of religion and power across the Holy Roman Empire: the Catholic Emperor and the Catholic League against Protestant princes, joined by Denmark, then Sweden under Gustavus Adolphus, and finally France. It was the age of pike and shot: squares of pikemen with musketeers on their flanks, and cavalry that fought with pistols and carbines as much as swords. At Lützen, near Leipzig, on 16 November 1632 the Swedes beat Wallenstein's imperial army but Gustavus Adolphus was killed. A mass grave of 47 men found there in 2011 is most likely part of the Swedish 'Blue Brigade', surprised in the flank by imperial cavalry; it is the source of this group's table.
+
+| Side | Who | Armour |
+|---|---|---|
+| Sweden and Protestant allies | Swedish and Finnish troops and many German and Scottish mercenaries in Swedish pay, with Saxony and other Protestant states. | Pikemen wore helmets and corslets when they kept them; musketeers wore none; cavalry rode in buff coats with helmets and breastplates. |
+| Imperial army and Catholic League | The Emperor's army under Wallenstein and Pappenheim, Bavaria and the Catholic League, and Croat light horse. | Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured. |
+
+**Example combatants**
+
+| Name | Side | Wears | Fights with | Notes |
+|---|---|---|---|---|
+| Blue Brigade musketeer | Sweden and Protestant allies | Unarmoured | Matchlock musket | Matchlock and bandolier; clubs the musket in the press. |
+| Swedish pikeman | Sweden and Protestant allies | Pikeman: morion and corslet | Spear / lance | Pike about 5 m long. |
+| Finnish hakkapeliitta | Sweden and Protestant allies | Harquebusier: buff coat, breastplate, pot helmet | Sabre or broadsword | Light cavalry: pistols, then swords at the gallop. |
+| Imperial cuirassier | Imperial army and Catholic League | Cuirassier, three-quarter armour (1630s) | Wheellock pistol or carbine (cavalry) | Pappenheim's heavy horse; pistols at close range, aimed at the head. |
+| Imperial harquebusier | Imperial army and Catholic League | Harquebusier: buff coat, breastplate, pot helmet | Wheellock pistol or carbine (cavalry) | Carbine and pistols; most of the balls in the Lützen grave are carbine shot. |
+| Croat light horseman | Imperial army and Catholic League | Unarmoured | Sabre or broadsword | Raiders and skirmishers. |
+
+Sources: Nicklisch et al., PLoS ONE 12(5): e0178252 (2017): the Lützen mass grave, the Blue Brigade, and contemporary advice to aim for the head and left chest. Sides, armour and dress: general historical knowledge, not from the grave study.
+
+## Lützen 1632 - mass grave (bone evidence)
+
+*Battle injuries on 47 men buried in one grave at Lützen, most likely infantry of the Swedish Blue Brigade cut down by imperial cavalry. Killed only.*
+
+Confidence: **Historical - taken directly from a source** · Armour: **allowed**
+
+| Location | Pistol/carbine | Matchlock | Sabre | Musket butt |
+|---|---|---|---|---|
+| Skull (left) | 01-33 | 01-33 | 01-10 | 01-14 |
+| Skull (right) | 34-66 | 34-66 | 11-19 | 15-19 |
+| Face | 67-69 | 67-69 | 20-32 | 20-62 |
+| Chest (left) | 70-71 | 70-71 | - | 63-64 |
+| Chest (right) | 72-73 | 72-73 | - | 65-66 |
+| Groin / pelvis | 74-79 | 74-79 | 33-39 | - |
+| Upper back | 80-84 | 80-84 | 40-49 | 67 |
+| Lower back | 85 | 85 | 50-57 | - |
+| Upper arm (left) | - | - | 58-63 | - |
+| Forearm (left) | - | - | 64-69 | 68-76 |
+| Forearm (right) | - | - | 70-75 | 77-81 |
+| Hand (left) | - | - | - | 82-86 |
+| Thigh (left) | - | - | - | 87-95 |
+| Thigh (right) | 86-88 | 86-88 | 76-94 | - |
+| Lower leg (left) | 89-94 | 89-94 | - | - |
+| Lower leg (right) | 95-00 | 95-00 | 95-00 | - |
+| Foot (right) | - | - | - | 96-00 |
+
+**Source totals:** frontal R; parietal R; occipital R (11) = 15.9%; frontal L; parietal L; occipital L (13) = 18.8%; facial L; facial centre; facial R (12) = 17.4%; cranial base; parietal centre; occipital centre (4) = 5.8%; lower limb R (4) = 5.8%; lower limb R (3) = 4.3%; lower limb L (2) = 2.9%; torso (1) = 1.4%; torso (1) = 1.4%; torso (1) = 1.4%; torso (2) = 2.9%; upper limb R (2) = 2.9%; upper limb L (3) = 4.3%; upper limb L (1) = 1.4%; lower limb R (1) = 1.4%; lower limb L (2) = 2.9%; torso (1) = 1.4%; upper limb L (1) = 1.4%; torso (4) = 5.8% (n = 69). Counted from the study's tables of reliable battle injuries (69: 32 projectile, 21 blunt, 16 sharp), each weapon rolling on its own mechanism's injuries. Sides are as recorded; injuries the authors only call probable are left out. Where a bone could belong to more than one location (vertebra, ribcage, cranial base), it is shared by body exposure.
+
+
+**What hit them? (d100)**
+
+| d100 | Cause |
+|---|---|
+| 01-47 | Lead ball (pistol, carbine, musket) |
+| 48-77 | Blunt force (musket butt, hilt, horse) |
+| 78-00 | Sharp force (sword, rapier, halberd) |
+
+Source: 
+
+**Close combat:** Dagger: roll location on *Knife assault - stab wounds (forensic)*. Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Sword, Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** The men wore little or no armour ('insufficient head protection', the authors note), so armour can be applied. This is bone evidence: wounds to soft tissue, above all the belly and chest, left no mark, so the trunk is under-counted. Some blunt facial fractures may come from the burial rather than the battle. For play, use the all-hits table.
+
+**Status:** Historical, from one small grave (47 men, 69 reliable injuries) and one moment of the battle: a cavalry charge with pistols and carbines aimed at the head, as contemporary instructions advised. Not a picture of the whole war.
+
+Sources:
+- Nicklisch N., Ramsthaler F., Meller H., Friederich S., Alt K.W., 'The face of war: Trauma analysis of a mass grave from the Battle of Lützen (1632)', PLoS ONE 12(5): e0178252 (2017), open access (PMC5439951): Tables 1, 3 and 4.
+- Same study: lead balls in the grave were mostly from carbines (12-14), then muskets (5) and pistols (1-3); 21 men had gunshot wounds to the head; the attack came mainly from the front and side.
+- Injury tally: data/sources/lutzen-1632-mass-grave.csv.
+
+## Thirty Years' War - all hits (gameplay)
+
+*Where shot and blows land on a man in the open, before death and burial sort the evidence. For pike-and-shot battles of the 1600s.*
+
+Confidence: **Extrapolated - design estimate from analogous evidence** · Armour: **allowed**
+
+| Location | Matchlock | Pistol/carbine |
+|---|---|---|
+| Skull (left) | 01-09 | 01-09 |
+| Skull (right) | 10-18 | 10-18 |
+| Face | 19-24 | 19-24 |
+| Neck | 25 | 25 |
+| Chest (left) | 26-27 | 26-27 |
+| Chest (right) | 28-29 | 28-29 |
+| Abdomen | 30-31 | 30-31 |
+| Groin / pelvis | 32-34 | 32-34 |
+| Upper back | 35 | 35 |
+| Lower back | 36 | 36 |
+| Shoulder (left) | 37-39 | 37-39 |
+| Shoulder (right) | 40-42 | 40-42 |
+| Upper arm (left) | 43-49 | 43-49 |
+| Upper arm (right) | 50-55 | 50-55 |
+| Forearm (left) | 56-57 | 56-57 |
+| Forearm (right) | 58-59 | 58-59 |
+| Hand (left) | 60-62 | 60-62 |
+| Hand (right) | 63-64 | 63-64 |
+| Thigh (left) | 65-71 | 65-71 |
+| Thigh (right) | 72-79 | 72-79 |
+| Knee (left) | 80-81 | 80-81 |
+| Knee (right) | 82 | 82 |
+| Lower leg (left) | 83-89 | 83-89 |
+| Lower leg (right) | 90-96 | 90-96 |
+| Foot (left) | 97-98 | 97-98 |
+| Foot (right) | 99-00 | 99-00 |
+
+**Close combat:** Sabre, Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Musket butt, Sword, Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted* with Target has no shield applied. Dagger: roll location on *Knife assault - stab wounds (forensic)*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** Use this table for gunfire in play; armour applies (cuirassier, harquebusier and pikeman kits). Sabres and clubbed muskets roll on their own tables (the Peninsular records and the Visby melee table).
+
+**Status:** Estimated. The killed part is real 1632 evidence but bone-only, so it under-counts trunk wounds; the wounded part is borrowed from a later war. Edit the share in tools/blend_tables.py if you prefer another.
+
+Sources:
+- Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers (wounded) + 25.5% lutzen-1632-mass-grave (killed), location by location.
+- No wounded records survive for the Thirty Years' War; the Peninsular War officers' wounds (same smoothbore lead balls and swords, 180 years later) stand in. Killed share as for the Napoleonic blend (about 1 killed to 3 wounded).
+
 # American Revolution (1775-1783)
 
 The thirteen colonies, joined by France from 1778 and later Spain and the Dutch Republic, fought Britain for independence. Battles were fought with smoothbore muskets and bayonets at close range, with artillery firing round shot, grape and canister; riflemen picked off officers from cover; dragoons fought with the sabre. Bayonet charges decided many fights, and some ended in killings of men trying to surrender, such as Paoli (1777) and Waxhaws (1780). Peckham counted 7,174 Americans killed and 8,241 wounded in action. The tables here are tallied from the men disabled for life who claimed federal invalid pensions in 1792-95.
@@ -1880,14 +1997,14 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 |---|---|---|---|
 | Attacker on target's shield side | facing | left side x1.8, right side x0.5 | Attacker works round to the target's left (shield) side. Tables: Visby 1361 |
 | Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Visby 1361 |
-| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Visby 1361, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Visby 1361, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Visby 1361, Peninsular War 1808-14, Knife assault, Unarmed |
-| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Visby 1361, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Visby 1361, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
+| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Visby 1361, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
+| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
 | Target has no shield | - | head x1.1, torso x1.4, forearm (left) x0.7, hand (left) x0.7 | Tables assume a shield. Without one the body and head are more open. Tables: Visby 1361 |
-| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Visby 1361, Peninsular War 1808-14, Knife assault |
-| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
+| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Visby 1361, Lützen 1632, Peninsular War 1808-14, Knife assault |
+| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
 
 **Called shot:** Roll the location twice; keep whichever result lands in the called zone. If both or neither do, keep the first. Your system sets any to-hit penalty.
 
@@ -2275,6 +2392,53 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 | Lower leg (right) | 95-98 | 97-98 | 92-98 | 99 | 92-97 | 98-99 | 93-97 | 94-97 | 95-98 | 96-98 |
 | Foot (left) | 99 | 99-00 | 99 | 00 | 98-99 | 00 | 98-99 | 98-99 | 99 | 99 |
 | Foot (right) | 00 | - | 00 | - | 00 | - | 00 | 00 | 00 | 00 |
+
+### Lützen 1632 - mass grave (bone evidence) - Pistol/carbine / Matchlock
+
+| Location | Normal | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-33 | 01-40 | 01-21 | 01-41 | 01-32 | 01-31 | 01-33 | 01-46 |
+| Skull (right) | 34-66 | 41-80 | 22-42 | 42-82 | 33-64 | 32-62 | 34-66 | 47-92 |
+| Face | 67-69 | 81-84 | 43-44 | 83-85 | - | 63-65 | 67-69 | 93-97 |
+| Chest (left) | 70-71 | 85 | 45-46 | 86 | - | 66 | 70-71 | 98 |
+| Chest (right) | 72-73 | 86 | 47-48 | 87 | - | 67 | 72-73 | 99 |
+| Groin / pelvis | 74-79 | 87-91 | 49-62 | 88-89 | 65 | 68-72 | 74-79 | - |
+| Upper back | 80-84 | 92-94 | 63-68 | 90-94 | 66-80 | 73-82 | 80-84 | 00 |
+| Lower back | 85 | 95 | 69-70 | 95 | 81-83 | 83-85 | 85 | - |
+| Thigh (right) | 86-88 | 96 | 71-76 | 96 | 84-86 | 86-88 | 86-88 | - |
+| Lower leg (left) | 89-94 | 97-98 | 77-88 | 97-98 | 87-93 | 89-94 | 89-94 | - |
+| Lower leg (right) | 95-00 | 99-00 | 89-00 | 99-00 | 94-00 | 95-00 | 95-00 | - |
+
+### Thirty Years' War - all hits (gameplay) - Matchlock / Pistol/carbine
+
+| Location | Normal | Higher | Lower | Fleeing | Flanked | Cover |
+|---|---|---|---|---|---|---|
+| Skull (left) | 01-09 | 01-15 | 01-04 | 01-12 | 01-09 | 01-19 |
+| Skull (right) | 10-18 | 16-28 | 05-08 | 13-23 | 10-18 | 20-37 |
+| Face | 19-24 | 29-37 | 09-11 | 24 | 19-23 | 38-50 |
+| Neck | 25 | 38 | - | 25 | 24 | 51-52 |
+| Chest (left) | 26-27 | 39-40 | 12-13 | - | 25-26 | 53 |
+| Chest (right) | 28-29 | 41-42 | 14-15 | - | 27-28 | 54 |
+| Abdomen | 30-31 | 43-44 | 16-17 | - | 29-30 | - |
+| Groin / pelvis | 32-34 | 45-47 | 18-22 | 26 | 31-33 | - |
+| Upper back | 35 | 48 | 23 | 27-31 | 34-36 | 55 |
+| Lower back | 36 | 49 | 24 | 32-35 | 37-39 | - |
+| Shoulder (left) | 37-39 | 50-54 | 25-27 | 36-37 | 40-42 | 56-62 |
+| Shoulder (right) | 40-42 | 55-59 | 28-30 | 38-39 | 43-45 | 63-69 |
+| Upper arm (left) | 43-49 | 60-67 | 31-36 | 40-43 | 46-51 | 70-78 |
+| Upper arm (right) | 50-55 | 68-74 | 37-42 | 44-47 | 52-56 | 79-87 |
+| Forearm (left) | 56-57 | 75-76 | 43-44 | 48 | 57-58 | 88-90 |
+| Forearm (right) | 58-59 | 77-78 | 45-46 | 49 | 59 | 91-92 |
+| Hand (left) | 60-62 | 79-81 | 47-48 | 50-51 | 60-61 | 93-96 |
+| Hand (right) | 63-64 | 82-84 | 49-50 | 52 | 62-63 | 97-99 |
+| Thigh (left) | 65-71 | 85-87 | 51-60 | 53-62 | 64-71 | - |
+| Thigh (right) | 72-79 | 88-90 | 61-71 | 63-73 | 72-80 | 00 |
+| Knee (left) | 80-81 | 91 | 72-73 | 74-75 | 81 | - |
+| Knee (right) | 82 | 92 | 74-75 | 76-77 | 82 | - |
+| Lower leg (left) | 83-89 | 93-95 | 76-84 | 78-86 | 83-89 | - |
+| Lower leg (right) | 90-96 | 96-98 | 85-94 | 87-95 | 90-96 | - |
+| Foot (left) | 97-98 | 99 | 95-97 | 96-97 | 97-98 | - |
+| Foot (right) | 99-00 | 00 | 98-00 | 98-00 | 99-00 | - |
 
 ### American Revolution 1775-83 - disabled veterans' wounds - Musket / Rifle / Pistol / Artillery
 
@@ -3238,6 +3402,7 @@ Penalties add up; each total is capped at -60%.
 | Mail over padding | 2 | 1 | 1 | 1 | 0 | 0 | 0 |
 | Coat of plates / brigandine | 2 | 2 | 1 | 1 | 1 | 0 | 0 |
 | Plate | 3 | 2 | 1 | 2 | 1 | 0 | 0 |
+| Buff coat (thick oiled leather) | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 | Steel cuirass (cuirassier, carabinier) | 3 | 2 | 1 | 1 | 2 | 1 | 0 |
 | Cavalry helmet (brass or steel, with crest) | 2 | 1 | 1 | 1 | 1 | 0 | 0 |
 | Thin steel vest (private purchase) | 2 | 1 | 1 | 1 | 1 | 0 | 0 |
@@ -3289,23 +3454,23 @@ Weapon armour defeat: Axe (hand or long-hafted): -1 vs cut; Spiked club / mornin
 | sabaton (Feet) | - | - | - | - | Mail | Plate |
 | shield (Visby tables) | Yes | Yes | Yes | Yes | Yes | No |
 
-### Armour Kits: Musket era (1775-1815)
+### Armour Kits: Early modern (1600-1815)
 
-| Slot (covers) | Cuirassier: steel cuirass and helmet | Dragoon or light dragoon helmet |
-|---|---|---|
-| helm (Skull) | Cavalry helmet | Cavalry helmet |
-| visor (Face) | - | - |
-| gorget (Neck) | - | - |
-| torso_upper (Chest, upper back) | Steel cuirass | - |
-| torso_lower (Abdomen, lower back) | Steel cuirass 01-70 | - |
-| skirt (Groin / pelvis) | - | - |
-| pauldron (Shoulders) | - | - |
-| arm (Upper arms, forearms) | - | - |
-| gauntlet (Hands) | - | - |
-| leg (Thighs, knees) | - | - |
-| greave (Lower legs) | - | - |
-| sabaton (Feet) | - | - |
-| shield (Visby tables) | No | No |
+| Slot (covers) | Cuirassier, three-quarter armour (1630s) | Harquebusier: buff coat, breastplate, pot helmet | Pikeman: morion and corslet | Cuirassier: steel cuirass and helmet | Dragoon or light dragoon helmet |
+|---|---|---|---|---|---|
+| helm (Skull) | Plate | Plate 01-80 | Plate 01-85 | Cavalry helmet | Cavalry helmet |
+| visor (Face) | Plate 01-70 | - | - | - | - |
+| gorget (Neck) | Plate | - | - | - | - |
+| torso_upper (Chest, upper back) | Steel cuirass | Steel cuirass 01-80 / Buff coat 81-00 | Steel cuirass | Steel cuirass | - |
+| torso_lower (Abdomen, lower back) | Steel cuirass | Buff coat | Steel cuirass 01-60 | Steel cuirass 01-70 | - |
+| skirt (Groin / pelvis) | Plate | Buff coat | - | - | - |
+| pauldron (Shoulders) | Plate | Buff coat | - | - | - |
+| arm (Upper arms, forearms) | Plate | Buff coat | - | - | - |
+| gauntlet (Hands) | Plate 01-50 | Plate 01-50 | - | - | - |
+| leg (Thighs, knees) | Plate 01-70 | Buff coat 01-50 | Plate 01-35 | - | - |
+| greave (Lower legs) | - | - | - | - | - |
+| sabaton (Feet) | - | - | - | - | - |
+| shield (Visby tables) | No | No | No | No | No |
 
 ### Armour Kits: Modern (helmets, flak vests, Kevlar, plates)
 
@@ -3347,6 +3512,8 @@ Sources: Visby kit contents follow the finds summarised in Thordeman (1939): mai
 | Punch | - | - | 01-00 | - | melee: unarmed |
 | Kick | - | - | 01-00 | - | melee: unarmed |
 | Elbow or knee | 01-25 | - | 26-00 | - | melee: unarmed |
+| Matchlock musket | - | - | - | 01-00 | rifle |
+| Wheellock pistol or carbine (cavalry) | - | - | - | 01-00 | pistol |
 | Smoothbore musket (Brown Bess, Charleville) | - | - | - | 01-00 | rifle |
 | Flintlock rifle (Pennsylvania, Baker, Jäger) | - | - | - | 01-00 | rifle |
 | Flintlock pistol | - | - | - | 01-00 | pistol |

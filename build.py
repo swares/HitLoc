@@ -118,7 +118,7 @@ def slot_text(d, v) -> str:
 
 
 KIT_GROUPS = (("visby", "Armour Kits: Visby 1361"), ("generic", "Armour Kits: Medieval, generic"),
-              ("musket", "Armour Kits: Musket era (1775-1815)"),
+              ("musket", "Armour Kits: Early modern (1600-1815)"),
               ("modern", "Armour Kits: Modern (helmets, flak vests, Kevlar, plates)"))
 
 

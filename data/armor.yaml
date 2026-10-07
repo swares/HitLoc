@@ -33,7 +33,8 @@ materials:
   mail_padded: {name: "Mail over padding",           cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
   plates:      {name: "Coat of plates / brigandine", cut: 2, pierce: 2, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
   plate:       {name: "Plate",                       cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 2, pistol: 1, rifle: 0, rifle_ap: 0}}
-  # --- musket era ------------------------------------------------------------
+  # --- early modern (1600-1815) ----------------------------------------------
+  buff_coat:     {name: "Buff coat (thick oiled leather)", cut: 1, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
   cuirass:       {name: "Steel cuirass (cuirassier, carabinier)", cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 1, pistol: 2, rifle: 1, rifle_ap: 0}}
   cavalry_helmet: {name: "Cavalry helmet (brass or steel, with crest)", cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
   # --- 20th / 21st century --------------------------------------------------
@@ -135,7 +136,27 @@ kits:
             arm: mail_padded, gauntlet: plates, leg: mail_padded, greave: {material: plate, cover: 50}, sabaton: mail}
     notes: "Professional kit of the period; face left open (visors uncertain for 1361)."
 
-  # --- musket era (1775-1815) ----------------------------------------------
+  # --- early modern (1600-1815) --------------------------------------------
+  - id: cuirassier_1630
+    name: "Cuirassier, three-quarter armour (1630s)"
+    group: musket
+    slots: {helm: plate, visor: {material: plate, cover: 70}, gorget: plate, torso_upper: cuirass, torso_lower: cuirass,
+            skirt: plate, pauldron: plate, arm: plate, gauntlet: {material: plate, cover: 50}, leg: {material: plate, cover: 70}}
+    notes: "Closed helmet, proofed breastplate, arm defences and tassets to the knee; one gauntlet (the bridle hand). Heavy, and going out of use by the 1640s."
+
+  - id: harquebusier_1630
+    name: "Harquebusier: buff coat, breastplate, pot helmet"
+    group: musket
+    slots: {helm: {material: plate, cover: 80}, torso_upper: [{material: cuirass, cover: 80}, {material: buff_coat}],
+            torso_lower: buff_coat, skirt: buff_coat, pauldron: buff_coat, arm: buff_coat, gauntlet: {material: plate, cover: 50}, leg: {material: buff_coat, cover: 50}}
+    notes: "Lighter cavalry of the Thirty Years' War and the English Civil War: 'lobster-tail' pot helmet, breast and back plate over a buff coat, a gauntlet on the bridle arm."
+
+  - id: pikeman_1630
+    name: "Pikeman: morion and corslet"
+    group: musket
+    slots: {helm: {material: plate, cover: 85}, torso_upper: cuirass, torso_lower: {material: cuirass, cover: 60}, leg: {material: plate, cover: 35}}
+    notes: "Open helmet, breast and back plates and short tassets. Many pikemen left the armour behind on campaign."
+
   - id: cuirassier
     name: "Cuirassier: steel cuirass and helmet"
     group: musket

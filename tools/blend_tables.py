@@ -1,8 +1,9 @@
-"""Write the 'all hits' gameplay blends for the musket-era tables.
+"""Write the 'all hits' gameplay blends for the early-modern and musket-era tables.
 
 all hits = (1 - k) x wounded table + k x killed table, location by location, where k is
-the share of hits that killed outright. No region counts of the killed survive for these
-wars, so the Civil War killed-in-action table (1,173 men, soft lead balls) stands in.
+the share of hits that killed outright. Where no region counts of a war's killed survive,
+the Civil War killed-in-action table (1,173 men, soft lead balls) stands in for them; where
+no wounded records survive (the Thirty Years' War), the Peninsular War records stand in.
 Run from the project root after changing a source table:  python tools/blend_tables.py
 """
 import sys
@@ -12,11 +13,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from hitloc import model  # noqa: E402
 
 BLENDS = [
-    # (output id, wounded table, killed share, header lines)
-    ("revolution-1775-83-all-hits", "revolution-1775-83-pensioners", 0.465),
-    ("peninsular-1808-14-all-hits", "peninsular-1808-14-officers", 0.255),
+    # (output id, wounded table, killed table, killed share)
+    ("revolution-1775-83-all-hits", "revolution-1775-83-pensioners", "acw-1861-killed", 0.465),
+    ("peninsular-1808-14-all-hits", "peninsular-1808-14-officers", "acw-1861-killed", 0.255),
+    ("thirty-years-war-all-hits", "peninsular-1808-14-officers", "lutzen-1632-mass-grave", 0.255),
 ]
-KILLED = "acw-1861-killed"
 
 
 def shares(d, tid):
@@ -27,9 +28,8 @@ def shares(d, tid):
 
 def main():
     d = model.load("data")
-    kill = shares(d, KILLED)
-    for out, base, k in BLENDS:
-        wnd = shares(d, base)
+    for out, base, killed, k in BLENDS:
+        wnd, kill = shares(d, base), shares(d, killed)
         blend = {i: (1 - k) * wnd[i] + k * kill[i] for i in wnd}
         path = Path("data/tables") / f"{out}.yaml"
         text = path.read_text()

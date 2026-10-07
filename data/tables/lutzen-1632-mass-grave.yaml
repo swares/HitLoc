@@ -1,0 +1,89 @@
+id: lutzen-1632-mass-grave
+order: 13
+name: "Lützen 1632 - mass grave (bone evidence)"
+label: "Bone evidence: mass grave of 47"
+battle: "Thirty Years' War"
+context: "Battle injuries on 47 men buried in one grave at Lützen, most likely infantry of the Swedish Blue Brigade cut down by imperial cavalry. Killed only."
+variant: evidence
+armor: allowed
+native: gunfire
+also_native: [armed]
+weapon_bias: sourced
+weapons: [wheellock_pistol, matchlock_musket, saber, musket_butt]
+modifiers: [attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding, behind_cover]
+confidence: historical
+confidence_note: >
+  Counted from the study's tables of reliable battle injuries (69: 32 projectile, 21 blunt,
+  16 sharp), each weapon rolling on its own mechanism's injuries. Sides are as recorded;
+  injuries the authors only call probable are left out. Where a bone could belong to more
+  than one location (vertebra, ribcage, cranial base), it is shared by body exposure.
+weapon_mix:
+  - {label: "Lead ball (pistol, carbine, musket)", weapon: wheellock_pistol, pct: 46.4}
+  - {label: "Blunt force (musket butt, hilt, horse)", weapon: musket_butt, pct: 30.4}
+  - {label: "Sharp force (sword, rapier, halberd)", weapon: saber, pct: 23.2}
+armor_note: >
+  The men wore little or no armour ('insufficient head protection', the authors note), so
+  armour can be applied. This is bone evidence: wounds to soft tissue, above all the belly
+  and chest, left no mark, so the trunk is under-counted. Some blunt facial fractures may
+  come from the burial rather than the battle. For play, use the all-hits table.
+sources:
+  - "Nicklisch N., Ramsthaler F., Meller H., Friederich S., Alt K.W., 'The face of war: Trauma analysis of a mass grave from the Battle of Lützen (1632)', PLoS ONE 12(5): e0178252 (2017), open access (PMC5439951): Tables 1, 3 and 4."
+  - "Same study: lead balls in the grave were mostly from carbines (12-14), then muskets (5) and pistols (1-3); 21 men had gunshot wounds to the head; the attack came mainly from the front and side."
+  - "Injury tally: data/sources/lutzen-1632-mass-grave.csv."
+status: >
+  Historical, from one small grave (47 men, 69 reliable injuries) and one moment of the
+  battle: a cavalry charge with pistols and carbines aimed at the head, as contemporary
+  instructions advised. Not a picture of the whole war.
+regions:
+  - {label: "frontal R; parietal R; occipital R (11)", locs: [skull_r], count: 11}
+  - {label: "frontal L; parietal L; occipital L (13)", locs: [skull_l], count: 13}
+  - {label: "facial L; facial centre; facial R (12)", locs: [face], count: 12}
+  - {label: "cranial base; parietal centre; occipital centre (4)", locs: [skull_l, skull_r], count: 4}
+  - {label: "lower limb R (4)", locs: [thigh_r], count: 4}
+  - {label: "lower limb R (3)", locs: [lower_leg_r], count: 3}
+  - {label: "lower limb L (2)", locs: [lower_leg_l], count: 2}
+  - {label: "torso (1)", locs: [chest_l, chest_r], count: 1}
+  - {label: "torso (1)", locs: [back_upper], count: 1}
+  - {label: "torso (1)", locs: [back_upper, back_lower], count: 1}
+  - {label: "torso (2)", locs: [groin], count: 2}
+  - {label: "upper limb R (2)", locs: [forearm_r], count: 2}
+  - {label: "upper limb L (3)", locs: [forearm_l], count: 3}
+  - {label: "upper limb L (1)", locs: [hand_l], count: 1}
+  - {label: "lower limb R (1)", locs: [foot_r], count: 1}
+  - {label: "lower limb L (2)", locs: [thigh_l], count: 2}
+  - {label: "torso (1)", locs: [chest_l, chest_r, back_upper], count: 1}
+  - {label: "upper limb L (1)", locs: [upper_arm_l], count: 1}
+  - {label: "torso (4)", locs: [back_upper, back_lower, groin], count: 4}
+weapon_regions:
+  wheellock_pistol: &projectile
+    - {label: "frontal R; parietal R; occipital R (10)", locs: [skull_r], count: 10}
+    - {label: "frontal L; parietal L; occipital L (10)", locs: [skull_l], count: 10}
+    - {label: "facial L (1)", locs: [face], count: 1}
+    - {label: "cranial base (1)", locs: [skull_l, skull_r], count: 1}
+    - {label: "lower limb R (1)", locs: [thigh_r], count: 1}
+    - {label: "lower limb R (2)", locs: [lower_leg_r], count: 2}
+    - {label: "lower limb L (2)", locs: [lower_leg_l], count: 2}
+    - {label: "torso (1)", locs: [chest_l, chest_r], count: 1}
+    - {label: "torso (1)", locs: [back_upper], count: 1}
+    - {label: "torso (1)", locs: [back_upper, back_lower], count: 1}
+    - {label: "torso (2)", locs: [groin], count: 2}
+  matchlock_musket: *projectile
+  saber:
+    - {label: "parietal centre; occipital centre (3)", locs: [skull_l, skull_r], count: 3}
+    - {label: "facial R; facial L (2)", locs: [face], count: 2}
+    - {label: "upper limb R (1)", locs: [forearm_r], count: 1}
+    - {label: "upper limb L (1)", locs: [upper_arm_l], count: 1}
+    - {label: "upper limb L (1)", locs: [forearm_l], count: 1}
+    - {label: "lower limb R (3)", locs: [thigh_r], count: 3}
+    - {label: "lower limb R (1)", locs: [lower_leg_r], count: 1}
+    - {label: "torso (4)", locs: [back_upper, back_lower, groin], count: 4}
+  musket_butt:
+    - {label: "frontal R (1)", locs: [skull_r], count: 1}
+    - {label: "frontal L; parietal L (3)", locs: [skull_l], count: 3}
+    - {label: "facial centre (9)", locs: [face], count: 9}
+    - {label: "upper limb R (1)", locs: [forearm_r], count: 1}
+    - {label: "upper limb L (2)", locs: [forearm_l], count: 2}
+    - {label: "upper limb L (1)", locs: [hand_l], count: 1}
+    - {label: "lower limb R (1)", locs: [foot_r], count: 1}
+    - {label: "lower limb L (2)", locs: [thigh_l], count: 2}
+    - {label: "torso (1)", locs: [chest_l, chest_r, back_upper], count: 1}

@@ -1,0 +1,51 @@
+id: thirty-years-war-all-hits
+order: 14
+name: "Thirty Years' War - all hits (gameplay)"
+label: "All hits: gameplay blend"
+battle: "Thirty Years' War"
+context: "Where shot and blows land on a man in the open, before death and burial sort the evidence. For pike-and-shot battles of the 1600s."
+variant: adjusted
+armor: allowed
+weapon_bias: pooled
+weapons: [matchlock_musket, wheellock_pistol, saber, musket_butt]
+modifiers: [attacker_higher, attacker_lower, target_fleeing, flanked, behind_cover]
+confidence: extrapolated
+confidence_note: "Blend of the Lützen dead and a stand-in for the wounded; the mix is from casualty totals of a later war."
+armor_note: >
+  Use this table for gunfire in play; armour applies (cuirassier, harquebusier and pikeman
+  kits). Sabres and clubbed muskets roll on their own tables (the Peninsular records and
+  the Visby melee table).
+sources:
+  - "Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers (wounded) + 25.5% lutzen-1632-mass-grave (killed), location by location."
+  - "No wounded records survive for the Thirty Years' War; the Peninsular War officers' wounds (same smoothbore lead balls and swords, 180 years later) stand in. Killed share as for the Napoleonic blend (about 1 killed to 3 wounded)."
+status: >
+  Estimated. The killed part is real 1632 evidence but bone-only, so it under-counts trunk
+  wounds; the wounded part is borrowed from a later war. Edit the share in
+  tools/blend_tables.py if you prefer another.
+weights:
+  skull_l: 9.348
+  skull_r: 8.609
+  face: 6.039
+  neck: 0.858
+  chest_l: 1.901
+  chest_r: 1.901
+  abdomen: 1.902
+  groin: 3.294
+  back_upper: 1.333
+  back_lower: 1.365
+  shoulder_l: 3.18
+  shoulder_r: 3.18
+  upper_arm_l: 6.691
+  upper_arm_r: 6.322
+  forearm_l: 2.022
+  forearm_r: 1.653
+  hand_l: 2.654
+  hand_r: 2.284
+  thigh_l: 7.145
+  thigh_r: 7.884
+  knee_l: 1.445
+  knee_r: 1.445
+  lower_leg_l: 6.529
+  lower_leg_r: 6.899
+  foot_l: 1.874
+  foot_r: 2.244

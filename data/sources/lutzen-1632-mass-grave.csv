@@ -1,0 +1,42 @@
+# Perimortem (battle) injuries on the 47 skeletons from the Lützen 1632 mass grave, from
+# Nicklisch N. et al., 'The face of war: Trauma analysis of a mass grave from the Battle of
+# Lützen (1632)', PLoS ONE 12(5): e0178252, 2017 (PMC5439951), Table 3 (cranial injuries by
+# region and side) and Table 4 (postcranial injuries by region, side and bone).
+# Only injuries the authors call reliable are counted (their 'probable' cases are left out;
+# healed antemortem injuries too). loc uses body.yaml ids; several ids = shared between them.
+mechanism,source_region,side,bones,count,loc
+projectile,frontal,R,,4,skull_r
+projectile,frontal,L,,3,skull_l
+projectile,parietal,R,,4,skull_r
+projectile,parietal,L,,6,skull_l
+projectile,occipital,R,,2,skull_r
+projectile,occipital,L,,1,skull_l
+projectile,facial,L,,1,face
+projectile,cranial base,-,,1,skull_l skull_r
+projectile,lower limb,R,femur; tibia (2),1,thigh_r
+projectile,lower limb,R,tibia,2,lower_leg_r
+projectile,lower limb,L,tibia (2),2,lower_leg_l
+projectile,torso,-,ribcage,1,chest_l chest_r
+projectile,torso,-,scapula,1,back_upper
+projectile,torso,-,vertebra,1,back_upper back_lower
+projectile,torso,-,pelvis (2),2,groin
+blunt,frontal,R,,1,skull_r
+blunt,frontal,L,,2,skull_l
+blunt,parietal,L,,1,skull_l
+blunt,facial,centre,,9,face
+blunt,upper limb,R,ulna,1,forearm_r
+blunt,upper limb,L,ulna; radius,2,forearm_l
+blunt,upper limb,L,metacarpus,1,hand_l
+blunt,lower limb,R,metatarsus,1,foot_r
+blunt,lower limb,L,femur (2),2,thigh_l
+blunt,torso,-,ribcage/scapula,1,chest_l chest_r back_upper
+sharp,parietal,centre,,1,skull_l skull_r
+sharp,occipital,centre,,2,skull_l skull_r
+sharp,facial,R,,1,face
+sharp,facial,L,,1,face
+sharp,upper limb,R,radius,1,forearm_r
+sharp,upper limb,L,humerus,1,upper_arm_l
+sharp,upper limb,L,radius,1,forearm_l
+sharp,lower limb,R,femur (3),3,thigh_r
+sharp,lower limb,R,tibia,1,lower_leg_r
+sharp,torso,-,scapula; vertebra (2); pelvis,4,back_upper back_lower groin
