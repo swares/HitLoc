@@ -112,6 +112,114 @@ Confidence: **Extrapolated - design estimate from analogous evidence** · Armour
 Sources:
 - Derived from visby-1361-evidence.
 
+# Wars of the Roses (Towton, 29 March 1461)
+
+The Wars of the Roses (1455-1485) were fought between the houses of York and Lancaster for the English crown. At Towton in Yorkshire on Palm Sunday 1461, the Yorkist army of Edward IV defeated Henry VI's Lancastrians in a snowstorm, after an archery exchange and hours of fighting on foot; the Lancastrian army broke and was cut down in the rout. Contemporary claims of 28,000 dead are thought exaggerated, but it is often called the bloodiest battle fought in England. In 1996 building work at Towton Hall uncovered a mass grave of about 38 men, which gives the most detailed picture of medieval battle wounds yet recorded.
+
+| Side | Who | Armour |
+|---|---|---|
+| Yorkists | Edward IV's army: his retinue and those of Warwick, Fauconberg and (late in the day) Norfolk. | Nobles and men-at-arms in full plate, fighting on foot; retainers in brigandines and sallets; archers and billmen in padded jacks and sallets. |
+| Lancastrians | Henry VI's army under the Duke of Somerset, raised largely from the north. | The same mix as the Yorkists. The head wounds in the Towton grave suggest many of the dead had lost or taken off their helmets in the rout. |
+
+**Example combatants**
+
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Yorkist man-at-arms | Yorkists | Full plate harness (c.1450) | Poleaxe (axe, hammer and spike) | Full harness, fighting on foot with the poleaxe. | [Edward IV's army at Barnet, 1471, from the Ghent manuscript painted a few years later](https://commons.wikimedia.org/wiki/File:MS_Ghent_-_Battle_of_Barnet.jpg) |
+| Yorkist archer | Yorkists | Jack and sallet (archer or billman, c.1460) | Longbow (English war bow, bodkin and broadhead arrows) | By the traditional account, shot with the wind and snow at his back. | [English longbowmen at Crécy, from a 15th-century Froissart manuscript (painted a century after the battle, near Towton's time)](https://commons.wikimedia.org/wiki/File:Arcieri_inglesi_battaglia_di_Cr%C3%A9cy.jpg) |
+| Yorkist billman | Yorkists | Jack and sallet (archer or billman, c.1460) | Bill (English bill, hooked polearm) | Jack, sallet and bill: the common infantryman. |  |
+| Lancastrian man-at-arms | Lancastrians | Full plate harness (c.1450) | Sword (arming sword) | Full harness; sword and dagger in the press. | [Men-at-arms in battle, from the Beauchamp Pageant (English drawings of c. 1483-94)](https://commons.wikimedia.org/wiki/File:Battle_of_Campston_Hill%2C_from_the_1914_edition_of_the_Pageant_of_the_birth%2C_life_and_death_of_Richard_Beauchamp%2C_Earl_of_Warwick%2C_K.G.png) |
+| Lancastrian retainer | Lancastrians | Brigandine, sallet and arm splints (c.1460) | Bill (English bill, hooked polearm) | A lord's better-equipped retainer. | [Soldier in a brigandine, from a Breton manuscript of the 1440s](https://commons.wikimedia.org/wiki/File:Mid_15th_century_brigandine.jpg) |
+| Lancastrian archer | Lancastrians | Jack and sallet (archer or billman, c.1460) | Longbow (English war bow, bodkin and broadhead arrows) | By the traditional account, shot into the wind and fell short. | [English and Genoese archers at Crécy, from a 15th-century Froissart manuscript (a near match in time)](https://commons.wikimedia.org/wiki/File:Battle_of_crecy_froissart.jpg) |
+
+Sources: Fiorato V., Boylston A. and Knüsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007). Holst M. and Sutherland T., 'Towton Revisited', in Eickhoff and Schopper (eds), Schlachtfeld und Massengrab (2014), pp. 97-129.
+
+## Towton 1461 - mass grave (bone evidence)
+
+*Death wounds on the men buried at Towton Hall after the battle of 29 March 1461, most likely Lancastrians caught in the rout. Killed only.*
+
+Confidence: **Historical - taken directly from a source** · Armour: **already reflected (do not apply)**
+
+| Location | Sword | Bill | Poleaxe | Dagger | Longbow | Bow |
+|---|---|---|---|---|---|---|
+| Skull (left) | 01-28 | 01-28 | 01-42 | 01-54 | 01-32 | 01-32 |
+| Skull (right) | 29-49 | 29-49 | 43-58 | 55-00 | 33-54 | 33-54 |
+| Face | 50-60 | 50-60 | 59-88 | - | 55-68 | 55-68 |
+| Neck | 61-66 | 61-66 | 89-91 | - | 69-73 | 69-73 |
+| Groin / pelvis | 67 | 67 | - | - | 74 | 74 |
+| Shoulder (left) | 68-69 | 68-69 | - | - | 75 | 75 |
+| Shoulder (right) | 70 | 70 | - | - | 76 | 76 |
+| Upper arm (left) | 71 | 71 | - | - | 77 | 77 |
+| Upper arm (right) | 72 | 72 | - | - | 78 | 78 |
+| Forearm (left) | 73-75 | 73-75 | - | - | 79-80 | 79-80 |
+| Forearm (right) | 76-78 | 76-78 | 92-94 | - | 81-83 | 81-83 |
+| Hand (left) | 79-84 | 79-84 | - | - | 84-88 | 84-88 |
+| Hand (right) | 85-94 | 85-94 | 95-97 | - | 89-95 | 89-95 |
+| Thigh (left) | 95 | 95 | - | - | 96 | 96 |
+| Thigh (right) | 96 | 96 | - | - | 97 | 97 |
+| Knee (right) | 97 | 97 | - | - | - | - |
+| Lower leg (left) | 98 | 98 | 98-00 | - | 98 | 98 |
+| Foot (left) | 99-00 | 99-00 | - | - | 99-00 | 99-00 |
+
+**Source totals:** Face and jaw (26) = 14.4%; Skull, left (48) = 26.7%; Skull, midline or both sides (21) = 11.7%; Skull, right (29) = 16.1%; Foot, left (3) = 1.7%; Forearm, left (4) = 2.2%; Forearm, right (5) = 2.8%; Pelvis (1) = 0.6%; Hand, left (8) = 4.4%; Hand, side not recorded (1) = 0.6%; Hand, right (13) = 7.2%; Knee, right (1) = 0.6%; Lower leg, left (2) = 1.1%; Neck (cervical vertebrae) (9) = 5.0%; Shoulder, left (2) = 1.1%; Shoulder, right (1) = 0.6%; Thigh, left (1) = 0.6%; Thigh, right (2) = 1.1%; Upper arm, left (2) = 1.1%; Upper arm, right (1) = 0.6% (n = 180). Counted wound by wound from the study's tables: 124 head wounds (79 blade, 32 blunt, 13 penetrating) on 31 skulls and 56 injured bones below the head (52 blade, 4 blunt). Head wounds are counted per wound and body injuries per bone, as published, so the body is slightly under-counted. Blade weapons roll on the blade wounds, the poleaxe on the blunt ones and the dagger on the penetrating ones (arrow, bolt, dagger and poleaxe-spike wounds to the skull). Bows use all the wounds together. Unsided skull wounds (frontal, occipital, both parietals) are shared between left and right.
+
+
+**Close combat:** Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** Armour is already in these numbers: the head wounds suggest many men had lost or taken off their helmets in the rout, and the wounds fall where they were unprotected. Do not also subtract armour on this table; use the all-hits table for play. This is bone evidence, so wounds to the chest and belly that touched no bone left no mark, and arrows (which mostly wounded soft tissue) are under-counted.
+
+**Status:** Historical, from one grave of about 38 men killed in the rout after the battle. Their wounds are extreme: one man (skeleton 32) had 14 head wounds, many blows fell on the back of the skull and the neck, and the forearms and hands show defence wounds. It is a picture of men cut down while fleeing or after they fell, not of the fighting in the line.
+
+Sources:
+- Holst M. and Sutherland T., 'Towton Revisited - Analysis of the Human Remains from the Battle of Towton 1461', in Eickhoff S. and Schopper F. (eds), Schlachtfeld und Massengrab: Spektren interdisziplinärer Auswertung von Orten der Gewalt (Zossen 2014), pp. 97-129: Tab. 9 (post-cranial injuries) and Tab. 12 (peri-mortem cranial weapon trauma).
+- Same chapter: 36% of the skeletons had peri-mortem injuries below the head (56 in all), mostly to the hands and forearms; the back of the skull, left parietal and left frontal took the most blade wounds. Its text gives 33 blunt (25%) and 13 penetrating (10%) head wounds; its table lists 124 head wounds, which this table follows.
+- Fiorato V., Boylston A. and Knüsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007): the original excavation and analysis (Novak, 'Battle-related trauma').
+- Wound-by-wound tally: data/sources/towton-1461-mass-grave.csv.
+
+## Towton 1461 - gameplay-adjusted (before armour)
+
+*Where blows and arrows land on a man in the press at Towton, before armour, re-weighted from the bone evidence. Use for the Wars of the Roses.*
+
+Confidence: **Extrapolated - design estimate from analogous evidence** · Armour: **allowed**
+
+| Location | Sword | Bill | Poleaxe | Axe | Dagger | Spear | Longbow | Bow | Crossbow |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-12 | 01-13 | 01-14 | 01-13 | 01-11 | 01-09 | 01-12 | 01-12 | 01-13 |
+| Skull (right) | 13-21 | 14-23 | 15-25 | 14-23 | 12-19 | 10-16 | 13-21 | 13-21 | 14-23 |
+| Face | 22-27 | 24-30 | 26-32 | 24-29 | 20-27 | 17-23 | 22-27 | 22-27 | 24-29 |
+| Neck | 28-31 | 31-34 | 33-37 | 30-33 | 28-34 | 24-26 | 28-31 | 28-31 | 30-33 |
+| Chest (left) | 32-38 | 35-40 | 38-43 | 34-39 | 35-43 | 27-35 | 32-38 | 32-38 | 34-39 |
+| Chest (right) | 39-44 | 41-45 | 44-48 | 40-44 | 44-50 | 36-43 | 39-44 | 39-44 | 40-45 |
+| Abdomen | 45-51 | 46-51 | 49-54 | 45-49 | 51-59 | 44-52 | 45-51 | 45-51 | 46-51 |
+| Groin / pelvis | 52-54 | 52-54 | 55-57 | 50-51 | 60-63 | 53-56 | 52-54 | 52-54 | 52-54 |
+| Upper back | 55-58 | 55-58 | 58-61 | 52-54 | 64-68 | 57-61 | 55-58 | 55-58 | 55-58 |
+| Lower back | 59-61 | 59-61 | 62-64 | 55-56 | 69-72 | 62-65 | 59-61 | 59-61 | 59-61 |
+| Shoulder (left) | 62-63 | 62-63 | 65-66 | 57-58 | 73-74 | 66-67 | 62-63 | 62-63 | 62-63 |
+| Shoulder (right) | 64 | 64 | 67 | 59 | 75 | 68 | 64 | 64 | 64 |
+| Upper arm (left) | 65-66 | 65-66 | 68-69 | 60-61 | 76-77 | 69-70 | 65-66 | 65-66 | 65-66 |
+| Upper arm (right) | 67-68 | 67-68 | 70-71 | 62-63 | 78-79 | 71-72 | 67-68 | 67-68 | 67-68 |
+| Forearm (left) | 69-71 | 69-71 | 72-74 | 64-66 | 80-82 | 73-75 | 69-71 | 69-71 | 69-71 |
+| Forearm (right) | 72-74 | 72-74 | 75-77 | 67-69 | 83-85 | 76-78 | 72-74 | 72-74 | 72-74 |
+| Hand (left) | 75-78 | 75-78 | 78-81 | 70-73 | 86-89 | 79-81 | 75-78 | 75-78 | 75-78 |
+| Hand (right) | 79-82 | 79-82 | 82-84 | 74-77 | 90-93 | 82-84 | 79-82 | 79-82 | 79-82 |
+| Thigh (left) | 83-86 | 83-86 | 85-87 | 78-82 | 94-95 | 85-87 | 83-86 | 83-86 | 83-86 |
+| Thigh (right) | 87-90 | 87-90 | 88-90 | 83-87 | 96-97 | 88-90 | 87-90 | 87-90 | 87-90 |
+| Knee (left) | 91 | 91 | 91 | 88 | - | 91 | 91 | 91 | 91 |
+| Knee (right) | 92 | 92 | 92 | 89 | - | 92 | 92 | 92 | 92 |
+| Lower leg (left) | 93-95 | 93-95 | 93-95 | 90-93 | 98 | 93-95 | 93-95 | 93-95 | 93-95 |
+| Lower leg (right) | 96-97 | 96-97 | 96-97 | 94-96 | 99 | 96-97 | 96-97 | 96-97 | 96-97 |
+| Foot (left) | 98-99 | 98-99 | 98-99 | 97-99 | 00 | 98-99 | 98-99 | 98-99 | 98-99 |
+| Foot (right) | 00 | 00 | 00 | 00 | - | 00 | 00 | 00 | 00 |
+
+**Close combat:** Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Spiked club: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** These weights are where blows LAND. Resolve armour separately with the target's kit: a man-at-arms in full harness, a retainer in brigandine and sallet, or an archer or billman in a jack.
+
+**Status:** The bone evidence is 74% head and neck, 21% arms, 5% legs and almost no trunk. Corrections: (1) Trunk raised to 30%: blade, spike and arrow wounds to the chest and belly mostly miss bone, and the evidence shows almost none. (2) Head and neck lowered to 31%: many Towton skull wounds were struck after a man fell or lost his helmet in the rout (14 on one skull). (3) Arms kept at about a fifth, hands and forearms highest (defence wounds). (4) Legs raised to 18%: deep thigh wounds often miss the femur. The left-over-right skull bias (48 against 29 wounds) is kept.
+
+Sources:
+- Derived from towton-1461-mass-grave (Holst and Sutherland 2014, Tab. 9 and 12).
+
 # Thirty Years' War (1618-1648)
 
 A war of religion and power across the Holy Roman Empire: the Catholic Emperor and the Catholic League against Protestant princes, joined by Denmark, then Sweden under Gustavus Adolphus, and finally France. It was the age of pike and shot: squares of pikemen with musketeers on their flanks, and cavalry that fought with pistols and carbines as much as swords. At Lützen, near Leipzig, on 16 November 1632 the Swedes beat Wallenstein's imperial army but Gustavus Adolphus was killed. A mass grave of 47 men found there in 2011 is most likely part of the Swedish 'Blue Brigade', surprised in the flank by imperial cavalry; it is the source of this group's table.
@@ -1996,15 +2104,15 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 | Situation | Group | Effect on weights | Notes |
 |---|---|---|---|
 | Attacker on target's shield side | facing | left side x1.8, right side x0.5 | Attacker works round to the target's left (shield) side. Tables: Visby 1361 |
-| Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Visby 1361 |
-| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Visby 1361, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
-| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Visby 1361, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
+| Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Visby 1361, Towton 1461 |
+| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
+| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
 | Target has no shield | - | head x1.1, torso x1.4, forearm (left) x0.7, hand (left) x0.7 | Tables assume a shield. Without one the body and head are more open. Tables: Visby 1361 |
-| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Visby 1361, Lützen 1632, Peninsular War 1808-14, Knife assault |
-| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
+| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault |
+| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
 
 **Called shot:** Roll the location twice; keep whichever result lands in the called zone. If both or neither do, keep the first. Your system sets any to-hit penalty.
 
@@ -2392,6 +2500,288 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 | Lower leg (right) | 95-98 | 97-98 | 92-98 | 99 | 92-97 | 98-99 | 93-97 | 94-97 | 95-98 | 96-98 |
 | Foot (left) | 99 | 99-00 | 99 | 00 | 98-99 | 00 | 98-99 | 98-99 | 99 | 99 |
 | Foot (right) | 00 | - | 00 | - | 00 | - | 00 | 00 | 00 | 00 |
+
+### Towton 1461 - mass grave (bone evidence) - Sword / Bill
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-28 | 01-13 | 01-31 | 01-20 | 01-33 | 01-37 | 01-30 | 01-21 |
+| Skull (right) | 29-49 | 14-48 | 32-55 | 21-35 | 34-58 | 38-65 | 31-52 | 22-37 |
+| Face | 50-60 | 49-59 | 56-68 | 36-43 | 59-67 | 66-67 | 53-62 | 38-46 |
+| Neck | 61-66 | 60-65 | 69-75 | 44-47 | 68-74 | 68-75 | 63-67 | 47-51 |
+| Groin / pelvis | 67 | 66 | - | 48-49 | - | - | 68 | 52 |
+| Shoulder (left) | 68-69 | 67 | 76-77 | 50-51 | 75 | 76 | 69 | 53-54 |
+| Shoulder (right) | 70 | 68 | 78 | 52 | 76 | 77 | 70 | 55 |
+| Upper arm (left) | 71 | 69 | 79 | 53-54 | 77 | 78 | 71 | 56-57 |
+| Upper arm (right) | 72 | 70 | 80 | 55 | - | - | 72 | 58 |
+| Forearm (left) | 73-75 | 71 | 81-83 | 56-59 | 78-80 | 79-80 | 73-75 | 59-63 |
+| Forearm (right) | 76-78 | 72-76 | 84-86 | 60-63 | 81-83 | 81-82 | 76-78 | 64-68 |
+| Hand (left) | 79-84 | 77-79 | 87-91 | 64-72 | 84-89 | 83-86 | 79-84 | 69-80 |
+| Hand (right) | 85-94 | 80-95 | 92-99 | 73-85 | 90-98 | 87-92 | 85-92 | 81-97 |
+| Thigh (left) | 95 | - | - | 86-87 | - | 93 | 93 | - |
+| Thigh (right) | 96 | 96-98 | - | 88-91 | 99 | 94-95 | 94-95 | 98 |
+| Knee (right) | 97 | 99 | - | 92-93 | - | 96 | 96 | - |
+| Lower leg (left) | 98 | - | - | 94-95 | - | 97 | 97 | - |
+| Foot (left) | 99-00 | 00 | 00 | 96-00 | 00 | 98-00 | 98-00 | 99-00 |
+
+### Towton 1461 - mass grave (bone evidence) - Poleaxe
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-42 | 01-22 | 01-43 | 01-37 | 01-47 | 01-60 | 01-44 | 01-39 |
+| Skull (right) | 43-58 | 23-53 | 44-60 | 38-52 | 48-66 | 61-84 | 45-62 | 40-54 |
+| Face | 59-88 | 54-85 | 61-92 | 53-79 | 67-90 | 85-88 | 63-89 | 55-82 |
+| Neck | 89-91 | 86-88 | 93-95 | 80-82 | 91-93 | 89-92 | 90-91 | 83-85 |
+| Forearm (right) | 92-94 | 89-93 | 96-97 | 83-87 | 94-96 | 93-94 | 92-94 | 86-91 |
+| Hand (right) | 95-97 | 94-98 | 98-99 | 88-92 | 97-99 | 95-96 | 95-97 | 92-97 |
+| Lower leg (left) | 98-00 | 99-00 | 00 | 93-00 | 00 | 97-00 | 98-00 | 98-00 |
+
+### Towton 1461 - mass grave (bone evidence) - Dagger
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-54 | 01-24 | 01-54 | 01-54 | 01-54 | 01-54 | 01-54 | 01-54 |
+| Skull (right) | 55-00 | 25-00 | 55-00 | 55-00 | 55-00 | 55-00 | 55-00 | 55-00 |
+
+### Towton 1461 - mass grave (bone evidence) - Longbow / Bow
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-32 | 01-15 | 01-36 | 01-24 | 01-38 | 01-42 | 01-35 | 01-26 |
+| Skull (right) | 33-54 | 16-52 | 37-60 | 25-40 | 39-63 | 43-71 | 36-58 | 27-44 |
+| Face | 55-68 | 53-66 | 61-76 | 41-51 | 64-75 | 72-73 | 59-71 | 45-56 |
+| Neck | 69-73 | 67-71 | 77-82 | 52-55 | 76-81 | 74-79 | 72-75 | 57-60 |
+| Groin / pelvis | 74 | 72 | - | 56-57 | - | - | 76 | 61 |
+| Shoulder (left) | 75 | 73 | 83 | 58-59 | 82 | 80 | 77 | 62 |
+| Shoulder (right) | 76 | 74 | 84 | 60 | - | - | 78 | 63 |
+| Upper arm (left) | 77 | - | 85 | 61-62 | 83 | 81 | 79 | 64 |
+| Upper arm (right) | 78 | 75 | 86 | 63 | - | - | - | 65 |
+| Forearm (left) | 79-80 | 76 | 87-88 | 64-66 | 84-85 | 82 | 80-81 | 66-69 |
+| Forearm (right) | 81-83 | 77-81 | 89-90 | 67-70 | 86-88 | 83-84 | 82-83 | 70-74 |
+| Hand (left) | 84-88 | 82-83 | 91-94 | 71-77 | 89-92 | 85-87 | 84-87 | 75-83 |
+| Hand (right) | 89-95 | 84-96 | 95-00 | 78-88 | 93-99 | 88-92 | 88-94 | 84-97 |
+| Thigh (left) | 96 | - | - | 89 | - | 93 | 95 | - |
+| Thigh (right) | 97 | 97-98 | - | 90-92 | - | 94-95 | 96 | 98 |
+| Knee (right) | - | 99 | - | 93 | - | 96 | 97 | - |
+| Lower leg (left) | 98 | - | - | 94-96 | - | 97-98 | 98 | 99 |
+| Foot (left) | 99-00 | 00 | - | 97-00 | 00 | 99-00 | 99-00 | 00 |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Sword / Longbow / Bow
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-12 | 01-06 | 01-17 | 01-06 | 01-19 | 01-15 | 01-12 | 01-10 | 01-24 |
+| Skull (right) | 13-21 | 07-21 | 18-30 | 07-11 | 20-34 | 16-26 | 13-21 | 11-17 | 25-42 |
+| Face | 22-27 | 22-27 | 31-39 | 12-14 | 35-41 | 27 | 22-26 | 18-22 | 43-54 |
+| Neck | 28-31 | 28-31 | 40-45 | 15-16 | 42-48 | 28-32 | 27-29 | 23-25 | 55-62 |
+| Chest (left) | 32-38 | 32-34 | 46-51 | 17-23 | 49-51 | 33 | 30-35 | 26-31 | 63-65 |
+| Chest (right) | 39-44 | 35-44 | 52-56 | 24-29 | 52-54 | 34 | 36-40 | 32-36 | 66-67 |
+| Abdomen | 45-51 | 45-50 | 57-62 | 30-38 | 55-57 | 35 | 41-46 | 37-42 | 68 |
+| Groin / pelvis | 52-54 | 51-53 | 63-65 | 39-43 | 58 | 36 | 47-49 | 43-45 | - |
+| Upper back | 55-58 | 54-57 | 66-69 | 44-47 | 59-64 | 37-53 | 50-57 | 46-48 | 69-70 |
+| Lower back | 59-61 | 58-60 | 70-72 | 48-50 | 65-67 | 54-62 | 58-63 | 49-50 | - |
+| Shoulder (left) | 62-63 | 61 | 73-75 | 51-52 | 68-69 | 63 | 64-65 | 51-52 | 71-74 |
+| Shoulder (right) | 64 | 62-63 | 76 | 53 | 70 | 64 | 66 | 53 | 75-76 |
+| Upper arm (left) | 65-66 | 64 | 77-78 | 54-55 | 71-72 | 65 | 67-68 | 54-55 | 77-79 |
+| Upper arm (right) | 67-68 | 65-67 | 79-80 | 56-57 | 73-74 | 66 | 69-70 | 56-57 | 80-82 |
+| Forearm (left) | 69-71 | 68 | 81-83 | 58-60 | 75-78 | 67-68 | 71-73 | 58-63 | 83-86 |
+| Forearm (right) | 72-74 | 69-73 | 84-86 | 61-63 | 79-82 | 69-70 | 74-76 | 64-69 | 87-90 |
+| Hand (left) | 75-78 | 74-75 | 87-90 | 64-67 | 83-87 | 71-73 | 77-79 | 70-77 | 91-95 |
+| Hand (right) | 79-82 | 76-82 | 91-94 | 68-71 | 88-92 | 74-76 | 80-82 | 78-85 | 96-00 |
+| Thigh (left) | 83-86 | 83-84 | 95-96 | 72-77 | 93-94 | 77-82 | 83-86 | 86-88 | - |
+| Thigh (right) | 87-90 | 85-91 | 97 | 78-83 | 95-96 | 83-87 | 87-90 | 89-91 | - |
+| Knee (left) | 91 | - | - | 84-85 | 97 | 88 | 91 | 92 | - |
+| Knee (right) | 92 | 92-93 | - | 86-87 | - | 89 | 92 | 93 | - |
+| Lower leg (left) | 93-95 | 94 | 98 | 88-92 | 98 | 90-93 | 93-95 | 94-95 | - |
+| Lower leg (right) | 96-97 | 95-97 | 99 | 93-95 | 99 | 94-96 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 98 | 00 | 96-98 | 00 | 97-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | 99-00 | - | 99-00 | - | 00 | 00 | 00 | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Bill
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-13 | 01-06 | 01-19 | 01-07 | 01-21 | 01-17 | 01-13 | 01-11 | 01-25 |
+| Skull (right) | 14-23 | 07-23 | 20-33 | 08-12 | 22-37 | 18-29 | 14-23 | 12-19 | 26-44 |
+| Face | 24-30 | 24-29 | 34-42 | 13-15 | 38-44 | 30 | 24-29 | 20-25 | 45-57 |
+| Neck | 31-34 | 30-33 | 43-48 | 16-17 | 45-51 | 31-36 | 30-33 | 26-29 | 58-65 |
+| Chest (left) | 35-40 | 34-36 | 49-54 | 18-23 | 52-54 | 37 | 34-38 | 30-34 | 66-68 |
+| Chest (right) | 41-45 | 37-45 | 55-59 | 24-29 | 55-57 | 38 | 39-43 | 35-39 | 69-70 |
+| Abdomen | 46-51 | 46-51 | 60-65 | 30-37 | 58-60 | 39 | 44-48 | 40-44 | 71 |
+| Groin / pelvis | 52-54 | 52-54 | 66-68 | 38-42 | 61 | 40 | 49-50 | 45-46 | - |
+| Upper back | 55-58 | 55-58 | 69-71 | 43-46 | 62-66 | 41-55 | 51-58 | 47-49 | 72 |
+| Lower back | 59-61 | 59-61 | 72-73 | 47-49 | 67-69 | 56-64 | 59-64 | 50-51 | - |
+| Shoulder (left) | 62-63 | 62 | 74-76 | 50-51 | 70 | 65 | 65-66 | 52-53 | 73-76 |
+| Shoulder (right) | 64 | 63-64 | 77 | 52 | 71 | 66 | 67 | 54 | 77-78 |
+| Upper arm (left) | 65-66 | 65 | 78-79 | 53-54 | 72 | 67 | 68-69 | 55-56 | 79-80 |
+| Upper arm (right) | 67-68 | 66-68 | 80-81 | 55-56 | 73 | 68 | 70-71 | 57-58 | 81-82 |
+| Forearm (left) | 69-71 | 69 | 82-84 | 57-59 | 74-77 | 69-70 | 72-73 | 59-64 | 83-86 |
+| Forearm (right) | 72-74 | 70-74 | 85-87 | 60-62 | 78-81 | 71-72 | 74-75 | 65-70 | 87-90 |
+| Hand (left) | 75-78 | 75-76 | 88-91 | 63-66 | 82-86 | 73-74 | 76-78 | 71-77 | 91-95 |
+| Hand (right) | 79-82 | 77-82 | 92-95 | 67-70 | 87-91 | 75-76 | 79-81 | 78-84 | 96-00 |
+| Thigh (left) | 83-86 | 83-84 | 96 | 71-77 | 92-93 | 77-82 | 82-86 | 85-87 | - |
+| Thigh (right) | 87-90 | 85-91 | 97 | 78-83 | 94-95 | 83-87 | 87-90 | 88-90 | - |
+| Knee (left) | 91 | - | - | 84-85 | 96 | 88 | 91 | 91 | - |
+| Knee (right) | 92 | 92-93 | - | 86-87 | 97 | 89 | 92 | 92 | - |
+| Lower leg (left) | 93-95 | 94 | 98 | 88-92 | 98 | 90-93 | 93-95 | 93-95 | - |
+| Lower leg (right) | 96-97 | 95-97 | 99 | 93-95 | 99 | 94-96 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 98 | 00 | 96-98 | 00 | 97-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | 99-00 | - | 99-00 | - | 00 | 00 | 00 | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Poleaxe
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-14 | 01-07 | 01-20 | 01-07 | 01-22 | 01-18 | 01-14 | 01-12 | 01-26 |
+| Skull (right) | 15-25 | 08-25 | 21-35 | 08-13 | 23-39 | 19-31 | 15-25 | 13-21 | 27-46 |
+| Face | 26-32 | 26-32 | 36-45 | 14-17 | 40-47 | 32 | 26-31 | 22-27 | 47-59 |
+| Neck | 33-37 | 33-36 | 46-52 | 18-19 | 48-54 | 33-38 | 32-35 | 28-31 | 60-68 |
+| Chest (left) | 38-43 | 37-39 | 53-57 | 20-26 | 55-57 | 39 | 36-40 | 32-36 | 69-70 |
+| Chest (right) | 44-48 | 40-48 | 58-62 | 27-32 | 58-60 | 40 | 41-45 | 37-41 | 71-72 |
+| Abdomen | 49-54 | 49-54 | 63-67 | 33-41 | 61-63 | 41 | 46-50 | 42-46 | 73 |
+| Groin / pelvis | 55-57 | 55-57 | 68-69 | 42-46 | 64 | 42 | 51-52 | 47-48 | - |
+| Upper back | 58-61 | 58-60 | 70-72 | 47-50 | 65-69 | 43-57 | 53-60 | 49-51 | 74-75 |
+| Lower back | 62-64 | 61-63 | 73-74 | 51-53 | 70-72 | 58-66 | 61-66 | 52-53 | - |
+| Shoulder (left) | 65-66 | 64 | 75-76 | 54-55 | 73 | 67 | 67-68 | 54-55 | 76-78 |
+| Shoulder (right) | 67 | 65-66 | 77 | 56 | 74 | 68 | 69 | 56 | 79-80 |
+| Upper arm (left) | 68-69 | 67 | 78-79 | 57-58 | 75 | 69 | 70-71 | 57-58 | 81-82 |
+| Upper arm (right) | 70-71 | 68-70 | 80-81 | 59-60 | 76 | 70 | 72 | 59-60 | 83-84 |
+| Forearm (left) | 72-74 | 71 | 82-84 | 61-63 | 77-79 | 71-72 | 73-74 | 61-66 | 85-87 |
+| Forearm (right) | 75-77 | 72-76 | 85-87 | 64-66 | 80-82 | 73-74 | 75-76 | 67-71 | 88-90 |
+| Hand (left) | 78-81 | 77-78 | 88-91 | 67-70 | 83-87 | 75-76 | 77-79 | 72-78 | 91-95 |
+| Hand (right) | 82-84 | 79-84 | 92-95 | 71-74 | 88-92 | 77-78 | 80-82 | 79-85 | 96-00 |
+| Thigh (left) | 85-87 | 85-86 | 96 | 75-80 | 93-94 | 79-83 | 83-86 | 86-88 | - |
+| Thigh (right) | 88-90 | 87-92 | 97 | 81-86 | 95-96 | 84-88 | 87-90 | 89-91 | - |
+| Knee (left) | 91 | - | - | 87 | 97 | 89 | 91 | 92 | - |
+| Knee (right) | 92 | 93-94 | - | 88 | - | 90 | 92 | 93 | - |
+| Lower leg (left) | 93-95 | 95 | 98 | 89-93 | 98 | 91-94 | 93-95 | 94-95 | - |
+| Lower leg (right) | 96-97 | 96-98 | 99 | 94-96 | 99 | 95-97 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 99 | 00 | 97-99 | 00 | 98-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | 00 | - | 00 | - | 00 | 00 | 00 | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Axe
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-13 | 01-06 | 01-19 | 01-06 | 01-21 | 01-16 | 01-13 | 01-11 | 01-25 |
+| Skull (right) | 14-23 | 07-22 | 20-33 | 07-11 | 22-36 | 17-28 | 14-23 | 12-19 | 26-44 |
+| Face | 24-29 | 23-28 | 34-42 | 12-14 | 37-43 | 29 | 24-28 | 20-24 | 45-56 |
+| Neck | 30-33 | 29-32 | 43-48 | 15-16 | 44-50 | 30-34 | 29-32 | 25-28 | 57-64 |
+| Chest (left) | 34-39 | 33-35 | 49-53 | 17-22 | 51-53 | 35 | 33-37 | 29-32 | 65-66 |
+| Chest (right) | 40-44 | 36-43 | 54-57 | 23-27 | 54-55 | 36 | 38-41 | 33-36 | 67-68 |
+| Abdomen | 45-49 | 44-48 | 58-62 | 28-34 | 56-58 | 37 | 42-46 | 37-40 | 69 |
+| Groin / pelvis | 50-51 | 49-50 | 63-64 | 35-38 | 59 | - | 47-48 | 41-42 | - |
+| Upper back | 52-54 | 51-53 | 65-67 | 39-41 | 60-63 | 38-50 | 49-55 | 43-45 | 70 |
+| Lower back | 55-56 | 54-55 | 68-69 | 42-43 | 64-65 | 51-57 | 56-60 | 46-47 | - |
+| Shoulder (left) | 57-58 | 56 | 70-72 | 44-45 | 66-67 | 58 | 61-62 | 48-49 | 71-74 |
+| Shoulder (right) | 59 | 57-58 | 73 | 46 | 68 | 59 | 63 | 50 | 75-76 |
+| Upper arm (left) | 60-61 | 59 | 74-75 | 47-48 | 69-70 | 60 | 64-65 | 51-52 | 77-79 |
+| Upper arm (right) | 62-63 | 60-62 | 76-77 | 49-50 | 71 | 61 | 66-67 | 53-54 | 80-82 |
+| Forearm (left) | 64-66 | 63 | 78-80 | 51-53 | 72-75 | 62-63 | 68-69 | 55-60 | 83-86 |
+| Forearm (right) | 67-69 | 64-68 | 81-83 | 54-56 | 76-79 | 64-65 | 70-71 | 61-66 | 87-90 |
+| Hand (left) | 70-73 | 69-70 | 84-87 | 57-60 | 80-84 | 66-67 | 72-74 | 67-74 | 91-95 |
+| Hand (right) | 74-77 | 71-77 | 88-91 | 61-64 | 85-89 | 68-69 | 75-77 | 75-82 | 96-00 |
+| Thigh (left) | 78-82 | 78-79 | 92-93 | 65-72 | 90-91 | 70-76 | 78-82 | 83-86 | - |
+| Thigh (right) | 83-87 | 80-88 | 94-95 | 73-80 | 92-93 | 77-83 | 83-87 | 87-90 | - |
+| Knee (left) | 88 | 89 | 96 | 81-82 | 94 | 84-85 | 88 | 91 | - |
+| Knee (right) | 89 | 90-91 | 97 | 83-84 | 95 | 86-87 | 89 | 92 | - |
+| Lower leg (left) | 90-93 | 92-93 | 98 | 85-90 | 96-97 | 88-92 | 90-93 | 93-95 | - |
+| Lower leg (right) | 94-96 | 94-97 | 99 | 91-94 | 98 | 93-95 | 94-96 | 96-97 | - |
+| Foot (left) | 97-99 | 98 | 00 | 95-98 | 99 | 96-98 | 97-99 | 98-99 | - |
+| Foot (right) | 00 | 99-00 | - | 99-00 | 00 | 99-00 | 00 | 00 | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Dagger
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-11 | 01-05 | 01-14 | 01-06 | 01-17 | 01-14 | 01-11 | 01-09 | 01-20 |
+| Skull (right) | 12-19 | 06-19 | 15-25 | 07-10 | 18-30 | 15-25 | 12-19 | 10-16 | 21-35 |
+| Face | 20-27 | 20-27 | 26-36 | 11-14 | 31-39 | 26 | 20-26 | 17-23 | 36-50 |
+| Neck | 28-34 | 28-34 | 37-46 | 15-18 | 40-50 | 27-35 | 27-32 | 24-29 | 51-63 |
+| Chest (left) | 35-43 | 35-38 | 47-53 | 19-28 | 51-54 | 36 | 33-39 | 30-36 | 64-66 |
+| Chest (right) | 44-50 | 39-51 | 54-59 | 29-36 | 55-57 | 37 | 40-45 | 37-42 | 67-69 |
+| Abdomen | 51-59 | 52-59 | 60-66 | 37-48 | 58-61 | 38 | 46-52 | 43-49 | 70 |
+| Groin / pelvis | 60-63 | 60-62 | 67-69 | 49-55 | 62-63 | 39 | 53-55 | 50-52 | - |
+| Upper back | 64-68 | 63-67 | 70-73 | 56-60 | 64-70 | 40-61 | 56-65 | 53-56 | 71-72 |
+| Lower back | 69-72 | 68-70 | 74-76 | 61-64 | 71-73 | 62-73 | 66-73 | 57-59 | - |
+| Shoulder (left) | 73-74 | 71 | 77-79 | 65-66 | 74-75 | 74 | 74-75 | 60-61 | 73-76 |
+| Shoulder (right) | 75 | 72-73 | 80 | 67 | 76 | 75 | 76 | 62 | 77-78 |
+| Upper arm (left) | 76-77 | 74 | 81-82 | 68-69 | 77-78 | 76 | 77-78 | 63-64 | 79-80 |
+| Upper arm (right) | 78-79 | 75-77 | 83-84 | 70-71 | 79 | 77 | 79-80 | 65-66 | 81-82 |
+| Forearm (left) | 80-82 | 78 | 85-87 | 72-74 | 80-83 | 78-79 | 81-82 | 67-72 | 83-86 |
+| Forearm (right) | 83-85 | 79-83 | 88-90 | 75-77 | 84-87 | 80-81 | 83-84 | 73-78 | 87-90 |
+| Hand (left) | 86-89 | 84-85 | 91-94 | 78-81 | 88-92 | 82-84 | 85-87 | 79-86 | 91-95 |
+| Hand (right) | 90-93 | 86-92 | 95-98 | 82-85 | 93-97 | 85-87 | 88-90 | 87-94 | 96-00 |
+| Thigh (left) | 94-95 | 93 | 99 | 86-88 | 98 | 88-90 | 91-92 | 95-96 | - |
+| Thigh (right) | 96-97 | 94-96 | 00 | 89-91 | 99 | 91-93 | 93-94 | 97 | - |
+| Knee (left) | - | - | - | 92 | - | 94 | 95 | - | - |
+| Knee (right) | - | 97 | - | 93 | - | 95 | 96 | - | - |
+| Lower leg (left) | 98 | 98 | - | 94-95 | 00 | 96-97 | 97 | 98 | - |
+| Lower leg (right) | 99 | 99 | - | 96-97 | - | 98 | 98 | 99 | - |
+| Foot (left) | 00 | - | - | 98-99 | - | 99 | 99 | 00 | - |
+| Foot (right) | - | 00 | - | 00 | - | 00 | 00 | - | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Spear
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-09 | 01-04 | 01-13 | 01-05 | 01-16 | 01-12 | 01-09 | 01-08 | 01-21 |
+| Skull (right) | 10-16 | 05-16 | 14-23 | 06-08 | 17-28 | 13-21 | 10-16 | 09-14 | 22-36 |
+| Face | 17-23 | 17-23 | 24-33 | 09-11 | 29-36 | 22 | 17-22 | 15-20 | 37-51 |
+| Neck | 24-26 | 24-26 | 34-37 | 12-13 | 37-41 | 23-26 | 23-24 | 21-23 | 52-58 |
+| Chest (left) | 27-35 | 27-30 | 38-46 | 14-22 | 42-46 | 27-28 | 25-32 | 24-31 | 59-62 |
+| Chest (right) | 36-43 | 31-44 | 47-53 | 23-30 | 47-50 | 29 | 33-38 | 32-38 | 63-66 |
+| Abdomen | 44-52 | 45-53 | 54-61 | 31-42 | 51-55 | 30 | 39-46 | 39-46 | 67 |
+| Groin / pelvis | 53-56 | 54-57 | 62-65 | 43-49 | 56-57 | 31 | 47-49 | 47-49 | - |
+| Upper back | 57-61 | 58-62 | 66-70 | 50-54 | 58-65 | 32-54 | 50-60 | 50-53 | 68-69 |
+| Lower back | 62-65 | 63-66 | 71-74 | 55-58 | 66-69 | 55-67 | 61-68 | 54-56 | 70 |
+| Shoulder (left) | 66-67 | 67 | 75-76 | 59-60 | 70-71 | 68 | 69 | 57-58 | 71-74 |
+| Shoulder (right) | 68 | 68 | 77 | 61 | 72 | 69 | 70 | 59 | 75-76 |
+| Upper arm (left) | 69-70 | 69 | 78-79 | 62-63 | 73-74 | 70 | 71 | 60-61 | 77-79 |
+| Upper arm (right) | 71-72 | 70-72 | 80-81 | 64-65 | 75 | 71 | 72 | 62-63 | 80-82 |
+| Forearm (left) | 73-75 | 73 | 82-84 | 66-68 | 76-79 | 72-73 | 73-74 | 64-68 | 83-86 |
+| Forearm (right) | 76-78 | 74-77 | 85-87 | 69-71 | 80-83 | 74-75 | 75-76 | 69-73 | 87-90 |
+| Hand (left) | 79-81 | 78-79 | 88-91 | 72-74 | 84-88 | 76-77 | 77-79 | 74-80 | 91-95 |
+| Hand (right) | 82-84 | 80-85 | 92-95 | 75-77 | 89-93 | 78-79 | 80-82 | 81-87 | 96-00 |
+| Thigh (left) | 85-87 | 86-87 | 96 | 78-82 | 94-95 | 80-84 | 83-86 | 88-90 | - |
+| Thigh (right) | 88-90 | 88-93 | 97 | 83-87 | 96-97 | 85-89 | 87-90 | 91-93 | - |
+| Knee (left) | 91 | - | - | 88 | - | 90 | 91 | 94 | - |
+| Knee (right) | 92 | 94 | - | 89 | - | 91 | 92 | 95 | - |
+| Lower leg (left) | 93-95 | 95 | 98 | 90-93 | 98 | 92-95 | 93-95 | 96-97 | - |
+| Lower leg (right) | 96-97 | 96-98 | 99 | 94-96 | 99 | 96-97 | 96-97 | 98 | - |
+| Foot (left) | 98-99 | 99 | 00 | 97-99 | 00 | 98-99 | 98-99 | 99 | - |
+| Foot (right) | 00 | 00 | - | 00 | - | 00 | 00 | 00 | - |
+
+### Towton 1461 - gameplay-adjusted (before armour) - Crossbow
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-13 | 01-06 | 01-19 | 01-07 | 01-21 | 01-17 | 01-13 | 01-11 | 01-25 |
+| Skull (right) | 14-23 | 07-23 | 20-33 | 08-12 | 22-37 | 18-30 | 14-23 | 12-19 | 26-44 |
+| Face | 24-29 | 24-29 | 34-42 | 13-15 | 38-44 | 31 | 24-29 | 20-24 | 45-57 |
+| Neck | 30-33 | 30-33 | 43-47 | 16-17 | 45-50 | 32-36 | 30-32 | 25-27 | 58-64 |
+| Chest (left) | 34-39 | 34-36 | 48-53 | 18-24 | 51-53 | 37 | 33-38 | 28-33 | 65-67 |
+| Chest (right) | 40-45 | 37-46 | 54-58 | 25-30 | 54-56 | 38 | 39-43 | 34-38 | 68-69 |
+| Abdomen | 46-51 | 47-52 | 59-64 | 31-39 | 57-59 | 39 | 44-49 | 39-43 | 70 |
+| Groin / pelvis | 52-54 | 53-55 | 65-67 | 40-44 | 60 | 40 | 50-51 | 44-45 | - |
+| Upper back | 55-58 | 56-59 | 68-70 | 45-48 | 61-65 | 41-56 | 52-59 | 46-48 | 71-72 |
+| Lower back | 59-61 | 60-62 | 71-73 | 49-51 | 66-68 | 57-65 | 60-65 | 49-50 | - |
+| Shoulder (left) | 62-63 | 63 | 74-76 | 52-53 | 69-70 | 66 | 66-67 | 51-52 | 73-76 |
+| Shoulder (right) | 64 | 64-65 | 77 | 54 | 71 | 67 | 68 | 53 | 77-78 |
+| Upper arm (left) | 65-66 | 66 | 78-79 | 55-56 | 72-73 | 68 | 69-70 | 54-55 | 79-80 |
+| Upper arm (right) | 67-68 | 67-69 | 80-81 | 57-58 | 74-75 | 69 | 71-72 | 56-57 | 81-82 |
+| Forearm (left) | 69-71 | 70 | 82-84 | 59-61 | 76-79 | 70-71 | 73-74 | 58-63 | 83-86 |
+| Forearm (right) | 72-74 | 71-75 | 85-87 | 62-64 | 80-83 | 72-73 | 75-76 | 64-69 | 87-90 |
+| Hand (left) | 75-78 | 76-77 | 88-91 | 65-68 | 84-88 | 74-75 | 77-79 | 70-77 | 91-95 |
+| Hand (right) | 79-82 | 78-83 | 92-95 | 69-72 | 89-93 | 76-77 | 80-82 | 78-85 | 96-00 |
+| Thigh (left) | 83-86 | 84-85 | 96 | 73-78 | 94-95 | 78-82 | 83-86 | 86-88 | - |
+| Thigh (right) | 87-90 | 86-91 | 97 | 79-84 | 96-97 | 83-87 | 87-90 | 89-91 | - |
+| Knee (left) | 91 | - | - | 85-86 | - | 88 | 91 | 92 | - |
+| Knee (right) | 92 | 92-93 | - | 87-88 | - | 89 | 92 | 93 | - |
+| Lower leg (left) | 93-95 | 94 | 98 | 89-93 | 98 | 90-93 | 93-95 | 94-95 | - |
+| Lower leg (right) | 96-97 | 95-97 | 99 | 94-96 | 99 | 94-96 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 98 | 00 | 97-99 | 00 | 97-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | 99-00 | - | 00 | - | 00 | 00 | 00 | - |
 
 ### Lützen 1632 - mass grave (bone evidence) - Pistol/carbine / Matchlock
 
@@ -3402,6 +3792,7 @@ Penalties add up; each total is capped at -60%.
 | Mail over padding | 2 | 1 | 1 | 1 | 0 | 0 | 0 |
 | Coat of plates / brigandine | 2 | 2 | 1 | 1 | 1 | 0 | 0 |
 | Plate | 3 | 2 | 1 | 2 | 1 | 0 | 0 |
+| Jack (many layers of linen) | 2 | 1 | 1 | 1 | 0 | 0 | 0 |
 | Buff coat (thick oiled leather) | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
 | Steel cuirass (cuirassier, carabinier) | 3 | 2 | 1 | 1 | 2 | 1 | 0 |
 | Cavalry helmet (brass or steel, with crest) | 2 | 1 | 1 | 1 | 1 | 0 | 0 |
@@ -3416,7 +3807,7 @@ Penalties add up; each total is capped at -60%.
 | Rifle plate (SAPI) | 3 | 3 | 1 | 3 | 3 | 2 | 0 |
 | AP rifle plate (ESAPI) | 3 | 3 | 1 | 3 | 3 | 2 | 2 |
 
-Weapon armour defeat: Axe (hand or long-hafted): -1 vs cut; Spiked club / morning star (knout): -1 vs pierce; Crossbow (bolts): -1 vs pierce
+Weapon armour defeat: Axe (hand or long-hafted): -1 vs cut; Spiked club / morning star (knout): -1 vs pierce; Poleaxe (axe, hammer and spike): -1 vs crush, -1 vs pierce; Longbow (English war bow, bodkin and broadhead arrows): -1 vs pierce; Crossbow (bolts): -1 vs pierce
 
 ### Armour Kits: Visby 1361
 
@@ -3435,6 +3826,24 @@ Weapon armour defeat: Axe (hand or long-hafted): -1 vs cut; Spiked club / mornin
 | greave (Lower legs) | - | - | Plate 01-50 |
 | sabaton (Feet) | - | - | Mail |
 | shield (Visby tables) | Yes | Yes | Yes |
+
+### Armour Kits: Wars of the Roses (c.1460)
+
+| Slot (covers) | Jack and sallet (archer or billman, c.1460) | Brigandine, sallet and arm splints (c.1460) |
+|---|---|---|
+| helm (Skull) | Plate | Plate |
+| visor (Face) | - | - |
+| gorget (Neck) | Mail 01-50 | Mail |
+| torso_upper (Chest, upper back) | Jack | Coat of plates / brigandine |
+| torso_lower (Abdomen, lower back) | Jack | Coat of plates / brigandine |
+| skirt (Groin / pelvis) | Jack | Mail |
+| pauldron (Shoulders) | Jack | Plate 01-60 |
+| arm (Upper arms, forearms) | Jack 01-70 | Plate 01-50 |
+| gauntlet (Hands) | - | Plate 01-50 |
+| leg (Thighs, knees) | - | Mail over padding 01-40 |
+| greave (Lower legs) | - | - |
+| sabaton (Feet) | - | - |
+| shield (Visby tables) | No | No |
 
 ### Armour Kits: Medieval, generic
 
@@ -3500,7 +3909,10 @@ Sources: Visby kit contents follow the finds summarised in Thordeman (1939): mai
 | Axe (hand or long-hafted) | 01-85 | - | 86-00 | - | melee: armed |
 | Spiked club / morning star (knout) | - | 01-45 | 46-00 | - | melee: armed |
 | Spear / lance | 01-10 | 11-00 | - | - | melee: armed |
+| Bill (English bill, hooked polearm) | 01-60 | 61-90 | 91-00 | - | melee: armed |
+| Poleaxe (axe, hammer and spike) | 01-20 | 21-55 | 56-00 | - | melee: armed |
 | Bow (war arrows) | 01-05 | 06-00 | - | - | - |
+| Longbow (English war bow, bodkin and broadhead arrows) | 01-05 | 06-00 | - | - | - |
 | Crossbow (bolts) | - | 01-00 | - | - | - |
 | Sling (stones, lead bullets) | - | - | 01-00 | - | - |
 | Dagger / knife | 01-30 | 31-00 | - | - | melee: armed |

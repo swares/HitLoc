@@ -1,7 +1,7 @@
 # HitLoc - historical hit locations & wounds for RPGs
 
 Data-driven **d100 hit-location tables** weighted by real wound records - from the
-Visby skeletons of 1361 and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
+Visby skeletons of 1361, Towton (1461) and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
 War and the Indian Wars to both World Wars, Korea, Vietnam, Iraq and Afghanistan - with
 **system-agnostic wound effects**, armour, and wounded-fighter tracking for any tabletop
 RPG. All outputs are generated from the YAML files in `data/`, so the printed tables and
@@ -147,7 +147,7 @@ figures are illustrations, not research: dress and colours are typical, not exac
 
 ### Period pictures
 
-73 of the 103 example combatants link to a period picture of such a fighter on Wikimedia
+78 of the 109 example combatants link to a period picture of such a fighter on Wikimedia
 Commons: a painting, uniform plate, wartime photograph or surviving armour (the "picture"
 link next to the name in the roller, "(picture)" under the name in the PDF, a Picture
 column in `tables.md`). The rules:
@@ -159,9 +159,9 @@ column in `tables.md`). The rules:
   reconstructions. Where the nearest period image is not an exact match, the caption says
   so: Brunswick rather than Hessian troops in America, Morier's grenadiers of 1751, Catlin's
   Comanche of 1834, prints of the Thames made in 1833, Froissart's Crécy crossbowmen.
-- **No picture rather than a weak one.** 21 examples (and the 9 generic ones under
+- **No picture rather than a weak one.** 22 examples (and the 9 generic ones under
   Reference, Close combat and Unarmed) have none: no suitable period image was found
-  (the Finnish hakkapeliitta, Croat horsemen, Loyalist rangers, the Canadian militia,
+  (the Finnish hakkapeliitta, Croat horsemen, a Towton billman, Loyalist rangers, the Canadian militia,
   North Korean and Vietnamese fighters), or the images available show the dead,
   prisoners or propaganda, which this project doesn't link.
 
@@ -269,7 +269,8 @@ knife-assault table, unarmed strikes on the MMA table). A weapon can name its ow
   (8 deaths in 424 casualties), so survivors' records show nearly every edged hit;
 - the sharpened entrenching tool and the clubbed musket roll on the Visby gameplay-adjusted
   table (chops and blows), with `fallback_mods: [no_shield]` applied automatically because
-  their users carry no shield. No wound-location data exists for either.
+  their users carry no shield. No wound-location data exists for either;
+- the bill and poleaxe roll on the Towton gameplay-adjusted table.
 
 A table's `native` says what its own data is (armed, unarmed or gunfire; gunfire covers
 any shooting, arrows included); `also_native` adds further kinds, e.g. the Peninsular table
@@ -295,6 +296,9 @@ Firearms and explosives (any weapon with a `threat`) roll severity on the firear
   9% in the legs: unarmoured men, many mounted, shot at close range. Also offered on both
   Visby tables (126 arrow and bolt wounds there fell, like blade wounds, mostly on the lower
   body, so the Visby weights are used unchanged) and on the random-hit baseline.
+- **Longbow** - Towton tables. On the evidence table it uses all the recorded wounds
+  together (bone evidence under-counts arrows, which mostly wounded soft tissue); ignores 1
+  armour step against pierce (design estimate).
 - **Crossbow** - Visby tables and baseline; small head bias and ignores 1 armour step
   against pierce (design estimates). Visby does not count bolts apart from arrows.
 - **Sling** - Visby gameplay-adjusted table and baseline; crush wounds, head bias (design
@@ -302,6 +306,25 @@ Firearms and explosives (any weapon with a `threat`) roll severity on the firear
 - Arrows and bolts are pierce wounds, not gunfire: they roll severity on the default tiers.
   Check: on the arrow table, 32% of bow hits are fatal untreated (lethal in days or less);
   the report gives 26 deaths in 83 cases (31%), many of them men hit several times.
+
+## Wars of the Roses (Towton 1461)
+
+- *Towton 1461 - mass grave*: death wounds on the men buried at Towton Hall, most likely
+  Lancastrians cut down in the rout (Holst and Sutherland 2014, "Towton Revisited", in
+  Eickhoff and Schopper (eds), *Schlachtfeld und Massengrab*, pp. 97-129). Transcribed wound
+  by wound from the chapter's Tab. 12 (124 head wounds on 31 skulls: 79 blade, 32 blunt, 13
+  penetrating) and Tab. 9 (56 injured bones below the head, mostly hands and forearms, and
+  9 neck vertebrae) into `data/sources/towton-1461-mass-grave.csv`. Head wounds are counted
+  per wound and body injuries per bone, as published. Blades roll on the blade wounds, the
+  poleaxe on the blunt ones and the dagger on the penetrating ones. The chapter's text
+  percentages imply about 132 head wounds; its table lists 124, which the table follows.
+- *Gameplay-adjusted* table: the bone evidence (74% head and neck, almost no trunk)
+  re-weighted by stated corrections, as for Visby: trunk raised to 30%, head and neck
+  lowered to 31%, legs raised to 18% (design estimates).
+- New weapons: bill, poleaxe, longbow. New kits: jack and sallet (archer or billman),
+  brigandine and sallet (retainer); the man-at-arms uses the full plate kit (c.1450). New
+  material: jack (many layers of linen; design estimate). The figures draw the jack in the
+  side's livery colour.
 
 ## Thirty Years' War (pike and shot)
 
@@ -394,6 +417,8 @@ Locations whose weight rounds to 0% are left off that d100 column.
 |---|---|---|---|
 | Visby 1361 - bone evidence | evidence | fitted | Ingelmark summaries (placeholder for per-bone counts) |
 | Visby 1361 - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table |
+| Towton 1461 - mass grave | evidence | historical (per weapon) | Holst and Sutherland 2014, Tab. 9 and 12: 124 head wounds, 56 bones |
+| Towton 1461 - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table |
 | Lützen 1632 - mass grave | evidence, armour allowed | historical (per weapon) | Nicklisch et al., PLoS ONE 2017, 47 men, 69 injuries |
 | Thirty Years' War - all hits | adjusted | extrapolated | 74.5% Peninsular wounded + 25.5% Lützen killed |
 | American Revolution - disabled veterans' wounds | evidence, armour allowed | historical (regions; sides pooled) | Federal invalid pension lists 1792-95 (MEAD dataset, Penn 2021), 344 men |
@@ -428,6 +453,13 @@ figures. Weapons with identical location bias share one situation page in the PD
 The musket-era tables are survivors' records: pensioners disabled for life, and French
 officers of whom 95% survived. Their all-hits blends borrow the Civil War dead for where
 fatal hits landed, and the killed shares come from casualty totals; both are estimates.
+
+The Towton tables come from one grave of men killed in a rout, many probably after they
+had fallen or lost their helmets; they show where men were wounded in that rout, not in
+the fighting line. **Wittstock 1636** (Thirty Years' War, 125 dead, 88 complete skeletons
+examined) is pending: its trauma analysis (Jungklaus, König and Wahl, in the same
+*Schlachtfeld und Massengrab* volume, pp. 285-304) is in print only and was not available
+for this project.
 
 The arrow table is a collection of case reports, not a census: dramatic skull and trunk
 cases were more likely to be written up. Its 40 cases from routine casualty lists (none

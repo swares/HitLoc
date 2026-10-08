@@ -49,6 +49,38 @@ conflicts:
       - "Swedish History Museum, 'Skull from the Battle of Visby'."
       - "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
 
+  "Wars of the Roses":
+    period: "Towton, 29 March 1461"
+    map: {bbox: [-6.5, 50, 2, 56.2], sites: [{name: Towton, lat: 53.83, lon: -1.27}]}
+    summary: >
+      The Wars of the Roses (1455-1485) were fought between the houses of York and
+      Lancaster for the English crown. At Towton in Yorkshire on Palm Sunday 1461, the
+      Yorkist army of Edward IV defeated Henry VI's Lancastrians in a snowstorm, after an
+      archery exchange and hours of fighting on foot; the Lancastrian army broke and was cut
+      down in the rout. Contemporary claims of 28,000 dead are thought exaggerated, but it is
+      often called the bloodiest battle fought in England. In 1996 building work at Towton
+      Hall uncovered a mass grave of about 38 men, which gives the most detailed picture of
+      medieval battle wounds yet recorded.
+    sides:
+      - name: "Yorkists"
+        who: "Edward IV's army: his retinue and those of Warwick, Fauconberg and (late in the day) Norfolk."
+        armour: "Nobles and men-at-arms in full plate, fighting on foot; retainers in brigandines and sallets; archers and billmen in padded jacks and sallets."
+        look: {colour: "#6b2140", trousers: "#2f4f8f"}
+      - name: "Lancastrians"
+        who: "Henry VI's army under the Duke of Somerset, raised largely from the north."
+        armour: "The same mix as the Yorkists. The head wounds in the Towton grave suggest many of the dead had lost or taken off their helmets in the rout."
+        look: {colour: "#2c4f86", trousers: "#d8d4c8"}
+    examples:
+      - {name: "Yorkist man-at-arms", side: "Yorkists", kit: full_plate, weapon: poleaxe, notes: "Full harness, fighting on foot with the poleaxe.", image: {file: "MS Ghent - Battle of Barnet.jpg", caption: "Edward IV's army at Barnet, 1471, from the Ghent manuscript painted a few years later"}}
+      - {name: "Yorkist archer", side: "Yorkists", kit: jack_sallet, weapon: longbow, notes: "By the traditional account, shot with the wind and snow at his back.", image: {file: "Arcieri inglesi battaglia di Crécy.jpg", caption: "English longbowmen at Crécy, from a 15th-century Froissart manuscript (painted a century after the battle, near Towton's time)"}}
+      - {name: "Yorkist billman", side: "Yorkists", kit: jack_sallet, weapon: bill, notes: "Jack, sallet and bill: the common infantryman."}
+      - {name: "Lancastrian man-at-arms", side: "Lancastrians", kit: full_plate, weapon: sword, notes: "Full harness; sword and dagger in the press.", image: {file: "Battle of Campston Hill, from the 1914 edition of the Pageant of the birth, life and death of Richard Beauchamp, Earl of Warwick, K.G.png", caption: "Men-at-arms in battle, from the Beauchamp Pageant (English drawings of c. 1483-94)"}}
+      - {name: "Lancastrian retainer", side: "Lancastrians", kit: brigandine_sallet, weapon: bill, notes: "A lord's better-equipped retainer.", image: {file: "Mid 15th century brigandine.jpg", caption: "Soldier in a brigandine, from a Breton manuscript of the 1440s"}}
+      - {name: "Lancastrian archer", side: "Lancastrians", kit: jack_sallet, weapon: longbow, notes: "By the traditional account, shot into the wind and fell short.", image: {file: "Battle of crecy froissart.jpg", caption: "English and Genoese archers at Crécy, from a 15th-century Froissart manuscript (a near match in time)"}}
+    sources:
+      - "Fiorato V., Boylston A. and Knüsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007)."
+      - "Holst M. and Sutherland T., 'Towton Revisited', in Eickhoff and Schopper (eds), Schlachtfeld und Massengrab (2014), pp. 97-129."
+
   "Thirty Years' War":
     period: "1618-1648"
     map: {bbox: [3, 46, 22, 56], sites: [{name: Lützen, lat: 51.25, lon: 12.14}]}

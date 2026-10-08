@@ -9,7 +9,7 @@
 # loc_bias     - optional per-location multipliers, applied after zone_bias
 # armor_defeat - armour protection steps this weapon ignores, by mechanism
 # icon         - how the combatant figures draw it (templates/figure.js): sword, sabre,
-#                dagger, axe, club, spear, lance, bow, crossbow, sling, long_gun,
+#                dagger, axe, club, spear, bill, poleaxe, lance, bow, crossbow, sling, long_gun,
 #                bayonet_gun, musket_butt, modern_rifle, machine_gun, smg, pistol, launcher,
 #                grenade, stick_grenade, device, rammer, stake, spade, fist
 # melee_table  - for a close-combat weapon: the table it rolls on whenever the current table
@@ -86,6 +86,36 @@ weapons:
     confidence: extrapolated
     notes: "Thrusting weapon aimed at the centre mass and face over the shield rim."
 
+  - id: bill
+    name: "Bill (English bill, hooked polearm)"
+    short: "Bill"
+    icon: bill
+    era: medieval
+    melee: armed
+    melee_table: towton-1461-all-hits
+    mechanisms: {cut: 60, pierce: 30, crush: 10}
+    zone_bias: {head: 1.2, legs: 1.1}
+    confidence: extrapolated
+    notes: >
+      The common infantry polearm of the Wars of the Roses: a cleaving blade with a hook and
+      spike on a long haft. On the Towton evidence table it rolls on the blade wounds.
+
+  - id: poleaxe
+    name: "Poleaxe (axe, hammer and spike)"
+    short: "Poleaxe"
+    icon: poleaxe
+    era: medieval
+    melee: armed
+    melee_table: towton-1461-all-hits
+    mechanisms: {crush: 45, pierce: 35, cut: 20}
+    zone_bias: {head: 1.3}
+    armor_defeat: {crush: 1, pierce: 1}
+    confidence: extrapolated
+    notes: >
+      The man-at-arms' weapon against plate: hammer and spike to crack or pierce armour
+      (ignores 1 step vs crush and pierce: design estimate). On the Towton evidence table it
+      rolls on the blunt-force wounds, which were mostly to the head and face.
+
   # --- Bows, crossbows, slings ---------------------------------------------
   - id: bow
     name: "Bow (war arrows)"
@@ -101,6 +131,21 @@ weapons:
       blade wounds, mostly on the lower body, so on the Visby tables it uses their weights
       unchanged. Arrows are pierce wounds, not gunfire: bleeding, deep tracks and infection;
       a barbed head left inside causes trouble for months.
+
+  - id: longbow
+    name: "Longbow (English war bow, bodkin and broadhead arrows)"
+    short: "Longbow"
+    icon: bow
+    era: "medieval"
+    mechanisms: {pierce: 95, cut: 5}
+    zone_bias: {}
+    armor_defeat: {pierce: 1}
+    confidence: extrapolated
+    notes: >
+      Heavy war bow of the Hundred Years' War and the Wars of the Roses. Arrows mostly left
+      soft-tissue wounds, so bone evidence under-counts them; at Towton a few head wounds are
+      arrowheads. Heavy arrows punch through mail and jacks (ignores 1 step vs pierce): design
+      estimate; against good plate they mostly glanced.
 
   - id: crossbow
     name: "Crossbow (bolts)"

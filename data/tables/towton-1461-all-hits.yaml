@@ -1,0 +1,56 @@
+id: towton-1461-all-hits
+order: 12.5
+name: "Towton 1461 - gameplay-adjusted (before armour)"
+label: "Gameplay-adjusted (before armour)"
+battle: "Wars of the Roses"
+context: "Where blows and arrows land on a man in the press at Towton, before armour, re-weighted from the bone evidence. Use for the Wars of the Roses."
+variant: adjusted
+weapon_bias: raw
+native: armed
+derived_from: towton-1461-mass-grave
+armor: allowed
+weapons: [sword, bill, poleaxe, axe, dagger, spear, longbow, bow, crossbow]
+modifiers: [weapon_side, attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding, behind_cover]
+confidence: extrapolated
+confidence_note: "Re-weighted from the Towton bone evidence by the corrections listed below; the corrections are design estimates."
+armor_note: >
+  These weights are where blows LAND. Resolve armour separately with the target's kit: a
+  man-at-arms in full harness, a retainer in brigandine and sallet, or an archer or billman
+  in a jack.
+sources:
+  - "Derived from towton-1461-mass-grave (Holst and Sutherland 2014, Tab. 9 and 12)."
+status: >
+  The bone evidence is 74% head and neck, 21% arms, 5% legs and almost no trunk. Corrections:
+  (1) Trunk raised to 30%: blade, spike and arrow wounds to the chest and belly mostly miss
+  bone, and the evidence shows almost none. (2) Head and neck lowered to 31%: many Towton
+  skull wounds were struck after a man fell or lost his helmet in the rout (14 on one skull).
+  (3) Arms kept at about a fifth, hands and forearms highest (defence wounds). (4) Legs
+  raised to 18%: deep thigh wounds often miss the femur. The left-over-right skull bias
+  (48 against 29 wounds) is kept.
+weights:
+  skull_l: 12
+  skull_r: 9
+  face: 6
+  neck: 4
+  chest_l: 7
+  chest_r: 6
+  abdomen: 7
+  groin: 3
+  back_upper: 4
+  back_lower: 3
+  shoulder_l: 2
+  shoulder_r: 1
+  upper_arm_l: 2
+  upper_arm_r: 2
+  forearm_l: 3
+  forearm_r: 3
+  hand_l: 4
+  hand_r: 4
+  thigh_l: 4
+  thigh_r: 4
+  knee_l: 1
+  knee_r: 1
+  lower_leg_l: 3
+  lower_leg_r: 2
+  foot_l: 2
+  foot_r: 1

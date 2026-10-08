@@ -494,6 +494,89 @@
     }
    ]
   },
+  "bill": {
+   "id": "bill",
+   "name": "Bill (English bill, hooked polearm)",
+   "short": "Bill",
+   "icon": "bill",
+   "era": "medieval",
+   "melee": "armed",
+   "melee_table": "towton-1461-all-hits",
+   "mechanisms": {
+    "cut": 60,
+    "pierce": 30,
+    "crush": 10
+   },
+   "zone_bias": {
+    "head": 1.2,
+    "legs": 1.1
+   },
+   "confidence": "extrapolated",
+   "notes": "The common infantry polearm of the Wars of the Roses: a cleaving blade with a hook and spike on a long haft. On the Towton evidence table it rolls on the blade wounds.\n",
+   "mech_ranges": [
+    {
+     "id": "cut",
+     "pct": 60,
+     "lo": 1,
+     "hi": 60
+    },
+    {
+     "id": "pierce",
+     "pct": 30,
+     "lo": 61,
+     "hi": 90
+    },
+    {
+     "id": "crush",
+     "pct": 10,
+     "lo": 91,
+     "hi": 100
+    }
+   ]
+  },
+  "poleaxe": {
+   "id": "poleaxe",
+   "name": "Poleaxe (axe, hammer and spike)",
+   "short": "Poleaxe",
+   "icon": "poleaxe",
+   "era": "medieval",
+   "melee": "armed",
+   "melee_table": "towton-1461-all-hits",
+   "mechanisms": {
+    "crush": 45,
+    "pierce": 35,
+    "cut": 20
+   },
+   "zone_bias": {
+    "head": 1.3
+   },
+   "armor_defeat": {
+    "crush": 1,
+    "pierce": 1
+   },
+   "confidence": "extrapolated",
+   "notes": "The man-at-arms' weapon against plate: hammer and spike to crack or pierce armour (ignores 1 step vs crush and pierce: design estimate). On the Towton evidence table it rolls on the blunt-force wounds, which were mostly to the head and face.\n",
+   "mech_ranges": [
+    {
+     "id": "cut",
+     "pct": 20,
+     "lo": 1,
+     "hi": 20
+    },
+    {
+     "id": "pierce",
+     "pct": 35,
+     "lo": 21,
+     "hi": 55
+    },
+    {
+     "id": "crush",
+     "pct": 45,
+     "lo": 56,
+     "hi": 100
+    }
+   ]
+  },
   "bow": {
    "id": "bow",
    "name": "Bow (war arrows)",
@@ -507,6 +590,37 @@
    "zone_bias": {},
    "confidence": "historical",
    "notes": "Its own table is the US Army's 1865-71 arrow-wound reports (Plains and Apache bows, iron and flint heads). At Visby, 126 arrow and crossbow-bolt wounds fell much like the blade wounds, mostly on the lower body, so on the Visby tables it uses their weights unchanged. Arrows are pierce wounds, not gunfire: bleeding, deep tracks and infection; a barbed head left inside causes trouble for months.\n",
+   "mech_ranges": [
+    {
+     "id": "cut",
+     "pct": 5,
+     "lo": 1,
+     "hi": 5
+    },
+    {
+     "id": "pierce",
+     "pct": 95,
+     "lo": 6,
+     "hi": 100
+    }
+   ]
+  },
+  "longbow": {
+   "id": "longbow",
+   "name": "Longbow (English war bow, bodkin and broadhead arrows)",
+   "short": "Longbow",
+   "icon": "bow",
+   "era": "medieval",
+   "mechanisms": {
+    "pierce": 95,
+    "cut": 5
+   },
+   "zone_bias": {},
+   "armor_defeat": {
+    "pierce": 1
+   },
+   "confidence": "extrapolated",
+   "notes": "Heavy war bow of the Hundred Years' War and the Wars of the Roses. Arrows mostly left soft-tissue wounds, so bone evidence under-counts them; at Towton a few head wounds are arrowheads. Heavy arrows punch through mail and jacks (ignores 1 step vs pierce): design estimate; against good plate they mostly glanced.\n",
    "mech_ranges": [
     {
      "id": "cut",
@@ -2085,6 +2199,778 @@
     "knee_r": 2.0,
     "lower_leg_l": 9.0,
     "lower_leg_r": 5.0,
+    "foot_l": 2.0,
+    "foot_r": 1.0
+   }
+  },
+  "towton-1461-mass-grave": {
+   "id": "towton-1461-mass-grave",
+   "name": "Towton 1461 - mass grave (bone evidence)",
+   "label": "Bone evidence: Towton Hall mass grave",
+   "variant": "evidence",
+   "context": "Death wounds on the men buried at Towton Hall after the battle of 29 March 1461, most likely Lancastrians caught in the rout. Killed only.",
+   "confidence": "historical",
+   "armor_note": "Armour is already in these numbers: the head wounds suggest many men had lost or taken off their helmets in the rout, and the wounds fall where they were unprotected. Do not also subtract armour on this table; use the all-hits table for play. This is bone evidence, so wounds to the chest and belly that touched no bone left no mark, and arrows (which mostly wounded soft tissue) are under-counted.",
+   "status": "Historical, from one grave of about 38 men killed in the rout after the battle. Their wounds are extreme: one man (skeleton 32) had 14 head wounds, many blows fell on the back of the skull and the neck, and the forearms and hands show defence wounds. It is a picture of men cut down while fleeing or after they fell, not of the fighting in the line.",
+   "sources": [
+    "Holst M. and Sutherland T., 'Towton Revisited - Analysis of the Human Remains from the Battle of Towton 1461', in Eickhoff S. and Schopper F. (eds), Schlachtfeld und Massengrab: Spektren interdisziplin\u00e4rer Auswertung von Orten der Gewalt (Zossen 2014), pp. 97-129: Tab. 9 (post-cranial injuries) and Tab. 12 (peri-mortem cranial weapon trauma).",
+    "Same chapter: 36% of the skeletons had peri-mortem injuries below the head (56 in all), mostly to the hands and forearms; the back of the skull, left parietal and left frontal took the most blade wounds. Its text gives 33 blunt (25%) and 13 penetrating (10%) head wounds; its table lists 124 head wounds, which this table follows.",
+    "Fiorato V., Boylston A. and Kn\u00fcsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007): the original excavation and analysis (Novak, 'Battle-related trauma').",
+    "Wound-by-wound tally: data/sources/towton-1461-mass-grave.csv."
+   ],
+   "weapons": [
+    "sword",
+    "bill",
+    "poleaxe",
+    "dagger",
+    "longbow",
+    "bow",
+    "bayonet",
+    "axe",
+    "spiked_club",
+    "spear",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "sword",
+    "bill",
+    "poleaxe",
+    "dagger",
+    "longbow",
+    "bow"
+   ],
+   "resolve": {
+    "sword": "towton-1461-mass-grave",
+    "bill": "towton-1461-mass-grave",
+    "poleaxe": "towton-1461-mass-grave",
+    "dagger": "towton-1461-mass-grave",
+    "longbow": "towton-1461-mass-grave",
+    "bow": "towton-1461-mass-grave",
+    "bayonet": "peninsular-1808-14-officers",
+    "axe": "visby-1361-adjusted",
+    "spiked_club": "visby-1361-adjusted",
+    "spear": "visby-1361-adjusted",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "bill": [
+     0.8573106283029948,
+     0.9566141656198666,
+     0.7927187316500294,
+     1.2213740458015265,
+     0.0,
+     0.0,
+     0.0,
+     1.3740458015267174,
+     0.0,
+     0.0,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.099236641221374,
+     1.3740458015267176,
+     1.272264631043257,
+     1.3740458015267174,
+     1.3740458015267174,
+     0.0,
+     1.3740458015267174,
+     0.6870229007633587,
+     0.0,
+     1.3740458015267176,
+     0.0
+    ],
+    "bow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dagger": [
+     1.6568047337278105,
+     2.103213242453749,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "longbow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "poleaxe": [
+     1.2820512820512822,
+     0.7594936708860759,
+     2.115384615384616,
+     0.5555555555555555,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.37037037037037035,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     2.4999999999999996,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "sword": [
+     0.8573106283029948,
+     0.9566141656198666,
+     0.7927187316500294,
+     1.2213740458015265,
+     0.0,
+     0.0,
+     0.0,
+     1.3740458015267174,
+     0.0,
+     0.0,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.3740458015267174,
+     1.099236641221374,
+     1.3740458015267176,
+     1.272264631043257,
+     1.3740458015267174,
+     1.3740458015267174,
+     0.0,
+     1.3740458015267174,
+     0.6870229007633587,
+     0.0,
+     1.3740458015267176,
+     0.0
+    ]
+   },
+   "armor": "baked_in",
+   "native": "armed",
+   "weapon_bias": "sourced",
+   "assumes_shield": false,
+   "battle": "Wars of the Roses",
+   "confidence_note": "Counted wound by wound from the study's tables: 124 head wounds (79 blade, 32 blunt, 13 penetrating) on 31 skulls and 56 injured bones below the head (52 blade, 4 blunt). Head wounds are counted per wound and body injuries per bone, as published, so the body is slightly under-counted. Blade weapons roll on the blade wounds, the poleaxe on the blunt ones and the dagger on the penetrating ones (arrow, bolt, dagger and poleaxe-spike wounds to the skull). Bows use all the wounds together. Unsided skull wounds (frontal, occipital, both parietals) are shared between left and right.\n",
+   "regions": [
+    {
+     "label": "Face and jaw (26)",
+     "locs": [
+      "face"
+     ],
+     "count": 26
+    },
+    {
+     "label": "Skull, left (48)",
+     "locs": [
+      "skull_l"
+     ],
+     "count": 48
+    },
+    {
+     "label": "Skull, midline or both sides (21)",
+     "locs": [
+      "skull_l",
+      "skull_r"
+     ],
+     "count": 21
+    },
+    {
+     "label": "Skull, right (29)",
+     "locs": [
+      "skull_r"
+     ],
+     "count": 29
+    },
+    {
+     "label": "Foot, left (3)",
+     "locs": [
+      "foot_l"
+     ],
+     "count": 3
+    },
+    {
+     "label": "Forearm, left (4)",
+     "locs": [
+      "forearm_l"
+     ],
+     "count": 4
+    },
+    {
+     "label": "Forearm, right (5)",
+     "locs": [
+      "forearm_r"
+     ],
+     "count": 5
+    },
+    {
+     "label": "Pelvis (1)",
+     "locs": [
+      "groin"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Hand, left (8)",
+     "locs": [
+      "hand_l"
+     ],
+     "count": 8
+    },
+    {
+     "label": "Hand, side not recorded (1)",
+     "locs": [
+      "hand_l",
+      "hand_r"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Hand, right (13)",
+     "locs": [
+      "hand_r"
+     ],
+     "count": 13
+    },
+    {
+     "label": "Knee, right (1)",
+     "locs": [
+      "knee_r"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Lower leg, left (2)",
+     "locs": [
+      "lower_leg_l"
+     ],
+     "count": 2
+    },
+    {
+     "label": "Neck (cervical vertebrae) (9)",
+     "locs": [
+      "neck"
+     ],
+     "count": 9
+    },
+    {
+     "label": "Shoulder, left (2)",
+     "locs": [
+      "shoulder_l"
+     ],
+     "count": 2
+    },
+    {
+     "label": "Shoulder, right (1)",
+     "locs": [
+      "shoulder_r"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Thigh, left (1)",
+     "locs": [
+      "thigh_l"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Thigh, right (2)",
+     "locs": [
+      "thigh_r"
+     ],
+     "count": 2
+    },
+    {
+     "label": "Upper arm, left (2)",
+     "locs": [
+      "upper_arm_l"
+     ],
+     "count": 2
+    },
+    {
+     "label": "Upper arm, right (1)",
+     "locs": [
+      "upper_arm_r"
+     ],
+     "count": 1
+    }
+   ],
+   "regions_text": "Face and jaw (26) = 14.4%; Skull, left (48) = 26.7%; Skull, midline or both sides (21) = 11.7%; Skull, right (29) = 16.1%; Foot, left (3) = 1.7%; Forearm, left (4) = 2.2%; Forearm, right (5) = 2.8%; Pelvis (1) = 0.6%; Hand, left (8) = 4.4%; Hand, side not recorded (1) = 0.6%; Hand, right (13) = 7.2%; Knee, right (1) = 0.6%; Lower leg, left (2) = 1.1%; Neck (cervical vertebrae) (9) = 5.0%; Shoulder, left (2) = 1.1%; Shoulder, right (1) = 0.6%; Thigh, left (1) = 0.6%; Thigh, right (2) = 1.1%; Upper arm, left (2) = 1.1%; Upper arm, right (1) = 0.6% (n = 180)",
+   "modifiers": [
+    "weapon_side",
+    "attacker_higher",
+    "attacker_lower",
+    "target_down",
+    "target_fleeing",
+    "flanked",
+    "target_warding"
+   ],
+   "weapon_mix": [],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 58.5,
+    "skull_r": 39.5,
+    "face": 26.0,
+    "neck": 9.0,
+    "chest_l": 0.0,
+    "chest_r": 0.0,
+    "abdomen": 0.0,
+    "groin": 1.0,
+    "back_upper": 0.0,
+    "back_lower": 0.0,
+    "shoulder_l": 2.0,
+    "shoulder_r": 1.0,
+    "upper_arm_l": 2.0,
+    "upper_arm_r": 1.0,
+    "forearm_l": 4.0,
+    "forearm_r": 5.0,
+    "hand_l": 8.5,
+    "hand_r": 13.5,
+    "thigh_l": 1.0,
+    "thigh_r": 2.0,
+    "knee_l": 0.0,
+    "knee_r": 1.0,
+    "lower_leg_l": 2.0,
+    "lower_leg_r": 0.0,
+    "foot_l": 2.9999999999999996,
+    "foot_r": 0.0
+   }
+  },
+  "towton-1461-all-hits": {
+   "id": "towton-1461-all-hits",
+   "name": "Towton 1461 - gameplay-adjusted (before armour)",
+   "label": "Gameplay-adjusted (before armour)",
+   "variant": "adjusted",
+   "context": "Where blows and arrows land on a man in the press at Towton, before armour, re-weighted from the bone evidence. Use for the Wars of the Roses.",
+   "confidence": "extrapolated",
+   "armor_note": "These weights are where blows LAND. Resolve armour separately with the target's kit: a man-at-arms in full harness, a retainer in brigandine and sallet, or an archer or billman in a jack.",
+   "status": "The bone evidence is 74% head and neck, 21% arms, 5% legs and almost no trunk. Corrections: (1) Trunk raised to 30%: blade, spike and arrow wounds to the chest and belly mostly miss bone, and the evidence shows almost none. (2) Head and neck lowered to 31%: many Towton skull wounds were struck after a man fell or lost his helmet in the rout (14 on one skull). (3) Arms kept at about a fifth, hands and forearms highest (defence wounds). (4) Legs raised to 18%: deep thigh wounds often miss the femur. The left-over-right skull bias (48 against 29 wounds) is kept.",
+   "sources": [
+    "Derived from towton-1461-mass-grave (Holst and Sutherland 2014, Tab. 9 and 12)."
+   ],
+   "weapons": [
+    "sword",
+    "bill",
+    "poleaxe",
+    "axe",
+    "dagger",
+    "spear",
+    "longbow",
+    "bow",
+    "crossbow",
+    "bayonet",
+    "spiked_club",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "sword",
+    "bill",
+    "poleaxe",
+    "axe",
+    "dagger",
+    "spear",
+    "longbow",
+    "bow",
+    "crossbow"
+   ],
+   "resolve": {
+    "sword": "towton-1461-all-hits",
+    "bill": "towton-1461-all-hits",
+    "poleaxe": "towton-1461-all-hits",
+    "axe": "towton-1461-all-hits",
+    "dagger": "towton-1461-all-hits",
+    "spear": "towton-1461-all-hits",
+    "longbow": "towton-1461-all-hits",
+    "bow": "towton-1461-all-hits",
+    "crossbow": "towton-1461-all-hits",
+    "bayonet": "peninsular-1808-14-officers",
+    "spiked_club": "visby-1361-adjusted",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "axe": [
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3
+    ],
+    "bill": [
+     1.2,
+     1.2,
+     1.2,
+     1.2,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1
+    ],
+    "bow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "crossbow": [
+     1.15,
+     1.15,
+     1.15,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dagger": [
+     1.0,
+     1.0,
+     1.5,
+     2.0,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "longbow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "poleaxe": [
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "spear": [
+     0.8,
+     0.8,
+     1.2000000000000002,
+     0.8,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9
+    ],
+    "sword": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "armor": "allowed",
+   "native": "armed",
+   "weapon_bias": "raw",
+   "assumes_shield": false,
+   "battle": "Wars of the Roses",
+   "confidence_note": "Re-weighted from the Towton bone evidence by the corrections listed below; the corrections are design estimates.",
+   "regions": [],
+   "regions_text": "",
+   "modifiers": [
+    "weapon_side",
+    "attacker_higher",
+    "attacker_lower",
+    "target_down",
+    "target_fleeing",
+    "flanked",
+    "target_warding",
+    "behind_cover"
+   ],
+   "weapon_mix": [],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 12.0,
+    "skull_r": 9.0,
+    "face": 6.0,
+    "neck": 4.0,
+    "chest_l": 7.0,
+    "chest_r": 6.0,
+    "abdomen": 7.0,
+    "groin": 3.0,
+    "back_upper": 4.0,
+    "back_lower": 3.0,
+    "shoulder_l": 2.0,
+    "shoulder_r": 1.0,
+    "upper_arm_l": 2.0,
+    "upper_arm_r": 2.0,
+    "forearm_l": 3.0,
+    "forearm_r": 3.0,
+    "hand_l": 4.0,
+    "hand_r": 4.0,
+    "thigh_l": 4.0,
+    "thigh_r": 4.0,
+    "knee_l": 1.0,
+    "knee_r": 1.0,
+    "lower_leg_l": 3.0,
+    "lower_leg_r": 2.0,
     "foot_l": 2.0,
     "foot_r": 1.0
    }
@@ -15144,6 +16030,19 @@
      "rifle_ap": 0
     }
    },
+   "jack": {
+    "name": "Jack (many layers of linen)",
+    "cut": 2,
+    "pierce": 1,
+    "crush": 1,
+    "ballistic": 0,
+    "threats": {
+     "fragment": 1,
+     "pistol": 0,
+     "rifle": 0,
+     "rifle_ap": 0
+    }
+   },
    "buff_coat": {
     "name": "Buff coat (thick oiled leather)",
     "cut": 1,
@@ -16022,6 +16921,180 @@
        "mail",
        1,
        100
+      ]
+     ]
+    }
+   },
+   {
+    "id": "jack_sallet",
+    "name": "Jack and sallet (archer or billman, c.1460)",
+    "group": "roses",
+    "look": {
+     "helmet": "sallet"
+    },
+    "shield": false,
+    "slots": {
+     "helm": "plate",
+     "gorget": {
+      "material": "mail",
+      "cover": 50
+     },
+     "torso_upper": "jack",
+     "torso_lower": "jack",
+     "skirt": "jack",
+     "pauldron": "jack",
+     "arm": {
+      "material": "jack",
+      "cover": 70
+     }
+    },
+    "notes": "Padded jack of many linen layers and an open sallet; legs and hands mostly bare. Jack protection is a design estimate.",
+    "layers": {
+     "helm": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "gorget": [
+      [
+       "mail",
+       1,
+       50
+      ]
+     ],
+     "torso_upper": [
+      [
+       "jack",
+       1,
+       100
+      ]
+     ],
+     "torso_lower": [
+      [
+       "jack",
+       1,
+       100
+      ]
+     ],
+     "skirt": [
+      [
+       "jack",
+       1,
+       100
+      ]
+     ],
+     "pauldron": [
+      [
+       "jack",
+       1,
+       100
+      ]
+     ],
+     "arm": [
+      [
+       "jack",
+       1,
+       70
+      ]
+     ]
+    }
+   },
+   {
+    "id": "brigandine_sallet",
+    "name": "Brigandine, sallet and arm splints (c.1460)",
+    "group": "roses",
+    "look": {
+     "helmet": "sallet"
+    },
+    "shield": false,
+    "slots": {
+     "helm": "plate",
+     "gorget": "mail",
+     "torso_upper": "plates",
+     "torso_lower": "plates",
+     "skirt": "mail",
+     "pauldron": {
+      "material": "plate",
+      "cover": 60
+     },
+     "arm": {
+      "material": "plate",
+      "cover": 50
+     },
+     "gauntlet": {
+      "material": "plate",
+      "cover": 50
+     },
+     "leg": {
+      "material": "mail_padded",
+      "cover": 40
+     }
+    },
+    "notes": "Better-equipped retainer: brigandine (plates riveted inside cloth), sallet, splints on the arms, some plate on the hands.",
+    "layers": {
+     "helm": [
+      [
+       "plate",
+       1,
+       100
+      ]
+     ],
+     "gorget": [
+      [
+       "mail",
+       1,
+       100
+      ]
+     ],
+     "torso_upper": [
+      [
+       "plates",
+       1,
+       100
+      ]
+     ],
+     "torso_lower": [
+      [
+       "plates",
+       1,
+       100
+      ]
+     ],
+     "skirt": [
+      [
+       "mail",
+       1,
+       100
+      ]
+     ],
+     "pauldron": [
+      [
+       "plate",
+       1,
+       60
+      ]
+     ],
+     "arm": [
+      [
+       "plate",
+       1,
+       50
+      ]
+     ],
+     "gauntlet": [
+      [
+       "plate",
+       1,
+       50
+      ]
+     ],
+     "leg": [
+      [
+       "mail_padded",
+       1,
+       40
       ]
      ]
     }
@@ -16946,6 +18019,113 @@
    "sources": [
     "Swedish History Museum, 'Skull from the Battle of Visby'.",
     "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
+   ]
+  },
+  "Wars of the Roses": {
+   "period": "Towton, 29 March 1461",
+   "map": {
+    "bbox": [
+     -6.5,
+     50,
+     2,
+     56.2
+    ],
+    "sites": [
+     {
+      "name": "Towton",
+      "lat": 53.83,
+      "lon": -1.27
+     }
+    ]
+   },
+   "summary": "The Wars of the Roses (1455-1485) were fought between the houses of York and Lancaster for the English crown. At Towton in Yorkshire on Palm Sunday 1461, the Yorkist army of Edward IV defeated Henry VI's Lancastrians in a snowstorm, after an archery exchange and hours of fighting on foot; the Lancastrian army broke and was cut down in the rout. Contemporary claims of 28,000 dead are thought exaggerated, but it is often called the bloodiest battle fought in England. In 1996 building work at Towton Hall uncovered a mass grave of about 38 men, which gives the most detailed picture of medieval battle wounds yet recorded.\n",
+   "sides": [
+    {
+     "name": "Yorkists",
+     "who": "Edward IV's army: his retinue and those of Warwick, Fauconberg and (late in the day) Norfolk.",
+     "armour": "Nobles and men-at-arms in full plate, fighting on foot; retainers in brigandines and sallets; archers and billmen in padded jacks and sallets.",
+     "look": {
+      "colour": "#6b2140",
+      "trousers": "#2f4f8f"
+     }
+    },
+    {
+     "name": "Lancastrians",
+     "who": "Henry VI's army under the Duke of Somerset, raised largely from the north.",
+     "armour": "The same mix as the Yorkists. The head wounds in the Towton grave suggest many of the dead had lost or taken off their helmets in the rout.",
+     "look": {
+      "colour": "#2c4f86",
+      "trousers": "#d8d4c8"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "name": "Yorkist man-at-arms",
+     "side": "Yorkists",
+     "kit": "full_plate",
+     "weapon": "poleaxe",
+     "notes": "Full harness, fighting on foot with the poleaxe.",
+     "image": {
+      "file": "MS Ghent - Battle of Barnet.jpg",
+      "caption": "Edward IV's army at Barnet, 1471, from the Ghent manuscript painted a few years later"
+     }
+    },
+    {
+     "name": "Yorkist archer",
+     "side": "Yorkists",
+     "kit": "jack_sallet",
+     "weapon": "longbow",
+     "notes": "By the traditional account, shot with the wind and snow at his back.",
+     "image": {
+      "file": "Arcieri inglesi battaglia di Cr\u00e9cy.jpg",
+      "caption": "English longbowmen at Cr\u00e9cy, from a 15th-century Froissart manuscript (painted a century after the battle, near Towton's time)"
+     }
+    },
+    {
+     "name": "Yorkist billman",
+     "side": "Yorkists",
+     "kit": "jack_sallet",
+     "weapon": "bill",
+     "notes": "Jack, sallet and bill: the common infantryman."
+    },
+    {
+     "name": "Lancastrian man-at-arms",
+     "side": "Lancastrians",
+     "kit": "full_plate",
+     "weapon": "sword",
+     "notes": "Full harness; sword and dagger in the press.",
+     "image": {
+      "file": "Battle of Campston Hill, from the 1914 edition of the Pageant of the birth, life and death of Richard Beauchamp, Earl of Warwick, K.G.png",
+      "caption": "Men-at-arms in battle, from the Beauchamp Pageant (English drawings of c. 1483-94)"
+     }
+    },
+    {
+     "name": "Lancastrian retainer",
+     "side": "Lancastrians",
+     "kit": "brigandine_sallet",
+     "weapon": "bill",
+     "notes": "A lord's better-equipped retainer.",
+     "image": {
+      "file": "Mid 15th century brigandine.jpg",
+      "caption": "Soldier in a brigandine, from a Breton manuscript of the 1440s"
+     }
+    },
+    {
+     "name": "Lancastrian archer",
+     "side": "Lancastrians",
+     "kit": "jack_sallet",
+     "weapon": "longbow",
+     "notes": "By the traditional account, shot into the wind and fell short.",
+     "image": {
+      "file": "Battle of crecy froissart.jpg",
+      "caption": "English and Genoese archers at Cr\u00e9cy, from a 15th-century Froissart manuscript (a near match in time)"
+     }
+    }
+   ],
+   "sources": [
+    "Fiorato V., Boylston A. and Kn\u00fcsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007).",
+    "Holst M. and Sutherland T., 'Towton Revisited', in Eickhoff and Schopper (eds), Schlachtfeld und Massengrab (2014), pp. 97-129."
    ]
   },
   "Thirty Years' War": {
@@ -19124,6 +20304,44 @@
        "y": 57.5,
        "names": [
         "Visby"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "Wars of the Roses": {
+   "spec": {
+    "bbox": [
+     -6.5,
+     50,
+     2,
+     56.2
+    ],
+    "sites": [
+     {
+      "name": "Towton",
+      "lat": 53.83,
+      "lon": -1.27
+     }
+    ]
+   },
+   "w": 160,
+   "h": 120,
+   "gap": 8,
+   "panels": [
+    {
+     "label": "",
+     "land": "M75.6,0L75.5,0.1L74.5,0.7L71.7,1.3L70.9,1.7L70,2.5L68.9,2.9L70.1,2.9L71.3,2.4L73.4,2.3L75.8,3.8L75.6,5L74.6,6L72.4,6.1L70.3,8.2L69.4,8.9L68.4,9.2L67.2,9.1L64.9,8.6L63.9,8L64.8,8.9L65.8,9.4L71.7,10.6L72,10.5L73.9,9.2L76.3,9.2L81.1,11.5L82.4,13.3L84.4,15.8L85.4,16.8L86.2,17.7L86.7,19L87.6,23.4L88.6,27.7L90,32.3L90.6,33.5L91.4,34.4L95.6,36.5L96.5,37.1L98.1,39.1L99.6,41.2L101.1,42.8L102.6,44L101.8,44.7L101.3,45.8L101.7,47.2L102.3,48.5L103.6,50.7L104.7,53.1L104.3,52.7L103.9,52.5L103.3,52.5L102.7,52.4L101.7,51.7L100.6,50.8L98.7,51.2L97.6,51L96.6,51L98.4,51.5L100.4,51.6L104.8,55.5L106.3,57.8L107.2,60.9L106.6,62.3L105.6,63.2L104.8,64.2L103.9,65.3L106.4,67L106.9,66.9L107.5,66.7L108,66.1L108.9,64.8L109.3,64.3L110.8,64.1L112.1,64.2L113.4,64.5L114.5,64.4L116.8,65L117.9,65.5L120.8,67.9L121.4,69.2L121.7,71L121.7,72.8L121.2,74.5L120.7,76.1L120.3,78.1L120.1,78.8L119.8,79.3L118.2,80.9L117.2,81.5L116.8,81.3L116.3,81.3L116.3,81.7L116.8,82.5L116.8,83.5L115.9,84.2L115,84.5L113.5,84.1L111.3,85.4L112.9,86.1L113.2,86.8L112.8,88L111.8,88.6L110.7,88.9L109.7,88.9L108.8,89.2L107.9,89.8L109,89.5L109.7,89.8L110.2,90.8L110.6,91.2L112.8,91.6L114.1,91.6L116.6,91.3L117.8,91.4L118.3,91.5L118.3,92.4L118.1,94.6L117.7,95L114.4,96.8L113.7,98.1L113.5,98.8L111.5,98.7L110.6,99.5L109,100L107.8,100.6L106.6,101.3L105.6,101.5L101.4,100.7L98.8,100.7L95.3,101.5L94.4,101.3L93.1,100.7L91.7,100.2L90.1,100L88.7,99.3L89.6,100.6L87.6,101.8L86.8,102L85.9,102L84,102.3L82.3,102.1L82.5,103L83,103.7L82.6,104.1L82.2,104.1L79,103.6L78.5,103.7L78.1,104.2L76.9,103.9L75.7,103.1L74.5,102.5L73.2,102.2L72.2,102.3L68,103.7L67.1,105.1L66.7,107L66.1,108.8L65.1,110.1L63.9,110.3L62.8,109.3L60.7,108.3L59.9,107.6L59.7,107.6L59.5,107.8L58.6,108.2L57.8,108.2L56.5,108.4L54.1,109.3L53.2,109.8L51.2,111.4L50.8,111.8L50.1,113.4L48.9,113.6L47.9,112.7L46.8,112.3L45.6,112.7L44.8,113.2L44.5,112.7L44.4,111.9L45.3,110.8L47.7,110L49.8,107.9L50.9,106.6L51.2,105.9L51.8,105.5L52.4,105.3L52.7,104.5L55.6,101.3L55.9,100.6L56,99.2L56.3,98L58.6,97.1L59.8,94.5L60.1,94.3L63.4,93.8L65.8,93.8L68.3,94.3L69.5,94.4L70.7,94.2L71.7,93.4L73.4,90.8L74.3,89.7L75.4,88.6L76.4,87.4L78.1,85.2L77,86L75.6,87.2L74.9,87.9L72.4,88.6L71.3,89.3L69.5,91L69.1,91.1L66.3,90.7L64.2,88.6L62.9,87.7L62.3,87.6L61.8,87.9L60.5,88.1L59.3,88.1L59.9,87.1L60.8,86.6L58.9,86.2L58.3,85.9L57.7,85.2L56.2,85.1L55.5,85.3L54.2,86.2L52.3,87.1L50,85.8L49.6,85.2L49.6,84.1L49.2,83.2L48.6,82.9L49.4,81.7L50.4,80.9L52.6,80.1L55.9,78.3L57.7,77.5L59.5,76.1L60.2,75.3L60.7,74.1L61.2,72.7L61.9,71.6L61.2,71.3L60.9,70.4L61,69.6L61.3,68.8L61,67.8L60.5,66.8L60.6,66L60.7,65.1L59.4,65.2L58,65.5L56.8,66.1L55.6,66.9L54.6,67L54.6,66.4L55.1,65.6L56.2,64.4L57.5,63.5L58,62.7L58.3,61.9L58.9,61.2L60.6,59.9L63.7,58.4L64.2,58.3L65.4,58.5L66.6,58.3L67.7,57.7L68.8,57.6L71.2,59.2L70.4,56.8L71.5,56.3L73,58.4L73.6,58.6L74.8,58.3L74.3,57.9L73.8,57.9L73.1,57.6L72.5,56.9L71.5,54.7L71.6,53.5L72.2,52.1L73,50.9L72.4,50.6L71.8,50.2L71.7,48.9L71.9,47.8L73.2,46.8L73.6,45.4L73.8,43.7L73.6,43L72.2,43.1L71.6,43.4L71,43.9L70.4,43.9L68.8,42L67.9,40.7L66.2,37.8L66,36L67.3,32.3L69.4,29.9L71.8,29L71.3,28.8L67.7,28.8L66.4,29.1L65.3,30.1L64.7,30.4L64,30.5L63.4,31L62.8,31.7L62.2,32.2L60.9,32L60.3,32.2L59.9,31.8L59.6,31.1L59.1,31L58.6,31.1L57.5,32L56.4,32.6L55,32L53.2,31L52.9,31.3L52.4,32.3L52.2,33.8L51,32.5L49.9,30.7L49.5,29.7L49.5,28.4L50.1,27.9L50.7,28.4L51.7,25.4L53.5,21.6L54.2,20.5L54.7,19L54.6,18L54.2,17.2L52.4,15.3L52.4,13.8L52.6,12.1L53.1,11.1L53.3,10.9L55.6,10.9L54.7,10.3L52.9,8.8L53,8.2L53.4,6.8L53.2,6.9L52.8,7.6L52.1,9.2L51.6,9.6L50.3,10L50.1,10.8L49.9,11L49.2,11.1L49.1,11.8L48.9,11.9L48.7,11.1L48.7,9.7L49,8.5L49.5,7.6L51.3,5.4L50.4,6.1L48.3,8.1L47.3,9.4L47,9.8L46.9,10.2L46.9,10.6L47.4,13L47.3,14L45.5,21L45.2,21.7L44.9,22.1L44.6,22.2L43.7,22.1L43.3,21.5L43.3,20.9L43.5,20.1L44.2,16.7L44.5,15.8L45,14.9L46,13.4L46,13.3L45.3,13.6L45,13.5L44.8,13.2L44.9,8.7L45.5,7.2L45.7,5L46.2,3.2L46.8,1.8L47.2,0.1L47.3,0L75.6,0ZM0,85.3L0.7,84.8L1.2,84.5L1.7,83.8L3.3,83L0,84.1L0,78.9L0,78.9L0.1,78.8L0,78.7L0,76.8L0,76.8L1.5,76.6L0.8,75.9L0.7,74.4L0.1,74L0.8,73.3L1.6,72.9L3,71.5L3.5,71.3L6.1,71L9,70.2L11.8,69.2L10.4,68.7L9.7,67.9L8.5,69.4L7.7,70L5.4,70.3L4.7,70.1L3.7,69.7L3.4,69.8L3.1,70.2L1.6,70.9L0,71.1L0,71.1L0,71.1L1.8,69.8L4.2,67.5L4.7,66.7L5.4,65.5L5.2,64.9L4.7,64.6L6.4,62L7,61.5L8.1,61.4L8.9,61L9.3,61L9.6,60.9L10.3,60.1L9.2,59.6L8.1,59.3L4.7,59.6L4.2,59.5L3.8,59.3L3.5,59L3.3,58.1L3,57.9L2.3,57.9L1.5,58.1L0.9,58.1L0.4,57.7L1.3,56.8L0.2,56.6L0,56.6L0,53.5L0,53.5L0.4,53.4L2,53.1L0.6,52.6L0.1,52.2L0,51.5L0.1,51L1.8,50L3.5,49.6L3.4,49L3.5,48.3L1.8,48.1L0,48.6L0.2,47.2L0.6,46.1L0.7,45.3L0.6,44.5L0,44.7L0,41.4L0,41.4L0.9,41.4L2.1,40.8L3.7,40.7L6.3,40.8L8,42.4L8.5,42.1L9.2,41.1L9.5,41L12.2,41.5L13.9,42L14.3,41.8L14,40.7L13.5,40L14.2,38.9L15.1,38.3L15.7,37.9L17,37.5L17.6,37.1L18,35.8L18.6,34.7L15.2,35.2L12,33.9L12.5,33L13.2,32.5L14.4,32.1L14.5,31.6L15.1,31.2L16,30.2L15.7,28.8L15.9,27.8L16.6,27.1L16.8,26.2L17.1,25.5L18.6,25.2L19.9,24.6L20.4,24.7L22,24.5L22.6,24.8L22.5,23.6L23.5,23.5L23.9,23.7L24,24.5L24.5,25.1L24.6,25.9L24.3,26.6L23.8,27.2L24.3,27.7L23.6,28.7L24.3,28.3L25.4,27.3L25.4,26.5L25.2,25.5L24.9,24.6L25,23.7L25.7,23L27.3,22.7L26.6,21.6L27.2,21.5L27.9,21.7L28.8,22.6L29.8,23.3L30.8,23.8L29.8,24.9L28.6,25.7L28.1,26.5L28.5,27.1L28.5,27.1L29.4,27.3L30.1,26.7L31,24.8L31.6,24.7L32.3,24.9L33.6,24.6L35.9,23.8L37,23.8L38.4,24.2L39.5,24.2L40.5,25.5L41,27.6L42.2,29.7L43.8,31.5L43.9,32.6L43.3,33.2L42.1,33.9L42.1,34.7L42.9,34.3L43.6,34.1L45.2,34.3L45.8,35.1L46.2,36.2L46.4,37.2L46.2,38.3L45.8,37.9L45.4,37L44.9,36.5L44.3,36.3L44.6,37.6L44.4,39.3L44.7,39.5L45.5,39.5L45,41.3L43.9,41.8L42.7,42L42.4,42.6L42.1,43.4L41.5,44.6L40.7,45.2L39.6,45.1L38.6,44.6L39,45.2L39.2,45.8L38.5,46.1L37.6,45.9L37.3,46.4L37.2,47.2L37.5,48.2L38.1,49L38.5,50.6L38.8,52.5L39.4,53.6L39.5,55L39.4,55.7L39.5,56.9L39.3,57.3L39.4,58.4L40.1,60.8L40.4,62.1L40.6,64.9L40.1,66L39.5,67L39.1,68.2L38.8,69.5L38.6,71.6L37.3,74L36.7,74.6L36,75L37.5,76.6L36.3,77.4L35,77.6L33.6,77.2L32.7,77.2L31.9,77.8L31.6,78.1L31.3,78L30.8,76.6L30.4,78L29.6,78.5L28.2,78.4L25.8,78.8L24.9,79.2L24.6,79.8L24.3,80.5L23.9,80.9L23.5,81.2L21.7,81.7L21.3,81.9L20.5,83.1L19.4,83.8L18.5,84L17.7,83.3L17.4,82.9L17,82.7L15.7,82.7L16.1,82.9L16.4,83.4L16.5,84.3L16.3,85.2L15.7,85.7L15,85.8L13.9,86.7L12.3,87L11.5,87.8L6.5,89.3L6.2,89.3L5.5,88.9L4.7,88.8L4,88.9L1.9,89.7L0.8,89.5L2.1,87.5L3.9,86.5L4.1,86.2L3.5,86.1L0.2,86.8L0,86.9L0,85.3ZM83.9,120L83.9,120L84.1,119.1L85.7,119.2L86.9,119.4L89.2,118.7L90.3,119.2L90.3,120L83.9,120ZM105,120L105.4,118.8L109.9,116.2L113.1,115.4L116.5,114L118.2,112.6L119.3,110.7L119.7,110.3L120.1,109.9L119.7,109.2L120,101.9L120.3,100.6L120.9,99.5L121.9,98.7L123.4,97.8L129,96.5L129.8,96L134.4,93.2L137.1,91.7L138.4,91.3L139.2,91L141,90.9L142.3,91.4L144,91.7L145.4,91L146.4,91.6L147.6,91.2L146.7,90.9L145.3,90.2L143.4,90.8L142,90.1L140.9,90L140.2,89.5L139.5,88.6L140,88L140.5,87.8L142.5,87.6L144,88L146.7,90L147.4,90L148.1,89.7L147.7,89.2L147,88.9L146.1,88.4L145.3,87.6L147.1,87.4L146.9,87L146.6,86.4L144.7,84L145,83.4L145.5,82L146.1,80.9L146.6,80.6L147.4,79.8L149.1,77.5L150.3,75.6L151.1,73.3L152.3,67L152.7,65.9L153.2,64.7L154,64.9L154.5,65.3L156.3,64.4L159.4,62L160,60.6L160,120ZM156.8,58.3L154.9,59.6L154.7,59.4L155.9,58.3ZM160,56.6L159.1,57L159.1,57L158.1,57.1L157.6,56.9L160,56.2L160,56.6ZM57.4,42.9L55.3,45.1L54.5,44.7L53.8,44.9L53.5,44.8L53.9,44L54.4,42.1L55.3,41.4L56.4,39.4L57.3,38.9L57.6,38.9L57.8,39.1L58.2,41.3L57.6,42.1ZM50.2,20L48.9,20L48.4,19.8L47.9,19.4L47.2,16.8L47.4,15.9L47.7,15.5L48,15.2L48.7,15L49.4,15.5L49.6,15.9L50.2,17.7L50.3,19.1ZM42.7,0L43.4,0.5L43.2,3.3L43.2,3.3L39,4.3L37.6,4.2L37.5,3.7L37.8,3.4L38.9,3.1L39.4,0.5L38.6,0L42.7,0ZM39.5,11L39.9,13.4L40.3,14.9L40.3,15.4L39.9,16.1L38.2,17L37.7,17L37.7,16.8L38.1,15.9L37.7,14.8L37.9,14L37.7,13.8L37.4,13.9L36.1,15.2L35.7,15.4L35.7,15.1L36,14L36,13.3L36.2,12.9L36.6,12.4L37,12.1L37.3,12.1L37.6,12.4L38.6,11.5ZM41.2,13.2L40.9,13.4L40.4,13.3L40.2,13L40.1,12.6L40.1,11.7L40.4,11.1L41.8,10.2L41.2,9.9L41.1,9.7L41.5,8.9L43,7.7L43.4,7.5L43.7,7.5L43,9.6ZM59.7,58.1L60.1,58.4L61.2,58.4L60.9,59.1L59.7,59.9L58.8,60.7L57.9,61.3L57.4,60.6L56.8,60.6L56,59.1L55.8,57L56.9,56.4L58.5,56.4ZM92.4,102.7L91.5,103.3L91.2,103.9L91,104.2L90.4,104.4L89.9,104.4L87.7,103.1L87.2,103.1L87.6,102.5L89,102L89.8,101.3L91.6,102ZM154.5,62.5L153.4,63.7L152.8,63.3L152.6,63.1L152.9,62.1L154.5,60.5ZM144.7,85.2L145.7,86.2L145.9,86.4L146,86.8L144.7,87.1L143.3,86L142.4,86.3L142.1,85.7L142.1,85.4L143,85.1Z",
+     "lakes": "M160,76.3L158.9,76L155.9,75L155.9,74.7L155.9,73.8L156.3,73.5L156.3,73.2L156.3,72L156.3,71L156.3,70.1L157,70.1L158.1,69.5L158.1,68.2L157.4,67.3L157,66.4L156.6,65.8L156.3,65.1L157.4,64.2L158.5,63.3L159.7,62.6L159.7,62.9L160,65.3L160,72.3L160,72.3L159.7,72.6L157.4,74.4L157.4,74.7L158.1,75L160,75.6L160,76.3ZM35.7,33.3L36,33.3L37.5,33.3L37.9,34.3L37.9,35.3L37.2,36.9L37.2,37.2L36.4,37.2L34.9,36.9L34.9,36.2L35.3,34.9L35.7,33.6Z",
+     "highlight": "",
+     "borders": "",
+     "dots": [
+      {
+       "x": 90.2,
+       "y": 49.2,
+       "names": [
+        "Towton"
        ]
       }
      ]

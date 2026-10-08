@@ -56,6 +56,7 @@ const FIG = (() => {
   const HELMETS = {
     kettle: `<path d="M44 26 Q44 8 60 8 Q76 8 76 26 Z" fill="url(#fg-steel)" ${st}/><path d="M36 27 Q60 20 84 27 L84 30 Q60 24 36 30 Z" fill="url(#fg-steel)" ${st}/>`,
     bascinet: `<path d="M44 30 Q42 4 60 2 Q78 4 76 30 L72 30 Q70 16 60 16 Q50 16 48 30 Z" fill="url(#fg-steel)" ${st}/>`,
+    sallet: `<path d="M40 34 Q42 6 60 4 Q78 6 80 34 L74 31 Q72 18 60 18 Q48 18 46 31 Z" fill="url(#fg-steel)" ${st}/><path d="M47 22 H73" stroke="#3a4148" stroke-width="1.4"/>`,
     closed: `<path d="M44 40 Q42 6 60 4 Q78 6 76 40 Z" fill="url(#fg-steel)" ${st}/><path d="M50 24 H70 M50 28 H70" stroke="#3a4148" stroke-width="1.6"/>`,
     pot: `<path d="M45 27 Q45 9 60 9 Q75 9 75 27 Z" fill="url(#fg-steel)" ${st}/><path d="M45 26 L42 38 L48 38 Z M75 26 L78 38 L72 38 Z" fill="url(#fg-steel)" ${st}/><rect x="58" y="24" width="4" height="14" fill="#7c8792"/>`,
     morion: `<path d="M44 26 Q46 10 60 10 Q74 10 76 26 Z" fill="url(#fg-steel)" ${st}/><path d="M60 3 Q66 8 64 12 L56 12 Q54 8 60 3 Z" fill="url(#fg-steel)" ${st}/><path d="M36 28 Q48 22 60 26 Q72 22 84 28 Q72 25 60 29 Q48 25 36 28 Z" fill="url(#fg-steel)" ${st}/>`,
@@ -116,6 +117,8 @@ const FIG = (() => {
     axe: `<path d="M28 140 L20 72" stroke="#6b4b28" stroke-width="3"/><path d="M21 80 Q8 76 8 90 Q14 86 22 88 Z" fill="#9aa3ad" stroke="#4a525a" stroke-width=".8"/>`,
     club: `<path d="M28 140 L20 84" stroke="#6b4b28" stroke-width="3.5"/><circle cx="19" cy="80" r="7" fill="#9aa3ad" stroke="#4a525a"/><path d="M19 70 V73 M10 80 H13 M25 80 H28 M13 74 L15 76 M23 84 L25 86" stroke="#4a525a" stroke-width="1.6"/>`,
     spear: `<path d="M28 222 L28 8" stroke="#6b4b28" stroke-width="2.6"/><path d="M28 0 L31 12 L28 16 L25 12 Z" fill="#c9d1d8" stroke="#4a525a" stroke-width=".6"/>`,
+    bill: `<path d="M28 222 L28 14" stroke="#6b4b28" stroke-width="2.6"/><path d="M28 0 L31 13 L32 34 Q22 33 23 22 Q27 24 27 16 Z" fill="#c9d1d8" stroke="#4a525a" stroke-width=".7"/><path d="M31 25 L38 21" stroke="#4a525a" stroke-width="1.6" stroke-linecap="round"/>`,
+    poleaxe: `<path d="M28 222 L28 10" stroke="#6b4b28" stroke-width="2.6"/><path d="M28 0 L30.5 12 L25.5 12 Z" fill="#c9d1d8" stroke="#4a525a" stroke-width=".6"/><path d="M29.5 14 Q42 12 43 30 Q36 25 29.5 27 Z" fill="#9aa3ad" stroke="#4a525a" stroke-width=".7"/><rect x="19.5" y="16" width="8" height="7" rx="1" fill="#9aa3ad" stroke="#4a525a" stroke-width=".7"/>`,
     lance: `<path d="M28 222 L28 4" stroke="#6b4b28" stroke-width="2.6"/><path d="M28 -4 L31 8 L28 12 L25 8 Z" fill="#c9d1d8" stroke="#4a525a" stroke-width=".6"/><path d="M28 14 L42 18 L28 24 Z" fill="#c73a3a"/><path d="M28 18 L42 18 L28 22 Z" fill="#f2efe6"/>`,
     bow: `<path d="M98 72 Q120 130 98 188" fill="none" stroke="#6b4b28" stroke-width="3"/><path d="M98 72 L98 188" stroke="#ddd" stroke-width=".7"/>`,
     crossbow: `<path d="M28 134 L58 104" stroke="#6b4b28" stroke-width="4"/><path d="M44 104 Q56 96 64 112" fill="none" stroke="#4a525a" stroke-width="2.4"/>`,

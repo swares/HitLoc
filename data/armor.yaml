@@ -36,6 +36,7 @@ materials:
   mail_padded: {name: "Mail over padding",           cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
   plates:      {name: "Coat of plates / brigandine", cut: 2, pierce: 2, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 1, rifle: 0, rifle_ap: 0}}
   plate:       {name: "Plate",                       cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 2, pistol: 1, rifle: 0, rifle_ap: 0}}
+  jack:        {name: "Jack (many layers of linen)", cut: 2, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
   # --- early modern (1600-1815) ----------------------------------------------
   buff_coat:     {name: "Buff coat (thick oiled leather)", cut: 1, pierce: 1, crush: 1, ballistic: 0, threats: {fragment: 1, pistol: 0, rifle: 0, rifle_ap: 0}}
   cuirass:       {name: "Steel cuirass (cuirassier, carabinier)", cut: 3, pierce: 2, crush: 1, ballistic: 1, threats: {fragment: 1, pistol: 2, rifle: 1, rifle_ap: 0}}
@@ -139,6 +140,26 @@ kits:
     slots: {helm: plate, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: mail_padded,
             arm: mail_padded, gauntlet: plates, leg: mail_padded, greave: {material: plate, cover: 50}, sabaton: mail}
     notes: "Professional kit of the period; face left open (visors uncertain for 1361)."
+
+  # --- Wars of the Roses (1455-85) -------------------------------------------
+  # The full harness of a man-at-arms is the generic full_plate kit (c.1450).
+  - id: jack_sallet
+    name: "Jack and sallet (archer or billman, c.1460)"
+    group: roses
+    look: {helmet: sallet}
+    shield: false
+    slots: {helm: plate, gorget: {material: mail, cover: 50}, torso_upper: jack, torso_lower: jack, skirt: jack, pauldron: jack,
+            arm: {material: jack, cover: 70}}
+    notes: "Padded jack of many linen layers and an open sallet; legs and hands mostly bare. Jack protection is a design estimate."
+
+  - id: brigandine_sallet
+    name: "Brigandine, sallet and arm splints (c.1460)"
+    group: roses
+    look: {helmet: sallet}
+    shield: false
+    slots: {helm: plate, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: {material: plate, cover: 60},
+            arm: {material: plate, cover: 50}, gauntlet: {material: plate, cover: 50}, leg: {material: mail_padded, cover: 40}}
+    notes: "Better-equipped retainer: brigandine (plates riveted inside cloth), sallet, splints on the arms, some plate on the hands."
 
   # --- early modern (1600-1815) --------------------------------------------
   - id: cuirassier_1630
