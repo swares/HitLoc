@@ -145,11 +145,20 @@ fought within today's borders (Korea onward) also show faint modern borders and 
 theatre countries; older wars show coastlines only, since modern borders would be wrong
 for them. Nearby sites share one dot; hover a dot for its names.
 
+A solid dot is a place the wound records come from. A hollow dot is a place fought over in
+that war that the records do not cover. The Napoleonic map, for example, has two panels:
+the Peninsula (solid dots, where the officers' records come from) and the War of 1812
+(hollow dots: Queenston Heights, Lundy's Lane, Baltimore, New Orleans and others), since no
+region-by-region wound count survives for 1812. The Great Lakes and other large lakes are
+drawn as water.
+
 - The map spec is data: `map:` on each conflict in `conflicts.yaml` (`bbox`, `sites`,
-  optional `borders` and `highlight`).
+  optional `borders` and `highlight`; a site with `context: true` gets a hollow dot). A
+  list of specs, each with a `label`, draws several panels side by side (stacked on the
+  start page).
 - `tools/maps/make_maps.mjs` turns the specs into `data/maps.json` (plain SVG paths)
   from Natural Earth coastlines and borders (public domain, via the `world-atlas` npm
-  package): `cd tools/maps && npm ci && node make_maps.mjs`. Node is needed only
+  package) and Natural Earth lakes (via the `sane-topojson` package, MIT): `cd tools/maps && npm ci && node make_maps.mjs`. Node is needed only
   for this step; the build warns when a map is missing or out of date.
 
 ## Website (GitHub Pages)

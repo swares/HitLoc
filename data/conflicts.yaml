@@ -4,8 +4,10 @@
 #            (weapons.yaml) for that side. The kit is what they wear as a TARGET;
 #            the weapon is what they use when they ATTACK.
 # map      - locator map: bbox [west, south, east, north] in degrees, sites (name, lat, lon)
-#            where the records come from, optional borders: true (modern borders; only
+#            where the records come from (context: true = fought there, but no records
+#            used; drawn hollow), optional borders: true (modern borders; only
 #            for wars fought within today's borders) and highlight: [country names].
+#            A list of such maps draws them side by side (label names each panel).
 #            After editing, run: cd tools/maps && npm ci && node make_maps.mjs (writes data/maps.json)
 # look     - how the example figures are drawn (templates/figure.js), on a side or an example
 #            (an example's look is merged over its side's): colour, trousers, coat: skin,
@@ -127,7 +129,9 @@ conflicts:
 
   "Napoleonic era & War of 1812":
     period: "1803-1815"
-    map: {bbox: [-10, 35.5, 4, 44.5], sites: [{name: Salamanca, lat: 40.97, lon: -5.66}, {name: Talavera, lat: 39.96, lon: -4.83}, {name: Albuera, lat: 38.72, lon: -6.82}, {name: Zaragoza, lat: 41.65, lon: -0.88}]}
+    map:
+      - {label: Peninsular War, bbox: [-10, 35.5, 4, 44.5], sites: [{name: Salamanca, lat: 40.97, lon: -5.66}, {name: Talavera, lat: 39.96, lon: -4.83}, {name: Albuera, lat: 38.72, lon: -6.82}, {name: Zaragoza, lat: 41.65, lon: -0.88}]}
+      - {label: War of 1812, bbox: [-92, 28.5, -70, 46.5], sites: [{name: Queenston Heights, lat: 43.16, lon: -79.05, context: true}, {name: Lundy's Lane, lat: 43.09, lon: -79.09, context: true}, {name: Fort Erie, lat: 42.90, lon: -78.92, context: true}, {name: River Raisin, lat: 41.91, lon: -83.40, context: true}, {name: The Thames, lat: 42.57, lon: -81.98, context: true}, {name: Bladensburg, lat: 38.94, lon: -76.94, context: true}, {name: Baltimore, lat: 39.26, lon: -76.58, context: true}, {name: New Orleans, lat: 29.94, lon: -90.05, context: true}]}
     summary: >
       France under Napoleon against shifting coalitions of Britain, Austria, Prussia,
       Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and

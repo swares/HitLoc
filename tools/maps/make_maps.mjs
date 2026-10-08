@@ -1,6 +1,6 @@
 // Builds data/maps.json: one small locator map per conflict, from the `map:` entries in
-// data/conflicts.yaml and Natural Earth 1:50m coastlines and borders (public domain, via the
-// world-atlas package). Run from this folder after editing a map entry:
+// data/conflicts.yaml and Natural Earth coastlines and borders (public domain, via the
+// world-atlas package) and lakes (Natural Earth, via the sane-topojson package). Run from this folder after editing a map entry:
 //   npm ci && node make_maps.mjs   (versions pinned by package-lock.json)
 // The output is plain SVG path data, so the roller, start page and PDF need nothing at runtime.
 import fs from "node:fs";
@@ -19,35 +19,42 @@ const atlas = f => JSON.parse(fs.readFileSync(path.join(here, "node_modules/worl
 const scale = {};
 for (const res of ["50m", "110m"]) {
   const lt = atlas(`land-${res}.json`), ct = atlas(`countries-${res}.json`);
+  const wt = JSON.parse(fs.readFileSync(path.join(here, "node_modules/sane-topojson/dist", `world_${res}.json`), "utf8"));
   scale[res] = { land: feature(lt, lt.objects.land), countries: feature(ct, ct.objects.countries).features,
-                 borders: mesh(ct, ct.objects.countries, (a, b) => a !== b) };
+                 borders: mesh(ct, ct.objects.countries, (a, b) => a !== b), lakes: feature(wt, wt.objects.lakes) };
 }
 
-const out = {};
-for (const [battle, c] of Object.entries(conflicts)) {
-  const m = c.map; if (!m) continue;
+function panel(battle, m) {
   const [w, s, e, n] = m.bbox;
   // Polygon wound clockwise in lon/lat so d3 treats it as the box, not the rest of the globe.
   const box = { type: "Feature", geometry: { type: "Polygon", coordinates: [[[w, s], [w, n], [e, n], [e, s], [w, s]]] } };
-  const { land, countries, borders } = scale[e - w > 60 ? "110m" : "50m"];
+  const { land, countries, borders, lakes } = scale[e - w > 60 ? "110m" : "50m"];
   const proj = geoMercator().fitExtent([[6, 6], [W - 6, H - 6]], box).clipExtent([[0, 0], [W, H]]);
   const p = geoPath(proj).digits(1);
   const missing = (m.highlight || []).filter(name => !countries.some(f => f.properties.name === name));
   if (missing.length) throw new Error(`${battle}: unknown highlight countries ${missing}`);
   const hl = (m.highlight || []).map(name => p(countries.find(f => f.properties.name === name))).join("");
   // Sites closer than MERGE units share one dot (its tooltip lists them all).
+  // Hollow dots (context: true) mark places fought over whose wounds are not in the records.
   const dots = [];
   for (const site of m.sites || []) {
-    const [x, y] = proj([site.lon, site.lat]);
-    const near = dots.find(d => Math.hypot(d.x - x, d.y - y) < MERGE);
+    const [x, y] = proj([site.lon, site.lat]), context = !!site.context;
+    const near = dots.find(d => d.context === context && Math.hypot(d.x - x, d.y - y) < MERGE);
     if (near) { near.names.push(site.name); near.x = (near.x + x) / 2; near.y = (near.y + y) / 2 }
-    else dots.push({ x, y, names: [site.name] });
+    else dots.push({ x, y, context, names: [site.name] });
   }
-  out[battle] = {
-    spec: m, w: W, h: H, land: p(land) || "", highlight: hl, borders: m.borders ? p(borders) || "" : "",
-    dots: dots.map(d => ({ x: +d.x.toFixed(1), y: +d.y.toFixed(1), names: d.names })),
-  };
-  console.log(battle.padEnd(30), `${Math.round(JSON.stringify(out[battle]).length / 1024)} KB`, `${dots.length} dot(s)`);
+  return { label: m.label || "", land: p(land) || "", lakes: p(lakes) || "", highlight: hl, borders: m.borders ? p(borders) || "" : "",
+           dots: dots.map(d => ({ x: +d.x.toFixed(1), y: +d.y.toFixed(1), names: d.names, ...(d.context ? { context: true } : {}) })) };
+}
+
+// A conflict's map is one panel or a list of panels drawn side by side.
+const out = {};
+for (const [battle, c] of Object.entries(conflicts)) {
+  if (!c.map) continue;
+  const panels = (Array.isArray(c.map) ? c.map : [c.map]).map(m => panel(battle, m));
+  out[battle] = { spec: c.map, w: W, h: H, gap: 8, panels };
+  console.log(battle.padEnd(30), `${Math.round(JSON.stringify(out[battle]).length / 1024)} KB`,
+              panels.map(q => `${q.dots.length} dot(s)`).join(" + "));
 }
 fs.writeFileSync(path.join(root, "data/maps.json"), JSON.stringify(out, null, 1) + "\n");
 console.log("wrote data/maps.json");
