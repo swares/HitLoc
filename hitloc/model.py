@@ -1,6 +1,8 @@
 """Load and validate the YAML data set."""
 from __future__ import annotations
 
+import re
+
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -8,6 +10,38 @@ import yaml
 
 MECHANISMS = ("cut", "pierce", "crush", "ballistic")
 THREATS = ("fragment", "pistol", "rifle", "rifle_ap")
+# Names the combatant figures can draw (templates/figure.js); build.py checks they exist there.
+FIG_NAMES = {
+    "helmet": ("kettle", "bascinet", "closed", "pot", "morion", "coif", "crested", "brodie", "adrian", "stahlhelm",
+               "fj", "m1", "japanese", "soviet", "pasgt", "ach", "cap"),
+    "hat": ("none", "hood", "broad_hat", "tricorne", "bicorne", "shako", "bearskin", "mitre", "round_hat", "kepi",
+            "slouch", "feather", "headband", "czapka", "field_cap", "winter_cap", "pith", "boonie", "turban",
+            "shemagh", "balaclava", "beret", "police_cap", "kabalak"),
+    "icon": ("sword", "sabre", "dagger", "axe", "club", "spear", "lance", "bow", "crossbow", "sling", "long_gun",
+             "bayonet_gun", "musket_butt", "modern_rifle", "machine_gun", "smg", "pistol", "launcher", "grenade",
+             "stick_grenade", "device", "rammer", "stake", "spade", "fist"),
+    "beard": ("none", "stubble", "moustache", "beard"),
+}
+LOOK_KEYS = ("colour", "trousers", "coat", "hat", "helmet", "beard")
+
+
+def look_errors(where: str, look) -> list[str]:
+    """Problems with a figure `look` (side, example or kit)."""
+    if look is None:
+        return []
+    if not isinstance(look, dict):
+        return [f"{where}: look must be a mapping"]
+    out = []
+    for k, v in look.items():
+        if k not in LOOK_KEYS:
+            out.append(f"{where}: unknown look key {k} (use {', '.join(LOOK_KEYS)})")
+        elif k in ("colour", "trousers") and not re.fullmatch(r"#[0-9a-fA-F]{6}", str(v)):
+            out.append(f"{where}: look {k} must be a colour like #2f3f6e")
+        elif k == "coat" and v != "skin":
+            out.append(f"{where}: look coat can only be skin (bare chest)")
+        elif k in FIG_NAMES and v not in FIG_NAMES[k]:
+            out.append(f"{where}: look {k} {v} is not one the figures can draw ({', '.join(FIG_NAMES[k])})")
+    return out
 SEVERITIES = ("light", "serious", "critical")
 
 
@@ -351,6 +385,11 @@ def validate(d: Data) -> None:
                 errors.append(f"weapons.yaml: {wid} fallback_mods {m} is not offered on {mt}")
         if w.get("melee") and w["melee"] not in ("armed", "unarmed"):
             errors.append(f"weapons.yaml: {wid} melee must be armed or unarmed")
+    for wid, w in d.weapons.items():
+        if w.get("icon") and w["icon"] not in FIG_NAMES["icon"]:
+            errors.append(f"weapons.yaml: {wid} icon {w['icon']} is not one the figures can draw")
+    for kid, kit in d.armor.get("kits", {}).items():
+        errors += look_errors(f"armor.yaml: kit {kid}", kit.get("look"))
     for kid, kit in d.armor.get("kits", {}).items():
         if "shield" in kit and not isinstance(kit["shield"], bool):
             errors.append(f"armor.yaml: kit {kid} shield must be true or false")
@@ -369,7 +408,10 @@ def validate(d: Data) -> None:
             if t.get("battle") == b:
                 offered |= set(t["weapons"])
         sides = {sd["name"] for sd in c.get("sides") or []}
+        for sd in c.get("sides") or []:
+            errors += look_errors(f"conflicts.yaml: {b} side {sd['name']}", sd.get("look"))
         for ex in c.get("examples") or []:
+            errors += look_errors(f"conflicts.yaml: {b} example {ex['name']}", ex.get("look"))
             if ex["kit"] not in d.armor["kits"]:
                 errors.append(f"conflicts.yaml: {b} example '{ex['name']}' has unknown kit {ex['kit']}")
             if ex["weapon"] not in d.weapons:

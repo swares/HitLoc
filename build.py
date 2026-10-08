@@ -367,11 +367,49 @@ def markdown(d) -> str:
 # --------------------------------------------------------------------------
 # PDF
 # --------------------------------------------------------------------------
-def pdf(d, path: Path) -> None:
+def render_figures(d, fig_js: str, out_dir: Path) -> dict:
+    """PNG of every example combatant's figure, for the PDF: {(battle, index): path}.
+    Uses a headless browser (Playwright + Chromium) to draw templates/figure.js exactly as the
+    roller does. Optional: without Playwright the PDF is built without figures."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("note: Playwright not installed, so the PDF has no combatant figures "
+              "(pip install playwright && playwright install chromium)")
+        return {}
+    items = []
+    for battle, c in d.conflicts.items():
+        for i, e in enumerate(c.get("examples") or []):
+            items.append({"key": [battle, i], "kit": d.armor["kits"][e["kit"]], "weapon": d.weapons[e["weapon"]],
+                          "conflict": {"sides": c.get("sides") or []}, "ex": e})
+    out_dir.mkdir(parents=True, exist_ok=True)
+    page_html = ("<!doctype html><meta charset='utf-8'><body style='margin:0;background:transparent'>"
+                 f"<script>{fig_js}</script><div id='f'></div><script>const I = {json.dumps(items)};"
+                 "document.getElementById('f').innerHTML = I.map((x, n) => `<div id='g${n}' style='display:inline-block;padding:2px'>`"
+                 " + FIG.svg({kit: x.kit, weapon: x.weapon, look: FIG.lookFor(x.conflict, x.ex), size: 160}) + '</div>').join('');</script>")
+    found = {}
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch()
+            page = browser.new_page(device_scale_factor=2)
+            page.set_content(page_html)
+            for n, x in enumerate(items):
+                f = out_dir / f"fig{n:03d}.png"
+                page.locator(f"#g{n}").screenshot(path=str(f), omit_background=True)
+                found[tuple(x["key"])] = f
+            browser.close()
+    except Exception as e:                      # no browser installed, sandbox, etc.
+        print(f"note: could not draw combatant figures for the PDF ({e.__class__.__name__}); building without them")
+        return {}
+    return found
+
+
+def pdf(d, path: Path, figs: dict | None = None) -> None:
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import letter
     from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
     from reportlab.lib.units import inch
+    from reportlab.platypus import Image as RLImage
     from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle,
                                     PageBreak, KeepTogether)
 
@@ -449,14 +487,17 @@ def pdf(d, path: Path) -> None:
                     rows += [[Paragraph(f"<b>{x['name']}</b>", C), Paragraph(x["who"], C), Paragraph(x["armour"], C)] for x in c["sides"]]
                     story += [Paragraph("Sides and armour", H2), grid(rows, [1.3 * inch, 2.2 * inch, W - 3.5 * inch]), Spacer(1, 8)]
                 if c.get("examples"):
-                    rows = [[Paragraph(x, CH) for x in ["Example", "Side", "Wears (armour kit)", "Fights with", "Notes"]]]
-                    rows += [[Paragraph(f"<b>{e['name']}</b>", C), Paragraph(e["side"], C),
+                    figs = figs or {}
+                    fig = lambda i: (RLImage(str(figs[(prev_battle, i)]), width=0.32 * inch, height=0.64 * inch)
+                                     if (prev_battle, i) in figs else "")
+                    rows = [[Paragraph(x, CH) for x in ["", "Example", "Side", "Wears (armour kit)", "Fights with", "Notes"]]]
+                    rows += [[fig(i), Paragraph(f"<b>{e['name']}</b>", C), Paragraph(e["side"], C),
                               Paragraph(d.armor["kits"][e["kit"]]["name"], C), Paragraph(d.weapons[e["weapon"]]["name"], C),
-                              Paragraph(e.get("notes", ""), C)] for e in c["examples"]]
+                              Paragraph(e.get("notes", ""), C)] for i, e in enumerate(c["examples"])]
                     story += [Paragraph("Example combatants", H2),
                               Paragraph("The kit is what they wear when hit (use it on a table that allows armour); "
                                         "the weapon is what they fight with.", S), Spacer(1, 3),
-                              grid(rows, [1.4 * inch, 1.0 * inch, 1.9 * inch, 1.4 * inch, W - 5.7 * inch]), Spacer(1, 6)]
+                              grid(rows, [0.45 * inch, 1.3 * inch, 1.0 * inch, 1.7 * inch, 1.3 * inch, W - 5.75 * inch]), Spacer(1, 6)]
                 cmp_ = c.get("comparison")
                 if cmp_:
                     rows = [[Paragraph(x, CH) for x in ["", *cmp_["columns"]]]] + [[Paragraph(f"<b>{r[0]}</b>", C)] + r[1:] for r in cmp_["rows"]]
@@ -696,9 +737,19 @@ def main() -> int:
     b = bundle(d)
     (DIST / "hitloc-data.json").write_text(json.dumps(b, indent=1), encoding="utf-8")
     (DIST / "tables.md").write_text(markdown(d), encoding="utf-8")
-    pdf(d, DIST / "tables.pdf")
+    fig_js = (ROOT / "templates" / "figure.js").read_text(encoding="utf-8")
+    import tempfile
+    with tempfile.TemporaryDirectory() as tmp:
+        pdf(d, DIST / "tables.pdf", render_figures(d, fig_js, Path(tmp)))
     tpl = (ROOT / "templates" / "roller.html").read_text(encoding="utf-8")
-    html = tpl.replace("/*__HITLOC_DATA__*/null", json.dumps(b, separators=(",", ":")))
+    from hitloc.model import FIG_NAMES
+    missing = [f"{k}:{n}" for k, names in FIG_NAMES.items() for n in names
+               if not re.search(r"\b" + re.escape(n) + r"\s*:", fig_js)]
+    if missing:
+        print("templates/figure.js lacks drawings named in hitloc/model.py FIG_NAMES: " + ", ".join(missing), file=sys.stderr)
+        return 1
+    html = tpl.replace("/*__FIGURE_JS__*/", fig_js.replace("</script>", "<\\/script>"))
+    html = html.replace("/*__HITLOC_DATA__*/null", json.dumps(b, separators=(",", ":")))
     (DIST / "roller.html").write_text(html, encoding="utf-8")
     (ROOT / "index.html").write_text(index_page(d), encoding="utf-8")
     print("Built:", ", ".join(p.name for p in sorted(DIST.iterdir())), "+ index.html")
