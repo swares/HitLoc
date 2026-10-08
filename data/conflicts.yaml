@@ -14,6 +14,10 @@
 #            hat (when the kit has no helmet), helmet (shape, when it has one), beard
 #            elsewhere: true - the weapon is recorded only in another group's tables (no
 #            data for it in this war); the roller offers to switch tables when he attacks.
+# image    - optional picture of such a combatant: {file: <Wikimedia Commons file name,
+#            without "File:">, caption: <what it shows, who made it and when>}. Period
+#            images only (art, photographs or objects of the time; no reenactors); say in
+#            the caption when it is a near match (another year, unit or army).
 
 conflicts:
   "Visby 1361":
@@ -36,11 +40,11 @@ conflicts:
         armour: "Uneven. Many wore mail coifs and padded coats; some had coats of plates and gauntlets; many had little or nothing on the legs, which took most of the blade wounds."
         look: {colour: "#8a7a5c", trousers: "#6b5d45", hat: hood, beard: beard}
     examples:
-      - {name: "Gotland levy", side: "Gotlandic levy", kit: gotland_levy, weapon: spear, notes: "Coif and padded coat; legs bare."}
-      - {name: "Gotland freeholder", side: "Gotlandic levy", kit: gotland_armoured, weapon: axe, notes: "Wealthier farmer in a coat of plates."}
-      - {name: "Danish man-at-arms", side: "Danish army", kit: danish_maa, weapon: sword, notes: "Fully harnessed professional."}
+      - {name: "Gotland levy", side: "Gotlandic levy", kit: gotland_levy, weapon: spear, notes: "Coif and padded coat; legs bare.", image: {file: "Fornsalen - Invasion 1361 - Schädel mit Kettenhaube 1.jpg", caption: "Mail coif still on a skull from the Visby mass graves (Gotland Museum)"}}
+      - {name: "Gotland freeholder", side: "Gotlandic levy", kit: gotland_armoured, weapon: axe, notes: "Wealthier farmer in a coat of plates.", image: {file: "Korsbetningen - KMB - 16001000018315.jpg", caption: "Coat of plates no. 7 from mass grave 2 at Visby"}}
+      - {name: "Danish man-at-arms", side: "Danish army", kit: danish_maa, weapon: sword, notes: "Fully harnessed professional.", image: {file: "Valdemar Atterdag.jpg", caption: "Valdemar IV Atterdag, who took Visby, armed with sword and shield (drawing of the c. 1375 Næstved fresco)"}}
       - {name: "Danish sergeant", side: "Danish army", kit: transitional, weapon: spiked_club, notes: "Coat of plates and mail; the spiked club matches square holes in Visby skulls."}
-      - {name: "Danish crossbowman", side: "Danish army", kit: transitional, weapon: crossbow, notes: "126 arrow and bolt wounds were found among the Gotland dead."}
+      - {name: "Danish crossbowman", side: "Danish army", kit: transitional, weapon: crossbow, notes: "126 arrow and bolt wounds were found among the Gotland dead.", image: {file: "Battle of Crecy (crossbowmen).jpg", caption: "Crossbowmen at Crécy (1346), painted about a century later"}}
     sources:
       - "Swedish History Museum, 'Skull from the Battle of Visby'."
       - "Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939)."
@@ -67,11 +71,11 @@ conflicts:
         armour: "Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured."
         look: {colour: "#9a8a6a", trousers: "#4a4038", hat: broad_hat, beard: moustache}
     examples:
-      - {name: "Blue Brigade musketeer", side: "Sweden and Protestant allies", kit: none, weapon: matchlock_musket, notes: "Matchlock and bandolier; clubs the musket in the press.", look: {hat: broad_hat}}
-      - {name: "Swedish pikeman", side: "Sweden and Protestant allies", kit: pikeman_1630, weapon: spear, notes: "Pike about 5 m long."}
+      - {name: "Blue Brigade musketeer", side: "Sweden and Protestant allies", kit: none, weapon: matchlock_musket, notes: "Matchlock and bandolier; clubs the musket in the press.", look: {hat: broad_hat}, image: {file: "Jacob de Gheyn - Wapenhandelinge 4.jpg", caption: "Musketeer from de Gheyn's Dutch drill book (1608), the drill the Swedish army adopted"}}
+      - {name: "Swedish pikeman", side: "Sweden and Protestant allies", kit: pikeman_1630, weapon: spear, notes: "Pike about 5 m long.", image: {file: "The Soldier Carrying His Pike at the Slope MET DP801214.jpg", caption: "Armoured pikeman, drawing by Jacob de Gheyn II, c. 1600"}}
       - {name: "Finnish hakkapeliitta", side: "Sweden and Protestant allies", kit: harquebusier_1630, weapon: saber, notes: "Light cavalry: pistols, then swords at the gallop."}
-      - {name: "Imperial cuirassier", side: "Imperial army and Catholic League", kit: cuirassier_1630, weapon: wheellock_pistol, notes: "Pappenheim's heavy horse; pistols at close range, aimed at the head."}
-      - {name: "Imperial harquebusier", side: "Imperial army and Catholic League", kit: harquebusier_1630, weapon: wheellock_pistol, notes: "Carbine and pistols; most of the balls in the Lützen grave are carbine shot."}
+      - {name: "Imperial cuirassier", side: "Imperial army and Catholic League", kit: cuirassier_1630, weapon: wheellock_pistol, notes: "Pappenheim's heavy horse; pistols at close range, aimed at the head.", image: {file: "Snayers Bucquoy.jpg", caption: "Imperial general Bucquoy in cuirassier's armour, by Peter Snayers"}}
+      - {name: "Imperial harquebusier", side: "Imperial army and Catholic League", kit: harquebusier_1630, weapon: wheellock_pistol, notes: "Carbine and pistols; most of the balls in the Lützen grave are carbine shot.", image: {file: "Fotothek df tg 0000946 Kriegskunst ^ Pferd ^ Kavallerie ^ Reiter ^ Lanzierer ^ Kürassier ^ Arkebussierr.jpg", caption: "Lancer, cuirassier and harquebusier from Wallhausen's cavalry manual (1616)"}}
       - {name: "Croat light horseman", side: "Imperial army and Catholic League", kit: none, weapon: saber, notes: "Raiders and skirmishers."}
     sources:
       - "Nicklisch et al., PLoS ONE 12(5): e0178252 (2017): the Lützen mass grave, the Blue Brigade, and contemporary advice to aim for the head and left chest."
@@ -111,16 +115,16 @@ conflicts:
         armour: "None. Musket, tomahawk and knife; raids and ambushes on the frontier."
         look: {colour: "#9a7347", trousers: "#7d5530", hat: feather}
     examples:
-      - {name: "Continental infantryman", side: "Continental Army and militia", kit: none, weapon: musket_smoothbore, notes: "Musket and bayonet."}
-      - {name: "Morgan's rifleman", side: "Continental Army and militia", kit: none, weapon: rifle_flintlock, notes: "Long rifle, slow to load, deadly at range; no bayonet.", look: {colour: "#a99b72", trousers: "#a99b72", hat: round_hat}}
+      - {name: "Continental infantryman", side: "Continental Army and militia", kit: none, weapon: musket_smoothbore, notes: "Musket and bayonet.", image: {file: "Soldiers at the siege of Yorktown (1781), by Jean-Baptiste-Antoine DeVerger.png", caption: "American soldiers at Yorktown, 1781, watercolour by a French officer"}}
+      - {name: "Morgan's rifleman", side: "Continental Army and militia", kit: none, weapon: rifle_flintlock, notes: "Long rifle, slow to load, deadly at range; no bayonet.", look: {colour: "#a99b72", trousers: "#a99b72", hat: round_hat}, image: {file: "Soldiers at the siege of Yorktown (1781), by Jean-Baptiste-Antoine DeVerger.png", caption: "American soldiers at Yorktown, 1781; the rifleman wears a hunting shirt"}}
       - {name: "Continental light dragoon", side: "Continental Army and militia", kit: dragoon_helmet, weapon: saber, notes: "Leather helmet and sabre."}
-      - {name: "British grenadier", side: "British Army and Loyalists", kit: none, weapon: bayonet, notes: "The bayonet charge was the British infantry's favoured tactic.", look: {hat: bearskin}}
+      - {name: "British grenadier", side: "British Army and Loyalists", kit: none, weapon: bayonet, notes: "The bayonet charge was the British infantry's favoured tactic.", look: {hat: bearskin}, image: {file: "David Morier (1705^-70) - Grenadiers, 16th and 17th Regiments of Foot, and Grenadier and Drummer, 18th Royal Irish Regiment of Foot, 1751 - RCIN 405583 - Royal Collection.jpg", caption: "British grenadiers by David Morier, 1751, a generation before the war"}}
       - {name: "Loyalist ranger", side: "British Army and Loyalists", kit: none, weapon: musket_smoothbore, notes: "Frontier raids alongside Native allies.", look: {colour: "#3f5a32"}}
-      - {name: "British light dragoon", side: "British Army and Loyalists", kit: dragoon_helmet, weapon: saber, notes: "Tarleton's British Legion fought with sabres at Waxhaws."}
-      - {name: "Hessian Jäger", side: "German auxiliaries", kit: none, weapon: rifle_flintlock, notes: "German hunters' rifle, short and accurate.", look: {colour: "#3f5a32", trousers: "#3f5a32"}}
-      - {name: "Hessian musketeer", side: "German auxiliaries", kit: none, weapon: musket_smoothbore, notes: "Line infantry; musket and bayonet.", look: {hat: mitre}}
+      - {name: "British light dragoon", side: "British Army and Loyalists", kit: dragoon_helmet, weapon: saber, notes: "Tarleton's British Legion fought with sabres at Waxhaws.", image: {file: "Banastre-Tarleton-by-Joshua-Reynolds.jpg", caption: "Banastre Tarleton in light dragoon helmet, by Joshua Reynolds, 1782"}}
+      - {name: "Hessian Jäger", side: "German auxiliaries", kit: none, weapon: rifle_flintlock, notes: "German hunters' rifle, short and accurate.", look: {colour: "#3f5a32", trousers: "#3f5a32"}, image: {file: "Braunschweiger Jäger.jpg", caption: "Brunswick (not Hessian) Jäger in America, watercolour by Friedrich von Germann, 1778"}}
+      - {name: "Hessian musketeer", side: "German auxiliaries", kit: none, weapon: musket_smoothbore, notes: "Line infantry; musket and bayonet.", look: {hat: mitre}, image: {file: "Braunschw. Regt v. Specht. 1778.jpg", caption: "Brunswick (not Hessian) musketeer of Regiment Specht, watercolour by von Germann, 1778"}}
       - {name: "French fusilier", side: "French forces", kit: none, weapon: musket_smoothbore, notes: "Charleville musket; Yorktown 1781."}
-      - {name: "Mohawk warrior", side: "Native nations", kit: none, weapon: axe, notes: "Tomahawk and musket."}
+      - {name: "Mohawk warrior", side: "Native nations", kit: none, weapon: axe, notes: "Tomahawk and musket.", image: {file: "Joseph Brant painting by George Romney 1776.jpg", caption: "Joseph Brant (Thayendanegea), Mohawk war leader, by George Romney, 1776"}}
       - {name: "Oneida scout", side: "Native nations", kit: none, weapon: musket_smoothbore, notes: "Allied with the Americans."}
     sources:
       - "Peckham, The Toll of Independence (1974), via Journal of the American Revolution, 'The 25 Deadliest Battles of the Revolutionary War' (2014): 7,174 killed and 8,241 wounded."
@@ -164,18 +168,18 @@ conflicts:
         armour: "None. Musket, rifle, tomahawk and war club."
         look: {colour: "#9a7347", trousers: "#7d5530", hat: feather}
     examples:
-      - {name: "French line infantryman", side: "French Empire and allies", kit: none, weapon: musket_smoothbore, notes: "Charleville musket and bayonet."}
-      - {name: "French cuirassier", side: "French Empire and allies", kit: cuirassier, weapon: saber, notes: "Heavy cavalry: straight sword, breastplate and helmet."}
-      - {name: "Polish lancer", side: "French Empire and allies", kit: none, weapon: lance, notes: "Vistula Legion lancers, feared at Albuera (1811).", look: {hat: czapka, trousers: "#2f3f6e"}}
-      - {name: "British redcoat", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Brown Bess and bayonet, firing in two-deep line."}
-      - {name: "95th rifleman", side: "Britain and Peninsular allies", kit: none, weapon: rifle_flintlock, notes: "Baker rifle; skirmisher and sniper.", look: {colour: "#2f4a2a", trousers: "#2f4a2a"}}
-      - {name: "British heavy dragoon", side: "Britain and Peninsular allies", kit: dragoon_helmet, weapon: saber, notes: "1796 heavy cavalry sword.", look: {trousers: "#e8e4d8"}}
-      - {name: "Spanish guerrilla", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Ambushes of convoys and couriers.", look: {colour: "#7d5530", trousers: "#4a4038", hat: broad_hat, beard: beard}}
-      - {name: "US regular, 1814", side: "United States (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Chippawa and Lundy's Lane; Springfield musket.", look: {colour: "#8a8f96", trousers: "#8a8f96"}}
-      - {name: "Kentucky militia rifleman", side: "United States (1812-15)", kit: none, weapon: rifle_flintlock, notes: "River Raisin, the Thames, New Orleans.", look: {colour: "#a99b72", trousers: "#7d5530", hat: round_hat}}
-      - {name: "British regular, 1814", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Often a Peninsular veteran."}
+      - {name: "French line infantryman", side: "French Empire and allies", kit: none, weapon: musket_smoothbore, notes: "Charleville musket and bayonet.", image: {file: "Grande Armée - Infantry.jpg", caption: "French line infantry, from Carle Vernet's La Grande Armée de 1812"}}
+      - {name: "French cuirassier", side: "French Empire and allies", kit: cuirassier, weapon: saber, notes: "Heavy cavalry: straight sword, breastplate and helmet.", image: {file: "Cuirassier du 1er régiment en 1812.jpg", caption: "Cuirassier of the 1st Regiment, 1812, by Carle Vernet"}}
+      - {name: "Polish lancer", side: "French Empire and allies", kit: none, weapon: lance, notes: "Vistula Legion lancers, feared at Albuera (1811).", look: {hat: czapka, trousers: "#2f3f6e"}, image: {file: "Grande Armée - Polish Light Horse Lancers.jpg", caption: "Lancers of the 7th Chevau-légers (the former Vistula Legion lancers), by Carle Vernet, 1812"}}
+      - {name: "British redcoat", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Brown Bess and bayonet, firing in two-deep line.", image: {file: "Battalion Infantry 6th Regiment and 23rd (or Royal Welsh) Fusiliers.jpg", caption: "British line infantry, by Charles Hamilton Smith, 1815"}}
+      - {name: "95th rifleman", side: "Britain and Peninsular allies", kit: none, weapon: rifle_flintlock, notes: "Baker rifle; skirmisher and sniper.", look: {colour: "#2f4a2a", trousers: "#2f4a2a"}, image: {file: "British Riflemen.jpg", caption: "Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812"}}
+      - {name: "British heavy dragoon", side: "Britain and Peninsular allies", kit: dragoon_helmet, weapon: saber, notes: "1796 heavy cavalry sword.", look: {trousers: "#e8e4d8"}, image: {file: "Uniform of a Private of the 3rd or Kings Own Dragoons.jpg", caption: "Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812"}}
+      - {name: "Spanish guerrilla", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Ambushes of convoys and couriers.", look: {colour: "#7d5530", trousers: "#4a4038", hat: broad_hat, beard: beard}, image: {file: "Goya-Guerra (02).jpg", caption: "Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)"}}
+      - {name: "US regular, 1814", side: "United States (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Chippawa and Lundy's Lane; Springfield musket.", look: {colour: "#8a8f96", trousers: "#8a8f96"}, image: {file: "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg", caption: "The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"}}
+      - {name: "Kentucky militia rifleman", side: "United States (1812-15)", kit: none, weapon: rifle_flintlock, notes: "River Raisin, the Thames, New Orleans.", look: {colour: "#a99b72", trousers: "#7d5530", hat: round_hat}, image: {file: "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg", caption: "Kentucky mounted volunteers at the Thames, 1813 (print of 1833)"}}
+      - {name: "British regular, 1814", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Often a Peninsular veteran.", image: {file: "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg", caption: "British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"}}
       - {name: "Canadian militiaman", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Sedentary or embodied militia.", look: {colour: "#4a4f55", hat: round_hat}}
-      - {name: "Shawnee warrior", side: "Tecumseh's confederacy", kit: none, weapon: axe, notes: "Tomahawk and musket."}
+      - {name: "Shawnee warrior", side: "Tecumseh's confederacy", kit: none, weapon: axe, notes: "Tomahawk and musket.", image: {file: "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg", caption: "Tecumseh's warriors at the Thames, 1813 (print of 1833)"}}
     sources:
       - "Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database)."
       - "Sides, armour and dress: general historical knowledge, not from the wound data."
@@ -198,11 +202,11 @@ conflicts:
         armour: "None issued; private vests were rarer still."
         look: {colour: "#8a8f96", trousers: "#6b6f75", hat: slouch, beard: beard}
     examples:
-      - {name: "Union infantryman", side: "Union", kit: none, weapon: rifle_musket, notes: "Springfield rifle-musket, no armour."}
-      - {name: "Union volunteer with steel vest, 1862", side: "Union", kit: acw_steel_vest, weapon: rifle_musket, notes: "One of the few who kept his vest."}
-      - {name: "Confederate cavalryman", side: "Confederacy", kit: none, weapon: revolver, notes: "Revolver and sabre.", look: {hat: slouch}}
-      - {name: "Confederate infantryman", side: "Confederacy", kit: none, weapon: rifle_musket, notes: "Enfield or Springfield rifle-musket, no armour."}
-      - {name: "Union cavalryman", side: "Union", kit: none, weapon: saber, notes: "Sabre charge; carbine and revolver as well.", look: {trousers: "#6f88b0"}}
+      - {name: "Union infantryman", side: "Union", kit: none, weapon: rifle_musket, notes: "Springfield rifle-musket, no armour.", image: {file: "Unidentified soldier in Union uniform with musket and bayonet LOC 5228555193.jpg", caption: "Unidentified Union soldier with musket and bayonet, 1861-65 (Library of Congress)"}}
+      - {name: "Union volunteer with steel vest, 1862", side: "Union", kit: acw_steel_vest, weapon: rifle_musket, notes: "One of the few who kept his vest.", image: {file: "American Civil War bullet proof vest.jpg", caption: "Advertisement for the Soldiers' Bullet Proof Vest, 1862"}}
+      - {name: "Confederate cavalryman", side: "Confederacy", kit: none, weapon: revolver, notes: "Revolver and sabre.", look: {hat: slouch}, image: {file: "Unidentified soldier in Confederate uniform with cavalry sword and revolver LCCN2012646164.jpg", caption: "Unidentified Confederate soldier with cavalry sword and revolver, 1861-65 (Library of Congress)"}}
+      - {name: "Confederate infantryman", side: "Confederacy", kit: none, weapon: rifle_musket, notes: "Enfield or Springfield rifle-musket, no armour.", image: {file: "Unidentified soldier in Confederate uniform with musket LCCN2010650476.jpg", caption: "Unidentified Confederate soldier with musket, 1861-65 (Library of Congress)"}}
+      - {name: "Union cavalryman", side: "Union", kit: none, weapon: saber, notes: "Sabre charge; carbine and revolver as well.", look: {trousers: "#6f88b0"}, image: {file: "Unidentified soldier in Union cavalry uniform holding cavalry saber LOC 5229167420.jpg", caption: "Unidentified Union cavalryman with sabre, 1861-65 (Library of Congress)"}}
     sources:
       - "Antietam on the Web, 'Saved by his steel vest' (2018): Atwater and G&D Cook vests, sales and use."
 
@@ -229,12 +233,12 @@ conflicts:
         armour: "None worn. Many warriors carried a round shield of thick rawhide (buffalo hide on the Plains), which could turn an arrow or a glancing ball."
         look: {colour: "#9a7347", trousers: "#7d5530", hat: feather}
     examples:
-      - {name: "Plains warrior with bow", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: bow, notes: "Iron trade-hoop or flint arrowheads; several arrows in quick succession."}
-      - {name: "Comanche lancer", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: spear, notes: "Mounted with lance and shield."}
+      - {name: "Plains warrior with bow", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: bow, notes: "Iron trade-hoop or flint arrowheads; several arrows in quick succession.", image: {file: "White Bear (Sa-tan-ta), a Kiowa chief, full-length, seated, holding bow and arrows, 1869 - 1874 - NARA - 518901.jpg", caption: "Satanta (White Bear), Kiowa war leader, with bow and arrows, photographed by William S. Soule, 1869-74"}}
+      - {name: "Comanche lancer", side: "Plains and Southwest nations", kit: rawhide_shield, weapon: spear, notes: "Mounted with lance and shield.", image: {file: "Comanche Osage fight.jpg", caption: "A Comanche lances an Osage at full gallop, painted by George Catlin, 1834"}}
       - {name: "Apache raider", side: "Plains and Southwest nations", kit: none, weapon: bow, notes: "Ambush from cover; hoop-iron arrowheads.", look: {colour: "#e8e4d8", trousers: "#9a7347", hat: headband}}
-      - {name: "US cavalry trooper", side: "US Army", kit: none, weapon: revolver, elsewhere: true, notes: "No arrow-era gunshot table exists; his revolver rolls on a Civil War table."}
+      - {name: "US cavalry trooper", side: "US Army", kit: none, weapon: revolver, elsewhere: true, notes: "No arrow-era gunshot table exists; his revolver rolls on a Civil War table.", image: {file: "Unidentified Buffalo soldier, 10th Cavalry, United States Army (5431234784).jpg", caption: "Trooper of the 10th Cavalry (Buffalo Soldiers), c. 1870"}}
       - {name: "US infantryman", side: "US Army", kit: none, weapon: rifle_musket, elsewhere: true, notes: "Springfield rifle (rolls on a Civil War table)."}
-      - {name: "Indian scout", side: "US Army", kit: none, weapon: bow, notes: "Several scouts in the reports were themselves hit by arrows.", look: {colour: "#2f3f6e", trousers: "#7d5530", hat: headband}}
+      - {name: "Indian scout", side: "US Army", kit: none, weapon: bow, notes: "Several scouts in the reports were themselves hit by arrows.", look: {colour: "#2f3f6e", trousers: "#7d5530", hat: headband}, image: {file: "Apache Scouts.jpg", caption: "Apache scouts at Fort Apache, Arizona Territory, c. 1880"}}
     sources:
       - "US Surgeon General's Office, Circular No. 3 (1871), 'Arrow-Wounds', pp. 144-161 (archive.org: reportofsurgical00unituoft). Places, tribes, units and the note on firearms and bows are from the case reports and Dr. Muller's note there."
       - "Rawhide shields: general ethnographic description, not from the report."
@@ -257,17 +261,17 @@ conflicts:
         armour: "German Stahlhelm from 1916. Heavy Sappenpanzer breastplates for sentries and machine gunners in fixed positions."
         look: {colour: "#6f7569", hat: field_cap, helmet: stahlhelm, beard: moustache}
     examples:
-      - {name: "French poilu, 1914", side: "Allies", kit: none, weapon: rifle_service, notes: "Kepi, no helmet yet.", look: {colour: "#3f4f7a", trousers: "#a3262b", hat: kepi}}
-      - {name: "British infantryman, 1916", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield."}
-      - {name: "German machine gunner", side: "Central Powers", kit: ww1_sentry, weapon: machine_gun, notes: "Stahlhelm and Sappenpanzer in a fixed position."}
-      - {name: "Trench raider, 1917", side: "Allies", kit: ww2_rifleman, weapon: entrenching_tool, notes: "Night raid: sharpened spade, revolver and grenades; no rifle in the trench."}
-      - {name: "Russian infantryman, 1915", side: "Allies", kit: none, weapon: bayonet, notes: "Most Russian soldiers had no steel helmet; the army set great store by the bayonet.", look: {colour: "#8a8458", hat: field_cap}}
-      - {name: "Italian Ardito, 1918", side: "Allies", kit: ww2_rifleman, weapon: hand_grenade, notes: "Assault trooper: Adrian helmet, grenades and dagger.", look: {colour: "#6f7560", helmet: adrian}}
-      - {name: "American doughboy, 1918", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1917 (Brodie-pattern) helmet, Springfield rifle.", look: {colour: "#6f6a48"}}
-      - {name: "German stormtrooper, 1918", side: "Central Powers", kit: ww2_rifleman, weapon: hand_grenade, notes: "Stahlhelm; grenades, carbine and sharpened spade."}
-      - {name: "Austro-Hungarian infantryman", side: "Central Powers", kit: ww2_rifleman, weapon: rifle_service, notes: "Steel helmet from 1916-17; Mannlicher rifle.", look: {colour: "#7f8a8c"}}
-      - {name: "Ottoman infantryman, Gallipoli", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Cloth headgear, no steel helmet; Mauser rifle.", look: {colour: "#8a7a52", hat: kabalak}}
-      - {name: "Bulgarian infantryman", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Mostly without steel helmets; Mannlicher rifle.", look: {colour: "#6f6a50", hat: field_cap}}
+      - {name: "French poilu, 1914", side: "Allies", kit: none, weapon: rifle_service, notes: "Kepi, no helmet yet.", look: {colour: "#3f4f7a", trousers: "#a3262b", hat: kepi}, image: {file: "Portrait de soldats du 20e régiment d'infanterie territoriale, août 1914.jpg", caption: "French territorial infantry in kepis, August 1914"}}
+      - {name: "British infantryman, 1916", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield.", image: {file: "Cheshire Regiment trench Somme 1916.jpg", caption: "Cheshire Regiment in a captured German trench on the Somme, July 1916"}}
+      - {name: "German machine gunner", side: "Central Powers", kit: ww1_sentry, weapon: machine_gun, notes: "Stahlhelm and Sappenpanzer in a fixed position.", image: {file: "Maschinengewehrkompanie.jpg", caption: "German machine-gun company (MGK III, Infantry Regiment 401), 1918"}}
+      - {name: "Trench raider, 1917", side: "Allies", kit: ww2_rifleman, weapon: entrenching_tool, notes: "Night raid: sharpened spade, revolver and grenades; no rifle in the trench.", image: {file: "A raiding party from the 9th Battalion, Scottish Rifles (Cameronians), leaving a sap and making for the German lines, 11 April 1917. Q5101.jpg", caption: "Raiding party of the 9th Cameronians leaving a sap for the German lines, April 1917"}}
+      - {name: "Russian infantryman, 1915", side: "Allies", kit: none, weapon: bayonet, notes: "Most Russian soldiers had no steel helmet; the army set great store by the bayonet.", look: {colour: "#8a8458", hat: field_cap}, image: {file: "Russian infantry LCCN2014697563.jpg", caption: "Russian infantry, 1914 (Library of Congress)"}}
+      - {name: "Italian Ardito, 1918", side: "Allies", kit: ww2_rifleman, weapon: hand_grenade, notes: "Assault trooper: Adrian helmet, grenades and dagger.", look: {colour: "#6f7560", helmet: adrian}, image: {file: "Italian Arditi.jpg", caption: "Italian Arditi assault troops, c. 1918"}}
+      - {name: "American doughboy, 1918", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1917 (Brodie-pattern) helmet, Springfield rifle.", look: {colour: "#6f6a48"}, image: {file: "At close grips2.jpg", caption: "American soldiers bombing a position, c. 1917-18 (Library of Congress)"}}
+      - {name: "German stormtrooper, 1918", side: "Central Powers", kit: ww2_rifleman, weapon: hand_grenade, notes: "Stahlhelm; grenades, carbine and sharpened spade.", image: {file: "Bundesarchiv Bild 146-1974-132-26A, Stoßtrupp.jpg", caption: "German Stoßtruppen leaving a trench to attack, 1917-18 (Bundesarchiv)"}}
+      - {name: "Austro-Hungarian infantryman", side: "Central Powers", kit: ww2_rifleman, weapon: rifle_service, notes: "Steel helmet from 1916-17; Mannlicher rifle.", look: {colour: "#7f8a8c"}, image: {file: "Handgranatenwerfer an der isonzofront 10. september 1917.jpg", caption: "Austro-Hungarian soldiers in steel helmets on the Isonzo front, September 1917"}}
+      - {name: "Ottoman infantryman, Gallipoli", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Cloth headgear, no steel helmet; Mauser rifle.", look: {colour: "#8a7a52", hat: kabalak}, image: {file: "Turkish Infantry Column at rest (LOC).jpg", caption: "Ottoman infantry column at rest, c. 1915 (Library of Congress)"}}
+      - {name: "Bulgarian infantryman", side: "Central Powers", kit: none, weapon: rifle_service, notes: "Mostly without steel helmets; Mannlicher rifle.", look: {colour: "#6f6a50", hat: field_cap}, image: {file: "Miletkovo 1917 Bulgarian Soldiers Resting.jpg", caption: "Bulgarian soldiers resting at Miletkovo on the Macedonian front, 1916-18"}}
     sources:
       - "Military Wiki, 'Stahlhelm' (introduction of German and Allied steel helmets)."
 
@@ -290,13 +294,13 @@ conflicts:
         armour: "Steel helmets (Japanese Type 90, German Stahlhelm); no infantry body armour."
         look: {colour: "#6f7569", helmet: stahlhelm}
     examples:
-      - {name: "US Marine, Bougainville", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, M1 Garand."}
-      - {name: "Japanese infantryman", side: "Axis", kit: ww2_rifleman, weapon: hand_grenade, notes: "Type 90 helmet; grenades and knee mortars at close range.", look: {colour: "#7d7448", helmet: japanese}}
-      - {name: "German MG gunner, Italy", side: "Axis", kit: ww2_rifleman, weapon: machine_gun, notes: "Stahlhelm, MG 42."}
-      - {name: "US bomber waist gunner", side: "Allies", kit: aircrew_flak, weapon: machine_gun, notes: "Flak vest and helmet; not an infantry kit."}
-      - {name: "British infantryman, Italy", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield; Eighth Army.", look: {colour: "#7a6e48", helmet: brodie}}
-      - {name: "Australian infantryman, Bougainville 1945", side: "Allies", kit: none, weapon: pistol_smg, notes: "Often a slouch hat rather than a helmet in the jungle; Owen submachine gun.", look: {colour: "#5d6449", hat: slouch}}
-      - {name: "German paratrooper, Cassino", side: "Axis", kit: ww2_rifleman, weapon: pistol_smg, notes: "Rimless paratrooper helmet, MP 40; fought as infantry.", look: {helmet: fj}}
+      - {name: "US Marine, Bougainville", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, M1 Garand.", image: {file: "1st Battalion 3rd Marines on Bougainville.png", caption: "1st Battalion, 3rd Marines coming out of the jungle on Bougainville, November 1943"}}
+      - {name: "Japanese infantryman", side: "Axis", kit: ww2_rifleman, weapon: hand_grenade, notes: "Type 90 helmet; grenades and knee mortars at close range.", look: {colour: "#7d7448", helmet: japanese}, image: {file: "Imperial Japanese Army Infantry 111th Regiment soldier and Indian National Army soldier.jpg", caption: "Japanese infantry of the 111th Regiment in Burma, 1943"}}
+      - {name: "German MG gunner, Italy", side: "Axis", kit: ww2_rifleman, weapon: machine_gun, notes: "Stahlhelm, MG 42.", image: {file: "Bundesarchiv Bild 101I-316-1172-06, Italien, Gebirgsjäger mit schwerem MG 42.jpg", caption: "German mountain troops with an MG 42 in Italy, 1944 (Bundesarchiv)"}}
+      - {name: "US bomber waist gunner", side: "Allies", kit: aircrew_flak, weapon: machine_gun, notes: "Flak vest and helmet; not an infantry kit.", image: {file: "B-17 waist gunner LCCN2004661756.jpg", caption: "B-17 waist gunner, wartime drawing, 1942 (Library of Congress)"}}
+      - {name: "British infantryman, Italy", side: "Allies", kit: ww2_rifleman, weapon: rifle_service, notes: "Brodie helmet, Lee-Enfield; Eighth Army.", look: {colour: "#7a6e48", helmet: brodie}, image: {file: "The British Army in Italy, April 1944 TR1708.jpg", caption: "Corporal of the Duke of Cornwall's Light Infantry in Italy, April 1944"}}
+      - {name: "Australian infantryman, Bougainville 1945", side: "Allies", kit: none, weapon: pistol_smg, notes: "Often a slouch hat rather than a helmet in the jungle; Owen submachine gun.", look: {colour: "#5d6449", hat: slouch}, image: {file: "AWM 078546 Australian 42nd Battalion patrol on Bougainville.jpg", caption: "Australian 42nd Battalion patrol on Bougainville, January 1945"}}
+      - {name: "German paratrooper, Cassino", side: "Axis", kit: ww2_rifleman, weapon: pistol_smg, notes: "Rimless paratrooper helmet, MP 40; fought as infantry.", look: {helmet: fj}, image: {file: "Bundesarchiv Bild 146-1974-006-62, Bei Monte Cassino, Fallschirmjäger.jpg", caption: "German paratrooper near Monte Cassino, February 1944 (Bundesarchiv)"}}
     sources:
       - "Borden Institute, Weapons Effects and War Wounds, Table 1-1 (Bougainville causes of injury)."
 
@@ -318,12 +322,12 @@ conflicts:
         armour: "No body armour; many Chinese soldiers had no steel helmet."
         look: {colour: "#7a7448", hat: field_cap}
     examples:
-      - {name: "US Army rifleman, 1950", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, no vest."}
-      - {name: "US Marine, 1952", side: "UN Command", kit: vietnam_usmc, weapon: rifle_service, notes: "M1951 Doron vest."}
-      - {name: "South Korean infantryman", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "ROK Army: M1 helmet, M1 Garand."}
-      - {name: "British infantryman, Imjin 1951", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "Commonwealth brigade: steel helmet, Lee-Enfield.", look: {colour: "#7a6e48", helmet: brodie}}
+      - {name: "US Army rifleman, 1950", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "M1 helmet, no vest.", image: {file: "U.S. Army machine gun team near the Chongchon River in North Korea (November 1950).jpg", caption: "US Army machine-gun team near the Chongchon River, November 1950"}}
+      - {name: "US Marine, 1952", side: "UN Command", kit: vietnam_usmc, weapon: rifle_service, notes: "M1951 Doron vest.", image: {file: "Body armor vest in Korea (KWB 53-2511-171), National Museum of Health and Medicine (3299287269).jpg", caption: "American soldier in an armoured vest, Korea (Army wound-ballistics survey photo, 1953)"}}
+      - {name: "South Korean infantryman", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "ROK Army: M1 helmet, M1 Garand.", image: {file: "SC 348651 - ROK squad, led by American soldiers, search for North Korean enemy snipers near Yongsan. 16 September, 1950. (52514534466).jpg", caption: "ROK Army squad searching for snipers near Yongsan, September 1950"}}
+      - {name: "British infantryman, Imjin 1951", side: "UN Command", kit: ww2_rifleman, weapon: rifle_service, notes: "Commonwealth brigade: steel helmet, Lee-Enfield.", look: {colour: "#7a6e48", helmet: brodie}, image: {file: "Indian, British, New Zealand and Australian soldiers in Korea 1951.jpg", caption: "Indian, British, New Zealand and Australian soldiers in Korea, March 1951"}}
       - {name: "North Korean infantryman, 1950", side: "North Korea and China", kit: none, weapon: rifle_service, notes: "Korean People's Army: Soviet-pattern kit, often no steel helmet; Mosin rifle or PPSh."}
-      - {name: "Chinese infantryman", side: "North Korea and China", kit: none, weapon: pistol_smg, notes: "Quilted uniform, PPSh submachine gun, grenades.", look: {colour: "#8a8a6a", hat: winter_cap}}
+      - {name: "Chinese infantryman", side: "North Korea and China", kit: none, weapon: pistol_smg, notes: "Quilted uniform, PPSh submachine gun, grenades.", look: {colour: "#8a8a6a", hat: winter_cap}, image: {file: "P46 b.jpg", caption: "Chinese People's Volunteers taking an oath before the Chosin Reservoir battle, November 1950"}}
     sources:
       - "Wikipedia, 'M-1952 Flak Jacket'."
 
@@ -345,11 +349,11 @@ conflicts:
         armour: "None. The PAVN pith helmet gave no ballistic protection. They relied on concealment, mines and booby traps."
         look: {colour: "#5f6b3a", hat: pith}
     examples:
-      - {name: "US Army infantryman, 1968", side: "US and allies", kit: vietnam_army, weapon: rifle_assault, notes: "M1 helmet, M69 vest, M16."}
-      - {name: "US Marine, Hue 1968", side: "US and allies", kit: vietnam_usmc, weapon: rifle_assault, notes: "M1955 vest, urban fighting."}
-      - {name: "ARVN infantryman", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before."}
-      - {name: "Australian infantryman, 1968", side: "US and allies", kit: none, weapon: rifle_assault, notes: "Bush hat, no body armour; L1A1 SLR.", look: {colour: "#4f5a3a", hat: boonie}}
-      - {name: "South Korean marine", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "ROK Marine Corps: M1 helmet."}
+      - {name: "US Army infantryman, 1968", side: "US and allies", kit: vietnam_army, weapon: rifle_assault, notes: "M1 helmet, M69 vest, M16.", image: {file: "1st Battalion, 18th Infantry soldiers search Mac Dinh Chi Cemetery for Viet Cong snipers.jpg", caption: "1st Battalion, 18th Infantry search a Saigon cemetery for snipers, February 1968"}}
+      - {name: "US Marine, Hue 1968", side: "US and allies", kit: vietnam_usmc, weapon: rifle_assault, notes: "M1955 vest, urban fighting.", image: {file: "US Marines move through streets of Hue, Vietnam (1968).jpg", caption: "US Marines move through the streets of Hue, February 1968"}}
+      - {name: "ARVN infantryman", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before.", image: {file: "ARVN 7th Battalion, 1st Airborne Division soldier takes up position near the wall of the French National Cemetery.jpg", caption: "ARVN airborne soldier in Saigon during the May 1968 offensive"}}
+      - {name: "Australian infantryman, 1968", side: "US and allies", kit: none, weapon: rifle_assault, notes: "Bush hat, no body armour; L1A1 SLR.", look: {colour: "#4f5a3a", hat: boonie}, image: {file: "4 RAR soldier armed with a M60 in South Vietnam during August 1968.jpg", caption: "4 RAR soldier with an M60 in Phuoc Tuy Province, August 1968"}}
+      - {name: "South Korean marine", side: "US and allies", kit: ww2_rifleman, weapon: rifle_assault, notes: "ROK Marine Corps: M1 helmet.", image: {file: "ROK Outpost, South of Chu Lai, circa 1966 (49716380807).jpg", caption: "Republic of Korea Marine outpost south of Chu Lai, c. 1966"}}
       - {name: "PAVN regular", side: "PAVN and Viet Cong", kit: none, weapon: rifle_assault, notes: "Pith helmet, AK-47."}
       - {name: "Viet Cong guerrilla", side: "PAVN and Viet Cong", kit: none, weapon: mine_ied, notes: "Booby traps, mines and punji pits.", look: {colour: "#2b2b2b", trousers: "#2b2b2b", hat: none}}
     sources:
@@ -391,14 +395,14 @@ conflicts:
       - {name: "British soldier, Belfast", side: "Northern Ireland", kit: pasgt, weapon: rifle_assault, notes: "Soft body armour and helmet (PASGT used as the nearest kit).", look: {helmet: pasgt, hat: beret}}
       - {name: "IRA sniper", side: "Northern Ireland", kit: none, weapon: rifle_assault, notes: "Armalite, no armour.", look: {colour: "#3a3a3a", trousers: "#2f3540", hat: balaclava}}
       - {name: "British Guardsman, Tumbledown", side: "Falklands 1982", kit: ww2_rifleman, weapon: bayonet, notes: "Steel helmet; the final assaults on the mountains ended with the bayonet."}
-      - {name: "Argentine conscript", side: "Falklands 1982", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, FN FAL.", look: {colour: "#5d6449", helmet: m1}}
-      - {name: "US soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "PASGT helmet and vest, M16.", look: {helmet: pasgt}}
-      - {name: "British soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "Soft body armour and helmet (PASGT used as the nearest kit)."}
-      - {name: "Iraqi conscript", side: "Gulf War 1991", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, AK-47.", look: {colour: "#6b6a4a", helmet: m1}}
-      - {name: "US Ranger, Mogadishu", side: "Somalia 1993", kit: ranger_1993, weapon: rifle_assault, notes: "Front plate only."}
+      - {name: "Argentine conscript", side: "Falklands 1982", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, FN FAL.", look: {colour: "#5d6449", helmet: m1}, image: {file: "Soldadosargentinos3.jpg", caption: "Argentine soldiers with FN FAL rifles on the Falklands, May 1982"}}
+      - {name: "US soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "PASGT helmet and vest, M16.", look: {helmet: pasgt}, image: {file: "DA-ST-92-07911.jpg", caption: "Soldiers of the 327th Infantry, 101st Airborne Division, March 1991"}}
+      - {name: "British soldier, Desert Storm", side: "Gulf War 1991", kit: pasgt, weapon: rifle_assault, notes: "Soft body armour and helmet (PASGT used as the nearest kit).", image: {file: "British soldier with L85.jpg", caption: "1st Staffordshire Regiment soldier with an L85 on live-fire training, January 1991"}}
+      - {name: "Iraqi conscript", side: "Gulf War 1991", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, AK-47.", look: {colour: "#6b6a4a", helmet: m1}, image: {file: "Iraqi soldiers in Kuwait, 1990.png", caption: "Iraqi soldiers in Kuwait, 1990"}}
+      - {name: "US Ranger, Mogadishu", side: "Somalia 1993", kit: ranger_1993, weapon: rifle_assault, notes: "Front plate only.", image: {file: "Black Hawk Down Rangers under fire October 3, 1993.jpg", caption: "Task Force Ranger under fire in Mogadishu, 3 October 1993"}}
       - {name: "Somali militiaman", side: "Somalia 1993", kit: none, weapon: rpg, notes: "No armour; AK-47 and RPG-7.", look: {colour: "#d8d0b8", trousers: "#4a4f55", hat: none}}
       - {name: "Russian conscript, Grozny 1995", side: "Chechnya", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet; body armour often missing.", look: {helmet: soviet}}
-      - {name: "Chechen fighter, Grozny", side: "Chechnya", kit: none, weapon: rpg, notes: "Urban ambush teams.", look: {colour: "#3f4a3a", hat: none, beard: beard}}
+      - {name: "Chechen fighter, Grozny", side: "Chechnya", kit: none, weapon: rpg, notes: "Urban ambush teams.", look: {colour: "#3f4a3a", hat: none, beard: beard}, image: {file: "Evstafiev-chechnya-palace-gunman.jpg", caption: "Chechen fighter near the Presidential Palace in Grozny, January 1995 (Mikhail Evstafiev)"}}
     sources:
       - "Wikipedia, 'Ranger Body Armor' (front plate only in 1993)."
       - "Borden Institute, Weapons Effects and War Wounds, Table 1-2 (wound distributions)."
@@ -425,10 +429,10 @@ conflicts:
         armour: "Largely unarmoured. IEDs, RPGs, rifles and mortars."
         look: {colour: "#d8d0b8", trousers: "#cfc6ae", hat: turban, beard: beard}
     examples:
-      - {name: "US soldier, Iraq 2004", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Interceptor vest, SAPI plates, ACH."}
-      - {name: "US soldier, Afghanistan 2011", side: "Coalition", kit: plate_carrier, weapon: rifle_assault, notes: "Plate carrier with ESAPI."}
-      - {name: "British soldier, Helmand 2009", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Osprey vest with plates (Interceptor used as the nearest kit).", look: {colour: "#a39573"}}
-      - {name: "Afghan National Army soldier", side: "Coalition", kit: pasgt, weapon: rifle_assault, notes: "Helmet and vest when issued (PASGT used as the nearest kit).", look: {colour: "#6b6a4a", helmet: pasgt}}
+      - {name: "US soldier, Iraq 2004", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Interceptor vest, SAPI plates, ACH.", image: {file: "A CO 1-18IN 2BDE 1ID on patrol Iraq Nov 2004.jpg", caption: "1st Infantry Division soldiers on patrol in Iraq, November 2004"}}
+      - {name: "US soldier, Afghanistan 2011", side: "Coalition", kit: plate_carrier, weapon: rifle_assault, notes: "Plate carrier with ESAPI.", image: {file: "Defense.gov News Photo 110131-A-9563P-045 - U.S. Army Spc. Nicholas Francioso crosses a small irrigation canal during a patrol in the Arghandab district in Afghanistan s Kandahar province on.jpg", caption: "US Army patrol in the Arghandab district, Kandahar, January 2011"}}
+      - {name: "British soldier, Helmand 2009", side: "Coalition", kit: interceptor, weapon: rifle_assault, notes: "Osprey vest with plates (Interceptor used as the nearest kit).", look: {colour: "#a39573"}, image: {file: "Soldier with 1 Welsh Guards Returns from a Patrol in Afghanistan MOD 45153403.jpg", caption: "1st Welsh Guards soldier returning from patrol in Helmand, May 2009"}}
+      - {name: "Afghan National Army soldier", side: "Coalition", kit: pasgt, weapon: rifle_assault, notes: "Helmet and vest when issued (PASGT used as the nearest kit).", look: {colour: "#6b6a4a", helmet: pasgt}, image: {file: "Afghan National Army Soldier MOD 45152324.jpg", caption: "Afghan National Army soldier, December 2010"}}
       - {name: "Iraqi soldier, 2003", side: "Iraqi army, 2003", kit: ww2_rifleman, weapon: rifle_assault, notes: "Steel helmet, AK-47.", look: {helmet: m1}}
       - {name: "Insurgent, Iraq", side: "Insurgents and Taliban", kit: none, weapon: mine_ied, notes: "Roadside bombs.", look: {hat: shemagh}}
       - {name: "Taliban fighter", side: "Insurgents and Taliban", kit: none, weapon: rifle_assault, notes: "AK-47, no armour."}

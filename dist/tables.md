@@ -15,13 +15,13 @@ King Valdemar IV Atterdag of Denmark invaded Gotland, then a rich trading island
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Gotland levy | Gotlandic levy | Gotland levy: mail coif, padded coat | Spear / lance | Coif and padded coat; legs bare. |
-| Gotland freeholder | Gotlandic levy | Gotland, better equipped: coif, coat of plates | Axe (hand or long-hafted) | Wealthier farmer in a coat of plates. |
-| Danish man-at-arms | Danish army | Danish man-at-arms (1361) | Sword (arming sword) | Fully harnessed professional. |
-| Danish sergeant | Danish army | Coat of plates and mail (c.1350) | Spiked club / morning star (knout) | Coat of plates and mail; the spiked club matches square holes in Visby skulls. |
-| Danish crossbowman | Danish army | Coat of plates and mail (c.1350) | Crossbow (bolts) | 126 arrow and bolt wounds were found among the Gotland dead. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Gotland levy | Gotlandic levy | Gotland levy: mail coif, padded coat | Spear / lance | Coif and padded coat; legs bare. | [Mail coif still on a skull from the Visby mass graves (Gotland Museum)](https://commons.wikimedia.org/wiki/File:Fornsalen_-_Invasion_1361_-_Sch%C3%A4del_mit_Kettenhaube_1.jpg) |
+| Gotland freeholder | Gotlandic levy | Gotland, better equipped: coif, coat of plates | Axe (hand or long-hafted) | Wealthier farmer in a coat of plates. | [Coat of plates no. 7 from mass grave 2 at Visby](https://commons.wikimedia.org/wiki/File:Korsbetningen_-_KMB_-_16001000018315.jpg) |
+| Danish man-at-arms | Danish army | Danish man-at-arms (1361) | Sword (arming sword) | Fully harnessed professional. | [Valdemar IV Atterdag, who took Visby, armed with sword and shield (drawing of the c. 1375 Næstved fresco)](https://commons.wikimedia.org/wiki/File:Valdemar_Atterdag.jpg) |
+| Danish sergeant | Danish army | Coat of plates and mail (c.1350) | Spiked club / morning star (knout) | Coat of plates and mail; the spiked club matches square holes in Visby skulls. |  |
+| Danish crossbowman | Danish army | Coat of plates and mail (c.1350) | Crossbow (bolts) | 126 arrow and bolt wounds were found among the Gotland dead. | [Crossbowmen at Crécy (1346), painted about a century later](https://commons.wikimedia.org/wiki/File:Battle_of_Crecy_%28crossbowmen%29.jpg) |
 
 Sources: Swedish History Museum, 'Skull from the Battle of Visby'. Medievalists.net, 'Medieval battle injuries' (2024), summarising Ingelmark in Thordeman (1939).
 
@@ -123,14 +123,14 @@ A war of religion and power across the Holy Roman Empire: the Catholic Emperor a
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Blue Brigade musketeer | Sweden and Protestant allies | Unarmoured | Matchlock musket | Matchlock and bandolier; clubs the musket in the press. |
-| Swedish pikeman | Sweden and Protestant allies | Pikeman: morion and corslet | Spear / lance | Pike about 5 m long. |
-| Finnish hakkapeliitta | Sweden and Protestant allies | Harquebusier: buff coat, breastplate, pot helmet | Sabre or broadsword | Light cavalry: pistols, then swords at the gallop. |
-| Imperial cuirassier | Imperial army and Catholic League | Cuirassier, three-quarter armour (1630s) | Wheellock pistol or carbine (cavalry) | Pappenheim's heavy horse; pistols at close range, aimed at the head. |
-| Imperial harquebusier | Imperial army and Catholic League | Harquebusier: buff coat, breastplate, pot helmet | Wheellock pistol or carbine (cavalry) | Carbine and pistols; most of the balls in the Lützen grave are carbine shot. |
-| Croat light horseman | Imperial army and Catholic League | Unarmoured | Sabre or broadsword | Raiders and skirmishers. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Blue Brigade musketeer | Sweden and Protestant allies | Unarmoured | Matchlock musket | Matchlock and bandolier; clubs the musket in the press. | [Musketeer from de Gheyn's Dutch drill book (1608), the drill the Swedish army adopted](https://commons.wikimedia.org/wiki/File:Jacob_de_Gheyn_-_Wapenhandelinge_4.jpg) |
+| Swedish pikeman | Sweden and Protestant allies | Pikeman: morion and corslet | Spear / lance | Pike about 5 m long. | [Armoured pikeman, drawing by Jacob de Gheyn II, c. 1600](https://commons.wikimedia.org/wiki/File:The_Soldier_Carrying_His_Pike_at_the_Slope_MET_DP801214.jpg) |
+| Finnish hakkapeliitta | Sweden and Protestant allies | Harquebusier: buff coat, breastplate, pot helmet | Sabre or broadsword | Light cavalry: pistols, then swords at the gallop. |  |
+| Imperial cuirassier | Imperial army and Catholic League | Cuirassier, three-quarter armour (1630s) | Wheellock pistol or carbine (cavalry) | Pappenheim's heavy horse; pistols at close range, aimed at the head. | [Imperial general Bucquoy in cuirassier's armour, by Peter Snayers](https://commons.wikimedia.org/wiki/File:Snayers_Bucquoy.jpg) |
+| Imperial harquebusier | Imperial army and Catholic League | Harquebusier: buff coat, breastplate, pot helmet | Wheellock pistol or carbine (cavalry) | Carbine and pistols; most of the balls in the Lützen grave are carbine shot. | [Lancer, cuirassier and harquebusier from Wallhausen's cavalry manual (1616)](https://commons.wikimedia.org/wiki/File:Fotothek_df_tg_0000946_Kriegskunst_%5E_Pferd_%5E_Kavallerie_%5E_Reiter_%5E_Lanzierer_%5E_K%C3%BCrassier_%5E_Arkebussierr.jpg) |
+| Croat light horseman | Imperial army and Catholic League | Unarmoured | Sabre or broadsword | Raiders and skirmishers. |  |
 
 Sources: Nicklisch et al., PLoS ONE 12(5): e0178252 (2017): the Lützen mass grave, the Blue Brigade, and contemporary advice to aim for the head and left chest. Sides, armour and dress: general historical knowledge, not from the grave study.
 
@@ -243,19 +243,19 @@ The thirteen colonies, joined by France from 1778 and later Spain and the Dutch 
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Continental infantryman | Continental Army and militia | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Musket and bayonet. |
-| Morgan's rifleman | Continental Army and militia | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | Long rifle, slow to load, deadly at range; no bayonet. |
-| Continental light dragoon | Continental Army and militia | Dragoon or light dragoon helmet | Sabre or broadsword | Leather helmet and sabre. |
-| British grenadier | British Army and Loyalists | Unarmoured | Bayonet (musket or rifle) | The bayonet charge was the British infantry's favoured tactic. |
-| Loyalist ranger | British Army and Loyalists | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Frontier raids alongside Native allies. |
-| British light dragoon | British Army and Loyalists | Dragoon or light dragoon helmet | Sabre or broadsword | Tarleton's British Legion fought with sabres at Waxhaws. |
-| Hessian Jäger | German auxiliaries | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | German hunters' rifle, short and accurate. |
-| Hessian musketeer | German auxiliaries | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Line infantry; musket and bayonet. |
-| French fusilier | French forces | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Charleville musket; Yorktown 1781. |
-| Mohawk warrior | Native nations | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. |
-| Oneida scout | Native nations | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Allied with the Americans. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Continental infantryman | Continental Army and militia | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Musket and bayonet. | [American soldiers at Yorktown, 1781, watercolour by a French officer](https://commons.wikimedia.org/wiki/File:Soldiers_at_the_siege_of_Yorktown_%281781%29%2C_by_Jean-Baptiste-Antoine_DeVerger.png) |
+| Morgan's rifleman | Continental Army and militia | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | Long rifle, slow to load, deadly at range; no bayonet. | [American soldiers at Yorktown, 1781; the rifleman wears a hunting shirt](https://commons.wikimedia.org/wiki/File:Soldiers_at_the_siege_of_Yorktown_%281781%29%2C_by_Jean-Baptiste-Antoine_DeVerger.png) |
+| Continental light dragoon | Continental Army and militia | Dragoon or light dragoon helmet | Sabre or broadsword | Leather helmet and sabre. |  |
+| British grenadier | British Army and Loyalists | Unarmoured | Bayonet (musket or rifle) | The bayonet charge was the British infantry's favoured tactic. | [British grenadiers by David Morier, 1751, a generation before the war](https://commons.wikimedia.org/wiki/File:David_Morier_%281705%5E-70%29_-_Grenadiers%2C_16th_and_17th_Regiments_of_Foot%2C_and_Grenadier_and_Drummer%2C_18th_Royal_Irish_Regiment_of_Foot%2C_1751_-_RCIN_405583_-_Royal_Collection.jpg) |
+| Loyalist ranger | British Army and Loyalists | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Frontier raids alongside Native allies. |  |
+| British light dragoon | British Army and Loyalists | Dragoon or light dragoon helmet | Sabre or broadsword | Tarleton's British Legion fought with sabres at Waxhaws. | [Banastre Tarleton in light dragoon helmet, by Joshua Reynolds, 1782](https://commons.wikimedia.org/wiki/File:Banastre-Tarleton-by-Joshua-Reynolds.jpg) |
+| Hessian Jäger | German auxiliaries | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | German hunters' rifle, short and accurate. | [Brunswick (not Hessian) Jäger in America, watercolour by Friedrich von Germann, 1778](https://commons.wikimedia.org/wiki/File:Braunschweiger_J%C3%A4ger.jpg) |
+| Hessian musketeer | German auxiliaries | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Line infantry; musket and bayonet. | [Brunswick (not Hessian) musketeer of Regiment Specht, watercolour by von Germann, 1778](https://commons.wikimedia.org/wiki/File:Braunschw._Regt_v._Specht._1778.jpg) |
+| French fusilier | French forces | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Charleville musket; Yorktown 1781. |  |
+| Mohawk warrior | Native nations | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. | [Joseph Brant (Thayendanegea), Mohawk war leader, by George Romney, 1776](https://commons.wikimedia.org/wiki/File:Joseph_Brant_painting_by_George_Romney_1776.jpg) |
+| Oneida scout | Native nations | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Allied with the Americans. |  |
 
 Sources: Peckham, The Toll of Independence (1974), via Journal of the American Revolution, 'The 25 Deadliest Battles of the Revolutionary War' (2014): 7,174 killed and 8,241 wounded. Federal Revolutionary War Invalid Pension Claims, 1792-1795, Magazine of Early American Datasets (Penn, 2021). Sides, alliances and dress: general historical knowledge, not from the pension data.
 
@@ -378,20 +378,20 @@ France under Napoleon against shifting coalitions of Britain, Austria, Prussia, 
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| French line infantryman | French Empire and allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Charleville musket and bayonet. |
-| French cuirassier | French Empire and allies | Cuirassier: steel cuirass and helmet | Sabre or broadsword | Heavy cavalry: straight sword, breastplate and helmet. |
-| Polish lancer | French Empire and allies | Unarmoured | Cavalry lance | Vistula Legion lancers, feared at Albuera (1811). |
-| British redcoat | Britain and Peninsular allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Brown Bess and bayonet, firing in two-deep line. |
-| 95th rifleman | Britain and Peninsular allies | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | Baker rifle; skirmisher and sniper. |
-| British heavy dragoon | Britain and Peninsular allies | Dragoon or light dragoon helmet | Sabre or broadsword | 1796 heavy cavalry sword. |
-| Spanish guerrilla | Britain and Peninsular allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Ambushes of convoys and couriers. |
-| US regular, 1814 | United States (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Chippawa and Lundy's Lane; Springfield musket. |
-| Kentucky militia rifleman | United States (1812-15) | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | River Raisin, the Thames, New Orleans. |
-| British regular, 1814 | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Often a Peninsular veteran. |
-| Canadian militiaman | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Sedentary or embodied militia. |
-| Shawnee warrior | Tecumseh's confederacy | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| French line infantryman | French Empire and allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Charleville musket and bayonet. | [French line infantry, from Carle Vernet's La Grande Armée de 1812](https://commons.wikimedia.org/wiki/File:Grande_Arm%C3%A9e_-_Infantry.jpg) |
+| French cuirassier | French Empire and allies | Cuirassier: steel cuirass and helmet | Sabre or broadsword | Heavy cavalry: straight sword, breastplate and helmet. | [Cuirassier of the 1st Regiment, 1812, by Carle Vernet](https://commons.wikimedia.org/wiki/File:Cuirassier_du_1er_r%C3%A9giment_en_1812.jpg) |
+| Polish lancer | French Empire and allies | Unarmoured | Cavalry lance | Vistula Legion lancers, feared at Albuera (1811). | [Lancers of the 7th Chevau-légers (the former Vistula Legion lancers), by Carle Vernet, 1812](https://commons.wikimedia.org/wiki/File:Grande_Arm%C3%A9e_-_Polish_Light_Horse_Lancers.jpg) |
+| British redcoat | Britain and Peninsular allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Brown Bess and bayonet, firing in two-deep line. | [British line infantry, by Charles Hamilton Smith, 1815](https://commons.wikimedia.org/wiki/File:Battalion_Infantry_6th_Regiment_and_23rd_%28or_Royal_Welsh%29_Fusiliers.jpg) |
+| 95th rifleman | Britain and Peninsular allies | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | Baker rifle; skirmisher and sniper. | [Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812](https://commons.wikimedia.org/wiki/File:British_Riflemen.jpg) |
+| British heavy dragoon | Britain and Peninsular allies | Dragoon or light dragoon helmet | Sabre or broadsword | 1796 heavy cavalry sword. | [Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812](https://commons.wikimedia.org/wiki/File:Uniform_of_a_Private_of_the_3rd_or_Kings_Own_Dragoons.jpg) |
+| Spanish guerrilla | Britain and Peninsular allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Ambushes of convoys and couriers. | [Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)](https://commons.wikimedia.org/wiki/File:Goya-Guerra_%2802%29.jpg) |
+| US regular, 1814 | United States (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Chippawa and Lundy's Lane; Springfield musket. | [The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
+| Kentucky militia rifleman | United States (1812-15) | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | River Raisin, the Thames, New Orleans. | [Kentucky mounted volunteers at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
+| British regular, 1814 | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Often a Peninsular veteran. | [British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
+| Canadian militiaman | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Sedentary or embodied militia. |  |
+| Shawnee warrior | Tecumseh's confederacy | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. | [Tecumseh's warriors at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
 
 Sources: Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database). Sides, armour and dress: general historical knowledge, not from the wound data.
 
@@ -513,13 +513,13 @@ The United States (Union) against the seceded Confederate States. Most wounds ca
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Union infantryman | Union | Unarmoured | Rifle-musket (Minie ball) | Springfield rifle-musket, no armour. |
-| Union volunteer with steel vest, 1862 | Union | Private steel vest (Civil War, 1862) | Rifle-musket (Minie ball) | One of the few who kept his vest. |
-| Confederate cavalryman | Confederacy | Unarmoured | Revolver | Revolver and sabre. |
-| Confederate infantryman | Confederacy | Unarmoured | Rifle-musket (Minie ball) | Enfield or Springfield rifle-musket, no armour. |
-| Union cavalryman | Union | Unarmoured | Sabre or broadsword | Sabre charge; carbine and revolver as well. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Union infantryman | Union | Unarmoured | Rifle-musket (Minie ball) | Springfield rifle-musket, no armour. | [Unidentified Union soldier with musket and bayonet, 1861-65 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Unidentified_soldier_in_Union_uniform_with_musket_and_bayonet_LOC_5228555193.jpg) |
+| Union volunteer with steel vest, 1862 | Union | Private steel vest (Civil War, 1862) | Rifle-musket (Minie ball) | One of the few who kept his vest. | [Advertisement for the Soldiers' Bullet Proof Vest, 1862](https://commons.wikimedia.org/wiki/File:American_Civil_War_bullet_proof_vest.jpg) |
+| Confederate cavalryman | Confederacy | Unarmoured | Revolver | Revolver and sabre. | [Unidentified Confederate soldier with cavalry sword and revolver, 1861-65 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Unidentified_soldier_in_Confederate_uniform_with_cavalry_sword_and_revolver_LCCN2012646164.jpg) |
+| Confederate infantryman | Confederacy | Unarmoured | Rifle-musket (Minie ball) | Enfield or Springfield rifle-musket, no armour. | [Unidentified Confederate soldier with musket, 1861-65 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Unidentified_soldier_in_Confederate_uniform_with_musket_LCCN2010650476.jpg) |
+| Union cavalryman | Union | Unarmoured | Sabre or broadsword | Sabre charge; carbine and revolver as well. | [Unidentified Union cavalryman with sabre, 1861-65 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Unidentified_soldier_in_Union_cavalry_uniform_holding_cavalry_saber_LOC_5229167420.jpg) |
 
 Sources: Antietam on the Web, 'Saved by his steel vest' (2018): Atwater and G&D Cook vests, sales and use.
 
@@ -665,14 +665,14 @@ After the Civil War the US Army garrisoned the Plains and the Southwest and foug
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Plains warrior with bow | Plains and Southwest nations | Rawhide shield, no armour (Plains warrior) | Bow (war arrows) | Iron trade-hoop or flint arrowheads; several arrows in quick succession. |
-| Comanche lancer | Plains and Southwest nations | Rawhide shield, no armour (Plains warrior) | Spear / lance | Mounted with lance and shield. |
-| Apache raider | Plains and Southwest nations | Unarmoured | Bow (war arrows) | Ambush from cover; hoop-iron arrowheads. |
-| US cavalry trooper | US Army | Unarmoured | Revolver | No arrow-era gunshot table exists; his revolver rolls on a Civil War table. |
-| US infantryman | US Army | Unarmoured | Rifle-musket (Minie ball) | Springfield rifle (rolls on a Civil War table). |
-| Indian scout | US Army | Unarmoured | Bow (war arrows) | Several scouts in the reports were themselves hit by arrows. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Plains warrior with bow | Plains and Southwest nations | Rawhide shield, no armour (Plains warrior) | Bow (war arrows) | Iron trade-hoop or flint arrowheads; several arrows in quick succession. | [Satanta (White Bear), Kiowa war leader, with bow and arrows, photographed by William S. Soule, 1869-74](https://commons.wikimedia.org/wiki/File:White_Bear_%28Sa-tan-ta%29%2C_a_Kiowa_chief%2C_full-length%2C_seated%2C_holding_bow_and_arrows%2C_1869_-_1874_-_NARA_-_518901.jpg) |
+| Comanche lancer | Plains and Southwest nations | Rawhide shield, no armour (Plains warrior) | Spear / lance | Mounted with lance and shield. | [A Comanche lances an Osage at full gallop, painted by George Catlin, 1834](https://commons.wikimedia.org/wiki/File:Comanche_Osage_fight.jpg) |
+| Apache raider | Plains and Southwest nations | Unarmoured | Bow (war arrows) | Ambush from cover; hoop-iron arrowheads. |  |
+| US cavalry trooper | US Army | Unarmoured | Revolver | No arrow-era gunshot table exists; his revolver rolls on a Civil War table. | [Trooper of the 10th Cavalry (Buffalo Soldiers), c. 1870](https://commons.wikimedia.org/wiki/File:Unidentified_Buffalo_soldier%2C_10th_Cavalry%2C_United_States_Army_%285431234784%29.jpg) |
+| US infantryman | US Army | Unarmoured | Rifle-musket (Minie ball) | Springfield rifle (rolls on a Civil War table). |  |
+| Indian scout | US Army | Unarmoured | Bow (war arrows) | Several scouts in the reports were themselves hit by arrows. | [Apache scouts at Fort Apache, Arizona Territory, c. 1880](https://commons.wikimedia.org/wiki/File:Apache_Scouts.jpg) |
 
 Sources: US Surgeon General's Office, Circular No. 3 (1871), 'Arrow-Wounds', pp. 144-161 (archive.org: reportofsurgical00unituoft). Places, tribes, units and the note on firearms and bows are from the case reports and Dr. Muller's note there. Rawhide shields: general ethnographic description, not from the report.
 
@@ -734,19 +734,19 @@ The Allied powers (France, the British Empire, Russia, Italy, and from 1917 the 
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| French poilu, 1914 | Allies | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Kepi, no helmet yet. |
-| British infantryman, 1916 | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Brodie helmet, Lee-Enfield. |
-| German machine gunner | Central Powers | Steel helmet and Sappenpanzer (WWI German sentry) | Machine gun | Stahlhelm and Sappenpanzer in a fixed position. |
-| Trench raider, 1917 | Allies | Steel helmet only (1915-1950s rifleman) | Sharpened entrenching tool (spade) | Night raid: sharpened spade, revolver and grenades; no rifle in the trench. |
-| Russian infantryman, 1915 | Allies | Unarmoured | Bayonet (musket or rifle) | Most Russian soldiers had no steel helmet; the army set great store by the bayonet. |
-| Italian Ardito, 1918 | Allies | Steel helmet only (1915-1950s rifleman) | Hand grenade | Assault trooper: Adrian helmet, grenades and dagger. |
-| American doughboy, 1918 | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1917 (Brodie-pattern) helmet, Springfield rifle. |
-| German stormtrooper, 1918 | Central Powers | Steel helmet only (1915-1950s rifleman) | Hand grenade | Stahlhelm; grenades, carbine and sharpened spade. |
-| Austro-Hungarian infantryman | Central Powers | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Steel helmet from 1916-17; Mannlicher rifle. |
-| Ottoman infantryman, Gallipoli | Central Powers | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Cloth headgear, no steel helmet; Mauser rifle. |
-| Bulgarian infantryman | Central Powers | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Mostly without steel helmets; Mannlicher rifle. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| French poilu, 1914 | Allies | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Kepi, no helmet yet. | [French territorial infantry in kepis, August 1914](https://commons.wikimedia.org/wiki/File:Portrait_de_soldats_du_20e_r%C3%A9giment_d'infanterie_territoriale%2C_ao%C3%BBt_1914.jpg) |
+| British infantryman, 1916 | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Brodie helmet, Lee-Enfield. | [Cheshire Regiment in a captured German trench on the Somme, July 1916](https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg) |
+| German machine gunner | Central Powers | Steel helmet and Sappenpanzer (WWI German sentry) | Machine gun | Stahlhelm and Sappenpanzer in a fixed position. | [German machine-gun company (MGK III, Infantry Regiment 401), 1918](https://commons.wikimedia.org/wiki/File:Maschinengewehrkompanie.jpg) |
+| Trench raider, 1917 | Allies | Steel helmet only (1915-1950s rifleman) | Sharpened entrenching tool (spade) | Night raid: sharpened spade, revolver and grenades; no rifle in the trench. | [Raiding party of the 9th Cameronians leaving a sap for the German lines, April 1917](https://commons.wikimedia.org/wiki/File:A_raiding_party_from_the_9th_Battalion%2C_Scottish_Rifles_%28Cameronians%29%2C_leaving_a_sap_and_making_for_the_German_lines%2C_11_April_1917._Q5101.jpg) |
+| Russian infantryman, 1915 | Allies | Unarmoured | Bayonet (musket or rifle) | Most Russian soldiers had no steel helmet; the army set great store by the bayonet. | [Russian infantry, 1914 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Russian_infantry_LCCN2014697563.jpg) |
+| Italian Ardito, 1918 | Allies | Steel helmet only (1915-1950s rifleman) | Hand grenade | Assault trooper: Adrian helmet, grenades and dagger. | [Italian Arditi assault troops, c. 1918](https://commons.wikimedia.org/wiki/File:Italian_Arditi.jpg) |
+| American doughboy, 1918 | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1917 (Brodie-pattern) helmet, Springfield rifle. | [American soldiers bombing a position, c. 1917-18 (Library of Congress)](https://commons.wikimedia.org/wiki/File:At_close_grips2.jpg) |
+| German stormtrooper, 1918 | Central Powers | Steel helmet only (1915-1950s rifleman) | Hand grenade | Stahlhelm; grenades, carbine and sharpened spade. | [German Stoßtruppen leaving a trench to attack, 1917-18 (Bundesarchiv)](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1974-132-26A%2C_Sto%C3%9Ftrupp.jpg) |
+| Austro-Hungarian infantryman | Central Powers | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Steel helmet from 1916-17; Mannlicher rifle. | [Austro-Hungarian soldiers in steel helmets on the Isonzo front, September 1917](https://commons.wikimedia.org/wiki/File:Handgranatenwerfer_an_der_isonzofront_10._september_1917.jpg) |
+| Ottoman infantryman, Gallipoli | Central Powers | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Cloth headgear, no steel helmet; Mauser rifle. | [Ottoman infantry column at rest, c. 1915 (Library of Congress)](https://commons.wikimedia.org/wiki/File:Turkish_Infantry_Column_at_rest_%28LOC%29.jpg) |
+| Bulgarian infantryman | Central Powers | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Mostly without steel helmets; Mannlicher rifle. | [Bulgarian soldiers resting at Miletkovo on the Macedonian front, 1916-18](https://commons.wikimedia.org/wiki/File:Miletkovo_1917_Bulgarian_Soldiers_Resting.jpg) |
 
 Sources: Military Wiki, 'Stahlhelm' (introduction of German and Allied steel helmets).
 
@@ -806,15 +806,15 @@ The Allies against the Axis. This group's tables come from two theatres: the jun
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| US Marine, Bougainville | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1 helmet, M1 Garand. |
-| Japanese infantryman | Axis | Steel helmet only (1915-1950s rifleman) | Hand grenade | Type 90 helmet; grenades and knee mortars at close range. |
-| German MG gunner, Italy | Axis | Steel helmet only (1915-1950s rifleman) | Machine gun | Stahlhelm, MG 42. |
-| US bomber waist gunner | Allies | Aircrew flak vest and helmet (WWII bomber crew) | Machine gun | Flak vest and helmet; not an infantry kit. |
-| British infantryman, Italy | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Brodie helmet, Lee-Enfield; Eighth Army. |
-| Australian infantryman, Bougainville 1945 | Allies | Unarmoured | Pistol or submachine gun | Often a slouch hat rather than a helmet in the jungle; Owen submachine gun. |
-| German paratrooper, Cassino | Axis | Steel helmet only (1915-1950s rifleman) | Pistol or submachine gun | Rimless paratrooper helmet, MP 40; fought as infantry. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| US Marine, Bougainville | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1 helmet, M1 Garand. | [1st Battalion, 3rd Marines coming out of the jungle on Bougainville, November 1943](https://commons.wikimedia.org/wiki/File:1st_Battalion_3rd_Marines_on_Bougainville.png) |
+| Japanese infantryman | Axis | Steel helmet only (1915-1950s rifleman) | Hand grenade | Type 90 helmet; grenades and knee mortars at close range. | [Japanese infantry of the 111th Regiment in Burma, 1943](https://commons.wikimedia.org/wiki/File:Imperial_Japanese_Army_Infantry_111th_Regiment_soldier_and_Indian_National_Army_soldier.jpg) |
+| German MG gunner, Italy | Axis | Steel helmet only (1915-1950s rifleman) | Machine gun | Stahlhelm, MG 42. | [German mountain troops with an MG 42 in Italy, 1944 (Bundesarchiv)](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-316-1172-06%2C_Italien%2C_Gebirgsj%C3%A4ger_mit_schwerem_MG_42.jpg) |
+| US bomber waist gunner | Allies | Aircrew flak vest and helmet (WWII bomber crew) | Machine gun | Flak vest and helmet; not an infantry kit. | [B-17 waist gunner, wartime drawing, 1942 (Library of Congress)](https://commons.wikimedia.org/wiki/File:B-17_waist_gunner_LCCN2004661756.jpg) |
+| British infantryman, Italy | Allies | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Brodie helmet, Lee-Enfield; Eighth Army. | [Corporal of the Duke of Cornwall's Light Infantry in Italy, April 1944](https://commons.wikimedia.org/wiki/File:The_British_Army_in_Italy%2C_April_1944_TR1708.jpg) |
+| Australian infantryman, Bougainville 1945 | Allies | Unarmoured | Pistol or submachine gun | Often a slouch hat rather than a helmet in the jungle; Owen submachine gun. | [Australian 42nd Battalion patrol on Bougainville, January 1945](https://commons.wikimedia.org/wiki/File:AWM_078546_Australian_42nd_Battalion_patrol_on_Bougainville.jpg) |
+| German paratrooper, Cassino | Axis | Steel helmet only (1915-1950s rifleman) | Pistol or submachine gun | Rimless paratrooper helmet, MP 40; fought as infantry. | [German paratrooper near Monte Cassino, February 1944 (Bundesarchiv)](https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-1974-006-62%2C_Bei_Monte_Cassino%2C_Fallschirmj%C3%A4ger.jpg) |
 
 Sources: Borden Institute, Weapons Effects and War Wounds, Table 1-1 (Bougainville causes of injury).
 
@@ -1096,14 +1096,14 @@ The United Nations Command, led by the United States with South Korea, the Briti
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| US Army rifleman, 1950 | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1 helmet, no vest. |
-| US Marine, 1952 | UN Command | M1 helmet, Doron vest (USMC M1951/M1955, 1951-75) | Service rifle (bolt or semi-auto, 1914-53) | M1951 Doron vest. |
-| South Korean infantryman | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | ROK Army: M1 helmet, M1 Garand. |
-| British infantryman, Imjin 1951 | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Commonwealth brigade: steel helmet, Lee-Enfield. |
-| North Korean infantryman, 1950 | North Korea and China | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Korean People's Army: Soviet-pattern kit, often no steel helmet; Mosin rifle or PPSh. |
-| Chinese infantryman | North Korea and China | Unarmoured | Pistol or submachine gun | Quilted uniform, PPSh submachine gun, grenades. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| US Army rifleman, 1950 | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | M1 helmet, no vest. | [US Army machine-gun team near the Chongchon River, November 1950](https://commons.wikimedia.org/wiki/File:U.S._Army_machine_gun_team_near_the_Chongchon_River_in_North_Korea_%28November_1950%29.jpg) |
+| US Marine, 1952 | UN Command | M1 helmet, Doron vest (USMC M1951/M1955, 1951-75) | Service rifle (bolt or semi-auto, 1914-53) | M1951 Doron vest. | [American soldier in an armoured vest, Korea (Army wound-ballistics survey photo, 1953)](https://commons.wikimedia.org/wiki/File:Body_armor_vest_in_Korea_%28KWB_53-2511-171%29%2C_National_Museum_of_Health_and_Medicine_%283299287269%29.jpg) |
+| South Korean infantryman | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | ROK Army: M1 helmet, M1 Garand. | [ROK Army squad searching for snipers near Yongsan, September 1950](https://commons.wikimedia.org/wiki/File:SC_348651_-_ROK_squad%2C_led_by_American_soldiers%2C_search_for_North_Korean_enemy_snipers_near_Yongsan._16_September%2C_1950._%2852514534466%29.jpg) |
+| British infantryman, Imjin 1951 | UN Command | Steel helmet only (1915-1950s rifleman) | Service rifle (bolt or semi-auto, 1914-53) | Commonwealth brigade: steel helmet, Lee-Enfield. | [Indian, British, New Zealand and Australian soldiers in Korea, March 1951](https://commons.wikimedia.org/wiki/File:Indian%2C_British%2C_New_Zealand_and_Australian_soldiers_in_Korea_1951.jpg) |
+| North Korean infantryman, 1950 | North Korea and China | Unarmoured | Service rifle (bolt or semi-auto, 1914-53) | Korean People's Army: Soviet-pattern kit, often no steel helmet; Mosin rifle or PPSh. |  |
+| Chinese infantryman | North Korea and China | Unarmoured | Pistol or submachine gun | Quilted uniform, PPSh submachine gun, grenades. | [Chinese People's Volunteers taking an oath before the Chosin Reservoir battle, November 1950](https://commons.wikimedia.org/wiki/File:P46_b.jpg) |
 
 Sources: Wikipedia, 'M-1952 Flak Jacket'.
 
@@ -1231,15 +1231,15 @@ South Vietnam, the United States and allies (Australia, New Zealand, South Korea
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| US Army infantryman, 1968 | US and allies | M1 helmet, nylon flak vest (US Army M1952/M69, 1952-75) | Assault rifle (M16, AK) | M1 helmet, M69 vest, M16. |
-| US Marine, Hue 1968 | US and allies | M1 helmet, Doron vest (USMC M1951/M1955, 1951-75) | Assault rifle (M16, AK) | M1955 vest, urban fighting. |
-| ARVN infantryman | US and allies | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before. |
-| Australian infantryman, 1968 | US and allies | Unarmoured | Assault rifle (M16, AK) | Bush hat, no body armour; L1A1 SLR. |
-| South Korean marine | US and allies | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | ROK Marine Corps: M1 helmet. |
-| PAVN regular | PAVN and Viet Cong | Unarmoured | Assault rifle (M16, AK) | Pith helmet, AK-47. |
-| Viet Cong guerrilla | PAVN and Viet Cong | Unarmoured | Mine, booby trap or IED | Booby traps, mines and punji pits. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| US Army infantryman, 1968 | US and allies | M1 helmet, nylon flak vest (US Army M1952/M69, 1952-75) | Assault rifle (M16, AK) | M1 helmet, M69 vest, M16. | [1st Battalion, 18th Infantry search a Saigon cemetery for snipers, February 1968](https://commons.wikimedia.org/wiki/File:1st_Battalion%2C_18th_Infantry_soldiers_search_Mac_Dinh_Chi_Cemetery_for_Viet_Cong_snipers.jpg) |
+| US Marine, Hue 1968 | US and allies | M1 helmet, Doron vest (USMC M1951/M1955, 1951-75) | Assault rifle (M16, AK) | M1955 vest, urban fighting. | [US Marines move through the streets of Hue, February 1968](https://commons.wikimedia.org/wiki/File:US_Marines_move_through_streets_of_Hue%2C_Vietnam_%281968%29.jpg) |
+| ARVN infantryman | US and allies | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before. | [ARVN airborne soldier in Saigon during the May 1968 offensive](https://commons.wikimedia.org/wiki/File:ARVN_7th_Battalion%2C_1st_Airborne_Division_soldier_takes_up_position_near_the_wall_of_the_French_National_Cemetery.jpg) |
+| Australian infantryman, 1968 | US and allies | Unarmoured | Assault rifle (M16, AK) | Bush hat, no body armour; L1A1 SLR. | [4 RAR soldier with an M60 in Phuoc Tuy Province, August 1968](https://commons.wikimedia.org/wiki/File:4_RAR_soldier_armed_with_a_M60_in_South_Vietnam_during_August_1968.jpg) |
+| South Korean marine | US and allies | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | ROK Marine Corps: M1 helmet. | [Republic of Korea Marine outpost south of Chu Lai, c. 1966](https://commons.wikimedia.org/wiki/File:ROK_Outpost%2C_South_of_Chu_Lai%2C_circa_1966_%2849716380807%29.jpg) |
+| PAVN regular | PAVN and Viet Cong | Unarmoured | Assault rifle (M16, AK) | Pith helmet, AK-47. |  |
+| Viet Cong guerrilla | PAVN and Viet Cong | Unarmoured | Mine, booby trap or IED | Booby traps, mines and punji pits. |  |
 
 Sources: Neel, Medical Support of the U.S. Army in Vietnam (1973), ch. 3, Table 6. Wikipedia, 'Flak jacket' (M69 and M1955 protection).
 
@@ -1372,19 +1372,19 @@ Six smaller wars with very different fighting. Northern Ireland (1969-98): the B
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| British soldier, Belfast | Northern Ireland | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Soft body armour and helmet (PASGT used as the nearest kit). |
-| IRA sniper | Northern Ireland | Unarmoured | Assault rifle (M16, AK) | Armalite, no armour. |
-| British Guardsman, Tumbledown | Falklands 1982 | Steel helmet only (1915-1950s rifleman) | Bayonet (musket or rifle) | Steel helmet; the final assaults on the mountains ended with the bayonet. |
-| Argentine conscript | Falklands 1982 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, FN FAL. |
-| US soldier, Desert Storm | Gulf War 1991 | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | PASGT helmet and vest, M16. |
-| British soldier, Desert Storm | Gulf War 1991 | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Soft body armour and helmet (PASGT used as the nearest kit). |
-| Iraqi conscript | Gulf War 1991 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, AK-47. |
-| US Ranger, Mogadishu | Somalia 1993 | Ranger Body Armor, front plate only (Mogadishu 1993) | Assault rifle (M16, AK) | Front plate only. |
-| Somali militiaman | Somalia 1993 | Unarmoured | RPG (rocket-propelled grenade) | No armour; AK-47 and RPG-7. |
-| Russian conscript, Grozny 1995 | Chechnya | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet; body armour often missing. |
-| Chechen fighter, Grozny | Chechnya | Unarmoured | RPG (rocket-propelled grenade) | Urban ambush teams. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| British soldier, Belfast | Northern Ireland | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Soft body armour and helmet (PASGT used as the nearest kit). |  |
+| IRA sniper | Northern Ireland | Unarmoured | Assault rifle (M16, AK) | Armalite, no armour. |  |
+| British Guardsman, Tumbledown | Falklands 1982 | Steel helmet only (1915-1950s rifleman) | Bayonet (musket or rifle) | Steel helmet; the final assaults on the mountains ended with the bayonet. |  |
+| Argentine conscript | Falklands 1982 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, FN FAL. | [Argentine soldiers with FN FAL rifles on the Falklands, May 1982](https://commons.wikimedia.org/wiki/File:Soldadosargentinos3.jpg) |
+| US soldier, Desert Storm | Gulf War 1991 | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | PASGT helmet and vest, M16. | [Soldiers of the 327th Infantry, 101st Airborne Division, March 1991](https://commons.wikimedia.org/wiki/File:DA-ST-92-07911.jpg) |
+| British soldier, Desert Storm | Gulf War 1991 | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Soft body armour and helmet (PASGT used as the nearest kit). | [1st Staffordshire Regiment soldier with an L85 on live-fire training, January 1991](https://commons.wikimedia.org/wiki/File:British_soldier_with_L85.jpg) |
+| Iraqi conscript | Gulf War 1991 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, AK-47. | [Iraqi soldiers in Kuwait, 1990](https://commons.wikimedia.org/wiki/File:Iraqi_soldiers_in_Kuwait%2C_1990.png) |
+| US Ranger, Mogadishu | Somalia 1993 | Ranger Body Armor, front plate only (Mogadishu 1993) | Assault rifle (M16, AK) | Front plate only. | [Task Force Ranger under fire in Mogadishu, 3 October 1993](https://commons.wikimedia.org/wiki/File:Black_Hawk_Down_Rangers_under_fire_October_3%2C_1993.jpg) |
+| Somali militiaman | Somalia 1993 | Unarmoured | RPG (rocket-propelled grenade) | No armour; AK-47 and RPG-7. |  |
+| Russian conscript, Grozny 1995 | Chechnya | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet; body armour often missing. |  |
+| Chechen fighter, Grozny | Chechnya | Unarmoured | RPG (rocket-propelled grenade) | Urban ambush teams. | [Chechen fighter near the Presidential Palace in Grozny, January 1995 (Mikhail Evstafiev)](https://commons.wikimedia.org/wiki/File:Evstafiev-chechnya-palace-gunman.jpg) |
 
 Sources: Wikipedia, 'Ranger Body Armor' (front plate only in 1993). Borden Institute, Weapons Effects and War Wounds, Table 1-2 (wound distributions).
 
@@ -1676,15 +1676,15 @@ US-led coalitions in Afghanistan from 2001 (against the Taliban and al-Qaeda) an
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| US soldier, Iraq 2004 | Coalition | Interceptor vest, SAPI plates, ACH (2000s) | Assault rifle (M16, AK) | Interceptor vest, SAPI plates, ACH. |
-| US soldier, Afghanistan 2011 | Coalition | Plate carrier, ESAPI plates, helmet (2010s-) | Assault rifle (M16, AK) | Plate carrier with ESAPI. |
-| British soldier, Helmand 2009 | Coalition | Interceptor vest, SAPI plates, ACH (2000s) | Assault rifle (M16, AK) | Osprey vest with plates (Interceptor used as the nearest kit). |
-| Afghan National Army soldier | Coalition | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Helmet and vest when issued (PASGT used as the nearest kit). |
-| Iraqi soldier, 2003 | Iraqi army, 2003 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, AK-47. |
-| Insurgent, Iraq | Insurgents and Taliban | Unarmoured | Mine, booby trap or IED | Roadside bombs. |
-| Taliban fighter | Insurgents and Taliban | Unarmoured | Assault rifle (M16, AK) | AK-47, no armour. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| US soldier, Iraq 2004 | Coalition | Interceptor vest, SAPI plates, ACH (2000s) | Assault rifle (M16, AK) | Interceptor vest, SAPI plates, ACH. | [1st Infantry Division soldiers on patrol in Iraq, November 2004](https://commons.wikimedia.org/wiki/File:A_CO_1-18IN_2BDE_1ID_on_patrol_Iraq_Nov_2004.jpg) |
+| US soldier, Afghanistan 2011 | Coalition | Plate carrier, ESAPI plates, helmet (2010s-) | Assault rifle (M16, AK) | Plate carrier with ESAPI. | [US Army patrol in the Arghandab district, Kandahar, January 2011](https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_110131-A-9563P-045_-_U.S._Army_Spc._Nicholas_Francioso_crosses_a_small_irrigation_canal_during_a_patrol_in_the_Arghandab_district_in_Afghanistan_s_Kandahar_province_on.jpg) |
+| British soldier, Helmand 2009 | Coalition | Interceptor vest, SAPI plates, ACH (2000s) | Assault rifle (M16, AK) | Osprey vest with plates (Interceptor used as the nearest kit). | [1st Welsh Guards soldier returning from patrol in Helmand, May 2009](https://commons.wikimedia.org/wiki/File:Soldier_with_1_Welsh_Guards_Returns_from_a_Patrol_in_Afghanistan_MOD_45153403.jpg) |
+| Afghan National Army soldier | Coalition | PASGT vest and helmet (1980s-90s) | Assault rifle (M16, AK) | Helmet and vest when issued (PASGT used as the nearest kit). | [Afghan National Army soldier, December 2010](https://commons.wikimedia.org/wiki/File:Afghan_National_Army_Soldier_MOD_45152324.jpg) |
+| Iraqi soldier, 2003 | Iraqi army, 2003 | Steel helmet only (1915-1950s rifleman) | Assault rifle (M16, AK) | Steel helmet, AK-47. |  |
+| Insurgent, Iraq | Insurgents and Taliban | Unarmoured | Mine, booby trap or IED | Roadside bombs. |  |
+| Taliban fighter | Insurgents and Taliban | Unarmoured | Assault rifle (M16, AK) | AK-47, no armour. |  |
 
 Sources: Owens et al., J Trauma 2008; Borden Institute, Table 1-1 (DoD Trauma Registry 2007-17).
 
@@ -1809,11 +1809,11 @@ Not a war. The random-hit table shows where hits would land if every square inch
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Modern soldier | - | Plate carrier, ESAPI plates, helmet (2010s-) | Assault rifle (M16, AK) | Plate carrier and helmet. |
-| Police officer | - | Concealable soft vest (police IIIA) | Pistol or submachine gun | Concealable IIIA vest. |
-| Civilian | - | Unarmoured | Pistol or submachine gun | No armour. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Modern soldier | - | Plate carrier, ESAPI plates, helmet (2010s-) | Assault rifle (M16, AK) | Plate carrier and helmet. |  |
+| Police officer | - | Concealable soft vest (police IIIA) | Pistol or submachine gun | Concealable IIIA vest. |  |
+| Civilian | - | Unarmoured | Pistol or submachine gun | No armour. |  |
 
 **US wars compared: where hospitalized wounded were hit**
 
@@ -1886,12 +1886,12 @@ Knife killings recorded by forensic pathologists: usually one attacker against a
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Knife attacker | Attacker | Unarmoured | Dagger / knife | Single assailant. |
-| Police officer | Victim | Concealable soft vest (police IIIA) | Dagger / knife | IIIA vest: stops bullets, not knives. |
-| Soldier in plates | Victim | Plate carrier, ESAPI plates, helmet (2010s-) | Bayonet (musket or rifle) | Plates stop most stabs to the chest. |
-| Civilian | Victim | Unarmoured | Dagger / knife | No armour. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Knife attacker | Attacker | Unarmoured | Dagger / knife | Single assailant. |  |
+| Police officer | Victim | Concealable soft vest (police IIIA) | Dagger / knife | IIIA vest: stops bullets, not knives. |  |
+| Soldier in plates | Victim | Plate carrier, ESAPI plates, helmet (2010s-) | Bayonet (musket or rifle) | Plates stop most stabs to the chest. |  |
+| Civilian | Victim | Unarmoured | Dagger / knife | No armour. |  |
 
 Sources: Karlsson 1998, via forensicmed.co.uk.
 
@@ -1948,10 +1948,10 @@ Professional mixed martial arts under the Unified Rules: four-ounce gloves, no s
 
 **Example combatants**
 
-| Name | Side | Wears | Fights with | Notes |
-|---|---|---|---|---|
-| Striker | Fighters | Unarmoured | Punch | Boxer-style; head hunter. |
-| Kickboxer | Fighters | Unarmoured | Kick | Low kicks to the lead leg. |
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Striker | Fighters | Unarmoured | Punch | Boxer-style; head hunter. |  |
+| Kickboxer | Fighters | Unarmoured | Kick | Low kicks to the lead leg. |  |
 
 Sources: Fightshow, UFC Strike Map.
 

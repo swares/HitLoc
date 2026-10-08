@@ -16896,21 +16896,33 @@
      "side": "Gotlandic levy",
      "kit": "gotland_levy",
      "weapon": "spear",
-     "notes": "Coif and padded coat; legs bare."
+     "notes": "Coif and padded coat; legs bare.",
+     "image": {
+      "file": "Fornsalen - Invasion 1361 - Sch\u00e4del mit Kettenhaube 1.jpg",
+      "caption": "Mail coif still on a skull from the Visby mass graves (Gotland Museum)"
+     }
     },
     {
      "name": "Gotland freeholder",
      "side": "Gotlandic levy",
      "kit": "gotland_armoured",
      "weapon": "axe",
-     "notes": "Wealthier farmer in a coat of plates."
+     "notes": "Wealthier farmer in a coat of plates.",
+     "image": {
+      "file": "Korsbetningen - KMB - 16001000018315.jpg",
+      "caption": "Coat of plates no. 7 from mass grave 2 at Visby"
+     }
     },
     {
      "name": "Danish man-at-arms",
      "side": "Danish army",
      "kit": "danish_maa",
      "weapon": "sword",
-     "notes": "Fully harnessed professional."
+     "notes": "Fully harnessed professional.",
+     "image": {
+      "file": "Valdemar Atterdag.jpg",
+      "caption": "Valdemar IV Atterdag, who took Visby, armed with sword and shield (drawing of the c. 1375 N\u00e6stved fresco)"
+     }
     },
     {
      "name": "Danish sergeant",
@@ -16924,7 +16936,11 @@
      "side": "Danish army",
      "kit": "transitional",
      "weapon": "crossbow",
-     "notes": "126 arrow and bolt wounds were found among the Gotland dead."
+     "notes": "126 arrow and bolt wounds were found among the Gotland dead.",
+     "image": {
+      "file": "Battle of Crecy (crossbowmen).jpg",
+      "caption": "Crossbowmen at Cr\u00e9cy (1346), painted about a century later"
+     }
     }
    ],
    "sources": [
@@ -16983,6 +16999,10 @@
      "notes": "Matchlock and bandolier; clubs the musket in the press.",
      "look": {
       "hat": "broad_hat"
+     },
+     "image": {
+      "file": "Jacob de Gheyn - Wapenhandelinge 4.jpg",
+      "caption": "Musketeer from de Gheyn's Dutch drill book (1608), the drill the Swedish army adopted"
      }
     },
     {
@@ -16990,7 +17010,11 @@
      "side": "Sweden and Protestant allies",
      "kit": "pikeman_1630",
      "weapon": "spear",
-     "notes": "Pike about 5 m long."
+     "notes": "Pike about 5 m long.",
+     "image": {
+      "file": "The Soldier Carrying His Pike at the Slope MET DP801214.jpg",
+      "caption": "Armoured pikeman, drawing by Jacob de Gheyn II, c. 1600"
+     }
     },
     {
      "name": "Finnish hakkapeliitta",
@@ -17004,14 +17028,22 @@
      "side": "Imperial army and Catholic League",
      "kit": "cuirassier_1630",
      "weapon": "wheellock_pistol",
-     "notes": "Pappenheim's heavy horse; pistols at close range, aimed at the head."
+     "notes": "Pappenheim's heavy horse; pistols at close range, aimed at the head.",
+     "image": {
+      "file": "Snayers Bucquoy.jpg",
+      "caption": "Imperial general Bucquoy in cuirassier's armour, by Peter Snayers"
+     }
     },
     {
      "name": "Imperial harquebusier",
      "side": "Imperial army and Catholic League",
      "kit": "harquebusier_1630",
      "weapon": "wheellock_pistol",
-     "notes": "Carbine and pistols; most of the balls in the L\u00fctzen grave are carbine shot."
+     "notes": "Carbine and pistols; most of the balls in the L\u00fctzen grave are carbine shot.",
+     "image": {
+      "file": "Fotothek df tg 0000946 Kriegskunst ^ Pferd ^ Kavallerie ^ Reiter ^ Lanzierer ^ K\u00fcrassier ^ Arkebussierr.jpg",
+      "caption": "Lancer, cuirassier and harquebusier from Wallhausen's cavalry manual (1616)"
+     }
     },
     {
      "name": "Croat light horseman",
@@ -17128,7 +17160,11 @@
      "side": "Continental Army and militia",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Musket and bayonet."
+     "notes": "Musket and bayonet.",
+     "image": {
+      "file": "Soldiers at the siege of Yorktown (1781), by Jean-Baptiste-Antoine DeVerger.png",
+      "caption": "American soldiers at Yorktown, 1781, watercolour by a French officer"
+     }
     },
     {
      "name": "Morgan's rifleman",
@@ -17140,6 +17176,10 @@
       "colour": "#a99b72",
       "trousers": "#a99b72",
       "hat": "round_hat"
+     },
+     "image": {
+      "file": "Soldiers at the siege of Yorktown (1781), by Jean-Baptiste-Antoine DeVerger.png",
+      "caption": "American soldiers at Yorktown, 1781; the rifleman wears a hunting shirt"
      }
     },
     {
@@ -17157,6 +17197,10 @@
      "notes": "The bayonet charge was the British infantry's favoured tactic.",
      "look": {
       "hat": "bearskin"
+     },
+     "image": {
+      "file": "David Morier (1705^-70) - Grenadiers, 16th and 17th Regiments of Foot, and Grenadier and Drummer, 18th Royal Irish Regiment of Foot, 1751 - RCIN 405583 - Royal Collection.jpg",
+      "caption": "British grenadiers by David Morier, 1751, a generation before the war"
      }
     },
     {
@@ -17174,7 +17218,11 @@
      "side": "British Army and Loyalists",
      "kit": "dragoon_helmet",
      "weapon": "saber",
-     "notes": "Tarleton's British Legion fought with sabres at Waxhaws."
+     "notes": "Tarleton's British Legion fought with sabres at Waxhaws.",
+     "image": {
+      "file": "Banastre-Tarleton-by-Joshua-Reynolds.jpg",
+      "caption": "Banastre Tarleton in light dragoon helmet, by Joshua Reynolds, 1782"
+     }
     },
     {
      "name": "Hessian J\u00e4ger",
@@ -17185,6 +17233,10 @@
      "look": {
       "colour": "#3f5a32",
       "trousers": "#3f5a32"
+     },
+     "image": {
+      "file": "Braunschweiger J\u00e4ger.jpg",
+      "caption": "Brunswick (not Hessian) J\u00e4ger in America, watercolour by Friedrich von Germann, 1778"
      }
     },
     {
@@ -17195,6 +17247,10 @@
      "notes": "Line infantry; musket and bayonet.",
      "look": {
       "hat": "mitre"
+     },
+     "image": {
+      "file": "Braunschw. Regt v. Specht. 1778.jpg",
+      "caption": "Brunswick (not Hessian) musketeer of Regiment Specht, watercolour by von Germann, 1778"
      }
     },
     {
@@ -17209,7 +17265,11 @@
      "side": "Native nations",
      "kit": "none",
      "weapon": "axe",
-     "notes": "Tomahawk and musket."
+     "notes": "Tomahawk and musket.",
+     "image": {
+      "file": "Joseph Brant painting by George Romney 1776.jpg",
+      "caption": "Joseph Brant (Thayendanegea), Mohawk war leader, by George Romney, 1776"
+     }
     },
     {
      "name": "Oneida scout",
@@ -17379,14 +17439,22 @@
      "side": "French Empire and allies",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Charleville musket and bayonet."
+     "notes": "Charleville musket and bayonet.",
+     "image": {
+      "file": "Grande Arm\u00e9e - Infantry.jpg",
+      "caption": "French line infantry, from Carle Vernet's La Grande Arm\u00e9e de 1812"
+     }
     },
     {
      "name": "French cuirassier",
      "side": "French Empire and allies",
      "kit": "cuirassier",
      "weapon": "saber",
-     "notes": "Heavy cavalry: straight sword, breastplate and helmet."
+     "notes": "Heavy cavalry: straight sword, breastplate and helmet.",
+     "image": {
+      "file": "Cuirassier du 1er r\u00e9giment en 1812.jpg",
+      "caption": "Cuirassier of the 1st Regiment, 1812, by Carle Vernet"
+     }
     },
     {
      "name": "Polish lancer",
@@ -17397,6 +17465,10 @@
      "look": {
       "hat": "czapka",
       "trousers": "#2f3f6e"
+     },
+     "image": {
+      "file": "Grande Arm\u00e9e - Polish Light Horse Lancers.jpg",
+      "caption": "Lancers of the 7th Chevau-l\u00e9gers (the former Vistula Legion lancers), by Carle Vernet, 1812"
      }
     },
     {
@@ -17404,7 +17476,11 @@
      "side": "Britain and Peninsular allies",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Brown Bess and bayonet, firing in two-deep line."
+     "notes": "Brown Bess and bayonet, firing in two-deep line.",
+     "image": {
+      "file": "Battalion Infantry 6th Regiment and 23rd (or Royal Welsh) Fusiliers.jpg",
+      "caption": "British line infantry, by Charles Hamilton Smith, 1815"
+     }
     },
     {
      "name": "95th rifleman",
@@ -17415,6 +17491,10 @@
      "look": {
       "colour": "#2f4a2a",
       "trousers": "#2f4a2a"
+     },
+     "image": {
+      "file": "British Riflemen.jpg",
+      "caption": "Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812"
      }
     },
     {
@@ -17425,6 +17505,10 @@
      "notes": "1796 heavy cavalry sword.",
      "look": {
       "trousers": "#e8e4d8"
+     },
+     "image": {
+      "file": "Uniform of a Private of the 3rd or Kings Own Dragoons.jpg",
+      "caption": "Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812"
      }
     },
     {
@@ -17438,6 +17522,10 @@
       "trousers": "#4a4038",
       "hat": "broad_hat",
       "beard": "beard"
+     },
+     "image": {
+      "file": "Goya-Guerra (02).jpg",
+      "caption": "Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)"
      }
     },
     {
@@ -17449,6 +17537,10 @@
      "look": {
       "colour": "#8a8f96",
       "trousers": "#8a8f96"
+     },
+     "image": {
+      "file": "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg",
+      "caption": "The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"
      }
     },
     {
@@ -17461,6 +17553,10 @@
       "colour": "#a99b72",
       "trousers": "#7d5530",
       "hat": "round_hat"
+     },
+     "image": {
+      "file": "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg",
+      "caption": "Kentucky mounted volunteers at the Thames, 1813 (print of 1833)"
      }
     },
     {
@@ -17468,7 +17564,11 @@
      "side": "British North America (1812-15)",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Often a Peninsular veteran."
+     "notes": "Often a Peninsular veteran.",
+     "image": {
+      "file": "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg",
+      "caption": "British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"
+     }
     },
     {
      "name": "Canadian militiaman",
@@ -17486,7 +17586,11 @@
      "side": "Tecumseh's confederacy",
      "kit": "none",
      "weapon": "axe",
-     "notes": "Tomahawk and musket."
+     "notes": "Tomahawk and musket.",
+     "image": {
+      "file": "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg",
+      "caption": "Tecumseh's warriors at the Thames, 1813 (print of 1833)"
+     }
     }
    ],
    "sources": [
@@ -17561,14 +17665,22 @@
      "side": "Union",
      "kit": "none",
      "weapon": "rifle_musket",
-     "notes": "Springfield rifle-musket, no armour."
+     "notes": "Springfield rifle-musket, no armour.",
+     "image": {
+      "file": "Unidentified soldier in Union uniform with musket and bayonet LOC 5228555193.jpg",
+      "caption": "Unidentified Union soldier with musket and bayonet, 1861-65 (Library of Congress)"
+     }
     },
     {
      "name": "Union volunteer with steel vest, 1862",
      "side": "Union",
      "kit": "acw_steel_vest",
      "weapon": "rifle_musket",
-     "notes": "One of the few who kept his vest."
+     "notes": "One of the few who kept his vest.",
+     "image": {
+      "file": "American Civil War bullet proof vest.jpg",
+      "caption": "Advertisement for the Soldiers' Bullet Proof Vest, 1862"
+     }
     },
     {
      "name": "Confederate cavalryman",
@@ -17578,6 +17690,10 @@
      "notes": "Revolver and sabre.",
      "look": {
       "hat": "slouch"
+     },
+     "image": {
+      "file": "Unidentified soldier in Confederate uniform with cavalry sword and revolver LCCN2012646164.jpg",
+      "caption": "Unidentified Confederate soldier with cavalry sword and revolver, 1861-65 (Library of Congress)"
      }
     },
     {
@@ -17585,7 +17701,11 @@
      "side": "Confederacy",
      "kit": "none",
      "weapon": "rifle_musket",
-     "notes": "Enfield or Springfield rifle-musket, no armour."
+     "notes": "Enfield or Springfield rifle-musket, no armour.",
+     "image": {
+      "file": "Unidentified soldier in Confederate uniform with musket LCCN2010650476.jpg",
+      "caption": "Unidentified Confederate soldier with musket, 1861-65 (Library of Congress)"
+     }
     },
     {
      "name": "Union cavalryman",
@@ -17595,6 +17715,10 @@
      "notes": "Sabre charge; carbine and revolver as well.",
      "look": {
       "trousers": "#6f88b0"
+     },
+     "image": {
+      "file": "Unidentified soldier in Union cavalry uniform holding cavalry saber LOC 5229167420.jpg",
+      "caption": "Unidentified Union cavalryman with sabre, 1861-65 (Library of Congress)"
      }
     }
    ],
@@ -17674,14 +17798,22 @@
      "side": "Plains and Southwest nations",
      "kit": "rawhide_shield",
      "weapon": "bow",
-     "notes": "Iron trade-hoop or flint arrowheads; several arrows in quick succession."
+     "notes": "Iron trade-hoop or flint arrowheads; several arrows in quick succession.",
+     "image": {
+      "file": "White Bear (Sa-tan-ta), a Kiowa chief, full-length, seated, holding bow and arrows, 1869 - 1874 - NARA - 518901.jpg",
+      "caption": "Satanta (White Bear), Kiowa war leader, with bow and arrows, photographed by William S. Soule, 1869-74"
+     }
     },
     {
      "name": "Comanche lancer",
      "side": "Plains and Southwest nations",
      "kit": "rawhide_shield",
      "weapon": "spear",
-     "notes": "Mounted with lance and shield."
+     "notes": "Mounted with lance and shield.",
+     "image": {
+      "file": "Comanche Osage fight.jpg",
+      "caption": "A Comanche lances an Osage at full gallop, painted by George Catlin, 1834"
+     }
     },
     {
      "name": "Apache raider",
@@ -17701,7 +17833,11 @@
      "kit": "none",
      "weapon": "revolver",
      "elsewhere": true,
-     "notes": "No arrow-era gunshot table exists; his revolver rolls on a Civil War table."
+     "notes": "No arrow-era gunshot table exists; his revolver rolls on a Civil War table.",
+     "image": {
+      "file": "Unidentified Buffalo soldier, 10th Cavalry, United States Army (5431234784).jpg",
+      "caption": "Trooper of the 10th Cavalry (Buffalo Soldiers), c. 1870"
+     }
     },
     {
      "name": "US infantryman",
@@ -17721,6 +17857,10 @@
       "colour": "#2f3f6e",
       "trousers": "#7d5530",
       "hat": "headband"
+     },
+     "image": {
+      "file": "Apache Scouts.jpg",
+      "caption": "Apache scouts at Fort Apache, Arizona Territory, c. 1880"
      }
     }
    ],
@@ -17802,6 +17942,10 @@
       "colour": "#3f4f7a",
       "trousers": "#a3262b",
       "hat": "kepi"
+     },
+     "image": {
+      "file": "Portrait de soldats du 20e r\u00e9giment d'infanterie territoriale, ao\u00fbt 1914.jpg",
+      "caption": "French territorial infantry in kepis, August 1914"
      }
     },
     {
@@ -17809,21 +17953,33 @@
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "Brodie helmet, Lee-Enfield."
+     "notes": "Brodie helmet, Lee-Enfield.",
+     "image": {
+      "file": "Cheshire Regiment trench Somme 1916.jpg",
+      "caption": "Cheshire Regiment in a captured German trench on the Somme, July 1916"
+     }
     },
     {
      "name": "German machine gunner",
      "side": "Central Powers",
      "kit": "ww1_sentry",
      "weapon": "machine_gun",
-     "notes": "Stahlhelm and Sappenpanzer in a fixed position."
+     "notes": "Stahlhelm and Sappenpanzer in a fixed position.",
+     "image": {
+      "file": "Maschinengewehrkompanie.jpg",
+      "caption": "German machine-gun company (MGK III, Infantry Regiment 401), 1918"
+     }
     },
     {
      "name": "Trench raider, 1917",
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "entrenching_tool",
-     "notes": "Night raid: sharpened spade, revolver and grenades; no rifle in the trench."
+     "notes": "Night raid: sharpened spade, revolver and grenades; no rifle in the trench.",
+     "image": {
+      "file": "A raiding party from the 9th Battalion, Scottish Rifles (Cameronians), leaving a sap and making for the German lines, 11 April 1917. Q5101.jpg",
+      "caption": "Raiding party of the 9th Cameronians leaving a sap for the German lines, April 1917"
+     }
     },
     {
      "name": "Russian infantryman, 1915",
@@ -17834,6 +17990,10 @@
      "look": {
       "colour": "#8a8458",
       "hat": "field_cap"
+     },
+     "image": {
+      "file": "Russian infantry LCCN2014697563.jpg",
+      "caption": "Russian infantry, 1914 (Library of Congress)"
      }
     },
     {
@@ -17845,6 +18005,10 @@
      "look": {
       "colour": "#6f7560",
       "helmet": "adrian"
+     },
+     "image": {
+      "file": "Italian Arditi.jpg",
+      "caption": "Italian Arditi assault troops, c. 1918"
      }
     },
     {
@@ -17855,6 +18019,10 @@
      "notes": "M1917 (Brodie-pattern) helmet, Springfield rifle.",
      "look": {
       "colour": "#6f6a48"
+     },
+     "image": {
+      "file": "At close grips2.jpg",
+      "caption": "American soldiers bombing a position, c. 1917-18 (Library of Congress)"
      }
     },
     {
@@ -17862,7 +18030,11 @@
      "side": "Central Powers",
      "kit": "ww2_rifleman",
      "weapon": "hand_grenade",
-     "notes": "Stahlhelm; grenades, carbine and sharpened spade."
+     "notes": "Stahlhelm; grenades, carbine and sharpened spade.",
+     "image": {
+      "file": "Bundesarchiv Bild 146-1974-132-26A, Sto\u00dftrupp.jpg",
+      "caption": "German Sto\u00dftruppen leaving a trench to attack, 1917-18 (Bundesarchiv)"
+     }
     },
     {
      "name": "Austro-Hungarian infantryman",
@@ -17872,6 +18044,10 @@
      "notes": "Steel helmet from 1916-17; Mannlicher rifle.",
      "look": {
       "colour": "#7f8a8c"
+     },
+     "image": {
+      "file": "Handgranatenwerfer an der isonzofront 10. september 1917.jpg",
+      "caption": "Austro-Hungarian soldiers in steel helmets on the Isonzo front, September 1917"
      }
     },
     {
@@ -17883,6 +18059,10 @@
      "look": {
       "colour": "#8a7a52",
       "hat": "kabalak"
+     },
+     "image": {
+      "file": "Turkish Infantry Column at rest (LOC).jpg",
+      "caption": "Ottoman infantry column at rest, c. 1915 (Library of Congress)"
      }
     },
     {
@@ -17894,6 +18074,10 @@
      "look": {
       "colour": "#6f6a50",
       "hat": "field_cap"
+     },
+     "image": {
+      "file": "Miletkovo 1917 Bulgarian Soldiers Resting.jpg",
+      "caption": "Bulgarian soldiers resting at Miletkovo on the Macedonian front, 1916-18"
      }
     }
    ],
@@ -17950,7 +18134,11 @@
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "M1 helmet, M1 Garand."
+     "notes": "M1 helmet, M1 Garand.",
+     "image": {
+      "file": "1st Battalion 3rd Marines on Bougainville.png",
+      "caption": "1st Battalion, 3rd Marines coming out of the jungle on Bougainville, November 1943"
+     }
     },
     {
      "name": "Japanese infantryman",
@@ -17961,6 +18149,10 @@
      "look": {
       "colour": "#7d7448",
       "helmet": "japanese"
+     },
+     "image": {
+      "file": "Imperial Japanese Army Infantry 111th Regiment soldier and Indian National Army soldier.jpg",
+      "caption": "Japanese infantry of the 111th Regiment in Burma, 1943"
      }
     },
     {
@@ -17968,14 +18160,22 @@
      "side": "Axis",
      "kit": "ww2_rifleman",
      "weapon": "machine_gun",
-     "notes": "Stahlhelm, MG 42."
+     "notes": "Stahlhelm, MG 42.",
+     "image": {
+      "file": "Bundesarchiv Bild 101I-316-1172-06, Italien, Gebirgsj\u00e4ger mit schwerem MG 42.jpg",
+      "caption": "German mountain troops with an MG 42 in Italy, 1944 (Bundesarchiv)"
+     }
     },
     {
      "name": "US bomber waist gunner",
      "side": "Allies",
      "kit": "aircrew_flak",
      "weapon": "machine_gun",
-     "notes": "Flak vest and helmet; not an infantry kit."
+     "notes": "Flak vest and helmet; not an infantry kit.",
+     "image": {
+      "file": "B-17 waist gunner LCCN2004661756.jpg",
+      "caption": "B-17 waist gunner, wartime drawing, 1942 (Library of Congress)"
+     }
     },
     {
      "name": "British infantryman, Italy",
@@ -17986,6 +18186,10 @@
      "look": {
       "colour": "#7a6e48",
       "helmet": "brodie"
+     },
+     "image": {
+      "file": "The British Army in Italy, April 1944 TR1708.jpg",
+      "caption": "Corporal of the Duke of Cornwall's Light Infantry in Italy, April 1944"
      }
     },
     {
@@ -17997,6 +18201,10 @@
      "look": {
       "colour": "#5d6449",
       "hat": "slouch"
+     },
+     "image": {
+      "file": "AWM 078546 Australian 42nd Battalion patrol on Bougainville.jpg",
+      "caption": "Australian 42nd Battalion patrol on Bougainville, January 1945"
      }
     },
     {
@@ -18007,6 +18215,10 @@
      "notes": "Rimless paratrooper helmet, MP 40; fought as infantry.",
      "look": {
       "helmet": "fj"
+     },
+     "image": {
+      "file": "Bundesarchiv Bild 146-1974-006-62, Bei Monte Cassino, Fallschirmj\u00e4ger.jpg",
+      "caption": "German paratrooper near Monte Cassino, February 1944 (Bundesarchiv)"
      }
     }
    ],
@@ -18078,21 +18290,33 @@
      "side": "UN Command",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "M1 helmet, no vest."
+     "notes": "M1 helmet, no vest.",
+     "image": {
+      "file": "U.S. Army machine gun team near the Chongchon River in North Korea (November 1950).jpg",
+      "caption": "US Army machine-gun team near the Chongchon River, November 1950"
+     }
     },
     {
      "name": "US Marine, 1952",
      "side": "UN Command",
      "kit": "vietnam_usmc",
      "weapon": "rifle_service",
-     "notes": "M1951 Doron vest."
+     "notes": "M1951 Doron vest.",
+     "image": {
+      "file": "Body armor vest in Korea (KWB 53-2511-171), National Museum of Health and Medicine (3299287269).jpg",
+      "caption": "American soldier in an armoured vest, Korea (Army wound-ballistics survey photo, 1953)"
+     }
     },
     {
      "name": "South Korean infantryman",
      "side": "UN Command",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "ROK Army: M1 helmet, M1 Garand."
+     "notes": "ROK Army: M1 helmet, M1 Garand.",
+     "image": {
+      "file": "SC 348651 - ROK squad, led by American soldiers, search for North Korean enemy snipers near Yongsan. 16 September, 1950. (52514534466).jpg",
+      "caption": "ROK Army squad searching for snipers near Yongsan, September 1950"
+     }
     },
     {
      "name": "British infantryman, Imjin 1951",
@@ -18103,6 +18327,10 @@
      "look": {
       "colour": "#7a6e48",
       "helmet": "brodie"
+     },
+     "image": {
+      "file": "Indian, British, New Zealand and Australian soldiers in Korea 1951.jpg",
+      "caption": "Indian, British, New Zealand and Australian soldiers in Korea, March 1951"
      }
     },
     {
@@ -18121,6 +18349,10 @@
      "look": {
       "colour": "#8a8a6a",
       "hat": "winter_cap"
+     },
+     "image": {
+      "file": "P46 b.jpg",
+      "caption": "Chinese People's Volunteers taking an oath before the Chosin Reservoir battle, November 1950"
      }
     }
    ],
@@ -18192,21 +18424,33 @@
      "side": "US and allies",
      "kit": "vietnam_army",
      "weapon": "rifle_assault",
-     "notes": "M1 helmet, M69 vest, M16."
+     "notes": "M1 helmet, M69 vest, M16.",
+     "image": {
+      "file": "1st Battalion, 18th Infantry soldiers search Mac Dinh Chi Cemetery for Viet Cong snipers.jpg",
+      "caption": "1st Battalion, 18th Infantry search a Saigon cemetery for snipers, February 1968"
+     }
     },
     {
      "name": "US Marine, Hue 1968",
      "side": "US and allies",
      "kit": "vietnam_usmc",
      "weapon": "rifle_assault",
-     "notes": "M1955 vest, urban fighting."
+     "notes": "M1955 vest, urban fighting.",
+     "image": {
+      "file": "US Marines move through streets of Hue, Vietnam (1968).jpg",
+      "caption": "US Marines move through the streets of Hue, February 1968"
+     }
     },
     {
      "name": "ARVN infantryman",
      "side": "US and allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before."
+     "notes": "South Vietnamese army: M1 helmet, usually no vest; M16 from 1968, carbines before.",
+     "image": {
+      "file": "ARVN 7th Battalion, 1st Airborne Division soldier takes up position near the wall of the French National Cemetery.jpg",
+      "caption": "ARVN airborne soldier in Saigon during the May 1968 offensive"
+     }
     },
     {
      "name": "Australian infantryman, 1968",
@@ -18217,6 +18461,10 @@
      "look": {
       "colour": "#4f5a3a",
       "hat": "boonie"
+     },
+     "image": {
+      "file": "4 RAR soldier armed with a M60 in South Vietnam during August 1968.jpg",
+      "caption": "4 RAR soldier with an M60 in Phuoc Tuy Province, August 1968"
      }
     },
     {
@@ -18224,7 +18472,11 @@
      "side": "US and allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "ROK Marine Corps: M1 helmet."
+     "notes": "ROK Marine Corps: M1 helmet.",
+     "image": {
+      "file": "ROK Outpost, South of Chu Lai, circa 1966 (49716380807).jpg",
+      "caption": "Republic of Korea Marine outpost south of Chu Lai, c. 1966"
+     }
     },
     {
      "name": "PAVN regular",
@@ -18373,6 +18625,10 @@
      "look": {
       "colour": "#5d6449",
       "helmet": "m1"
+     },
+     "image": {
+      "file": "Soldadosargentinos3.jpg",
+      "caption": "Argentine soldiers with FN FAL rifles on the Falklands, May 1982"
      }
     },
     {
@@ -18383,6 +18639,10 @@
      "notes": "PASGT helmet and vest, M16.",
      "look": {
       "helmet": "pasgt"
+     },
+     "image": {
+      "file": "DA-ST-92-07911.jpg",
+      "caption": "Soldiers of the 327th Infantry, 101st Airborne Division, March 1991"
      }
     },
     {
@@ -18390,7 +18650,11 @@
      "side": "Gulf War 1991",
      "kit": "pasgt",
      "weapon": "rifle_assault",
-     "notes": "Soft body armour and helmet (PASGT used as the nearest kit)."
+     "notes": "Soft body armour and helmet (PASGT used as the nearest kit).",
+     "image": {
+      "file": "British soldier with L85.jpg",
+      "caption": "1st Staffordshire Regiment soldier with an L85 on live-fire training, January 1991"
+     }
     },
     {
      "name": "Iraqi conscript",
@@ -18401,6 +18665,10 @@
      "look": {
       "colour": "#6b6a4a",
       "helmet": "m1"
+     },
+     "image": {
+      "file": "Iraqi soldiers in Kuwait, 1990.png",
+      "caption": "Iraqi soldiers in Kuwait, 1990"
      }
     },
     {
@@ -18408,7 +18676,11 @@
      "side": "Somalia 1993",
      "kit": "ranger_1993",
      "weapon": "rifle_assault",
-     "notes": "Front plate only."
+     "notes": "Front plate only.",
+     "image": {
+      "file": "Black Hawk Down Rangers under fire October 3, 1993.jpg",
+      "caption": "Task Force Ranger under fire in Mogadishu, 3 October 1993"
+     }
     },
     {
      "name": "Somali militiaman",
@@ -18442,6 +18714,10 @@
       "colour": "#3f4a3a",
       "hat": "none",
       "beard": "beard"
+     },
+     "image": {
+      "file": "Evstafiev-chechnya-palace-gunman.jpg",
+      "caption": "Chechen fighter near the Presidential Palace in Grozny, January 1995 (Mikhail Evstafiev)"
      }
     }
    ],
@@ -18524,14 +18800,22 @@
      "side": "Coalition",
      "kit": "interceptor",
      "weapon": "rifle_assault",
-     "notes": "Interceptor vest, SAPI plates, ACH."
+     "notes": "Interceptor vest, SAPI plates, ACH.",
+     "image": {
+      "file": "A CO 1-18IN 2BDE 1ID on patrol Iraq Nov 2004.jpg",
+      "caption": "1st Infantry Division soldiers on patrol in Iraq, November 2004"
+     }
     },
     {
      "name": "US soldier, Afghanistan 2011",
      "side": "Coalition",
      "kit": "plate_carrier",
      "weapon": "rifle_assault",
-     "notes": "Plate carrier with ESAPI."
+     "notes": "Plate carrier with ESAPI.",
+     "image": {
+      "file": "Defense.gov News Photo 110131-A-9563P-045 - U.S. Army Spc. Nicholas Francioso crosses a small irrigation canal during a patrol in the Arghandab district in Afghanistan s Kandahar province on.jpg",
+      "caption": "US Army patrol in the Arghandab district, Kandahar, January 2011"
+     }
     },
     {
      "name": "British soldier, Helmand 2009",
@@ -18541,6 +18825,10 @@
      "notes": "Osprey vest with plates (Interceptor used as the nearest kit).",
      "look": {
       "colour": "#a39573"
+     },
+     "image": {
+      "file": "Soldier with 1 Welsh Guards Returns from a Patrol in Afghanistan MOD 45153403.jpg",
+      "caption": "1st Welsh Guards soldier returning from patrol in Helmand, May 2009"
      }
     },
     {
@@ -18552,6 +18840,10 @@
      "look": {
       "colour": "#6b6a4a",
       "helmet": "pasgt"
+     },
+     "image": {
+      "file": "Afghan National Army Soldier MOD 45152324.jpg",
+      "caption": "Afghan National Army soldier, December 2010"
      }
     },
     {
