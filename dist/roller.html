@@ -1099,6 +1099,8 @@ function renderRounds(){
 function renderChars(){
   sortChars();
   if (S.turn != null && !S.chars.some(c => c.id === S.turn)) S.turn = null;
+  const att = attackerChar();                // an incapacitated fighter can't stay the attacker
+  if (att && penalties(att).flags.includes("incapacitated")) S.attacker = -1;
   $("#chars").innerHTML = S.chars.map((c, i) => {
     const st = charStats(c);
     const painCls = st.pain > TRK.pain_cap ? "crit" : st.pain >= 2 ? "warn" : "";
