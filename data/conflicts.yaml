@@ -11,7 +11,8 @@
 #            After editing, run: cd tools/maps && npm ci && node make_maps.mjs (writes data/maps.json)
 # look     - how the example figures are drawn (templates/figure.js), on a side or an example
 #            (an example's look is merged over its side's): colour, trousers, coat: skin,
-#            hat (when the kit has no helmet), helmet (shape, when it has one), beard
+#            hat (when the kit has no helmet), helmet (shape, when it has one), beard,
+#            shield (heater or round; drawn when the kit has a shield)
 #            elsewhere: true - the weapon is recorded only in another group's tables (no
 #            data for it in this war); the roller offers to switch tables when he attacks.
 # image    - optional picture of such a combatant: {file: <Wikimedia Commons file name,
@@ -20,6 +21,37 @@
 #            the caption when it is a near match (another year, unit or army).
 
 conflicts:
+  "Crusades":
+    period: "Sidon, 1253 or 1260"
+    map: {bbox: [30.5, 29.5, 39.5, 37.5], sites: [{name: Sidon, lat: 33.56, lon: 35.37}]}
+    summary: >
+      From 1099 to 1291 Frankish crusader states held the coast of the Levant. Sidon, a
+      walled port in today's Lebanon, was sacked twice in the 13th century: in 1253 by an
+      army from Damascus while Louis IX of France was rebuilding its walls (Joinville
+      describes the king helping to bury the rotting dead), and in 1260 by the Mongols
+      under Kitbuqa. Two mass graves in the town ditch near St Louis' castle, dated to
+      the mid-13th century, hold at least 25 men, Europeans and locals, killed in one of
+      these attacks; their bones show sword, axe and mace wounds, many from behind.
+    sides:
+      - name: "Defenders of Sidon"
+        who: "Frankish knights and sergeants, crossbowmen and townsmen of mixed European and Near Eastern descent."
+        armour: "Knights and many sergeants in mail hauberks with helmets and shields; others in padded coats or nothing."
+        look: {colour: "#e6e0d2", trousers: "#6b5d45", beard: beard}
+      - name: "Attackers"
+        who: "The army from Damascus that sacked the town in 1253, or the Mongols in 1260; which raid filled the graves is not known."
+        armour: "Horsemen in mail or lamellar with round shields, lance, sword, mace and bow; Mongol horse archers in lamellar or padded coats."
+        look: {colour: "#b3812f", trousers: "#5c4a3a", hat: turban, beard: beard, shield: round}
+    examples:
+      - {name: "Frankish knight", side: "Defenders of Sidon", kit: hauberk, weapon: sword, look: {helmet: closed}, notes: "Mail hauberk, great helm and shield.", image: {file: "Crusaders-middle-ages.jpg", caption: "Knights in battle, from the Crusader (Morgan) Bible, France, 1240s"}}
+      - {name: "Frankish sergeant", side: "Defenders of Sidon", kit: hauberk, weapon: axe, notes: "Heavy blade wounds at Sidon point to swords and axes.", image: {file: "Morgan-bible-fl-29.jpg", caption: "Armoured foot and horse soldiers, from the Crusader (Morgan) Bible, France, 1240s"}}
+      - {name: "Crossbowman", side: "Defenders of Sidon", kit: gambeson, weapon: crossbow, notes: "Padded coat; the town's walls were still being rebuilt in 1253."}
+      - {name: "Townsman", side: "Defenders of Sidon", kit: none, weapon: spear, notes: "Caught in the sack."}
+      - {name: "Syrian horseman", side: "Attackers", kit: hauberk, weapon: spiked_club, look: {helmet: pot}, notes: "Mace blows from the saddle: the Sidon wounds fall on the head, neck and shoulders.", image: {file: "A Mamluk Training with a Lance.jpeg", caption: "Mamluk horseman training with a lance, Egypt or Syria, c. 1500 (a later near match)"}}
+      - {name: "Mongol horse archer", side: "Attackers", kit: leather, weapon: bow, look: {colour: "#7a3b2e", hat: winter_cap}, notes: "Kitbuqa's raid of 1260.", image: {file: "MongolCavalrymen.jpg", caption: "Mongol horsemen, from Rashid al-Din's Jami' al-tawarikh, early 14th century"}}
+    sources:
+      - "Mikulski R.N.R. et al., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021)."
+      - "Joinville, Life of Saint Louis, on Louis IX burying the dead of Sidon (1253)."
+
   "Visby 1361":
     period: "27 July 1361"
     map: {bbox: [9, 53.5, 25, 60.8], sites: [{name: Visby, lat: 57.64, lon: 18.30}]}

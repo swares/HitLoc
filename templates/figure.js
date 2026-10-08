@@ -110,6 +110,11 @@ const FIG = (() => {
   };
 
   // --- weapons, by `icon` (held in the weapon hand at 28,130) ------------------------
+  // Shield shapes (look.shield): a heater with painted bands, or a round shield with a boss.
+  const SHIELDS = {
+    heater: c => `<path d="M88 92 L112 92 L112 116 Q112 136 100 144 Q88 136 88 116 Z" fill="${shade(c, 0.15)}" stroke="${INK}" stroke-width="1.2"/><path d="M100 96 V138 M90 110 H110" stroke="${shade(c, 0.55)}" stroke-width="2"/>`,
+    round: c => `<circle cx="100" cy="114" r="15" fill="${shade(c, 0.15)}" stroke="${INK}" stroke-width="1.2"/><circle cx="100" cy="114" r="10" fill="none" stroke="${shade(c, 0.5)}" stroke-width="1.2"/><circle cx="100" cy="114" r="3.2" fill="#9aa3ad" stroke="${INK}" stroke-width=".8"/>`,
+  };
   const W = {
     sword: `<path d="M28 132 L18 70" stroke="#c9d1d8" stroke-width="3" stroke-linecap="round"/><path d="M22 128 L34 126" stroke="#6b5530" stroke-width="3"/>`,
     sabre: `<path d="M28 132 Q12 104 22 70" fill="none" stroke="#c9d1d8" stroke-width="3" stroke-linecap="round"/><path d="M22 128 L34 126" stroke="#a7822f" stroke-width="3"/>`,
@@ -216,7 +221,7 @@ const FIG = (() => {
       ${helmShape === "closed" || faceOver ? "" : face(look.beard)}
       ${helmShape ? HELMETS[helmShape] || "" : (HATS[hat] || HATS.none)(colour)}
       ${faceOver ? face(hat === "balaclava" ? "mask" : look.beard) : ""}
-      ${shield ? `<path d="M88 92 L112 92 L112 116 Q112 136 100 144 Q88 136 88 116 Z" fill="${shade(colour, 0.15)}" stroke="${INK}" stroke-width="1.2"/><path d="M100 96 V138 M90 110 H110" stroke="${shade(colour, 0.55)}" stroke-width="2"/>` : ""}
+      ${shield ? (SHIELDS[look.shield] || SHIELDS.heater)(colour) : ""}
       ${pole ? "" : W[icon] || ""}
       ${woundMarks(wounds)}
     </svg>`;
@@ -248,6 +253,6 @@ const FIG = (() => {
       <rect x=".5" y=".5" width="${m.w - 1}" height="${m.h - 1}" rx="7" fill="none" stroke="var(--map-coast,#8c8670)" stroke-width="1"/></g>`;
     return `<svg viewBox="0 0 ${W} ${m.h}" width="${width}" height="${height}" role="img" aria-label="${title}: ${names}"><title>${title}: ${names}</title>${m.panels.map(panel).join("")}</svg>`;
   }
-  return { svg, map, lookFor, iconOf, names: { helmet: Object.keys(HELMETS), hat: Object.keys(HATS), icon: Object.keys(W), beard: Object.keys(BEARDS) } };
+  return { svg, map, lookFor, iconOf, names: { helmet: Object.keys(HELMETS), hat: Object.keys(HATS), icon: Object.keys(W), beard: Object.keys(BEARDS), shield: Object.keys(SHIELDS) } };
 })();
 if (typeof module !== "undefined") module.exports = FIG;

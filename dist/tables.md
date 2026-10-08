@@ -4,6 +4,120 @@ Generated 2026-10-08 from the data folder. Roll d100 (00 = 100).
 
 **Procedure:** 1) d100 location on the table for the fight and weapon (situation column if one applies; called shots roll twice). 2) d100 mechanism for the weapon. 3) Severity from your system's damage, or d100. 4) Armour (adjusted tables): lower severity by the material's steps. 5) Look up the wound by location class and severity, then apply the mechanism modifiers.
 
+# Crusades (Sidon, 1253 or 1260)
+
+From 1099 to 1291 Frankish crusader states held the coast of the Levant. Sidon, a walled port in today's Lebanon, was sacked twice in the 13th century: in 1253 by an army from Damascus while Louis IX of France was rebuilding its walls (Joinville describes the king helping to bury the rotting dead), and in 1260 by the Mongols under Kitbuqa. Two mass graves in the town ditch near St Louis' castle, dated to the mid-13th century, hold at least 25 men, Europeans and locals, killed in one of these attacks; their bones show sword, axe and mace wounds, many from behind.
+
+| Side | Who | Armour |
+|---|---|---|
+| Defenders of Sidon | Frankish knights and sergeants, crossbowmen and townsmen of mixed European and Near Eastern descent. | Knights and many sergeants in mail hauberks with helmets and shields; others in padded coats or nothing. |
+| Attackers | The army from Damascus that sacked the town in 1253, or the Mongols in 1260; which raid filled the graves is not known. | Horsemen in mail or lamellar with round shields, lance, sword, mace and bow; Mongol horse archers in lamellar or padded coats. |
+
+**Example combatants**
+
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| Frankish knight | Defenders of Sidon | Mail hauberk and helm (c.1100-1300) | Sword (arming sword) | Mail hauberk, great helm and shield. | [Knights in battle, from the Crusader (Morgan) Bible, France, 1240s](https://commons.wikimedia.org/wiki/File:Crusaders-middle-ages.jpg) |
+| Frankish sergeant | Defenders of Sidon | Mail hauberk and helm (c.1100-1300) | Axe (hand or long-hafted) | Heavy blade wounds at Sidon point to swords and axes. | [Armoured foot and horse soldiers, from the Crusader (Morgan) Bible, France, 1240s](https://commons.wikimedia.org/wiki/File:Morgan-bible-fl-29.jpg) |
+| Crossbowman | Defenders of Sidon | Gambeson and cap | Crossbow (bolts) | Padded coat; the town's walls were still being rebuilt in 1253. |  |
+| Townsman | Defenders of Sidon | Unarmoured | Spear / lance | Caught in the sack. |  |
+| Syrian horseman | Attackers | Mail hauberk and helm (c.1100-1300) | Spiked club / morning star (knout) | Mace blows from the saddle: the Sidon wounds fall on the head, neck and shoulders. | [Mamluk horseman training with a lance, Egypt or Syria, c. 1500 (a later near match)](https://commons.wikimedia.org/wiki/File:A_Mamluk_Training_with_a_Lance.jpeg) |
+| Mongol horse archer | Attackers | Hardened leather | Bow (war arrows) | Kitbuqa's raid of 1260. | [Mongol horsemen, from Rashid al-Din's Jami' al-tawarikh, early 14th century](https://commons.wikimedia.org/wiki/File:MongolCavalrymen.jpg) |
+
+Sources: Mikulski R.N.R. et al., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021). Joinville, Life of Saint Louis, on Louis IX burying the dead of Sidon (1253).
+
+## Sidon, mid-13th century - crusader mass graves (bone evidence)
+
+*Bones of at least 25 men killed when Mamluk (1253) or Mongol (1260) forces sacked crusader Sidon, later gathered into the town ditch. Killed only.*
+
+Confidence: **Historical - taken directly from a source** · Armour: **already reflected (do not apply)**
+
+| Location | Sword | Axe | Spiked club | Spear | Dagger | Bow | Crossbow |
+|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-03 | 01-03 | 01-10 | 01-19 | 01-05 | 01-05 | 01-05 |
+| Skull (right) | 04-06 | 04-06 | 11-20 | 20-38 | 06-10 | 06-10 | 06-10 |
+| Face | 07-09 | 07-09 | 21-32 | 39-60 | 11-16 | 11-16 | 11-16 |
+| Neck | 10-48 | 10-48 | - | - | 17-40 | 17-40 | 17-40 |
+| Chest (left) | 49-51 | 49-51 | 33-36 | - | 41-43 | 41-43 | 41-43 |
+| Chest (right) | 52-54 | 52-54 | 37-40 | - | 44-46 | 44-46 | 44-46 |
+| Groin / pelvis | - | - | 41-43 | - | 47 | 47 | 47 |
+| Upper back | 55-56 | 55-56 | 44-45 | - | 48-49 | 48-49 | 48-49 |
+| Lower back | 57-58 | 57-58 | 46-47 | - | 50-51 | 50-51 | 50-51 |
+| Shoulder (left) | 59-63 | 59-63 | 48-51 | - | 52-56 | 52-56 | 52-56 |
+| Shoulder (right) | 64-68 | 64-68 | 52-55 | - | 57-61 | 57-61 | 57-61 |
+| Upper arm (left) | 69-70 | 69-70 | 56-57 | - | 62-63 | 62-63 | 62-63 |
+| Upper arm (right) | 71-72 | 71-72 | 58-59 | - | 64-65 | 64-65 | 64-65 |
+| Forearm (left) | 73-74 | 73-74 | 60-61 | - | 66-67 | 66-67 | 66-67 |
+| Forearm (right) | 75-76 | 75-76 | 62-63 | - | 68-69 | 68-69 | 68-69 |
+| Hand (left) | 77-84 | 77-84 | 64 | - | 70-75 | 70-75 | 70-75 |
+| Hand (right) | 85-92 | 85-92 | 65 | - | 76-81 | 76-81 | 76-81 |
+| Thigh (left) | 93-96 | 93-96 | 66-74 | 61-70 | 82-87 | 82-87 | 82-87 |
+| Thigh (right) | 97-00 | 97-00 | 75-83 | 71-80 | 88-93 | 88-93 | 88-93 |
+| Knee (left) | - | - | 84-85 | 81-83 | 94 | 94 | 94 |
+| Knee (right) | - | - | 86-87 | 84-86 | 95 | 95 | 95 |
+| Lower leg (left) | - | - | 88-92 | 87-93 | 96-97 | 96-97 | 96-97 |
+| Lower leg (right) | - | - | 93-97 | 94-00 | 98-99 | 98-99 | 98-99 |
+| Foot (left) | - | - | 98-99 | - | 00 | 00 | 00 |
+| Foot (right) | - | - | 00 | - | - | - | - |
+
+**Source totals:** Head (cranium and mandible) (17) = 17.0%; Neck (cervical vertebrae) (24) = 24.0%; Shoulders (clavicle, scapula) (9) = 9.0%; Upper limbs (arm bones) (9) = 9.0%; Hands (11) = 11.0%; Torso (ribs, spine) (10) = 10.0%; Hips (1) = 1.0%; Thighs (12) = 12.0%; Legs (below the thigh) (6) = 6.0%; Feet (1) = 1.0% (n = 100). From the study's table of bones with definite battle injuries (100 bones; 62 sharp, 35 blunt and 5 penetrating injuries) by body region. Sides are not recorded, and each region is shared among its locations by body exposure. Swords and axes roll on the sharp-force bones, the mace (spiked club) on the blunt-force ones and the spear on the penetrating ones (spiked mace, arrow, lance or javelin, the authors suggest); other weapons use all bones together.
+
+
+**Close combat:** Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** Armour is already in these numbers. This is bone evidence: chest and belly wounds that missed bone left no mark. 24 of the 100 bones are blade cuts across the back of the neck, found on nearly every man; the authors think some may be executions of captives, so the neck is much higher here than in battle. For play, use the gameplay table, which leaves them out.
+
+**Status:** Historical, from about 25 men killed in a sack, their remains left exposed for weeks before burial and partly disarticulated, so wounds cannot be matched to individuals or sides. A picture of a massacre after a city fell, not of a pitched battle.
+
+Sources:
+- Mikulski R.N.R., Schutkowski H., Smith M.J., Doumet-Serhal C. and Mitchell P.D., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021), open access: S1 Table (elements with definite peri-mortem trauma by region).
+- Same study: more wounds on the back of the body than the front (men attacked as they fled); blows concentrated on the head, neck and shoulders, compatible with mounted attackers striking down at men on foot; one man had at least 12 injuries on 16 bones.
+- Tally: data/sources/sidon-1253-mass-graves.csv.
+
+## Sidon, mid-13th century - gameplay-adjusted (before armour)
+
+*Where blows land on a man fighting in the sack of a crusader town, before armour, re-weighted from the Sidon bone evidence without the neck cuts.*
+
+Confidence: **Extrapolated - design estimate from analogous evidence** · Armour: **allowed**
+
+| Location | Sword | Axe | Spiked club | Spear | Dagger | Bow | Crossbow |
+|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-08 | 01-09 | 01-10 | 01-06 | 01-07 | 01-08 | 01-09 |
+| Skull (right) | 09-16 | 10-18 | 11-20 | 07-12 | 08-14 | 09-16 | 10-18 |
+| Face | 17-22 | 19-24 | 21-28 | 13-19 | 15-22 | 17-22 | 19-24 |
+| Neck | 23-25 | 25-27 | 29-32 | 20-21 | 23-28 | 23-25 | 25-27 |
+| Chest (left) | 26-32 | 28-33 | 33-39 | 22-30 | 29-37 | 26-32 | 28-34 |
+| Chest (right) | 33-39 | 34-39 | 40-45 | 31-39 | 38-46 | 33-39 | 35-40 |
+| Abdomen | 40-46 | 40-44 | 46-51 | 40-48 | 47-55 | 40-46 | 41-46 |
+| Groin / pelvis | 47-49 | 45-46 | 52-54 | 49-52 | 56-59 | 47-49 | 47-49 |
+| Upper back | 50-52 | 47-48 | 55-57 | 53-56 | 60-63 | 50-52 | 50-52 |
+| Lower back | 53-55 | 49-50 | 58-60 | 57-60 | 64-67 | 53-55 | 53-55 |
+| Shoulder (left) | 56-58 | 51-53 | 61-63 | 61-63 | 68-70 | 56-58 | 56-58 |
+| Shoulder (right) | 59-61 | 54-56 | 64-66 | 64-66 | 71-73 | 59-61 | 59-61 |
+| Upper arm (left) | 62-63 | 57-58 | 67-68 | 67-68 | 74-75 | 62-63 | 62-63 |
+| Upper arm (right) | 64-65 | 59-60 | 69-70 | 69-70 | 76-77 | 64-65 | 64-65 |
+| Forearm (left) | 66-68 | 61-63 | 71-73 | 71-73 | 78-80 | 66-68 | 66-68 |
+| Forearm (right) | 69-71 | 64-66 | 74-76 | 74-76 | 81-83 | 69-71 | 69-71 |
+| Hand (left) | 72-75 | 67-70 | 77-80 | 77-79 | 84-87 | 72-75 | 72-75 |
+| Hand (right) | 76-79 | 71-74 | 81-84 | 80-82 | 88-91 | 76-79 | 76-79 |
+| Thigh (left) | 80-84 | 75-80 | 85-88 | 83-86 | 92-93 | 80-84 | 80-84 |
+| Thigh (right) | 85-89 | 81-86 | 89-92 | 87-90 | 94-95 | 85-89 | 85-89 |
+| Knee (left) | 90 | 87 | 93 | 91 | 96 | 90 | 90 |
+| Knee (right) | 91 | 88 | 94 | 92 | 97 | 91 | 91 |
+| Lower leg (left) | 92-94 | 89-92 | 95-96 | 93-95 | 98 | 92-94 | 92-94 |
+| Lower leg (right) | 95-97 | 93-96 | 97-98 | 96-97 | 99 | 95-97 | 95-97 |
+| Foot (left) | 98-99 | 97-99 | 99 | 98-99 | 00 | 98-99 | 98-99 |
+| Foot (right) | 00 | 00 | 00 | 00 | - | 00 | 00 |
+
+**Close combat:** Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** These weights are where blows LAND. Resolve armour separately with the target's kit (a mail hauberk for knights and many sergeants, padded coats for others).
+
+**Status:** Corrections to the bone evidence: (1) The 24 blade cuts across the back of the neck are left out as probable executions of captives; the neck keeps a small share for battle blows. (2) Trunk raised to 30%: chest and belly wounds mostly miss bone (the evidence has 10 torso bones in 100). (3) Head kept near its share of the remaining bones (22%). (4) Arms lowered from 38% to 24% and legs and hips from 26% to 24% to make room for the trunk. Sides are not recorded, so left and right are near even.
+
+Sources:
+- Derived from sidon-1253-mass-graves (Mikulski et al. 2021, S1 Table).
+
 # Visby 1361 (27 July 1361)
 
 King Valdemar IV Atterdag of Denmark invaded Gotland, then a rich trading island, and met its rural defenders outside the walls of Visby. The Gotlanders were a peasant levy facing professional troops, and the fight became a slaughter. The dead were buried quickly in mass graves, many still in their armour, which is why Visby gives the best picture of medieval battle wounds: 1,185 skeletons were recovered from three graves.
@@ -2103,18 +2217,300 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 
 | Situation | Group | Effect on weights | Notes |
 |---|---|---|---|
-| Attacker on target's shield side | facing | left side x1.8, right side x0.5 | Attacker works round to the target's left (shield) side. Tables: Visby 1361 |
-| Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Visby 1361, Towton 1461 |
-| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
-| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
-| Target has no shield | - | head x1.1, torso x1.4, forearm (left) x0.7, hand (left) x0.7 | Tables assume a shield. Without one the body and head are more open. Tables: Visby 1361 |
-| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault |
-| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
+| Attacker on target's shield side | facing | left side x1.8, right side x0.5 | Attacker works round to the target's left (shield) side. Tables: Sidon, mid-13th century, Visby 1361 |
+| Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461 |
+| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
+| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
+| Target has no shield | - | head x1.1, torso x1.4, forearm (left) x0.7, hand (left) x0.7 | Tables assume a shield. Without one the body and head are more open. Tables: Sidon, mid-13th century, Visby 1361 |
+| Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault |
+| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Sidon, mid-13th century, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
 
 **Called shot:** Roll the location twice; keep whichever result lands in the called zone. If both or neither do, keep the first. Your system sets any to-hit penalty.
+
+### Sidon, mid-13th century - crusader mass graves (bone evidence) - Sword / Axe
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-03 | 01 | 01-03 | 01 | 01-03 | 01-03 | 01-03 | 01-02 |
+| Skull (right) | 04-06 | 02-05 | 04-06 | 02 | 04-06 | 04-06 | 04-06 | 03-04 |
+| Face | 07-09 | 06-08 | 07-10 | 03-04 | 07-09 | - | 07-09 | 05-06 |
+| Neck | 10-48 | 09-44 | 11-57 | 05-28 | 10-59 | 07-53 | 10-45 | 07-35 |
+| Chest (left) | 49-51 | 45 | 58-59 | 29-32 | 60 | - | 46-48 | 36-37 |
+| Chest (right) | 52-54 | 46-50 | 60-61 | 33-36 | 61 | - | 49-51 | 38-39 |
+| Upper back | 55-56 | 51-52 | 62-63 | 37-38 | 62-63 | 54-61 | 52-56 | 40-41 |
+| Lower back | 57-58 | 53-54 | 64 | 39-40 | 64 | 62-66 | 57-60 | 42 |
+| Shoulder (left) | 59-63 | 55-56 | 65-70 | 41-46 | 65-67 | 67-69 | 61-64 | 43-47 |
+| Shoulder (right) | 64-68 | 57-64 | 71-76 | 47-52 | 68-70 | 70-72 | 65-68 | 48-52 |
+| Upper arm (left) | 69-70 | 65 | 77-78 | 53-55 | 71-72 | 73-74 | 69-70 | 53-55 |
+| Upper arm (right) | 71-72 | 66-69 | 79-80 | 56-58 | 73-74 | 75-76 | 71-72 | 56-58 |
+| Forearm (left) | 73-74 | 70 | 81-82 | 59-61 | 75-77 | 77-78 | 73-74 | 59-62 |
+| Forearm (right) | 75-76 | 71-74 | 83-84 | 62-64 | 78-80 | 79-80 | 75-76 | 63-66 |
+| Hand (left) | 77-84 | 75-78 | 85-91 | 65-74 | 81-88 | 81-85 | 77-83 | 67-80 |
+| Hand (right) | 85-92 | 79-91 | 92-98 | 75-84 | 89-96 | 86-90 | 84-90 | 81-94 |
+| Thigh (left) | 93-96 | 92-93 | 99 | 85-92 | 97-98 | 91-95 | 91-95 | 95-97 |
+| Thigh (right) | 97-00 | 94-00 | 00 | 93-00 | 99-00 | 96-00 | 96-00 | 98-00 |
+
+### Sidon, mid-13th century - crusader mass graves (bone evidence) - Spiked club
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-10 | 01-04 | 01-15 | 01-05 | 01-17 | 01-12 | 01-10 | 01-08 |
+| Skull (right) | 11-20 | 05-20 | 16-30 | 06-10 | 18-34 | 13-24 | 11-20 | 09-16 |
+| Face | 21-32 | 21-30 | 31-48 | 11-15 | 35-49 | 25 | 21-30 | 17-26 |
+| Chest (left) | 33-36 | 31-32 | 49-51 | 16-18 | 50-51 | 26 | 31-33 | 27-29 |
+| Chest (right) | 37-40 | 33-38 | 52-54 | 19-21 | 52-53 | 27 | 34-36 | 30-32 |
+| Groin / pelvis | 41-43 | 39-41 | 55-57 | 22-26 | 54 | 28 | 37-38 | 33-34 |
+| Upper back | 44-45 | 42-43 | 58-59 | 27-28 | 55-58 | 29-37 | 39-43 | 35-36 |
+| Lower back | 46-47 | 44-45 | 60-61 | 29-30 | 59-60 | 38-43 | 44-47 | 37-38 |
+| Shoulder (left) | 48-51 | 46-47 | 62-67 | 31-34 | 61-64 | 44-46 | 48-51 | 39-44 |
+| Shoulder (right) | 52-55 | 48-54 | 68-73 | 35-38 | 65-68 | 47-49 | 52-54 | 45-50 |
+| Upper arm (left) | 56-57 | 55 | 74-76 | 39-40 | 69-70 | 50 | 55-56 | 51-53 |
+| Upper arm (right) | 58-59 | 56-58 | 77-78 | 41-42 | 71-72 | 51 | 57-58 | 54-56 |
+| Forearm (left) | 60-61 | 59 | 79-80 | 43-44 | 73-75 | 52 | 59-60 | 57-60 |
+| Forearm (right) | 62-63 | 60-62 | 81-82 | 45-46 | 76-78 | 53 | 61-62 | 61-64 |
+| Hand (left) | 64 | 63 | 83-84 | 47 | 79-80 | 54 | 63 | 65-67 |
+| Hand (right) | 65 | 64-65 | 85-86 | 48 | 81-82 | 55 | 64 | 68-70 |
+| Thigh (left) | 66-74 | 66-69 | 87-89 | 49-61 | 83-86 | 56-66 | 65-73 | 71-77 |
+| Thigh (right) | 75-83 | 70-83 | 90-92 | 62-74 | 87-90 | 67-77 | 74-82 | 78-84 |
+| Knee (left) | 84-85 | 84 | 93 | 75-77 | 91 | 78-80 | 83-84 | 85-86 |
+| Knee (right) | 86-87 | 85-87 | 94 | 78-80 | 92 | 81-82 | 85-86 | 87-88 |
+| Lower leg (left) | 88-92 | 88-89 | 95-96 | 81-88 | 93-95 | 83-89 | 87-92 | 89-93 |
+| Lower leg (right) | 93-97 | 90-97 | 97-98 | 89-96 | 96-98 | 90-96 | 93-98 | 94-98 |
+| Foot (left) | 98-99 | 98 | 99 | 97-98 | 99 | 97-98 | 99 | 99 |
+| Foot (right) | 00 | 99-00 | 00 | 99-00 | 00 | 99-00 | 00 | 00 |
+
+### Sidon, mid-13th century - crusader mass graves (bone evidence) - Spear
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-19 | 01-09 | 01-27 | 01-10 | 01-29 | 01-23 | 01-19 | 01-19 |
+| Skull (right) | 20-38 | 10-39 | 28-54 | 11-20 | 30-58 | 24-45 | 20-38 | 20-38 |
+| Face | 39-60 | 40-59 | 55-86 | 21-32 | 59-82 | 46-48 | 39-56 | 39-60 |
+| Thigh (left) | 61-70 | 60-64 | 87-89 | 33-49 | 83-87 | 49-61 | 57-67 | 61-70 |
+| Thigh (right) | 71-80 | 65-80 | 90-92 | 50-66 | 88-92 | 62-74 | 68-78 | 71-80 |
+| Knee (left) | 81-83 | 81 | 93 | 67-70 | 93 | 75-77 | 79-81 | 81-83 |
+| Knee (right) | 84-86 | 82-85 | 94 | 71-74 | 94 | 78-80 | 82-84 | 84-86 |
+| Lower leg (left) | 87-93 | 86-88 | 95-97 | 75-87 | 95-97 | 81-90 | 85-92 | 87-93 |
+| Lower leg (right) | 94-00 | 89-00 | 98-00 | 88-00 | 98-00 | 91-00 | 93-00 | 94-00 |
+
+### Sidon, mid-13th century - crusader mass graves (bone evidence) - Dagger / Bow / Crossbow
+
+| Location | Normal | Weapon side | Higher | Lower | Down | Fleeing | Flanked | Warding |
+|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-05 | 01-02 | 01-07 | 01-03 | 01-08 | 01-07 | 01-06 | 01-04 |
+| Skull (right) | 06-10 | 03-11 | 08-14 | 04-06 | 09-16 | 08-13 | 07-12 | 05-08 |
+| Face | 11-16 | 12-17 | 15-22 | 07-10 | 17-22 | 14 | 13-18 | 09-13 |
+| Neck | 17-40 | 18-39 | 23-54 | 11-23 | 23-57 | 15-43 | 19-39 | 14-32 |
+| Chest (left) | 41-43 | 40 | 55-57 | 24-26 | 58 | 44 | 40-42 | 33-34 |
+| Chest (right) | 44-46 | 41-45 | 58-60 | 27-29 | 59 | 45 | 43-45 | 35-36 |
+| Groin / pelvis | 47 | 46 | 61 | 30-31 | - | - | 46 | 37 |
+| Upper back | 48-49 | 47-48 | 62-63 | 32-33 | 60-62 | 46-53 | 47-50 | 38-39 |
+| Lower back | 50-51 | 49-50 | 64 | 34-35 | 63-64 | 54-58 | 51-54 | 40 |
+| Shoulder (left) | 52-56 | 51-52 | 65-70 | 36-40 | 65-67 | 59-61 | 55-58 | 41-45 |
+| Shoulder (right) | 57-61 | 53-59 | 71-76 | 41-45 | 68-70 | 62-64 | 59-62 | 46-50 |
+| Upper arm (left) | 62-63 | 60 | 77-78 | 46-48 | 71-72 | 65 | 63-64 | 51-53 |
+| Upper arm (right) | 64-65 | 61-64 | 79-80 | 49-50 | 73-74 | 66 | 65-66 | 54-56 |
+| Forearm (left) | 66-67 | 65 | 81-82 | 51-52 | 75-77 | 67 | 67-68 | 57-60 |
+| Forearm (right) | 68-69 | 66-69 | 83-84 | 53-54 | 78-80 | 68 | 69-70 | 61-64 |
+| Hand (left) | 70-75 | 70-71 | 85-89 | 55-60 | 81-86 | 69-71 | 71-75 | 65-74 |
+| Hand (right) | 76-81 | 72-80 | 90-94 | 61-66 | 87-92 | 72-74 | 76-80 | 75-84 |
+| Thigh (left) | 82-87 | 81-83 | 95-96 | 67-77 | 93-95 | 75-82 | 81-87 | 85-89 |
+| Thigh (right) | 88-93 | 84-93 | 97-98 | 78-88 | 96-98 | 83-90 | 88-94 | 90-94 |
+| Knee (left) | 94 | - | - | 89 | - | 91 | 95 | 95 |
+| Knee (right) | 95 | 94 | - | 90 | - | 92 | 96 | 96 |
+| Lower leg (left) | 96-97 | 95 | 99 | 91-94 | 99 | 93-95 | 97-98 | 97-98 |
+| Lower leg (right) | 98-99 | 96-99 | 00 | 95-98 | 00 | 96-98 | 99-00 | 99-00 |
+| Foot (left) | 00 | - | - | 99 | - | 99 | - | - |
+| Foot (right) | - | 00 | - | 00 | - | 00 | - | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Sword / Bow
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-08 | 01-13 | 01-04 | 01-12 | 01-04 | 01-14 | 01-11 | 01-08 | 01-08 | 01-06 | 01-17 |
+| Skull (right) | 09-16 | 14-17 | 05-17 | 13-24 | 05-08 | 15-28 | 12-22 | 09-16 | 09-16 | 07-12 | 18-34 |
+| Face | 17-22 | 18-22 | 18-22 | 25-33 | 09-11 | 29-35 | 23 | 17-21 | 17-22 | 13-17 | 35-47 |
+| Neck | 23-25 | 23-25 | 23-25 | 34-37 | 12 | 36-40 | 24-27 | 22-24 | 23-25 | 18-19 | 48-53 |
+| Chest (left) | 26-32 | 26-36 | 26-28 | 38-44 | 13-19 | 41-44 | 28 | 25-30 | 26-34 | 20-25 | 54-56 |
+| Chest (right) | 33-39 | 37-39 | 29-39 | 45-51 | 20-26 | 45-48 | 29 | 31-36 | 35-43 | 26-31 | 57-59 |
+| Abdomen | 40-46 | 40-45 | 40-45 | 52-58 | 27-35 | 49-52 | 30 | 37-42 | 44-52 | 32-37 | 60 |
+| Groin / pelvis | 47-49 | 46-48 | 46-48 | 59-61 | 36-40 | 53 | 31 | 43-45 | 53-56 | 38-39 | - |
+| Upper back | 50-52 | 49-51 | 49-51 | 62-64 | 41-43 | 54-58 | 32-44 | 46-51 | 57-60 | 40-41 | 61 |
+| Lower back | 53-55 | 52-54 | 52-54 | 65-67 | 44-46 | 59-61 | 45-54 | 52-57 | 61-64 | 42-43 | 62 |
+| Shoulder (left) | 56-58 | 55-59 | 55 | 68-71 | 47-49 | 62-64 | 55-56 | 58-60 | 65-67 | 44-47 | 63-68 |
+| Shoulder (right) | 59-61 | 60 | 56-60 | 72-75 | 50-52 | 65-67 | 57-58 | 61-63 | 68-70 | 48-51 | 69-74 |
+| Upper arm (left) | 62-63 | 61-63 | 61 | 76-77 | 53-54 | 68-69 | 59 | 64-65 | 71-72 | 52-53 | 75-77 |
+| Upper arm (right) | 64-65 | 64 | 62-64 | 78-79 | 55-56 | 70-71 | 60 | 66-67 | 73-74 | 54-55 | 78-80 |
+| Forearm (left) | 66-68 | 65-69 | 65 | 80-82 | 57-59 | 72-75 | 61-62 | 68-70 | 75-76 | 56-61 | 81-84 |
+| Forearm (right) | 69-71 | 70 | 66-70 | 83-85 | 60-62 | 76-79 | 63-64 | 71-73 | 77-78 | 62-67 | 85-88 |
+| Hand (left) | 72-75 | 71-76 | 71-72 | 86-89 | 63-66 | 80-85 | 65-67 | 74-76 | 79-80 | 68-75 | 89-94 |
+| Hand (right) | 76-79 | 77-78 | 73-79 | 90-93 | 67-70 | 86-91 | 68-70 | 77-79 | 81-83 | 76-83 | 95-00 |
+| Thigh (left) | 80-84 | 79-86 | 80-81 | 94-95 | 71-78 | 92-94 | 71-77 | 80-84 | 84-87 | 84-87 | - |
+| Thigh (right) | 85-89 | 87-88 | 82-89 | 96-97 | 79-86 | 95-97 | 78-84 | 85-89 | 88-91 | 88-91 | - |
+| Knee (left) | 90 | 89-90 | - | - | 87 | - | 85-86 | 90 | 92 | 92 | - |
+| Knee (right) | 91 | 91 | 90-91 | - | 88 | - | 87-88 | 91 | 93 | 93 | - |
+| Lower leg (left) | 92-94 | 92-96 | 92 | 98 | 89-92 | 98 | 89-92 | 92-94 | 94-95 | 94-95 | - |
+| Lower leg (right) | 95-97 | 97 | 93-97 | 99 | 93-96 | 99 | 93-96 | 95-97 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 98-00 | 98 | 00 | 97-99 | 00 | 97-99 | 98-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | - | 99-00 | - | 00 | - | 00 | 00 | 00 | 00 | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Axe
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-09 | 01-14 | 01-04 | 01-13 | 01-04 | 01-15 | 01-11 | 01-09 | 01-09 | 01-07 | 01-18 |
+| Skull (right) | 10-18 | 15-18 | 05-18 | 14-26 | 05-08 | 16-30 | 12-22 | 10-18 | 10-18 | 08-14 | 19-36 |
+| Face | 19-24 | 19-24 | 19-24 | 27-36 | 09-11 | 31-38 | 23 | 19-23 | 19-24 | 15-19 | 37-49 |
+| Neck | 25-27 | 25-27 | 25-27 | 37-41 | 12 | 39-44 | 24-27 | 24-26 | 25-27 | 20-22 | 50-56 |
+| Chest (left) | 28-33 | 28-36 | 28-29 | 42-46 | 13-17 | 45-47 | 28 | 27-31 | 28-34 | 23-26 | 57-58 |
+| Chest (right) | 34-39 | 37-38 | 30-38 | 47-51 | 18-22 | 48-50 | 29 | 32-36 | 35-41 | 27-30 | 59-60 |
+| Abdomen | 40-44 | 39-43 | 39-43 | 52-56 | 23-29 | 51-53 | 30 | 37-41 | 42-48 | 31-34 | 61 |
+| Groin / pelvis | 45-46 | 44-45 | 44-45 | 57-58 | 30-33 | 54 | - | 42-43 | 49-51 | 35-36 | - |
+| Upper back | 47-48 | 46-47 | 46-47 | 59-60 | 34-35 | 55-58 | 31-40 | 44-48 | 52-54 | 37-38 | 62 |
+| Lower back | 49-50 | 48-49 | 48-49 | 61-62 | 36-37 | 59-60 | 41-48 | 49-53 | 55-57 | 39-40 | - |
+| Shoulder (left) | 51-53 | 50-54 | 50 | 63-66 | 38-40 | 61-62 | 49-50 | 54-56 | 58-60 | 41-44 | 63-68 |
+| Shoulder (right) | 54-56 | 55 | 51-55 | 67-70 | 41-43 | 63-64 | 51-52 | 57-58 | 61-63 | 45-47 | 69-74 |
+| Upper arm (left) | 57-58 | 56-58 | 56 | 71-72 | 44-45 | 65-66 | 53 | 59-60 | 64-65 | 48-49 | 75-77 |
+| Upper arm (right) | 59-60 | 59 | 57-59 | 73-74 | 46-47 | 67-68 | 54 | 61-62 | 66-67 | 50-51 | 78-80 |
+| Forearm (left) | 61-63 | 60-64 | 60 | 75-77 | 48-50 | 69-72 | 55-56 | 63-64 | 68-69 | 52-57 | 81-84 |
+| Forearm (right) | 64-66 | 65 | 61-65 | 78-80 | 51-53 | 73-76 | 57-58 | 65-66 | 70-72 | 58-63 | 85-88 |
+| Hand (left) | 67-70 | 66-71 | 66-67 | 81-84 | 54-57 | 77-81 | 59-60 | 67-69 | 73-74 | 64-71 | 89-93 |
+| Hand (right) | 71-74 | 72-73 | 68-73 | 85-88 | 58-60 | 82-86 | 61-62 | 70-72 | 75-77 | 72-79 | 94-98 |
+| Thigh (left) | 75-80 | 74-83 | 74-76 | 89-90 | 61-69 | 87-89 | 63-71 | 73-79 | 78-83 | 80-84 | 99 |
+| Thigh (right) | 81-86 | 84-86 | 77-86 | 91-92 | 70-78 | 90-92 | 72-80 | 80-86 | 84-89 | 85-89 | 00 |
+| Knee (left) | 87 | 87-88 | 87 | 93 | 79-80 | 93 | 81-82 | 87 | 90 | 90 | - |
+| Knee (right) | 88 | - | 88-89 | 94 | 81-82 | 94 | 83-84 | 88 | 91 | 91 | - |
+| Lower leg (left) | 89-92 | 89-94 | 90-91 | 95-96 | 83-88 | 95-96 | 85-89 | 89-92 | 92-94 | 92-94 | - |
+| Lower leg (right) | 93-96 | 95-96 | 92-97 | 97-98 | 89-94 | 97-98 | 90-94 | 93-96 | 95-97 | 95-97 | - |
+| Foot (left) | 97-99 | 97-00 | 98 | 99 | 95-98 | 99 | 95-98 | 97-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | - | 99-00 | 00 | 99-00 | 00 | 99-00 | 00 | 00 | 00 | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Spiked club
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-10 | 01-17 | 01-05 | 01-15 | 01-05 | 01-17 | 01-14 | 01-11 | 01-10 | 01-09 | 01-19 |
+| Skull (right) | 11-20 | 18-22 | 06-22 | 16-29 | 06-10 | 18-34 | 15-28 | 12-22 | 11-20 | 10-18 | 20-38 |
+| Face | 21-28 | 23-29 | 23-29 | 30-40 | 11-14 | 35-43 | 29 | 23-29 | 21-28 | 19-24 | 39-53 |
+| Neck | 29-32 | 30-33 | 30-33 | 41-45 | 15-16 | 44-50 | 30-34 | 30-32 | 29-32 | 25-27 | 54-60 |
+| Chest (left) | 33-39 | 34-44 | 34-36 | 46-51 | 17-23 | 51-53 | 35 | 33-38 | 33-40 | 28-32 | 61-63 |
+| Chest (right) | 40-45 | 45-47 | 37-47 | 52-57 | 24-30 | 54-56 | 36 | 39-44 | 41-48 | 33-37 | 64-66 |
+| Abdomen | 46-51 | 48-53 | 48-53 | 58-63 | 31-39 | 57-59 | 37 | 45-50 | 49-56 | 38-42 | 67 |
+| Groin / pelvis | 52-54 | 54-56 | 54-56 | 64-65 | 40-44 | 60 | 38 | 51-52 | 57-60 | 43-44 | - |
+| Upper back | 55-57 | 57-58 | 57-58 | 66-67 | 45-47 | 61-64 | 39-51 | 53-58 | 61-64 | 45-46 | 68 |
+| Lower back | 58-60 | 59-60 | 59-60 | 68-69 | 48-50 | 65-67 | 52-61 | 59-64 | 65-68 | 47-48 | - |
+| Shoulder (left) | 61-63 | 61-65 | 61 | 70-73 | 51-53 | 68-69 | 62-63 | 65-66 | 69-71 | 49-52 | 69-73 |
+| Shoulder (right) | 64-66 | 66 | 62-66 | 74-77 | 54-56 | 70-71 | 64-65 | 67-68 | 72-73 | 53-56 | 74-78 |
+| Upper arm (left) | 67-68 | 67-69 | 67 | 78-79 | 57-58 | 72-73 | 66 | 69-70 | 74-75 | 57-58 | 79-80 |
+| Upper arm (right) | 69-70 | 70 | 68-70 | 80-81 | 59-60 | 74-75 | 67 | 71-72 | 76-77 | 59-60 | 81-82 |
+| Forearm (left) | 71-73 | 71-75 | 71 | 82-84 | 61-63 | 76-79 | 68-69 | 73-74 | 78-79 | 61-66 | 83-86 |
+| Forearm (right) | 74-76 | 76 | 72-76 | 85-87 | 64-66 | 80-83 | 70-71 | 75-76 | 80-81 | 67-72 | 87-90 |
+| Hand (left) | 77-80 | 77-82 | 77-78 | 88-91 | 67-70 | 84-88 | 72-74 | 77-79 | 82-83 | 73-79 | 91-95 |
+| Hand (right) | 81-84 | 83-84 | 79-84 | 92-95 | 71-74 | 89-93 | 75-77 | 80-82 | 84-86 | 80-86 | 96-00 |
+| Thigh (left) | 85-88 | 85-90 | 85-86 | 96 | 75-80 | 94-95 | 78-83 | 83-86 | 87-89 | 87-89 | - |
+| Thigh (right) | 89-92 | 91-92 | 87-92 | 97 | 81-86 | 96-97 | 84-89 | 87-90 | 90-92 | 90-92 | - |
+| Knee (left) | 93 | 93 | - | - | 87 | - | 90 | 91 | 93 | 93 | - |
+| Knee (right) | 94 | - | 93 | - | 88 | - | 91 | 92 | 94 | 94 | - |
+| Lower leg (left) | 95-96 | 94-97 | 94 | 98 | 89-92 | 98 | 92-94 | 93-95 | 95-96 | 95-96 | - |
+| Lower leg (right) | 97-98 | 98 | 95-98 | 99 | 93-96 | 99 | 95-97 | 96-97 | 97-98 | 97-98 | - |
+| Foot (left) | 99 | 99-00 | 99 | 00 | 97-99 | 00 | 98-99 | 98-99 | 99 | 99 | - |
+| Foot (right) | 00 | - | 00 | - | 00 | - | 00 | 00 | 00 | 00 | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Spear
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-06 | 01-10 | 01-03 | 01-09 | 01-03 | 01-11 | 01-09 | 01-06 | 01-06 | 01-05 | 01-14 |
+| Skull (right) | 07-12 | 11-13 | 04-13 | 10-18 | 04-06 | 12-22 | 10-17 | 07-12 | 07-12 | 06-10 | 15-28 |
+| Face | 13-19 | 14-19 | 14-19 | 19-28 | 07-09 | 23-31 | 18 | 13-18 | 13-19 | 11-16 | 29-44 |
+| Neck | 20-21 | 20-21 | 20-21 | 29-31 | 10 | 32-35 | 19-21 | 19-20 | 20-21 | 17-18 | 45-49 |
+| Chest (left) | 22-30 | 22-36 | 22-25 | 32-40 | 11-19 | 36-40 | 22-23 | 21-28 | 22-32 | 19-26 | 50-54 |
+| Chest (right) | 31-39 | 37-40 | 26-40 | 41-49 | 20-28 | 41-45 | 24-25 | 29-36 | 33-43 | 27-34 | 55-59 |
+| Abdomen | 40-48 | 41-48 | 41-49 | 50-58 | 29-39 | 46-50 | 26-27 | 37-44 | 44-54 | 35-42 | 60 |
+| Groin / pelvis | 49-52 | 49-52 | 50-53 | 59-62 | 40-46 | 51-52 | 28 | 45-47 | 55-59 | 43-45 | 61 |
+| Upper back | 53-56 | 53-56 | 54-57 | 63-66 | 47-50 | 53-59 | 29-46 | 48-55 | 60-64 | 46-48 | 62-63 |
+| Lower back | 57-60 | 57-60 | 58-61 | 67-70 | 51-54 | 60-64 | 47-60 | 56-63 | 65-69 | 49-51 | 64 |
+| Shoulder (left) | 61-63 | 61-64 | 62 | 71-74 | 55-56 | 65-66 | 61-62 | 64-65 | 70-71 | 52-54 | 65-70 |
+| Shoulder (right) | 64-66 | 65 | 63-66 | 75-78 | 57-58 | 67-68 | 63-64 | 66-67 | 72-73 | 55-57 | 71-76 |
+| Upper arm (left) | 67-68 | 66-68 | 67 | 79-80 | 59-60 | 69-70 | 65 | 68 | 74 | 58-59 | 77-79 |
+| Upper arm (right) | 69-70 | 69 | 68-70 | 81-82 | 61-62 | 71-72 | 66 | 69 | 75 | 60-61 | 80-82 |
+| Forearm (left) | 71-73 | 70-73 | 71 | 83-85 | 63-64 | 73-76 | 67-68 | 70-71 | 76-77 | 62-66 | 83-86 |
+| Forearm (right) | 74-76 | 74 | 72-75 | 86-88 | 65-66 | 77-80 | 69-70 | 72-73 | 78-79 | 67-71 | 87-90 |
+| Hand (left) | 77-79 | 75-80 | 76-77 | 89-92 | 67-69 | 81-85 | 71-72 | 74-76 | 80-81 | 72-78 | 91-95 |
+| Hand (right) | 80-82 | 81-82 | 78-83 | 93-96 | 70-72 | 86-90 | 73-74 | 77-79 | 82-84 | 79-85 | 96-00 |
+| Thigh (left) | 83-86 | 83-89 | 84-85 | 97 | 73-79 | 91-92 | 75-80 | 80-84 | 85-88 | 86-89 | - |
+| Thigh (right) | 87-90 | 90-91 | 86-92 | 98 | 80-86 | 93-94 | 81-86 | 85-89 | 89-92 | 90-92 | - |
+| Knee (left) | 91 | 92 | - | - | 87 | 95 | 87 | 90 | 93 | 93 | - |
+| Knee (right) | 92 | - | 93 | - | 88 | 96 | 88 | 91 | 94 | 94 | - |
+| Lower leg (left) | 93-95 | 93-96 | 94 | 99 | 89-92 | 97 | 89-92 | 92-94 | 95-96 | 95-96 | - |
+| Lower leg (right) | 96-97 | 97 | 95-98 | 00 | 93-96 | 98 | 93-96 | 95-97 | 97-98 | 97-98 | - |
+| Foot (left) | 98-99 | 98-00 | 99 | - | 97-99 | 99 | 97-99 | 98-99 | 99 | 99 | - |
+| Foot (right) | 00 | - | 00 | - | 00 | 00 | 00 | 00 | 00 | 00 | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Dagger
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-07 | 01-12 | 01-03 | 01-10 | 01-04 | 01-12 | 01-10 | 01-07 | 01-07 | 01-06 | 01-14 |
+| Skull (right) | 08-14 | 13-15 | 04-15 | 11-20 | 05-08 | 13-24 | 11-20 | 08-14 | 08-14 | 07-12 | 15-28 |
+| Face | 15-22 | 16-22 | 16-22 | 21-31 | 09-12 | 25-34 | 21 | 15-21 | 15-22 | 13-19 | 29-44 |
+| Neck | 23-28 | 23-27 | 23-27 | 32-38 | 13-15 | 35-43 | 22-29 | 22-26 | 23-27 | 20-23 | 45-55 |
+| Chest (left) | 29-37 | 28-42 | 28-31 | 39-46 | 16-24 | 44-48 | 30-31 | 27-34 | 28-38 | 24-30 | 56-58 |
+| Chest (right) | 38-46 | 43-46 | 32-46 | 47-54 | 25-33 | 49-52 | 32-33 | 35-42 | 39-49 | 31-37 | 59-61 |
+| Abdomen | 47-55 | 47-54 | 47-54 | 55-62 | 34-45 | 53-56 | 34-35 | 43-50 | 50-60 | 38-44 | 62 |
+| Groin / pelvis | 56-59 | 55-58 | 55-58 | 63-65 | 46-52 | 57-58 | 36 | 51-53 | 61-65 | 45-47 | - |
+| Upper back | 60-63 | 59-61 | 59-62 | 66-68 | 53-56 | 59-64 | 37-54 | 54-61 | 66-70 | 48-50 | 63-64 |
+| Lower back | 64-67 | 62-64 | 63-65 | 69-71 | 57-60 | 65-68 | 55-68 | 62-69 | 71-75 | 51-53 | - |
+| Shoulder (left) | 68-70 | 65-69 | 66 | 72-75 | 61-63 | 69-71 | 69-70 | 70-72 | 76-78 | 54-57 | 65-70 |
+| Shoulder (right) | 71-73 | 70 | 67-71 | 76-79 | 64-66 | 72-74 | 71-72 | 73-75 | 79-80 | 58-61 | 71-76 |
+| Upper arm (left) | 74-75 | 71-73 | 72 | 80-81 | 67-68 | 75-76 | 73 | 76-77 | 81-82 | 62-63 | 77-79 |
+| Upper arm (right) | 76-77 | 74 | 73-75 | 82-83 | 69-70 | 77-78 | 74 | 78-79 | 83-84 | 64-65 | 80-82 |
+| Forearm (left) | 78-80 | 75-79 | 76 | 84-86 | 71-73 | 79-82 | 75-76 | 80-82 | 85-86 | 66-71 | 83-86 |
+| Forearm (right) | 81-83 | 80 | 77-81 | 87-89 | 74-76 | 83-86 | 77-78 | 83-85 | 87-88 | 72-77 | 87-90 |
+| Hand (left) | 84-87 | 81-87 | 82-83 | 90-93 | 77-80 | 87-91 | 79-81 | 86-88 | 89-90 | 78-85 | 91-95 |
+| Hand (right) | 88-91 | 88-89 | 84-90 | 94-97 | 81-84 | 92-96 | 82-84 | 89-91 | 91-93 | 86-93 | 96-00 |
+| Thigh (left) | 92-93 | 90-93 | 91 | 98 | 85-88 | 97 | 85-88 | 92-94 | 94-95 | 94-95 | - |
+| Thigh (right) | 94-95 | 94 | 92-95 | 99 | 89-92 | 98 | 89-92 | 95-97 | 96-97 | 96-97 | - |
+| Knee (left) | 96 | 95 | - | - | 93 | - | 93 | - | - | - | - |
+| Knee (right) | 97 | - | 96 | - | 94 | - | 94 | - | - | - | - |
+| Lower leg (left) | 98 | 96-97 | 97 | 00 | 95-96 | 99 | 95-96 | 98 | 98 | 98 | - |
+| Lower leg (right) | 99 | 98 | 98-99 | - | 97-98 | 00 | 97-98 | 99 | 99 | 99 | - |
+| Foot (left) | 00 | 99-00 | - | - | 99 | - | 99 | 00 | 00 | 00 | - |
+| Foot (right) | - | - | 00 | - | 00 | - | 00 | - | - | - | - |
+
+### Sidon, mid-13th century - gameplay-adjusted (before armour) - Crossbow
+
+| Location | Normal | Shield side | Weapon side | Higher | Lower | Down | Fleeing | Flanked | No shield | Warding | Cover |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Skull (left) | 01-09 | 01-14 | 01-04 | 01-13 | 01-04 | 01-15 | 01-12 | 01-09 | 01-09 | 01-07 | 01-18 |
+| Skull (right) | 10-18 | 15-18 | 05-18 | 14-26 | 05-08 | 16-30 | 13-24 | 10-18 | 10-18 | 08-14 | 19-36 |
+| Face | 19-24 | 19-24 | 19-24 | 27-36 | 09-11 | 31-38 | 25 | 19-24 | 19-24 | 15-19 | 37-50 |
+| Neck | 25-27 | 25-27 | 25-27 | 37-40 | 12 | 39-43 | 26-29 | 25-27 | 25-27 | 20-21 | 51-56 |
+| Chest (left) | 28-34 | 28-38 | 28-30 | 41-46 | 13-19 | 44-46 | 30 | 28-33 | 28-35 | 22-27 | 57-59 |
+| Chest (right) | 35-40 | 39-41 | 31-41 | 47-52 | 20-26 | 47-49 | 31 | 34-39 | 36-43 | 28-32 | 60-62 |
+| Abdomen | 41-46 | 42-47 | 42-47 | 53-58 | 27-35 | 50-52 | 32 | 40-45 | 44-51 | 33-37 | 63 |
+| Groin / pelvis | 47-49 | 48-50 | 48-50 | 59-61 | 36-40 | 53-54 | 33 | 46-48 | 52-55 | 38-39 | - |
+| Upper back | 50-52 | 51-53 | 51-53 | 62-64 | 41-43 | 55-58 | 34-46 | 49-54 | 56-59 | 40-41 | 64 |
+| Lower back | 53-55 | 54-56 | 54-56 | 65-67 | 44-46 | 59-61 | 47-56 | 55-60 | 60-63 | 42-43 | - |
+| Shoulder (left) | 56-58 | 57-61 | 57 | 68-71 | 47-49 | 62-64 | 57-58 | 61-63 | 64-66 | 44-47 | 65-70 |
+| Shoulder (right) | 59-61 | 62 | 58-62 | 72-75 | 50-52 | 65-66 | 59-60 | 64-65 | 67-69 | 48-51 | 71-76 |
+| Upper arm (left) | 62-63 | 63-65 | 63 | 76-77 | 53-54 | 67-68 | 61 | 66-67 | 70-71 | 52-53 | 77-79 |
+| Upper arm (right) | 64-65 | 66 | 64-66 | 78-79 | 55-56 | 69-70 | 62 | 68-69 | 72-73 | 54-55 | 80-82 |
+| Forearm (left) | 66-68 | 67-71 | 67 | 80-82 | 57-59 | 71-74 | 63-64 | 70-71 | 74-75 | 56-61 | 83-86 |
+| Forearm (right) | 69-71 | 72 | 68-72 | 83-85 | 60-62 | 75-78 | 65-66 | 72-73 | 76-78 | 62-67 | 87-90 |
+| Hand (left) | 72-75 | 73-78 | 73-74 | 86-89 | 63-66 | 79-83 | 67-69 | 74-76 | 79-80 | 68-75 | 91-95 |
+| Hand (right) | 76-79 | 79-80 | 75-80 | 90-93 | 67-70 | 84-88 | 70-72 | 77-79 | 81-83 | 76-83 | 96-00 |
+| Thigh (left) | 80-84 | 81-88 | 81-82 | 94-95 | 71-78 | 89-90 | 73-79 | 80-84 | 84-87 | 84-87 | - |
+| Thigh (right) | 85-89 | 89-90 | 83-90 | 96-97 | 79-86 | 91-92 | 80-86 | 85-89 | 88-91 | 88-91 | - |
+| Knee (left) | 90 | 91 | - | - | 87 | 93 | 87 | 90 | 92 | 92 | - |
+| Knee (right) | 91 | - | 91-92 | - | 88 | 94 | 88 | 91 | 93 | 93 | - |
+| Lower leg (left) | 92-94 | 92-96 | 93 | 98 | 89-92 | 95-96 | 89-92 | 92-94 | 94-95 | 94-95 | - |
+| Lower leg (right) | 95-97 | 97 | 94-98 | 99 | 93-96 | 97-98 | 93-96 | 95-97 | 96-97 | 96-97 | - |
+| Foot (left) | 98-99 | 98-00 | 99 | 00 | 97-99 | 99 | 97-99 | 98-99 | 98-99 | 98-99 | - |
+| Foot (right) | 00 | - | 00 | - | 00 | 00 | 00 | 00 | 00 | 00 | - |
 
 ### Visby 1361 - bone evidence - Sword / Bow
 
