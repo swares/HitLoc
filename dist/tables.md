@@ -450,7 +450,7 @@ Source:
 
 **Reading it:** Almost no one wore body armour (cuirassiers and carabiniers had steel cuirasses, and dragoons and heavy cavalry helmets), so armour can be applied. The records are of men who survived far more often than of men killed (146 killed and 84 died of wounds against 4,129 wounded), so head and trunk hits from gunfire are under-counted: use the all-hits table for gunfire in play. Edged weapons rarely killed (8 deaths among 424 sword, bayonet and lance casualties), so their columns are close to every hit they made.
 
-**Status:** Historical. French officers, so mounted officers and men in the front rank are over-represented; the rank-and-file sample was hit in the head more often (24%). Tables 7 and 8 were read from the article's table images.
+**Status:** Historical. French officers, so mounted officers and men in the front rank are over-represented; the rank-and-file sample was hit in the head more often (24%). Tables 7 and 8 were read from the article's table images. War of 1812: no count of wounds by body region has been found for that war, so it uses this table and the all-hits table. The weapons were the same (smoothbore musket and bayonet, rifle, sabre, smoothbore cannon), and many British regulars were Peninsular veterans. What differs: no cuirassiers or lancers fought in North America, so leave armour off; riflemen and much woodland and skirmish fighting make 'behind cover' common; and for a tomahawk or war club use the axe or spiked club, which roll on the Visby close-combat data.
 
 Sources:
 - Planas Campos J. and Grajal de Blas A., 'Wounds & Weapons in the Napoleonic War: a database of the Peninsular War', British Journal for Military History 7(3), Nov 2021, pp. 117-127: Table 1 (weapons, 4,359 entries), Table 2 (locations, 3,995 events), Tables 6-8 (location by firearm, edged weapon and ordnance). Source registers: French Army officer files, SHD 2Yb.
@@ -494,9 +494,9 @@ Confidence: **Extrapolated - design estimate from analogous evidence** · Armour
 
 **Close combat:** Sabre, Bayonet, Lance: roll location on *Peninsular War 1808-14 - French officers' wounds*. Dagger: roll location on *Knife assault - stab wounds (forensic)*. Sword, Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
 
-**Reading it:** Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets). Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely killed, so those records already include nearly every edged hit.
+**Reading it:** Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets). Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely killed, so those records already include nearly every edged hit. War of 1812: no armour was worn in North America (some light dragoons had leather helmets), so leave it off.
 
-**Status:** Estimated. The Peninsular records hold only 146 killed outright (head and chest most often), too few to use, so the Civil War killed-in-action table (also soft lead balls) stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another.
+**Status:** Estimated. The Peninsular records hold only 146 killed outright (head and chest most often), too few to use, so the Civil War killed-in-action table (also soft lead balls) stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another. War of 1812: there is no wound-by-location record for that war; the same weapons and tactics make this the closest table, but it is borrowed, not measured.
 
 Sources:
 - Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers + 25.5% acw-1861-killed, location by location.

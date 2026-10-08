@@ -39,6 +39,13 @@ status: >
   Historical. French officers, so mounted officers and men in the front rank are
   over-represented; the rank-and-file sample was hit in the head more often (24%). Tables
   7 and 8 were read from the article's table images.
+  War of 1812: no count of wounds by body region has been found for that war, so it uses
+  this table and the all-hits table. The weapons were the same (smoothbore musket and
+  bayonet, rifle, sabre, smoothbore cannon), and many British regulars were Peninsular
+  veterans. What differs: no cuirassiers or lancers fought in North America, so leave
+  armour off; riflemen and much woodland and skirmish fighting make 'behind cover' common;
+  and for a tomahawk or war club use the axe or spiked club, which roll on the Visby
+  close-combat data.
 regions:
   - {label: "Arm (bras) (678)", locs: [upper_arm_l, upper_arm_r], count: 678}
   - {label: "Hand (245)", locs: [hand_l, hand_r], count: 245}
