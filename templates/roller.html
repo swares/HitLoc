@@ -128,6 +128,18 @@ tr.hitrow td:first-child{box-shadow:inset 3px 0 0 var(--blood)}
 .roundbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;border:1px solid var(--line);border-radius:4px;padding:8px;background:var(--bg)}
 .roundno{font:700 1rem var(--mono);min-width:6.5ch;color:var(--ink)}
 .roundbar .spacer{flex:1 1 auto}
+.turnno{font-size:.85rem;color:var(--muted)}.turnno b{color:var(--ink)}
+.order{display:inline-flex;align-items:center;gap:4px;font-size:.8rem;color:var(--muted)}
+.order input{width:4.2em;padding:3px 5px;font:600 .85rem var(--mono)}
+.order .slow{color:var(--blood);font-size:.75rem}
+.grip{cursor:grab;color:var(--muted);font:700 1rem var(--mono);padding:0 2px;user-select:none;touch-action:none}
+.char.turn{outline:2px solid var(--ink);outline-offset:2px}
+.char.dragging{opacity:.45}.char.drop-ok{border-style:dashed}
+.turn-tag{font:700 .68rem var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;background:var(--ink);color:var(--panel)}
+.char.isdown{opacity:.7}
+.orderrow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:-2px}
+.orderrow button{padding:2px 7px;line-height:1.1}
+.char button:disabled{opacity:.3;cursor:default}
 .roundlog{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:11rem;overflow-y:auto;font-size:.84rem}
 .roundlog:empty{display:none}
 .roundlog li{border-left:3px solid var(--line);padding:2px 0 2px 8px}
@@ -222,6 +234,8 @@ tr.hitrow td:first-child{box-shadow:inset 3px 0 0 var(--blood)}
       <p class="muted" id="apply-msg" aria-live="polite" style="margin:0"></p>
       <div class="roundbar" role="group" aria-label="Round tracker">
         <span class="roundno" id="round-no" aria-live="polite">Round 1</span>
+        <button id="btn-next" title="Next fighter in initiative order who is still up; after the last one, the round ends">Next fighter</button>
+        <span class="turnno" id="turn-no" aria-live="polite"></span>
         <button id="btn-round" title="End this round: every casualty bleeds one round">Next round</button>
         <button id="btn-minute" title="Ten rounds pass for every casualty">+1 minute</button>
         <span class="spacer"></span>
@@ -258,7 +272,7 @@ const d100 = () => 1 + Math.floor(Math.random() * 100);
 const look = (ranges, n) => ranges.find(r => n >= r.lo && n <= r.hi).id;
 const shortName = w => DATA.weapons[w].short || DATA.weapons[w].name.split(" (")[0];
 
-const S = { table: null, weapon: null, hit: null, chars: [], active: 0, attacker: -1, seq: 1, mods: new Set(), called: "", armor: "none", round: 1, log: [] };
+const S = { table: null, weapon: null, hit: null, chars: [], active: 0, attacker: -1, seq: 1, mods: new Set(), called: "", armor: "none", round: 1, log: [], turn: null };
 const CMB = DATA.combat;
 const MODS = DATA.modifiers, KITS = Object.fromEntries(DATA.armor.kits.map(k => [k.id, k]));
 const MATS = DATA.armor.materials, LADDER = ["stopped", "light", "serious", "critical"];
@@ -403,7 +417,7 @@ function sevTiers(mech, zone, wid){
 const isEvidence = () => DATA.tables[rtid()].armor !== "allowed";
 
 /* ---------- storage (per-viewer convenience only) ---------- */
-function save(){ try{ localStorage.setItem("hitloc-chars", JSON.stringify({chars:S.chars,active:S.active,attacker:S.attacker,seq:S.seq,round:S.round,log:S.log})) }catch(e){} }
+function save(){ try{ localStorage.setItem("hitloc-chars", JSON.stringify({chars:S.chars,active:S.active,attacker:S.attacker,seq:S.seq,round:S.round,log:S.log,turn:S.turn})) }catch(e){} }
 function restore(){ try{ const j = JSON.parse(localStorage.getItem("hitloc-chars")||"null"); if(j && j.chars && j.chars.length){ Object.assign(S, j); return true } }catch(e){} return false }
 
 /* ---------- body figure ---------- */
@@ -675,7 +689,7 @@ function syncArmor(){
 
 /* ---------- tracker ---------- */
 const bleedPerRound = b => b === 3 ? 3 : b === 2 ? 1 : b === 1 ? 0.1 : 0;
-function newChar(name, kit = "none", weapon = null, look = {}){ return { id: S.seq++, name, kit, weapon, look, blood: TRK.blood_pool, rounds: 0, wounds: [] } }
+function newChar(name, kit = "none", weapon = null, look = {}){ return { id: S.seq++, name, kit, weapon, look, init: null, blood: TRK.blood_pool, rounds: 0, wounds: [] } }
 // Combatant figures (templates/figure.js): armour from the kit, weapon icon, side colours.
 // Period picture of such a combatant on Wikimedia Commons (conflicts.yaml `image`); same URL as hitloc.model.commons_url
 const commonsUrl = f => "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(f.replace(/ /g, "_")).replace(/\(/g, "%28").replace(/\)/g, "%29");
@@ -775,17 +789,66 @@ function advance(rounds){
   S.log = S.log.slice(0, 12);
   renderChars();
 }
+/* ---------- turn order ----------
+   S.chars is the turn order: highest initiative first. Equal initiatives keep the order
+   you give them (drag or the arrow buttons); a move past a different initiative snaps back,
+   so to act earlier, raise the number. Wounds don't change the order: the slowing they
+   would cause is shown beside the number for you to apply if your system does. */
+const isDown = c => { const th = charStats(c).th; return !!(th && (th.down || th.incapacitated)) };
+const initOf = c => Number.isFinite(+c.init) ? +c.init : 0;
+function reorder(arr){                       // replace S.chars, keeping attacker/defender by id
+  const att = attackerChar(), def = defenderChar();
+  S.chars = arr;
+  S.attacker = att ? S.chars.indexOf(att) : -1;
+  S.active = def ? Math.max(0, S.chars.indexOf(def)) : 0;
+}
+function sortChars(){                        // stable: ties keep their current order
+  const arr = S.chars.map((c, i) => [c, i]).sort((a, b) => initOf(b[0]) - initOf(a[0]) || a[1] - b[1]).map(x => x[0]);
+  if (arr.some((c, i) => c !== S.chars[i])) reorder(arr);
+}
+function moveChar(from, to){                 // only within equal initiative
+  if (to < 0 || to >= S.chars.length || from === to) return false;
+  if (initOf(S.chars[from]) !== initOf(S.chars[to])) return false;
+  const arr = S.chars.slice(), [c] = arr.splice(from, 1); arr.splice(to, 0, c); reorder(arr); return true;
+}
+function nextFighter(){
+  if (!S.chars.length) return;
+  const up = S.chars.filter(c => !isDown(c));
+  if (!up.length){ S.turn = null; $("#apply-msg").textContent = "Everyone is down: no one left to act."; renderChars(); return }
+  const cur = S.chars.findIndex(c => c.id === S.turn);
+  let next = S.chars.slice(cur + 1).find(c => !isDown(c));
+  if (!next){                                // past the last fighter: the round ends
+    if (cur >= 0) advance(1);
+    next = S.chars.find(c => !isDown(c));
+    if (!next){ S.turn = null; renderChars(); return }
+  }
+  S.turn = next.id;
+  const i = S.chars.indexOf(next);
+  if (S.attacker !== i) setAttacker(i); else renderChars();   // the fighter whose turn it is attacks
+}
 function renderRounds(){
   $("#round-no").textContent = `Round ${S.round}`;
+  const t = S.chars.find(c => c.id === S.turn);
+  $("#turn-no").innerHTML = t ? `Acting: <b>${t.name}</b>` : S.chars.length > 1 ? "Order: highest initiative first" : "";
   $("#round-log").innerHTML = S.log.map(e => `<li><b>${e.label}</b><br>${e.lines.join("<br>")}</li>`).join("");
 }
 function renderChars(){
+  sortChars();
+  if (S.turn != null && !S.chars.some(c => c.id === S.turn)) S.turn = null;
   $("#chars").innerHTML = S.chars.map((c, i) => {
     const st = charStats(c);
     const painCls = st.pain > TRK.pain_cap ? "crit" : st.pain >= 2 ? "warn" : "";
     const lethCls = ["minutes","rounds","instant"].includes(st.worst) ? "crit" : st.worst !== "none" ? "warn" : "";
-    const isAtt = i === S.attacker, isDef = i === S.active;
-    return `<div class="char ${isDef ? "active" : ""} ${isAtt ? "attacker" : ""}" data-i="${i}">
+    const isAtt = i === S.attacker, isDef = i === S.active, isTurn = c.id === S.turn, down = isDown(c);
+    const slow = penalties(c).attack, tieUp = i > 0 && initOf(S.chars[i - 1]) === initOf(c), tieDn = i < S.chars.length - 1 && initOf(S.chars[i + 1]) === initOf(c);
+    return `<div class="char ${isDef ? "active" : ""} ${isAtt ? "attacker" : ""} ${isTurn ? "turn" : ""} ${down ? "isdown" : ""}" data-i="${i}">
+      <div class="orderrow"><span class="grip" draggable="true" title="Drag to reorder fighters with the same initiative" aria-hidden="true">⋮⋮</span>
+        <label class="order" title="Initiative: higher acts first. Use your game's number (reaction, speed, a roll).">Init
+          <input type="number" step="any" data-act="init" value="${c.init ?? ""}" placeholder="0" aria-label="Initiative for ${attr(c.name)}"></label>
+        ${slow ? `<span class="order slow" title="Wound penalty (shown only; the order is not changed)">wounds −${slow}%</span>` : ""}
+        <button class="small" data-act="up" ${tieUp ? "" : "disabled"} aria-label="Act before the fighter above (same initiative)">▲</button>
+        <button class="small" data-act="down" ${tieDn ? "" : "disabled"} aria-label="Act after the fighter below (same initiative)">▼</button>
+        ${isTurn ? `<span class="turn-tag">Acting</span>` : down ? `<span class="turn-tag" style="background:var(--muted)">Down</span>` : ""}</div>
       <div class="charhead"><strong>${c.name}</strong>
         <button class="small" data-act="attacker" aria-pressed="${isAtt}">${isAtt ? "Attacking" : "Attacker"}</button>
         <button class="small" data-act="select" aria-pressed="${isDef}">${isDef ? "Defending" : "Defender"}</button>
@@ -813,6 +876,7 @@ $("#chars").addEventListener("click", e => {
   if (act === "select"){ selectChar(ci) }
   else if (act === "attacker"){ setAttacker(ci) }
   else if (act === "hand"){ c.hand = (c.hand || "R") === "R" ? "L" : "R"; renderChars() }
+  else if (act === "up" || act === "down"){ if (moveChar(ci, act === "up" ? ci - 1 : ci + 1)) renderChars() }
   else if (act === "remove"){
     S.chars.splice(ci, 1);
     if (S.attacker === ci) S.attacker = -1; else if (S.attacker > ci) S.attacker--;
@@ -821,6 +885,25 @@ $("#chars").addEventListener("click", e => {
   }
   else { const j = +b.closest("li").dataset.j; treat(c, c.wounds[j], act) }
 });
+$("#chars").addEventListener("change", e => {
+  const inp = e.target.closest('input[data-act="init"]'); if (!inp) return;
+  const c = S.chars[+inp.closest(".char").dataset.i];
+  c.init = inp.value === "" ? null : +inp.value;
+  renderChars();
+  const k = S.chars.indexOf(c); $(`.char[data-i="${k}"] input[data-act="init"]`)?.focus();
+});
+{ // drag a fighter (by its grip) among fighters with the same initiative
+  let from = -1;
+  const card = e => e.target.closest && e.target.closest(".char");
+  $("#chars").addEventListener("dragstart", e => { if (!e.target.classList?.contains("grip")) return;
+    const el = card(e); from = +el.dataset.i; el.classList.add("dragging"); e.dataTransfer.effectAllowed = "move"; e.dataTransfer.setData("text/plain", String(from)) });
+  $("#chars").addEventListener("dragover", e => { const el = card(e); if (from < 0 || !el) return;
+    const to = +el.dataset.i; if (initOf(S.chars[to]) === initOf(S.chars[from])){ e.preventDefault(); el.classList.add("drop-ok") } });
+  $("#chars").addEventListener("dragleave", e => { const el = card(e); if (el) el.classList.remove("drop-ok") });
+  $("#chars").addEventListener("drop", e => { const el = card(e); if (from < 0 || !el) return; e.preventDefault();
+    const to = +el.dataset.i; const f = from; from = -1; if (moveChar(f, to)) renderChars(); else renderChars() });
+  $("#chars").addEventListener("dragend", () => { from = -1; document.querySelectorAll(".char.dragging,.char.drop-ok").forEach(x => x.classList.remove("dragging", "drop-ok")) });
+}
 function applyHit(c, h){ if (!h.fx) return false; c.wounds.push({ loc:h.loc, mech:h.mech, sev:h.sev, fx: JSON.parse(JSON.stringify(h.fx)), treated:"" }); return true }
 
 /* ---------- wiring ---------- */
@@ -862,9 +945,10 @@ function init(){
       : `Armour stopped that blow: nothing to add to ${c.name}.`;
     renderChars();
   };
-  $("#btn-round").onclick = () => advance(1);
-  $("#btn-minute").onclick = () => advance(10);
-  $("#btn-reset-rounds").onclick = () => { S.round = 1; S.log = []; renderChars() };
+  $("#btn-next").onclick = nextFighter;
+  $("#btn-round").onclick = () => { S.turn = null; advance(1) };      // a new round: no one has acted yet
+  $("#btn-minute").onclick = () => { S.turn = null; advance(10) };
+  $("#btn-reset-rounds").onclick = () => { S.round = 1; S.log = []; S.turn = null; renderChars() };
 
   if (!restore()){
     // Example combatants from this conflict so the tracker shows what it does; remove them any time.
