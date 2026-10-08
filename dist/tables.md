@@ -1,6 +1,6 @@
 # Hit Location & Wound Tables
 
-Generated 2026-10-07 from the data folder. Roll d100 (00 = 100).
+Generated 2026-10-08 from the data folder. Roll d100 (00 = 100).
 
 **Procedure:** 1) d100 location on the table for the fight and weapon (situation column if one applies; called shots roll twice). 2) d100 mechanism for the weapon. 3) Severity from your system's damage, or d100. 4) Armour (adjusted tables): lower severity by the material's steps. 5) Look up the wound by location class and severity, then apply the mechanism modifiers.
 
