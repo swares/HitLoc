@@ -1,0 +1,18 @@
+# Elements affected by definite perimortem trauma in the Sidon crusader mass graves (burials 101
+# and 110, minimum 25 men, mid-13th century), from Mikulski R.N.R., Schutkowski H., Smith M.J.,
+# Doumet-Serhal C., Mitchell P.D., 'Weapon injuries in the crusader mass graves from a 13th century
+# attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021), S1 Table
+# (total numbers of elements affected by definite peri-mortem trauma and crude prevalence, by
+# region). elements = bones affected (N = 100); sft/bft/pft = sharp, blunt and penetrating force
+# lesions on them (62, 35 and 5; three elements carry two kinds). Sides are not given.
+region,elements,sft,bft,pft
+head,17,5,11,3
+neck,24,24,0,0
+shoulders,9,6,3,0
+upper limbs,9,6,3,0
+hands,11,10,1,0
+torso,10,6,4,0
+hips,1,0,1,0
+thighs,12,5,6,1
+legs,6,0,5,1
+feet,1,0,1,0

@@ -1,0 +1,54 @@
+id: sidon-1253-all-hits
+order: 9.5
+name: "Sidon, mid-13th century - gameplay-adjusted (before armour)"
+label: "Gameplay-adjusted (before armour)"
+battle: "Crusades"
+context: "Where blows land on a man fighting in the sack of a crusader town, before armour, re-weighted from the Sidon bone evidence without the neck cuts."
+variant: adjusted
+weapon_bias: raw
+native: armed
+assumes_shield: true
+derived_from: sidon-1253-mass-graves
+weapons: [sword, axe, spiked_club, spear, dagger, bow, crossbow]
+modifiers: [shield_side, weapon_side, attacker_higher, attacker_lower, target_down, target_fleeing, flanked, no_shield, target_warding, behind_cover]
+confidence: extrapolated
+confidence_note: "Re-weighted from the Sidon bone evidence by the corrections listed below; the corrections are design estimates."
+armor_note: >
+  These weights are where blows LAND. Resolve armour separately with the target's kit (a mail
+  hauberk for knights and many sergeants, padded coats for others).
+sources:
+  - "Derived from sidon-1253-mass-graves (Mikulski et al. 2021, S1 Table)."
+status: >
+  Corrections to the bone evidence: (1) The 24 blade cuts across the back of the neck are left
+  out as probable executions of captives; the neck keeps a small share for battle blows.
+  (2) Trunk raised to 30%: chest and belly wounds mostly miss bone (the evidence has 10 torso
+  bones in 100). (3) Head kept near its share of the remaining bones (22%). (4) Arms lowered
+  from 38% to 24% and legs and hips from 26% to 24% to make room for the trunk. Sides are not recorded,
+  so left and right are near even.
+weights:
+  skull_l: 8
+  skull_r: 8
+  face: 6
+  neck: 3
+  chest_l: 7
+  chest_r: 7
+  abdomen: 7
+  groin: 3
+  back_upper: 3
+  back_lower: 3
+  shoulder_l: 3
+  shoulder_r: 3
+  upper_arm_l: 2
+  upper_arm_r: 2
+  forearm_l: 3
+  forearm_r: 3
+  hand_l: 4
+  hand_r: 4
+  thigh_l: 5
+  thigh_r: 5
+  knee_l: 1
+  knee_r: 1
+  lower_leg_l: 3
+  lower_leg_r: 3
+  foot_l: 2
+  foot_r: 1

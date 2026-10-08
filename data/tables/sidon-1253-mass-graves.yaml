@@ -1,0 +1,66 @@
+id: sidon-1253-mass-graves
+order: 9
+name: "Sidon, mid-13th century - crusader mass graves (bone evidence)"
+label: "Bone evidence: crusader mass graves"
+battle: "Crusades"
+context: "Bones of at least 25 men killed when Mamluk (1253) or Mongol (1260) forces sacked crusader Sidon, later gathered into the town ditch. Killed only."
+variant: evidence
+native: armed
+weapon_bias: sourced
+weapons: [sword, axe, spiked_club, spear, dagger, bow, crossbow]
+modifiers: [weapon_side, attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding]
+confidence: historical
+confidence_note: >
+  From the study's table of bones with definite battle injuries (100 bones; 62 sharp, 35 blunt
+  and 5 penetrating injuries) by body region. Sides are not recorded, and each region is shared
+  among its locations by body exposure. Swords and axes roll on the sharp-force bones, the mace
+  (spiked club) on the blunt-force ones and the spear on the penetrating ones (spiked mace,
+  arrow, lance or javelin, the authors suggest); other weapons use all bones together.
+armor_note: >
+  Armour is already in these numbers. This is bone evidence: chest and belly wounds that missed
+  bone left no mark. 24 of the 100 bones are blade cuts across the back of the neck, found on
+  nearly every man; the authors think some may be executions of captives, so the neck is much
+  higher here than in battle. For play, use the gameplay table, which leaves them out.
+sources:
+  - "Mikulski R.N.R., Schutkowski H., Smith M.J., Doumet-Serhal C. and Mitchell P.D., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021), open access: S1 Table (elements with definite peri-mortem trauma by region)."
+  - "Same study: more wounds on the back of the body than the front (men attacked as they fled); blows concentrated on the head, neck and shoulders, compatible with mounted attackers striking down at men on foot; one man had at least 12 injuries on 16 bones."
+  - "Tally: data/sources/sidon-1253-mass-graves.csv."
+status: >
+  Historical, from about 25 men killed in a sack, their remains left exposed for weeks before
+  burial and partly disarticulated, so wounds cannot be matched to individuals or sides. A
+  picture of a massacre after a city fell, not of a pitched battle.
+regions:
+  - {label: "Head (cranium and mandible) (17)", locs: [skull_l, skull_r, face], count: 17}
+  - {label: "Neck (cervical vertebrae) (24)", locs: [neck], count: 24}
+  - {label: "Shoulders (clavicle, scapula) (9)", locs: [shoulder_l, shoulder_r], count: 9}
+  - {label: "Upper limbs (arm bones) (9)", locs: [upper_arm_l, upper_arm_r, forearm_l, forearm_r], count: 9}
+  - {label: "Hands (11)", locs: [hand_l, hand_r], count: 11}
+  - {label: "Torso (ribs, spine) (10)", locs: [chest_l, chest_r, back_upper, back_lower], count: 10}
+  - {label: "Hips (1)", locs: [groin], count: 1}
+  - {label: "Thighs (12)", locs: [thigh_l, thigh_r], count: 12}
+  - {label: "Legs (below the thigh) (6)", locs: [knee_l, knee_r, lower_leg_l, lower_leg_r], count: 6}
+  - {label: "Feet (1)", locs: [foot_l, foot_r], count: 1}
+weapon_regions:
+  sword: &blade
+    - {label: "Head (cranium and mandible) (5)", locs: [skull_l, skull_r, face], count: 5}
+    - {label: "Neck (cervical vertebrae) (24)", locs: [neck], count: 24}
+    - {label: "Shoulders (clavicle, scapula) (6)", locs: [shoulder_l, shoulder_r], count: 6}
+    - {label: "Upper limbs (arm bones) (6)", locs: [upper_arm_l, upper_arm_r, forearm_l, forearm_r], count: 6}
+    - {label: "Hands (10)", locs: [hand_l, hand_r], count: 10}
+    - {label: "Torso (ribs, spine) (6)", locs: [chest_l, chest_r, back_upper, back_lower], count: 6}
+    - {label: "Thighs (5)", locs: [thigh_l, thigh_r], count: 5}
+  axe: *blade
+  spiked_club:
+    - {label: "Head (cranium and mandible) (11)", locs: [skull_l, skull_r, face], count: 11}
+    - {label: "Shoulders (clavicle, scapula) (3)", locs: [shoulder_l, shoulder_r], count: 3}
+    - {label: "Upper limbs (arm bones) (3)", locs: [upper_arm_l, upper_arm_r, forearm_l, forearm_r], count: 3}
+    - {label: "Hands (1)", locs: [hand_l, hand_r], count: 1}
+    - {label: "Torso (ribs, spine) (4)", locs: [chest_l, chest_r, back_upper, back_lower], count: 4}
+    - {label: "Hips (1)", locs: [groin], count: 1}
+    - {label: "Thighs (6)", locs: [thigh_l, thigh_r], count: 6}
+    - {label: "Legs (below the thigh) (5)", locs: [knee_l, knee_r, lower_leg_l, lower_leg_r], count: 5}
+    - {label: "Feet (1)", locs: [foot_l, foot_r], count: 1}
+  spear:
+    - {label: "Head (cranium and mandible) (3)", locs: [skull_l, skull_r, face], count: 3}
+    - {label: "Thighs (1)", locs: [thigh_l, thigh_r], count: 1}
+    - {label: "Legs (below the thigh) (1)", locs: [knee_l, knee_r, lower_leg_l, lower_leg_r], count: 1}

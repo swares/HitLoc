@@ -1,7 +1,7 @@
 # HitLoc - historical hit locations & wounds for RPGs
 
 Data-driven **d100 hit-location tables** weighted by real wound records - from the
-Visby skeletons of 1361, Towton (1461) and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
+crusader mass graves at Sidon (13th century), the Visby skeletons of 1361, Towton (1461) and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
 War and the Indian Wars to both World Wars, Korea, Vietnam, Iraq and Afghanistan - with
 **system-agnostic wound effects**, armour, and wounded-fighter tracking for any tabletop
 RPG. All outputs are generated from the YAML files in `data/`, so the printed tables and
@@ -135,7 +135,7 @@ figure by `templates/figure.js`, entirely from the data:
 - **Look** - `look:` on a side in `conflicts.yaml` (colours and headgear for the whole
   side), merged with an example's own `look:`: `colour` (coat), `trousers`, `coat: skin`
   (bare chest), `hat` (drawn when the kit has no helmet), `helmet` (shape, when it has
-  one), `beard` (moustache, beard, stubble).
+  one), `beard` (moustache, beard, stubble), `shield` (heater or round, when the kit has one).
 - **Wounds** - on casualty cards, a red mark per open wound (bigger for worse wounds; a
   dashed ring for the back, which the front view can't show).
 
@@ -147,7 +147,7 @@ figures are illustrations, not research: dress and colours are typical, not exac
 
 ### Period pictures
 
-78 of the 109 example combatants link to a period picture of such a fighter on Wikimedia
+82 of the 115 example combatants link to a period picture of such a fighter on Wikimedia
 Commons: a painting, uniform plate, wartime photograph or surviving armour (the "picture"
 link next to the name in the roller, "(picture)" under the name in the PDF, a Picture
 column in `tables.md`). The rules:
@@ -159,9 +159,9 @@ column in `tables.md`). The rules:
   reconstructions. Where the nearest period image is not an exact match, the caption says
   so: Brunswick rather than Hessian troops in America, Morier's grenadiers of 1751, Catlin's
   Comanche of 1834, prints of the Thames made in 1833, Froissart's Crécy crossbowmen.
-- **No picture rather than a weak one.** 22 examples (and the 9 generic ones under
+- **No picture rather than a weak one.** 24 examples (and the 9 generic ones under
   Reference, Close combat and Unarmed) have none: no suitable period image was found
-  (the Finnish hakkapeliitta, Croat horsemen, a Towton billman, Loyalist rangers, the Canadian militia,
+  (a crusader crossbowman and townsman, the Finnish hakkapeliitta, Croat horsemen, a Towton billman, Loyalist rangers, the Canadian militia,
   North Korean and Vietnamese fighters), or the images available show the dead,
   prisoners or propaganda, which this project doesn't link.
 
@@ -307,6 +307,19 @@ Firearms and explosives (any weapon with a `threat`) roll severity on the firear
   Check: on the arrow table, 32% of bow hits are fatal untreated (lethal in days or less);
   the report gives 26 deaths in 83 cases (31%), many of them men hit several times.
 
+## Crusades (Sidon, 13th century)
+
+- *Sidon - crusader mass graves*: bones of at least 25 men killed when crusader Sidon was
+  sacked, in 1253 by an army from Damascus or in 1260 by the Mongols (Mikulski et al., PLoS
+  ONE 2021, open access). From the study's S1 Table: 100 bones with definite battle injuries
+  by body region (62 sharp, 35 blunt, 5 penetrating; `data/sources/sidon-1253-mass-graves.csv`).
+  Sides are not recorded. Swords and axes roll on the sharp-force bones, the mace on the
+  blunt and the spear on the penetrating. 24 of the 100 bones are blade cuts across the back
+  of the neck, which the authors think may be executions of captives: kept in the evidence
+  table, left out of the gameplay table.
+- *Gameplay-adjusted* table: neck cuts removed, trunk raised to 30% (design estimates).
+- Figures: shields can be `heater` (default) or `round` (`look: {shield: round}`).
+
 ## Wars of the Roses (Towton 1461)
 
 - *Towton 1461 - mass grave*: death wounds on the men buried at Towton Hall, most likely
@@ -417,6 +430,8 @@ Locations whose weight rounds to 0% are left off that d100 column.
 |---|---|---|---|
 | Visby 1361 - bone evidence | evidence | fitted | Ingelmark summaries (placeholder for per-bone counts) |
 | Visby 1361 - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table |
+| Sidon - crusader mass graves | evidence | historical (per weapon) | Mikulski et al., PLoS ONE 2021, S1 Table: 100 bones, about 25 men |
+| Sidon - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table, neck cuts left out |
 | Towton 1461 - mass grave | evidence | historical (per weapon) | Holst and Sutherland 2014, Tab. 9 and 12: 124 head wounds, 56 bones |
 | Towton 1461 - gameplay-adjusted | adjusted | extrapolated | derived from the evidence table |
 | Lützen 1632 - mass grave | evidence, armour allowed | historical (per weapon) | Nicklisch et al., PLoS ONE 2017, 47 men, 69 injuries |

@@ -1524,6 +1524,683 @@
   }
  },
  "tables": {
+  "sidon-1253-mass-graves": {
+   "id": "sidon-1253-mass-graves",
+   "name": "Sidon, mid-13th century - crusader mass graves (bone evidence)",
+   "label": "Bone evidence: crusader mass graves",
+   "variant": "evidence",
+   "context": "Bones of at least 25 men killed when Mamluk (1253) or Mongol (1260) forces sacked crusader Sidon, later gathered into the town ditch. Killed only.",
+   "confidence": "historical",
+   "armor_note": "Armour is already in these numbers. This is bone evidence: chest and belly wounds that missed bone left no mark. 24 of the 100 bones are blade cuts across the back of the neck, found on nearly every man; the authors think some may be executions of captives, so the neck is much higher here than in battle. For play, use the gameplay table, which leaves them out.",
+   "status": "Historical, from about 25 men killed in a sack, their remains left exposed for weeks before burial and partly disarticulated, so wounds cannot be matched to individuals or sides. A picture of a massacre after a city fell, not of a pitched battle.",
+   "sources": [
+    "Mikulski R.N.R., Schutkowski H., Smith M.J., Doumet-Serhal C. and Mitchell P.D., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021), open access: S1 Table (elements with definite peri-mortem trauma by region).",
+    "Same study: more wounds on the back of the body than the front (men attacked as they fled); blows concentrated on the head, neck and shoulders, compatible with mounted attackers striking down at men on foot; one man had at least 12 injuries on 16 bones.",
+    "Tally: data/sources/sidon-1253-mass-graves.csv."
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "dagger",
+    "bow",
+    "crossbow",
+    "bayonet",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "dagger",
+    "bow",
+    "crossbow"
+   ],
+   "resolve": {
+    "sword": "sidon-1253-mass-graves",
+    "axe": "sidon-1253-mass-graves",
+    "spiked_club": "sidon-1253-mass-graves",
+    "spear": "sidon-1253-mass-graves",
+    "dagger": "sidon-1253-mass-graves",
+    "bow": "sidon-1253-mass-graves",
+    "crossbow": "sidon-1253-mass-graves",
+    "bayonet": "peninsular-1808-14-officers",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "axe": [
+     0.47438330170777987,
+     0.47438330170777987,
+     0.47438330170778,
+     1.6129032258064515,
+     0.967741935483871,
+     0.967741935483871,
+     0.0,
+     0.0,
+     0.9677419354838708,
+     0.967741935483871,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.466275659824047,
+     1.466275659824047,
+     0.6720430107526881,
+     0.6720430107526881,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "bow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "crossbow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dagger": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "spear": [
+     3.5294117647058822,
+     3.5294117647058822,
+     3.5294117647058822,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.6666666666666667,
+     1.6666666666666667,
+     3.333333333333333,
+     3.333333333333333,
+     3.333333333333333,
+     3.333333333333333,
+     0.0,
+     0.0
+    ],
+    "spiked_club": [
+     1.8487394957983194,
+     1.8487394957983194,
+     1.8487394957983192,
+     0.0,
+     1.142857142857143,
+     1.142857142857143,
+     0.0,
+     2.857142857142857,
+     1.1428571428571426,
+     1.142857142857143,
+     0.9523809523809524,
+     0.9523809523809524,
+     0.9523809523809524,
+     0.9523809523809524,
+     0.9523809523809524,
+     0.9523809523809524,
+     0.2597402597402597,
+     0.2597402597402597,
+     1.4285714285714286,
+     1.4285714285714286,
+     2.380952380952381,
+     2.380952380952381,
+     2.3809523809523814,
+     2.3809523809523814,
+     2.857142857142857,
+     2.857142857142857
+    ],
+    "sword": [
+     0.47438330170777987,
+     0.47438330170777987,
+     0.47438330170778,
+     1.6129032258064515,
+     0.967741935483871,
+     0.967741935483871,
+     0.0,
+     0.0,
+     0.9677419354838708,
+     0.967741935483871,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.075268817204301,
+     1.466275659824047,
+     1.466275659824047,
+     0.6720430107526881,
+     0.6720430107526881,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "armor": "baked_in",
+   "native": "armed",
+   "weapon_bias": "sourced",
+   "assumes_shield": false,
+   "battle": "Crusades",
+   "confidence_note": "From the study's table of bones with definite battle injuries (100 bones; 62 sharp, 35 blunt and 5 penetrating injuries) by body region. Sides are not recorded, and each region is shared among its locations by body exposure. Swords and axes roll on the sharp-force bones, the mace (spiked club) on the blunt-force ones and the spear on the penetrating ones (spiked mace, arrow, lance or javelin, the authors suggest); other weapons use all bones together.\n",
+   "regions": [
+    {
+     "label": "Head (cranium and mandible) (17)",
+     "locs": [
+      "skull_l",
+      "skull_r",
+      "face"
+     ],
+     "count": 17
+    },
+    {
+     "label": "Neck (cervical vertebrae) (24)",
+     "locs": [
+      "neck"
+     ],
+     "count": 24
+    },
+    {
+     "label": "Shoulders (clavicle, scapula) (9)",
+     "locs": [
+      "shoulder_l",
+      "shoulder_r"
+     ],
+     "count": 9
+    },
+    {
+     "label": "Upper limbs (arm bones) (9)",
+     "locs": [
+      "upper_arm_l",
+      "upper_arm_r",
+      "forearm_l",
+      "forearm_r"
+     ],
+     "count": 9
+    },
+    {
+     "label": "Hands (11)",
+     "locs": [
+      "hand_l",
+      "hand_r"
+     ],
+     "count": 11
+    },
+    {
+     "label": "Torso (ribs, spine) (10)",
+     "locs": [
+      "chest_l",
+      "chest_r",
+      "back_upper",
+      "back_lower"
+     ],
+     "count": 10
+    },
+    {
+     "label": "Hips (1)",
+     "locs": [
+      "groin"
+     ],
+     "count": 1
+    },
+    {
+     "label": "Thighs (12)",
+     "locs": [
+      "thigh_l",
+      "thigh_r"
+     ],
+     "count": 12
+    },
+    {
+     "label": "Legs (below the thigh) (6)",
+     "locs": [
+      "knee_l",
+      "knee_r",
+      "lower_leg_l",
+      "lower_leg_r"
+     ],
+     "count": 6
+    },
+    {
+     "label": "Feet (1)",
+     "locs": [
+      "foot_l",
+      "foot_r"
+     ],
+     "count": 1
+    }
+   ],
+   "regions_text": "Head (cranium and mandible) (17) = 17.0%; Neck (cervical vertebrae) (24) = 24.0%; Shoulders (clavicle, scapula) (9) = 9.0%; Upper limbs (arm bones) (9) = 9.0%; Hands (11) = 11.0%; Torso (ribs, spine) (10) = 10.0%; Hips (1) = 1.0%; Thighs (12) = 12.0%; Legs (below the thigh) (6) = 6.0%; Feet (1) = 1.0% (n = 100)",
+   "modifiers": [
+    "weapon_side",
+    "attacker_higher",
+    "attacker_lower",
+    "target_down",
+    "target_fleeing",
+    "flanked",
+    "target_warding"
+   ],
+   "weapon_mix": [],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 5.3125,
+    "skull_r": 5.3125,
+    "face": 6.374999999999999,
+    "neck": 24.000000000000004,
+    "chest_l": 3.142857142857143,
+    "chest_r": 3.142857142857143,
+    "abdomen": 0.0,
+    "groin": 1.0,
+    "back_upper": 2.0,
+    "back_lower": 1.7142857142857142,
+    "shoulder_l": 4.5,
+    "shoulder_r": 4.5,
+    "upper_arm_l": 2.25,
+    "upper_arm_r": 2.25,
+    "forearm_l": 2.25,
+    "forearm_r": 2.25,
+    "hand_l": 5.5,
+    "hand_r": 5.5,
+    "thigh_l": 6.0,
+    "thigh_r": 6.0,
+    "knee_l": 0.782608695652174,
+    "knee_r": 0.782608695652174,
+    "lower_leg_l": 2.217391304347826,
+    "lower_leg_r": 2.217391304347826,
+    "foot_l": 0.5,
+    "foot_r": 0.5
+   }
+  },
+  "sidon-1253-all-hits": {
+   "id": "sidon-1253-all-hits",
+   "name": "Sidon, mid-13th century - gameplay-adjusted (before armour)",
+   "label": "Gameplay-adjusted (before armour)",
+   "variant": "adjusted",
+   "context": "Where blows land on a man fighting in the sack of a crusader town, before armour, re-weighted from the Sidon bone evidence without the neck cuts.",
+   "confidence": "extrapolated",
+   "armor_note": "These weights are where blows LAND. Resolve armour separately with the target's kit (a mail hauberk for knights and many sergeants, padded coats for others).",
+   "status": "Corrections to the bone evidence: (1) The 24 blade cuts across the back of the neck are left out as probable executions of captives; the neck keeps a small share for battle blows. (2) Trunk raised to 30%: chest and belly wounds mostly miss bone (the evidence has 10 torso bones in 100). (3) Head kept near its share of the remaining bones (22%). (4) Arms lowered from 38% to 24% and legs and hips from 26% to 24% to make room for the trunk. Sides are not recorded, so left and right are near even.",
+   "sources": [
+    "Derived from sidon-1253-mass-graves (Mikulski et al. 2021, S1 Table)."
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "dagger",
+    "bow",
+    "crossbow",
+    "bayonet",
+    "punch",
+    "kick",
+    "elbow_knee"
+   ],
+   "own_weapons": [
+    "sword",
+    "axe",
+    "spiked_club",
+    "spear",
+    "dagger",
+    "bow",
+    "crossbow"
+   ],
+   "resolve": {
+    "sword": "sidon-1253-all-hits",
+    "axe": "sidon-1253-all-hits",
+    "spiked_club": "sidon-1253-all-hits",
+    "spear": "sidon-1253-all-hits",
+    "dagger": "sidon-1253-all-hits",
+    "bow": "sidon-1253-all-hits",
+    "crossbow": "sidon-1253-all-hits",
+    "bayonet": "peninsular-1808-14-officers",
+    "punch": "unarmed-mma",
+    "kick": "unarmed-mma",
+    "elbow_knee": "unarmed-mma"
+   },
+   "wmult": {
+    "axe": [
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3,
+     1.3
+    ],
+    "bow": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "crossbow": [
+     1.15,
+     1.15,
+     1.15,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "dagger": [
+     1.0,
+     1.0,
+     1.5,
+     2.0,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     1.1,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "spear": [
+     0.8,
+     0.8,
+     1.2000000000000002,
+     0.8,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9,
+     0.9
+    ],
+    "spiked_club": [
+     1.4,
+     1.4,
+     1.4,
+     1.4,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8
+    ],
+    "sword": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ]
+   },
+   "armor": "allowed",
+   "native": "armed",
+   "weapon_bias": "raw",
+   "assumes_shield": true,
+   "battle": "Crusades",
+   "confidence_note": "Re-weighted from the Sidon bone evidence by the corrections listed below; the corrections are design estimates.",
+   "regions": [],
+   "regions_text": "",
+   "modifiers": [
+    "shield_side",
+    "weapon_side",
+    "attacker_higher",
+    "attacker_lower",
+    "target_down",
+    "target_fleeing",
+    "flanked",
+    "no_shield",
+    "target_warding",
+    "behind_cover"
+   ],
+   "weapon_mix": [],
+   "weapon_mix_source": "",
+   "weights": {
+    "skull_l": 8.0,
+    "skull_r": 8.0,
+    "face": 6.0,
+    "neck": 3.0,
+    "chest_l": 7.0,
+    "chest_r": 7.0,
+    "abdomen": 7.0,
+    "groin": 3.0,
+    "back_upper": 3.0,
+    "back_lower": 3.0,
+    "shoulder_l": 3.0,
+    "shoulder_r": 3.0,
+    "upper_arm_l": 2.0,
+    "upper_arm_r": 2.0,
+    "forearm_l": 3.0,
+    "forearm_r": 3.0,
+    "hand_l": 4.0,
+    "hand_r": 4.0,
+    "thigh_l": 5.0,
+    "thigh_r": 5.0,
+    "knee_l": 1.0,
+    "knee_r": 1.0,
+    "lower_leg_l": 3.0,
+    "lower_leg_r": 3.0,
+    "foot_l": 2.0,
+    "foot_r": 1.0
+   }
+  },
   "visby-1361-evidence": {
    "id": "visby-1361-evidence",
    "name": "Visby 1361 - bone evidence",
@@ -17923,6 +18600,123 @@
   "rifle_ap"
  ],
  "conflicts": {
+  "Crusades": {
+   "period": "Sidon, 1253 or 1260",
+   "map": {
+    "bbox": [
+     30.5,
+     29.5,
+     39.5,
+     37.5
+    ],
+    "sites": [
+     {
+      "name": "Sidon",
+      "lat": 33.56,
+      "lon": 35.37
+     }
+    ]
+   },
+   "summary": "From 1099 to 1291 Frankish crusader states held the coast of the Levant. Sidon, a walled port in today's Lebanon, was sacked twice in the 13th century: in 1253 by an army from Damascus while Louis IX of France was rebuilding its walls (Joinville describes the king helping to bury the rotting dead), and in 1260 by the Mongols under Kitbuqa. Two mass graves in the town ditch near St Louis' castle, dated to the mid-13th century, hold at least 25 men, Europeans and locals, killed in one of these attacks; their bones show sword, axe and mace wounds, many from behind.\n",
+   "sides": [
+    {
+     "name": "Defenders of Sidon",
+     "who": "Frankish knights and sergeants, crossbowmen and townsmen of mixed European and Near Eastern descent.",
+     "armour": "Knights and many sergeants in mail hauberks with helmets and shields; others in padded coats or nothing.",
+     "look": {
+      "colour": "#e6e0d2",
+      "trousers": "#6b5d45",
+      "beard": "beard"
+     }
+    },
+    {
+     "name": "Attackers",
+     "who": "The army from Damascus that sacked the town in 1253, or the Mongols in 1260; which raid filled the graves is not known.",
+     "armour": "Horsemen in mail or lamellar with round shields, lance, sword, mace and bow; Mongol horse archers in lamellar or padded coats.",
+     "look": {
+      "colour": "#b3812f",
+      "trousers": "#5c4a3a",
+      "hat": "turban",
+      "beard": "beard",
+      "shield": "round"
+     }
+    }
+   ],
+   "examples": [
+    {
+     "name": "Frankish knight",
+     "side": "Defenders of Sidon",
+     "kit": "hauberk",
+     "weapon": "sword",
+     "look": {
+      "helmet": "closed"
+     },
+     "notes": "Mail hauberk, great helm and shield.",
+     "image": {
+      "file": "Crusaders-middle-ages.jpg",
+      "caption": "Knights in battle, from the Crusader (Morgan) Bible, France, 1240s"
+     }
+    },
+    {
+     "name": "Frankish sergeant",
+     "side": "Defenders of Sidon",
+     "kit": "hauberk",
+     "weapon": "axe",
+     "notes": "Heavy blade wounds at Sidon point to swords and axes.",
+     "image": {
+      "file": "Morgan-bible-fl-29.jpg",
+      "caption": "Armoured foot and horse soldiers, from the Crusader (Morgan) Bible, France, 1240s"
+     }
+    },
+    {
+     "name": "Crossbowman",
+     "side": "Defenders of Sidon",
+     "kit": "gambeson",
+     "weapon": "crossbow",
+     "notes": "Padded coat; the town's walls were still being rebuilt in 1253."
+    },
+    {
+     "name": "Townsman",
+     "side": "Defenders of Sidon",
+     "kit": "none",
+     "weapon": "spear",
+     "notes": "Caught in the sack."
+    },
+    {
+     "name": "Syrian horseman",
+     "side": "Attackers",
+     "kit": "hauberk",
+     "weapon": "spiked_club",
+     "look": {
+      "helmet": "pot"
+     },
+     "notes": "Mace blows from the saddle: the Sidon wounds fall on the head, neck and shoulders.",
+     "image": {
+      "file": "A Mamluk Training with a Lance.jpeg",
+      "caption": "Mamluk horseman training with a lance, Egypt or Syria, c. 1500 (a later near match)"
+     }
+    },
+    {
+     "name": "Mongol horse archer",
+     "side": "Attackers",
+     "kit": "leather",
+     "weapon": "bow",
+     "look": {
+      "colour": "#7a3b2e",
+      "hat": "winter_cap"
+     },
+     "notes": "Kitbuqa's raid of 1260.",
+     "image": {
+      "file": "MongolCavalrymen.jpg",
+      "caption": "Mongol horsemen, from Rashid al-Din's Jami' al-tawarikh, early 14th century"
+     }
+    }
+   ],
+   "sources": [
+    "Mikulski R.N.R. et al., 'Weapon injuries in the crusader mass graves from a 13th century attack on the port city of Sidon (Lebanon)', PLoS ONE 16(8): e0256517 (2021).",
+    "Joinville, Life of Saint Louis, on Louis IX burying the dead of Sidon (1253)."
+   ]
+  },
   "Visby 1361": {
    "period": "27 July 1361",
    "map": {
@@ -20272,6 +21066,44 @@
   }
  },
  "maps": {
+  "Crusades": {
+   "spec": {
+    "bbox": [
+     30.5,
+     29.5,
+     39.5,
+     37.5
+    ],
+    "sites": [
+     {
+      "name": "Sidon",
+      "lat": 33.56,
+      "lon": 35.37
+     }
+    ]
+   },
+   "w": 160,
+   "h": 120,
+   "gap": 8,
+   "panels": [
+    {
+     "label": "",
+     "land": "M74,32.7L68.1,36.8L67.7,38.1L68,38.9L68.8,40L69,40.2L69.3,41L68,41.3L66.8,41.3L66.1,41.2L65.4,41.3L63.3,43.5L62.2,44.3L60.8,44.7L59.5,45L58.8,45L58.2,45.3L57.8,45.8L57.8,46.3L57.6,46.7L56.9,46.6L56.5,45.8L56,45.5L54.7,45.7L54.1,45.6L52,44.9L51.3,44.6L50.9,43.9L49.8,41.5L49.7,39.7L50.7,40.2L51.6,39.6L52.5,38.7L53.6,38.3L54.3,38.5L55,38.7L56.2,38.4L56.7,37L56.9,35.5L58.9,35.9L61,36.1L62.7,36.2L64.4,36L69.5,34.3L70.9,33.3L71.8,33L73.4,32.2L75,31.7ZM78.6,120L79.4,115.9L79.8,114.2L79.7,113.3L78.9,114.3L78.3,114.9L77,116.9L76.4,120L58.6,120L58.6,120L58.4,119.5L56.1,116.7L55.4,115.3L54.9,114.6L54.4,113.7L53.6,110.1L52.6,107.9L51.6,108.5L51.8,109.5L50.9,110.8L50.3,112.3L50.8,113.6L52.6,115.5L53,116.3L53.5,118.1L53.4,120L0,120L0,92.4L0.9,93.2L7.1,93.8L10.4,95.2L12.2,96.4L13.4,96.7L14.3,96.7L15.7,96.2L17.4,95.4L19.2,94.3L23,91.5L24.3,91L25.2,91.1L26.3,91.1L26.8,90.3L27.3,89.8L27.7,89.2L28.3,88.5L30.2,88.3L34.2,87L33.7,87.6L30.1,89L31.7,89.2L33.2,88.7L35.1,88.4L35.4,87.8L35.6,86.7L36,86.6L37.2,86.8L40.9,88.5L41.9,88.5L44.5,87.6L45,87.4L45.9,87.9L47.8,90L47.1,90L45.1,88.1L44.9,89L43.7,90.6L45.2,91.3L46.4,91.6L47,92.5L47.4,93.3L48.6,92.9L49.5,91.9L49,91.2L48.7,90.6L49.1,90.6L49.9,91.1L52.3,93.2L53.1,93.6L54,93.5L55.9,92.9L56.4,93L59,92.3L59.3,92.8L59.7,93.4L61.8,92.8L65,92.8L67.7,92.1L70.7,90.5L71,90.2L73.1,88.1L74.1,86.8L74.2,86.7L76.4,82.7L77.8,78.7L79.1,73.1L80.1,70.3L80.9,68.4L81.2,66.8L81.8,65.8L82.3,64.5L82.8,62.7L83.8,61.2L85.8,56.1L86.9,54.1L87.3,51.1L89,48.5L90.4,47.8L91,47L91,45.9L90.1,42.9L90,41.6L90,40L90.6,37.8L90.3,36.7L90.3,36L90.1,35.1L88.6,33L89.4,29.1L90.1,28.2L90.7,27.1L90,24.8L89.1,22.7L89.9,21.4L91.6,19.8L93.4,17.8L93.4,16.7L93.2,15.8L92.8,15.2L91.8,14.3L90.2,15.2L89,16.2L88.3,16.4L87.4,16.9L87,17.9L86,18.7L84.4,19L82,18.2L79.4,16.9L77.9,15.9L76.7,15.6L75.5,16.1L72.1,18.6L69,22.3L68.2,22.9L65.3,24.5L63.4,25L62.5,24.9L58.6,25.6L56.7,25.7L55.2,26.5L52.3,25.6L50.5,24.5L49.5,23.3L47.8,20.8L46.5,19.6L43.8,18.5L39,15.9L37.7,15.6L34.5,15.2L31.1,14.9L30.3,15.9L30.1,19.7L29.5,20.8L29.2,22.7L28.8,23.3L28.1,23.7L27.1,23L26.4,22.8L24.7,23.6L21.4,24.7L20.3,24.9L16.5,23.4L15.1,22.5L14.2,21.5L13.9,19.8L13.3,18.8L13.2,18.1L13,17.4L12.2,17.1L11.4,17.6L10.5,17.6L9.4,17.3L6.8,15.8L4.7,15.7L3.5,17.5L2.6,18L1.6,18.2L1.5,17.7L2.3,16.5L0,16.7L0,15.8L0,15.8L0.6,15.7L1.4,15.4L2.2,14.2L3.9,13.1L4.1,12.6L2.8,12.6L0,12.8L0,0L160,0L160,120ZM0,22.5L0.3,22.2L3.3,21.1L3.9,21L3.9,21.9L2.9,24.1L2.1,25.2L2.3,26.1L0.9,26.4L0,27.5L0,22.5Z",
+     "lakes": "M84.6,90.1L84.6,89.9L84.6,88L84.6,86.3L85,85.1L85.8,84.4L86.2,84.4L86.6,84.9L86.2,87L86.2,89.9L85.8,90.1ZM84.6,91.5L85,91.5L85.4,91.8L85.8,92.2L85.8,92.5L85.8,93L85.4,93.2L85,93.2L84.6,93.2L84.2,92.7L84.2,92.2L84.2,91.5ZM86.6,71.7L86.2,71.3L85.8,70.5L86.2,69.8L86.2,69.3L86.6,69.3L87,69.6L87,70.3L87,70.8L87,71.3Z",
+     "highlight": "",
+     "borders": "",
+     "dots": [
+      {
+       "x": 84.2,
+       "y": 60.4,
+       "names": [
+        "Sidon"
+       ]
+      }
+     ]
+    }
+   ]
+  },
   "Visby 1361": {
    "spec": {
     "bbox": [

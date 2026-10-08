@@ -21,8 +21,9 @@ FIG_NAMES = {
              "bayonet_gun", "musket_butt", "modern_rifle", "machine_gun", "smg", "pistol", "launcher", "grenade",
              "stick_grenade", "device", "rammer", "stake", "spade", "fist"),
     "beard": ("none", "stubble", "moustache", "beard"),
+    "shield": ("heater", "round"),
 }
-LOOK_KEYS = ("colour", "trousers", "coat", "hat", "helmet", "beard")
+LOOK_KEYS = ("colour", "trousers", "coat", "hat", "helmet", "beard", "shield")
 
 
 COMMONS = "https://commons.wikimedia.org/wiki/File:"
