@@ -780,8 +780,14 @@ function advance(rounds){
     if (!lost) return;
     const changed = after.th !== before.th;
     const cls = after.th && (after.th.down || after.th.incapacitated) ? "ev-bad" : changed ? "ev-warn" : "";
+    const ap = penalties(c);
+    const extraConds = [];
+    if (ap.flags.includes("incapacitated") && !(after.th && after.th.incapacitated))
+      extraConds.push(`<span class="ev-bad">incapacitated</span>`);
+    if (after.worst !== "none") extraConds.push(`lethal: ${after.worst}`);
+    const condStr = extraConds.length ? ` \u00b7 ${extraConds.join(", ")}` : "";
     lines.push(`${c.name}: \u2212${lost} Blood (${c.blood}/${TRK.blood_pool})` +
-      (changed ? `, <span class="${cls}">now ${thLabel(after.th)}</span>` : ""));
+      (changed ? `, <span class="${cls}">now ${thLabel(after.th)}</span>` : "") + condStr);
   });
   S.round += rounds;
   const label = rounds === 1 ? `Round ${from}` : `Rounds ${from}\u2013${S.round - 1}`;
@@ -794,7 +800,7 @@ function advance(rounds){
    you give them (drag or the arrow buttons); a move past a different initiative snaps back,
    so to act earlier, raise the number. Wounds don't change the order: the slowing they
    would cause is shown beside the number for you to apply if your system does. */
-const isDown = c => { const th = charStats(c).th; return !!(th && (th.down || th.incapacitated)) };
+const isDown = c => { const th = charStats(c).th; return !!(th && (th.down || th.incapacitated)) || penalties(c).flags.includes("incapacitated") };
 const initOf = c => Number.isFinite(+c.init) ? +c.init : 0;
 function reorder(arr){                       // replace S.chars, keeping attacker/defender by id
   const att = attackerChar(), def = defenderChar();
@@ -840,7 +846,8 @@ function renderChars(){
     const painCls = st.pain > TRK.pain_cap ? "crit" : st.pain >= 2 ? "warn" : "";
     const lethCls = ["minutes","rounds","instant"].includes(st.worst) ? "crit" : st.worst !== "none" ? "warn" : "";
     const isAtt = i === S.attacker, isDef = i === S.active, isTurn = c.id === S.turn, down = isDown(c);
-    const slow = penalties(c).attack, tieUp = i > 0 && initOf(S.chars[i - 1]) === initOf(c), tieDn = i < S.chars.length - 1 && initOf(S.chars[i + 1]) === initOf(c);
+    const cp = penalties(c), slow = cp.attack, tieUp = i > 0 && initOf(S.chars[i - 1]) === initOf(c), tieDn = i < S.chars.length - 1 && initOf(S.chars[i + 1]) === initOf(c);
+    const incap = cp.flags.includes("incapacitated");
     return `<div class="char ${isDef ? "active" : ""} ${isAtt ? "attacker" : ""} ${isTurn ? "turn" : ""} ${down ? "isdown" : ""}" data-i="${i}">
       <div class="orderrow"><span class="grip" draggable="true" title="Drag to reorder fighters with the same initiative" aria-hidden="true">⋮⋮</span>
         <label class="order" title="Initiative: higher acts first. Use your game's number (reaction, speed, a roll).">Init
@@ -850,13 +857,13 @@ function renderChars(){
         <button class="small" data-act="down" ${tieDn ? "" : "disabled"} aria-label="Act after the fighter below (same initiative)">▼</button>
         ${isTurn ? `<span class="turn-tag">Acting</span>` : down ? `<span class="turn-tag" style="background:var(--muted)">Down</span>` : ""}</div>
       <div class="charhead"><strong>${c.name}</strong>
-        <button class="small" data-act="attacker" aria-pressed="${isAtt}">${isAtt ? "Attacking" : "Attacker"}</button>
+        <button class="small" data-act="attacker" aria-pressed="${isAtt}" ${incap ? 'disabled title="Fighter is incapacitated"' : ""}>${isAtt ? "Attacking" : "Attacker"}</button>
         <button class="small" data-act="select" aria-pressed="${isDef}">${isDef ? "Defending" : "Defender"}</button>
         <button class="small" data-act="hand" title="Weapon hand">${(c.hand || "R") === "R" ? "Right-handed" : "Left-handed"}</button>
         <button class="small" data-act="remove">Remove</button></div>
       <div class="charid">${charFigure(c, 104)}<div style="display:flex;flex-direction:column;gap:6px">
         <div class="wears">Wears: ${kitName(c.kit || "none")}${c.weapon ? " · Fights with: " + DATA.weapons[c.weapon].name : ""}</div>
-        ${penLine(penalties(c))}</div></div>
+        ${penLine(cp)}</div></div>
       <div class="bar" title="Blood ${c.blood} of ${TRK.blood_pool}"><i style="width:${Math.max(0, st.frac * 100)}%"></i></div>
       <div class="stat"><span>Blood <b>${c.blood}</b>/${TRK.blood_pool}</span><span>Bleeding ${st.bleed.toFixed(1)}/round</span><span class="${painCls}">Pain −${Math.min(st.pain, TRK.pain_cap) * 10}%${st.pain > TRK.pain_cap ? " · shock check each round" : ""}</span></div>
       <div class="stat"><span class="${lethCls}">Worst untreated: ${st.worst}</span><span>${st.th ? st.th.effect : "Steady"}</span><span class="muted">${c.rounds} round${c.rounds === 1 ? "" : "s"} elapsed</span></div>
