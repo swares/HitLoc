@@ -7,18 +7,18 @@
 /* Layout: surgeon's field ledger - controls + result | body chart | casualty tracker; d100 table below */
 :root{
   --bg:#e9ecee; --panel:#f6f7f8; --ink:#1b2127; --muted:#5b6670; --line:#c5ccd2;
-  --steel:#3f4f5d; --blood:#8e1b2c; --blood-soft:#f1d9dc; --heat:142,27,44;
+  --steel:#3f4f5d; --blood:#8e1b2c; --blood-soft:#f1d9dc; --heat:142,27,44; --map-sea:#d5e1e6; --map-land:#cfc6ab; --map-coast:#8c8670; --map-hl:#b5a47a; --map-dot:#8e1b2c;
   --ok:#2f6b46; --warn:#a86512; --crit:#8e1b2c;
   --display:"Alegreya SC",Georgia,serif; --body:"Alegreya Sans","Gill Sans","Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#12161a; --panel:#1a2026; --ink:#e2e6e9; --muted:#97a3ad; --line:#2f3942;
-  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --heat:228,101,118;
+  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --heat:228,101,118; --map-sea:#1b2a33; --map-land:#3c4237; --map-coast:#66705e; --map-hl:#57604a; --map-dot:#e46576;
   --ok:#6cc08d; --warn:#e3a14d; --crit:#e46576; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12161a; --panel:#1a2026; --ink:#e2e6e9; --muted:#97a3ad; --line:#2f3942;
-  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --heat:228,101,118;
+  --steel:#a9b8c5; --blood:#e46576; --blood-soft:#3a1d23; --heat:228,101,118; --map-sea:#1b2a33; --map-land:#3c4237; --map-coast:#66705e; --map-hl:#57604a; --map-dot:#e46576;
   --ok:#6cc08d; --warn:#e3a14d; --crit:#e46576; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font:16px/1.45 var(--body);padding-inline:16px;padding-block:20px 40px}
@@ -47,6 +47,7 @@ select,input[type=number],input[type=text]{width:100%;background:var(--bg);borde
 .hist-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:18px}
 @media (max-width:820px){.hist-grid{grid-template-columns:minmax(0,1fr)}}
 .hist p{margin:0;max-width:75ch}
+.hist-title{display:flex;align-items:center;gap:12px}.hist-title svg{flex:none;display:block}
 .sides{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
 .sides li{border-left:3px solid var(--steel);padding-left:10px;font-size:.9rem}
 .sides b{font-family:var(--display);font-size:1rem}
@@ -604,7 +605,7 @@ function renderHistory(){
   $("#hist").hidden = false;
   const ex = c.examples || [];
   $("#hist").innerHTML = `
-    <div class="toolbar" style="justify-content:space-between"><h2 id="h-hist">About this conflict: ${b}</h2><span class="muted">${c.period || ""}</span></div>
+    <div class="toolbar hist-head" style="justify-content:space-between"><span class="hist-title">${FIG.map((DATA.maps || {})[b], 54, b)}<h2 id="h-hist">About this conflict: ${b}</h2></span><span class="muted">${c.period || ""}</span></div>
     <div class="hist-grid hist">
       <div style="display:flex;flex-direction:column;gap:12px">
         <p>${c.summary}</p>

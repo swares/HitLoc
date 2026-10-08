@@ -95,6 +95,7 @@ data/
                        (medieval, Visby, modern) by slot, with layered d100 coverage
 hitloc/                engine: validation, d100 ranges, wound composition, CLI
 tools/blend_tables.py  writes the musket-era all-hits blends
+tools/maps/            builds data/maps.json (conflict locator maps) with Node
 templates/roller.html  web roller template (data is injected at build)
 build.py               builds dist/
 dist/
@@ -134,6 +135,22 @@ rejects anything else, and the build checks that `figure.js` draws them all. The
 example tables include the figures when Playwright and Chromium are installed (the build
 draws them with a headless browser); without them the PDF is built without figures. The
 figures are illustrations, not research: dress and colours are typical, not exact.
+
+## Conflict maps
+
+Each war has a small locator map (in *About this conflict*, on the start page, and on its
+PDF history page): the region at medium detail, with a dot for each place the records come
+from (Visby, Lützen, the Peninsula's battles, Bougainville and Italy, Mogadishu...). Wars
+fought within today's borders (Korea onward) also show faint modern borders and shade the
+theatre countries; older wars show coastlines only, since modern borders would be wrong
+for them. Nearby sites share one dot; hover a dot for its names.
+
+- The map spec is data: `map:` on each conflict in `conflicts.yaml` (`bbox`, `sites`,
+  optional `borders` and `highlight`).
+- `tools/maps/make_maps.mjs` turns the specs into `data/maps.json` (plain SVG paths)
+  from Natural Earth coastlines and borders (public domain, via the `world-atlas` npm
+  package): `cd tools/maps && npm install && node make_maps.mjs`. Node is needed only
+  for this step; the build warns when a map is missing or out of date.
 
 ## Website (GitHub Pages)
 

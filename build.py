@@ -208,6 +208,7 @@ def bundle(d) -> dict:
                   "sources": d.armor.get("sources", [])},
         "threats": list(THREATS),
         "conflicts": d.conflicts,
+        "maps": load_maps(d),
     }
 
 
@@ -382,11 +383,14 @@ def render_figures(d, fig_js: str, out_dir: Path) -> dict:
         for i, e in enumerate(c.get("examples") or []):
             items.append({"key": [battle, i], "kit": d.armor["kits"][e["kit"]], "weapon": d.weapons[e["weapon"]],
                           "conflict": {"sides": c.get("sides") or []}, "ex": e})
+    maps = load_maps(d)
     out_dir.mkdir(parents=True, exist_ok=True)
-    page_html = ("<!doctype html><meta charset='utf-8'><body style='margin:0;background:transparent'>"
+    page_html = ("<!doctype html><meta charset='utf-8'><body style='margin:0;background:transparent;"
+                 "--map-sea:#d5e1e6;--map-land:#cfc6ab;--map-coast:#8c8670;--map-hl:#b5a47a;--map-dot:#8e1b2c'>"
                  f"<script>{fig_js}</script><div id='f'></div><script>const I = {json.dumps(items)};"
                  "document.getElementById('f').innerHTML = I.map((x, n) => `<div id='g${n}' style='display:inline-block;padding:2px'>`"
-                 " + FIG.svg({kit: x.kit, weapon: x.weapon, look: FIG.lookFor(x.conflict, x.ex), size: 160}) + '</div>').join('');</script>")
+                 " + FIG.svg({kit: x.kit, weapon: x.weapon, look: FIG.lookFor(x.conflict, x.ex), size: 160}) + '</div>').join('')"
+                 f" + Object.entries({json.dumps(maps)}).map(([b, m], n) => `<div id='m${{n}}' style='display:inline-block'>` + FIG.map(m, 240, b) + '</div>').join('');</script>")
     found = {}
     try:
         with sync_playwright() as pw:
@@ -397,6 +401,10 @@ def render_figures(d, fig_js: str, out_dir: Path) -> dict:
                 f = out_dir / f"fig{n:03d}.png"
                 page.locator(f"#g{n}").screenshot(path=str(f), omit_background=True)
                 found[tuple(x["key"])] = f
+            for n, battle in enumerate(maps):
+                f = out_dir / f"map{n:03d}.png"
+                page.locator(f"#m{n}").screenshot(path=str(f), omit_background=True)
+                found[("map", battle)] = f
             browser.close()
     except Exception as e:                      # no browser installed, sandbox, etc.
         print(f"note: could not draw combatant figures for the PDF ({e.__class__.__name__}); building without them")
@@ -479,7 +487,12 @@ def pdf(d, path: Path, figs: dict | None = None) -> None:
             prev_battle = t.get("battle")
             c = d.conflicts.get(prev_battle)
             if c:
-                story += [PageBreak(), Paragraph(f"{prev_battle}", H1),
+                mapimg = (figs or {}).get(("map", prev_battle))
+                head = Paragraph(f"{prev_battle}", H1)
+                if mapimg:
+                    head = Table([[head, RLImage(str(mapimg), width=1.2 * inch, height=0.9 * inch)]], colWidths=[W - 1.3 * inch, 1.3 * inch],
+                                 style=TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("LEFTPADDING", (0, 0), (-1, -1), 0)]))
+                story += [PageBreak(), head,
                           *([Paragraph(f"<i>{c['period']}</i>", B)] if c.get("period") else []), Spacer(1, 4),
                           Paragraph(" ".join(c["summary"].split()), B), Spacer(1, 8)]
                 if c.get("sides"):
@@ -690,6 +703,43 @@ def pdf(d, path: Path, figs: dict | None = None) -> None:
 
 
 # --------------------------------------------------------------------------
+# Locator maps (data/maps.json, built by tools/maps/make_maps.mjs)
+# --------------------------------------------------------------------------
+_MAPS = None
+
+
+def load_maps(d) -> dict:
+    """The conflict maps, checked against the `map:` entries they were built from."""
+    global _MAPS
+    if _MAPS is None:
+        f = ROOT / "data" / "maps.json"
+        maps = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+        for battle, c in d.conflicts.items():
+            spec = c.get("map")
+            if spec and (battle not in maps or maps[battle].get("spec") != spec):
+                print(f"warning: map for '{battle}' is missing or out of date; run: cd tools/maps && npm install && node make_maps.mjs")
+        _MAPS = {b: m for b, m in maps.items() if b in d.conflicts and d.conflicts[b].get("map")}
+    return _MAPS
+
+
+def map_svg(m, height: int = 48, title: str = "") -> str:
+    """Same drawing as FIG.map in templates/figure.js (for the static start page)."""
+    if not m:
+        return ""
+    esc = htmllib.escape
+    width = round(height * m["w"] / m["h"])
+    names = "; ".join(", ".join(x["names"]) for x in m["dots"])
+    dots = "".join(f'<circle cx="{x["x"]}" cy="{x["y"]}" r="{4.2 if len(x["names"]) > 1 else 3.4}" fill="var(--map-dot)" '
+                   f'stroke="var(--map-sea)" stroke-width="1.2"><title>{esc(", ".join(x["names"]))}</title></circle>' for x in m["dots"])
+    return (f'<svg viewBox="0 0 {m["w"]} {m["h"]}" width="{width}" height="{height}" role="img" aria-label="{esc(title)}: {esc(names)}">'
+            f'<title>{esc(title)}: {esc(names)}</title><rect width="{m["w"]}" height="{m["h"]}" rx="7" fill="var(--map-sea)"/>'
+            f'<path d="{m["land"]}" fill="var(--map-land)" stroke="var(--map-coast)" stroke-width=".5" stroke-linejoin="round"/>'
+            + (f'<path d="{m["highlight"]}" fill="var(--map-hl)" stroke="var(--map-coast)" stroke-width=".5"/>' if m.get("highlight") else "")
+            + (f'<path d="{m["borders"]}" fill="none" stroke="var(--map-coast)" stroke-width=".45" stroke-dasharray="1.6 1.2" opacity=".8"/>' if m.get("borders") else "")
+            + dots + f'<rect x=".5" y=".5" width="{m["w"] - 1}" height="{m["h"] - 1}" rx="7" fill="none" stroke="var(--map-coast)" stroke-width="1"/></svg>')
+
+
+# --------------------------------------------------------------------------
 # Start page (GitHub Pages serves index.html from the repository root)
 # --------------------------------------------------------------------------
 REPO_URL = "https://github.com/swares/HitLoc"
@@ -705,8 +755,9 @@ def index_page(d) -> str:
         period = (d.conflicts.get(battle) or {}).get("period", "")
         n = len(ts)
         labels = " · ".join(esc(t.get("label", t["name"])) for t in ts)
+        mp = load_maps(d).get(battle)
         items.append(
-            f'      <li><span class="name">{esc(battle)}</span>'
+            f'      <li><span class="map">{map_svg(mp, 42, battle) if mp else ""}</span><span class="name">{esc(battle)}</span>'
             f'<span class="period">{esc(str(period))}</span>'
             f'<span class="tables">{n} table{"s" if n != 1 else ""}: {labels}</span></li>')
     kits = [k for k in d.armor["kits"] if k != "none"]

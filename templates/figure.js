@@ -224,6 +224,20 @@ const FIG = (() => {
   }
   // The look of an example combatant: its side's look, then the example's own.
   const lookFor = (conflict, ex) => Object.assign({}, ((conflict.sides || []).find(s => s.name === ex.side) || {}).look || {}, ex.look || {});
-  return { svg, lookFor, iconOf, names: { helmet: Object.keys(HELMETS), hat: Object.keys(HATS), icon: Object.keys(W), beard: Object.keys(BEARDS) } };
+  // Locator map of a conflict (data/maps.json, built by tools/maps/make_maps.mjs). Colours
+  // come from CSS variables --map-sea, --map-land, --map-coast, --map-hl, --map-dot.
+  function map(m, height = 48, title = "") {
+    if (!m) return "";
+    const width = Math.round(height * m.w / m.h), r = 3.4;
+    const names = m.dots.map(d => d.names.join(", ")).join("; ");
+    return `<svg viewBox="0 0 ${m.w} ${m.h}" width="${width}" height="${height}" role="img" aria-label="${title}: ${names}"><title>${title}: ${names}</title>
+      <rect width="${m.w}" height="${m.h}" rx="7" fill="var(--map-sea,#d5e1e6)"/>
+      <path d="${m.land}" fill="var(--map-land,#cfc6ab)" stroke="var(--map-coast,#8c8670)" stroke-width=".5" stroke-linejoin="round"/>
+      ${m.highlight ? `<path d="${m.highlight}" fill="var(--map-hl,#b8a77a)" stroke="var(--map-coast,#8c8670)" stroke-width=".5"/>` : ""}
+      ${m.borders ? `<path d="${m.borders}" fill="none" stroke="var(--map-coast,#8c8670)" stroke-width=".45" stroke-dasharray="1.6 1.2" opacity=".8"/>` : ""}
+      ${m.dots.map(d => `<circle cx="${d.x}" cy="${d.y}" r="${d.names.length > 1 ? r + 0.8 : r}" fill="var(--map-dot,#8e1b2c)" stroke="var(--map-sea,#d5e1e6)" stroke-width="1.2"><title>${d.names.join(", ")}</title></circle>`).join("")}
+      <rect x=".5" y=".5" width="${m.w - 1}" height="${m.h - 1}" rx="7" fill="none" stroke="var(--map-coast,#8c8670)" stroke-width="1"/></svg>`;
+  }
+  return { svg, map, lookFor, iconOf, names: { helmet: Object.keys(HELMETS), hat: Object.keys(HATS), icon: Object.keys(W), beard: Object.keys(BEARDS) } };
 })();
 if (typeof module !== "undefined") module.exports = FIG;
