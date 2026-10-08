@@ -15,7 +15,7 @@ from pathlib import Path
 
 from hitloc import load, DataError
 from hitloc.engine import table_ranges, mechanism_ranges, severity_ranges, compose_wound, weapon_mix_ranges
-from hitloc.model import MECHANISMS, SEVERITIES, THREATS, available_weapons, resolve_table, slot_layers
+from hitloc.model import MECHANISMS, SEVERITIES, THREATS, available_weapons, commons_url, resolve_table, slot_layers
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
@@ -233,8 +233,9 @@ def markdown(d) -> str:
                     out += ["| Side | Who | Armour |", "|---|---|---|"]
                     out += [f"| {x['name']} | {x['who']} | {x['armour']} |" for x in c["sides"]] + [""]
                 if c.get("examples"):
-                    out += ["**Example combatants**", "", "| Name | Side | Wears | Fights with | Notes |", "|---|---|---|---|---|"]
-                    out += [f"| {e['name']} | {e['side']} | {d.armor['kits'][e['kit']]['name']} | {d.weapons[e['weapon']]['name']} | {e.get('notes', '')} |"
+                    out += ["**Example combatants**", "", "| Name | Side | Wears | Fights with | Notes | Picture |", "|---|---|---|---|---|---|"]
+                    out += [f"| {e['name']} | {e['side']} | {d.armor['kits'][e['kit']]['name']} | {d.weapons[e['weapon']]['name']} | {e.get('notes', '')} | "
+                            + (f"[{e['image']['caption']}]({commons_url(e['image']['file'])})" if e.get("image") else "") + " |"
                             for e in c["examples"]] + [""]
                 cmp_ = c.get("comparison")
                 if cmp_:
@@ -506,12 +507,16 @@ def pdf(d, path: Path, figs: dict | None = None) -> None:
                     fig = lambda i: (RLImage(str(figs[(prev_battle, i)]), width=0.32 * inch, height=0.64 * inch)
                                      if (prev_battle, i) in figs else "")
                     rows = [[Paragraph(x, CH) for x in ["", "Example", "Side", "Wears (armour kit)", "Fights with", "Notes"]]]
-                    rows += [[fig(i), Paragraph(f"<b>{e['name']}</b>", C), Paragraph(e["side"], C),
+                    name = lambda e: (f"<b>{htmllib.escape(e['name'])}</b>" if not e.get("image") else
+                                      f"<link href=\"{htmllib.escape(commons_url(e['image']['file']))}\" color=\"#8e1b2c\">"
+                                      f"<b>{htmllib.escape(e['name'])}</b><br/><font size=\"6.5\">(picture)</font></link>")
+                    rows += [[fig(i), Paragraph(name(e), C), Paragraph(e["side"], C),
                               Paragraph(d.armor["kits"][e["kit"]]["name"], C), Paragraph(d.weapons[e["weapon"]]["name"], C),
                               Paragraph(e.get("notes", ""), C)] for i, e in enumerate(c["examples"])]
                     story += [Paragraph("Example combatants", H2),
                               Paragraph("The kit is what they wear when hit (use it on a table that allows armour); "
-                                        "the weapon is what they fight with.", S), Spacer(1, 3),
+                                        "the weapon is what they fight with. 'Picture' links to a period image of such a "
+                                        "combatant on Wikimedia Commons.", S), Spacer(1, 3),
                               grid(rows, [0.45 * inch, 1.3 * inch, 1.0 * inch, 1.7 * inch, 1.3 * inch, W - 5.75 * inch]), Spacer(1, 6)]
                 cmp_ = c.get("comparison")
                 if cmp_:

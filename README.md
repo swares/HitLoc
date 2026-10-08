@@ -136,6 +136,29 @@ example tables include the figures when Playwright and Chromium are installed (t
 draws them with a headless browser); without them the PDF is built without figures. The
 figures are illustrations, not research: dress and colours are typical, not exact.
 
+### Period pictures
+
+73 of the 103 example combatants link to a period picture of such a fighter on Wikimedia
+Commons: a painting, uniform plate, wartime photograph or surviving armour (the "picture"
+link next to the name in the roller, "(picture)" under the name in the PDF, a Picture
+column in `tables.md`). The rules:
+
+- **Commons only**, as `image: {file, caption}` on the example in `conflicts.yaml`. The
+  file is the Commons file name, so every link goes to its Commons page, which shows the
+  licence and origin. The check rejects URLs and anything that isn't an image file name.
+- **Period only.** Art, photographs or objects from the time; no reenactors and no later
+  reconstructions. Where the nearest period image is not an exact match, the caption says
+  so: Brunswick rather than Hessian troops in America, Morier's grenadiers of 1751, Catlin's
+  Comanche of 1834, prints of the Thames made in 1833, Froissart's Crécy crossbowmen.
+- **No picture rather than a weak one.** 21 examples (and the 9 generic ones under
+  Reference, Close combat and Unarmed) have none: no suitable period image was found
+  (the Finnish hakkapeliitta, Croat horsemen, Loyalist rangers, the Canadian militia,
+  North Korean and Vietnamese fighters), or the images available show the dead,
+  prisoners or propaganda, which this project doesn't link.
+
+Links were checked when added. Commons pages are stable, but files are sometimes
+renamed; a renamed file still redirects, a deleted one doesn't.
+
 ## Conflict maps
 
 Each war has a small locator map (in *About this conflict*, on the start page, and on its

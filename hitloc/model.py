@@ -25,6 +25,33 @@ FIG_NAMES = {
 LOOK_KEYS = ("colour", "trousers", "coat", "hat", "helmet", "beard")
 
 
+COMMONS = "https://commons.wikimedia.org/wiki/File:"
+IMAGE_EXT = (".jpg", ".jpeg", ".png", ".tif", ".tiff", ".gif", ".webp", ".svg")
+
+
+def commons_url(file: str) -> str:
+    """Wikimedia Commons file page for an example's image (same as commonsUrl in roller.html)."""
+    from urllib.parse import quote
+    return COMMONS + quote(file.replace(" ", "_"), safe="!'*-._~")
+
+
+def image_errors(where: str, img) -> list[str]:
+    """An example's optional image: a Commons file name and a caption."""
+    if img is None:
+        return []
+    if not isinstance(img, dict) or set(img) - {"file", "caption"}:
+        return [f"{where}: image must be {{file, caption}}"]
+    f, cap = img.get("file"), img.get("caption")
+    errs = []
+    if not (isinstance(f, str) and f.strip() and "/" not in f and not f.lower().startswith("file:")
+            and f.lower().endswith(IMAGE_EXT)):
+        errs.append(f"{where}: image file must be a Wikimedia Commons file name like 'Example.jpg' "
+                    f"(no 'File:' prefix, no URL), got {f!r}")
+    if not (isinstance(cap, str) and cap.strip()):
+        errs.append(f"{where}: image needs a caption saying what it shows")
+    return errs
+
+
 def look_errors(where: str, look) -> list[str]:
     """Problems with a figure `look` (side, example or kit)."""
     if look is None:
@@ -423,6 +450,7 @@ def validate(d: Data) -> None:
             errors += look_errors(f"conflicts.yaml: {b} side {sd['name']}", sd.get("look"))
         for ex in c.get("examples") or []:
             errors += look_errors(f"conflicts.yaml: {b} example {ex['name']}", ex.get("look"))
+            errors += image_errors(f"conflicts.yaml: {b} example {ex['name']}", ex.get("image"))
             if ex["kit"] not in d.armor["kits"]:
                 errors.append(f"conflicts.yaml: {b} example '{ex['name']}' has unknown kit {ex['kit']}")
             if ex["weapon"] not in d.weapons:

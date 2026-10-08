@@ -54,6 +54,8 @@ select,input[type=number],input[type=text]{width:100%;background:var(--bg);borde
 .examples{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .examples li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
 .examples .meta{color:var(--muted);font-size:.8rem}
+.exlink{display:inline-flex;align-items:center;gap:3px;margin-left:4px;font-size:.75rem;color:var(--blood);text-decoration:none;vertical-align:1px}
+.exlink:hover{text-decoration:underline}.exlink svg{width:13px;height:13px;flex:none}
 .wears{font-size:.8rem;color:var(--muted)}
 .roles{margin:0;font-size:.85rem;border-left:3px solid var(--line);padding:4px 0 4px 10px}
 .roles b{font-weight:700}
@@ -618,7 +620,7 @@ function renderHistory(){
       </div>
       <div style="display:flex;flex-direction:column;gap:8px">
         <div class="toolbar" style="justify-content:space-between"><strong>Example combatants</strong>${ex.length ? `<button type="button" class="small" data-ex="all">Add all to casualties</button>` : ""}</div>
-        ${ex.length ? `<ul class="examples">${ex.map((e, i) => `<li><span class="exfig">${exFigure(c, e, 64)}</span><span><b>${e.name}</b> <span class="meta">${e.side}</span><br>
+        ${ex.length ? `<ul class="examples">${ex.map((e, i) => `<li><span class="exfig">${exFigure(c, e, 64)}</span><span><b>${e.name}</b>${exLink(e)} <span class="meta">${e.side}</span><br>
           <span class="meta">Wears: ${kitName(e.kit)} · Fights with: ${DATA.weapons[e.weapon].name}${e.notes ? " · " + e.notes : ""}</span></span>
           <button type="button" class="small" data-ex="${i}">Add</button></li>`).join("")}</ul>
           <p class="muted" style="margin:0;font-size:.8rem">Selecting a casualty puts their armour on as the target armour (where the table allows armour).</p>`
@@ -675,6 +677,10 @@ function syncArmor(){
 const bleedPerRound = b => b === 3 ? 3 : b === 2 ? 1 : b === 1 ? 0.1 : 0;
 function newChar(name, kit = "none", weapon = null, look = {}){ return { id: S.seq++, name, kit, weapon, look, blood: TRK.blood_pool, rounds: 0, wounds: [] } }
 // Combatant figures (templates/figure.js): armour from the kit, weapon icon, side colours.
+// Period picture of such a combatant on Wikimedia Commons (conflicts.yaml `image`); same URL as hitloc.model.commons_url
+const commonsUrl = f => "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(f.replace(/ /g, "_")).replace(/\(/g, "%28").replace(/\)/g, "%29");
+const attr = s => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+const exLink = e => e.image ? `<a class="exlink" href="${commonsUrl(e.image.file)}" target="_blank" rel="noopener" title="${attr(e.image.caption)} (Wikimedia Commons)" aria-label="Picture: ${attr(e.image.caption)} (opens Wikimedia Commons)"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="5.5" cy="6.5" r="1.4" fill="currentColor"/><path d="M2.5 12.5l4-4 3 3 2-2 2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>picture</a>` : "";
 const exFigure = (conflict, e, size) => FIG.svg({ kit: KITS[e.kit], weapon: DATA.weapons[e.weapon], look: FIG.lookFor(conflict, e), size, title: e.name });
 const charFigure = (c, size) => FIG.svg({ kit: KITS[c.kit || "none"], weapon: c.weapon ? DATA.weapons[c.weapon] : null, look: c.look || {}, size, title: c.name,
   wounds: c.wounds.filter(w => !w.stopped).map(w => ({ loc: w.loc, sev: w.sev })) });
