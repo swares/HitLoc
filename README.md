@@ -75,7 +75,8 @@ Quick start:
    keep the order you set by dragging the ⋮⋮ grip or using ▲ ▼ (a fighter can't be moved
    past a different number; change the number instead). **Next fighter** marks the next
    fighter who is still up as **Acting** and makes them the attacker, skipping anyone down
-   or unconscious; after the last one the round ends (as Next round) and it starts again at
+   or unconscious (a fighter knocked out while attacking stops being the attacker); after
+   the last one the round ends (as Next round) and it starts again at
    the top. Initiative stays the same each round and can be edited at any time. Wounds
    don't change the order: the slowing they would cause (the same penalty as on attack)
    is shown beside the number, for you to apply if your system does.
