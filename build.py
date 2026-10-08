@@ -490,7 +490,9 @@ def pdf(d, path: Path, figs: dict | None = None) -> None:
                 mapimg = (figs or {}).get(("map", prev_battle))
                 head = Paragraph(f"{prev_battle}", H1)
                 if mapimg:
-                    head = Table([[head, RLImage(str(mapimg), width=1.2 * inch, height=0.9 * inch)]], colWidths=[W - 1.3 * inch, 1.3 * inch],
+                    npan = len(load_maps(d)[prev_battle]["panels"])
+                    mw = 1.2 * inch * npan + 0.06 * inch * (npan - 1)
+                    head = Table([[head, RLImage(str(mapimg), width=mw, height=0.9 * inch)]], colWidths=[W - mw - 0.1 * inch, mw + 0.1 * inch],
                                  style=TableStyle([("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("LEFTPADDING", (0, 0), (-1, -1), 0)]))
                 story += [PageBreak(), head,
                           *([Paragraph(f"<i>{c['period']}</i>", B)] if c.get("period") else []), Spacer(1, 4),
@@ -706,6 +708,7 @@ def pdf(d, path: Path, figs: dict | None = None) -> None:
 # Locator maps (data/maps.json, built by tools/maps/make_maps.mjs)
 # --------------------------------------------------------------------------
 _MAPS = None
+_MAP_SEQ = 0
 
 
 def load_maps(d) -> dict:
@@ -722,21 +725,41 @@ def load_maps(d) -> dict:
     return _MAPS
 
 
-def map_svg(m, height: int = 48, title: str = "") -> str:
-    """Same drawing as FIG.map in templates/figure.js (for the static start page)."""
+def map_svg(m, height: int = 48, title: str = "", width: int = 0) -> str:
+    """Same drawing as FIG.map in templates/figure.js (for the static start page).
+    Panels sit side by side at the given height; with a width instead, they stack
+    vertically at that width (the start page's narrow icon column)."""
     if not m:
         return ""
     esc = htmllib.escape
-    width = round(height * m["w"] / m["h"])
-    names = "; ".join(", ".join(x["names"]) for x in m["dots"])
-    dots = "".join(f'<circle cx="{x["x"]}" cy="{x["y"]}" r="{4.2 if len(x["names"]) > 1 else 3.4}" fill="var(--map-dot)" '
-                   f'stroke="var(--map-sea)" stroke-width="1.2"><title>{esc(", ".join(x["names"]))}</title></circle>' for x in m["dots"])
-    return (f'<svg viewBox="0 0 {m["w"]} {m["h"]}" width="{width}" height="{height}" role="img" aria-label="{esc(title)}: {esc(names)}">'
-            f'<title>{esc(title)}: {esc(names)}</title><rect width="{m["w"]}" height="{m["h"]}" rx="7" fill="var(--map-sea)"/>'
-            f'<path d="{m["land"]}" fill="var(--map-land)" stroke="var(--map-coast)" stroke-width=".5" stroke-linejoin="round"/>'
-            + (f'<path d="{m["highlight"]}" fill="var(--map-hl)" stroke="var(--map-coast)" stroke-width=".5"/>' if m.get("highlight") else "")
-            + (f'<path d="{m["borders"]}" fill="none" stroke="var(--map-coast)" stroke-width=".45" stroke-dasharray="1.6 1.2" opacity=".8"/>' if m.get("borders") else "")
-            + dots + f'<rect x=".5" y=".5" width="{m["w"] - 1}" height="{m["h"] - 1}" rx="7" fill="none" stroke="var(--map-coast)" stroke-width="1"/></svg>')
+    n, w, h, gap = len(m["panels"]), m["w"], m["h"], m["gap"]
+    stack = bool(width)
+    total = n * w + (n - 1) * gap
+    tall = n * h + (n - 1) * gap
+    dot_name = lambda x: ", ".join(x["names"]) + (" (no records used)" if x.get("context") else "")
+    names = " | ".join((p["label"] + ": " if p.get("label") else "") + "; ".join(dot_name(x) for x in p["dots"]) for p in m["panels"])
+    global _MAP_SEQ
+    _MAP_SEQ += 1
+    parts = []
+    for i, p in enumerate(m["panels"]):
+        dots = "".join(
+            f'<circle cx="{x["x"]}" cy="{x["y"]}" r="{4.2 if len(x["names"]) > 1 else 3.4}" '
+            + (f'fill="var(--map-sea)" stroke="var(--map-dot)" stroke-width="1.6"' if x.get("context")
+               else f'fill="var(--map-dot)" stroke="var(--map-sea)" stroke-width="1.2"')
+            + f'><title>{esc(dot_name(x))}</title></circle>' for x in p["dots"])
+        parts.append(
+            f'<g transform="translate({0 if stack else i * (w + gap)} {i * (h + gap) if stack else 0})"><title>{esc(p.get("label") or title)}</title>'
+            f'<clipPath id="pm{_MAP_SEQ}-{i}"><rect width="{w}" height="{h}" rx="7"/></clipPath><g clip-path="url(#pm{_MAP_SEQ}-{i})">'
+            f'<rect width="{w}" height="{h}" fill="var(--map-sea)"/>'
+            f'<path d="{p["land"]}" fill="var(--map-land)" stroke="var(--map-coast)" stroke-width=".5" stroke-linejoin="round"/>'
+            + (f'<path d="{p["lakes"]}" fill="var(--map-sea)" stroke="var(--map-coast)" stroke-width=".35"/>' if p.get("lakes") else "")
+            + (f'<path d="{p["highlight"]}" fill="var(--map-hl)" stroke="var(--map-coast)" stroke-width=".5"/>' if p.get("highlight") else "")
+            + (f'<path d="{p["borders"]}" fill="none" stroke="var(--map-coast)" stroke-width=".45" stroke-dasharray="1.6 1.2" opacity=".8"/>' if p.get("borders") else "")
+            + '</g>' + dots + f'<rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="7" fill="none" stroke="var(--map-coast)" stroke-width="1"/></g>')
+    vb, size = ((f"0 0 {w} {tall}", f'width="{width}" height="{round(width * tall / w)}"') if stack
+                else (f"0 0 {total} {h}", f'width="{round(height * total / h)}" height="{height}"'))
+    return (f'<svg viewBox="{vb}" {size} role="img" '
+            f'aria-label="{esc(title)}: {esc(names)}"><title>{esc(title)}: {esc(names)}</title>' + "".join(parts) + '</svg>')
 
 
 # --------------------------------------------------------------------------
@@ -757,7 +780,7 @@ def index_page(d) -> str:
         labels = " · ".join(esc(t.get("label", t["name"])) for t in ts)
         mp = load_maps(d).get(battle)
         items.append(
-            f'      <li><span class="map">{map_svg(mp, 42, battle) if mp else ""}</span><span class="name">{esc(battle)}</span>'
+            f'      <li><span class="map">{map_svg(mp, title=battle, width=56) if mp else ""}</span><span class="name">{esc(battle)}</span>'
             f'<span class="period">{esc(str(period))}</span>'
             f'<span class="tables">{n} table{"s" if n != 1 else ""}: {labels}</span></li>')
     kits = [k for k in d.armor["kits"] if k != "none"]
