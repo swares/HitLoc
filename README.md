@@ -149,7 +149,7 @@ for them. Nearby sites share one dot; hover a dot for its names.
   optional `borders` and `highlight`).
 - `tools/maps/make_maps.mjs` turns the specs into `data/maps.json` (plain SVG paths)
   from Natural Earth coastlines and borders (public domain, via the `world-atlas` npm
-  package): `cd tools/maps && npm install && node make_maps.mjs`. Node is needed only
+  package): `cd tools/maps && npm ci && node make_maps.mjs`. Node is needed only
   for this step; the build warns when a map is missing or out of date.
 
 ## Website (GitHub Pages)

@@ -1,11 +1,11 @@
 // Builds data/maps.json: one small locator map per conflict, from the `map:` entries in
 // data/conflicts.yaml and Natural Earth 1:50m coastlines and borders (public domain, via the
 // world-atlas package). Run from this folder after editing a map entry:
-//   npm install && node make_maps.mjs
+//   npm ci && node make_maps.mjs   (versions pinned by package-lock.json)
 // The output is plain SVG path data, so the roller, start page and PDF need nothing at runtime.
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import yaml from "js-yaml";
 import { feature, mesh } from "topojson-client";
 import { geoMercator, geoPath } from "d3-geo";

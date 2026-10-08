@@ -6,7 +6,7 @@
 # map      - locator map: bbox [west, south, east, north] in degrees, sites (name, lat, lon)
 #            where the records come from, optional borders: true (modern borders; only
 #            for wars fought within today's borders) and highlight: [country names].
-#            After editing, run: node tools/maps/make_maps.mjs (writes data/maps.json)
+#            After editing, run: cd tools/maps && npm ci && node make_maps.mjs (writes data/maps.json)
 # look     - how the example figures are drawn (templates/figure.js), on a side or an example
 #            (an example's look is merged over its side's): colour, trousers, coat: skin,
 #            hat (when the kit has no helmet), helmet (shape, when it has one), beard

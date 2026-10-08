@@ -717,7 +717,7 @@ def load_maps(d) -> dict:
         for battle, c in d.conflicts.items():
             spec = c.get("map")
             if spec and (battle not in maps or maps[battle].get("spec") != spec):
-                print(f"warning: map for '{battle}' is missing or out of date; run: cd tools/maps && npm install && node make_maps.mjs")
+                print(f"warning: map for '{battle}' is missing or out of date; run: cd tools/maps && npm ci && node make_maps.mjs")
         _MAPS = {b: m for b, m in maps.items() if b in d.conflicts and d.conflicts[b].get("map")}
     return _MAPS
 
