@@ -1,12 +1,13 @@
 {
   "name": "hitloc-maps",
   "private": true,
-  "description": "Builds data/maps.json (conflict locator maps) from Natural Earth coastlines. Run: npm ci && node make_maps.mjs",
+  "description": "Builds data/maps.json (conflict locator maps) from Natural Earth coastlines, borders and lakes. Run: npm ci && node make_maps.mjs",
   "type": "module",
   "dependencies": {
     "d3-geo": "^3.1.1",
     "js-yaml": "^4.1.0",
     "topojson-client": "^3.1.0",
-    "world-atlas": "^2.0.2"
+    "world-atlas": "^2.0.2",
+    "sane-topojson": "^4.0.0"
   }
 }

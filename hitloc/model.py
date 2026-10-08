@@ -408,8 +408,9 @@ def validate(d: Data) -> None:
             if t.get("battle") == b:
                 offered |= set(t["weapons"])
         sides = {sd["name"] for sd in c.get("sides") or []}
-        mp = c.get("map")
-        if mp is not None:
+        for mp in (c.get("map") if isinstance(c.get("map"), list) else [c.get("map")]):
+            if mp is None:
+                continue
             bb = mp.get("bbox") if isinstance(mp, dict) else None
             if not (isinstance(bb, list) and len(bb) == 4 and bb[0] < bb[2] and bb[1] < bb[3]
                     and -180 <= bb[0] and bb[2] <= 180 and -90 <= bb[1] and bb[3] <= 90):
