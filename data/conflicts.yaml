@@ -3,6 +3,10 @@
 # examples - ready-made combatants: an armour kit (armor.yaml) and a typical weapon
 #            (weapons.yaml) for that side. The kit is what they wear as a TARGET;
 #            the weapon is what they use when they ATTACK.
+# map      - locator map: bbox [west, south, east, north] in degrees, sites (name, lat, lon)
+#            where the records come from, optional borders: true (modern borders; only
+#            for wars fought within today's borders) and highlight: [country names].
+#            After editing, run: cd tools/maps && npm ci && node make_maps.mjs (writes data/maps.json)
 # look     - how the example figures are drawn (templates/figure.js), on a side or an example
 #            (an example's look is merged over its side's): colour, trousers, coat: skin,
 #            hat (when the kit has no helmet), helmet (shape, when it has one), beard
@@ -12,6 +16,7 @@
 conflicts:
   "Visby 1361":
     period: "27 July 1361"
+    map: {bbox: [9, 53.5, 25, 60.8], sites: [{name: Visby, lat: 57.64, lon: 18.30}]}
     summary: >
       King Valdemar IV Atterdag of Denmark invaded Gotland, then a rich trading island,
       and met its rural defenders outside the walls of Visby. The Gotlanders were a
@@ -40,6 +45,7 @@ conflicts:
 
   "Thirty Years' War":
     period: "1618-1648"
+    map: {bbox: [3, 46, 22, 56], sites: [{name: Lützen, lat: 51.25, lon: 12.14}]}
     summary: >
       A war of religion and power across the Holy Roman Empire: the Catholic Emperor and the
       Catholic League against Protestant princes, joined by Denmark, then Sweden under
@@ -71,6 +77,7 @@ conflicts:
 
   "American Revolution":
     period: "1775-1783"
+    map: {bbox: [-84.5, 30.5, -65.5, 46.5], sites: [{name: Bunker Hill, lat: 42.38, lon: -71.06}, {name: Saratoga, lat: 43.00, lon: -73.63}, {name: Monmouth, lat: 40.26, lon: -74.31}, {name: Brandywine, lat: 39.88, lon: -75.58}, {name: Yorktown, lat: 37.24, lon: -76.51}, {name: Eutaw Springs, lat: 33.41, lon: -80.29}]}
     summary: >
       The thirteen colonies, joined by France from 1778 and later Spain and the Dutch
       Republic, fought Britain for independence. Battles were fought with smoothbore
@@ -120,6 +127,7 @@ conflicts:
 
   "Napoleonic era & War of 1812":
     period: "1803-1815"
+    map: {bbox: [-10, 35.5, 4, 44.5], sites: [{name: Salamanca, lat: 40.97, lon: -5.66}, {name: Talavera, lat: 39.96, lon: -4.83}, {name: Albuera, lat: 38.72, lon: -6.82}, {name: Zaragoza, lat: 41.65, lon: -0.88}]}
     summary: >
       France under Napoleon against shifting coalitions of Britain, Austria, Prussia,
       Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and
@@ -170,6 +178,7 @@ conflicts:
 
   "American Civil War":
     period: "1861-1865"
+    map: {bbox: [-93, 29, -72, 42], sites: [{name: Antietam, lat: 39.47, lon: -77.74}, {name: Gettysburg, lat: 39.83, lon: -77.23}, {name: Shiloh, lat: 35.15, lon: -88.32}, {name: Chickamauga, lat: 34.92, lon: -85.26}, {name: Vicksburg, lat: 32.35, lon: -90.88}]}
     summary: >
       The United States (Union) against the seceded Confederate States. Most wounds came
       from the rifle-musket firing soft lead conoidal balls, which shattered bone and led
@@ -195,6 +204,7 @@ conflicts:
 
   "American Indian Wars":
     period: "1862-1871 (arrow reports)"
+    map: {bbox: [-118, 28, -94, 49], sites: [{name: Fort Phil Kearny, lat: 44.53, lon: -106.83}, {name: Fort Buford, lat: 47.99, lon: -104.04}, {name: Fort Garland, lat: 37.43, lon: -105.43}, {name: Fort Dodge, lat: 37.73, lon: -99.94}, {name: Fort Concho, lat: 31.45, lon: -100.43}, {name: Camp Verde, lat: 34.56, lon: -111.85}]}
     summary: >
       After the Civil War the US Army garrisoned the Plains and the Southwest and fought a
       long series of campaigns against the nations whose land the railways and settlers
@@ -227,6 +237,7 @@ conflicts:
 
   "WWI":
     period: "1914-1918"
+    map: {bbox: [-3, 38, 30, 54], sites: [{name: Ypres, lat: 50.85, lon: 2.88}, {name: Somme, lat: 50.00, lon: 2.70}, {name: Verdun, lat: 49.16, lon: 5.38}, {name: Isonzo, lat: 46.00, lon: 13.60}, {name: Gallipoli, lat: 40.24, lon: 26.28}]}
     summary: >
       The Allied powers (France, the British Empire, Russia, Italy, and from 1917 the
       United States) against the Central Powers (Germany, Austria-Hungary, the Ottoman
@@ -258,6 +269,7 @@ conflicts:
 
   "WWII":
     period: "1939-1945 (Bougainville 1943-45; Italy 1943-45)"
+    map: {bbox: [-10, -20, 170, 60], sites: [{name: Italy (Cassino), lat: 41.49, lon: 13.81}, {name: Bougainville, lat: -6.20, lon: 155.40}]}
     summary: >
       The Allies against the Axis. This group's tables come from two theatres: the
       jungle campaign on Bougainville in the Solomon Islands (US Marines and Army against
@@ -286,6 +298,7 @@ conflicts:
 
   "Korea":
     period: "1950-1953"
+    map: {bbox: [124, 33, 131, 43], borders: true, highlight: [North Korea, South Korea], sites: [{name: Pusan, lat: 35.10, lon: 129.04}, {name: Seoul, lat: 37.57, lon: 126.98}, {name: Imjin River, lat: 37.95, lon: 126.90}, {name: Chosin Reservoir, lat: 40.47, lon: 127.30}]}
     summary: >
       The United Nations Command, led by the United States with South Korea, the British
       Commonwealth and others, against North Korea and, from late 1950, the Chinese
@@ -312,6 +325,7 @@ conflicts:
 
   "Vietnam":
     period: "1965-1973 (major US involvement)"
+    map: {bbox: [100, 8, 112, 24], borders: true, highlight: [Vietnam], sites: [{name: Khe Sanh, lat: 16.65, lon: 106.73}, {name: Hue, lat: 16.46, lon: 107.59}, {name: Ia Drang, lat: 13.60, lon: 107.70}, {name: Saigon, lat: 10.82, lon: 106.63}]}
     summary: >
       South Vietnam, the United States and allies (Australia, New Zealand, South Korea,
       Thailand) against North Vietnam's army (PAVN) and the southern Viet Cong. Most
@@ -340,6 +354,7 @@ conflicts:
 
   "Late 20th century":
     period: "1969-1996"
+    map: {bbox: [-80, -55, 60, 62], sites: [{name: Belfast, lat: 54.60, lon: -5.93}, {name: Falklands, lat: -51.70, lon: -57.86}, {name: Kuwait, lat: 29.37, lon: 47.98}, {name: Mogadishu, lat: 2.05, lon: 45.32}, {name: Grozny, lat: 43.32, lon: 45.69}]}
     summary: >
       Six smaller wars with very different fighting. Northern Ireland (1969-98): the
       British Army and police against the Provisional IRA, mostly sniping and bombs.
@@ -386,6 +401,7 @@ conflicts:
 
   "Iraq & Afghanistan":
     period: "2001-2021"
+    map: {bbox: [37, 24, 73, 39.5], borders: true, highlight: [Iraq, Afghanistan], sites: [{name: Baghdad, lat: 33.31, lon: 44.37}, {name: Fallujah, lat: 33.35, lon: 43.78}, {name: Helmand, lat: 31.58, lon: 64.37}, {name: Kandahar, lat: 31.61, lon: 65.71}]}
     summary: >
       US-led coalitions in Afghanistan from 2001 (against the Taliban and al-Qaeda) and
       in Iraq from 2003 (against the Iraqi army, then insurgents and militias). Roadside
@@ -448,6 +464,7 @@ conflicts:
 
   "Close combat":
     period: "Stockholm, 1983-1993"
+    map: {bbox: [10, 55, 25, 63], sites: [{name: Stockholm, lat: 59.33, lon: 18.07}]}
     summary: >
       Knife killings recorded by forensic pathologists: usually one attacker against an
       unarmoured, often surprised victim, with several wounds each. The table stands in

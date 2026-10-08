@@ -408,6 +408,16 @@ def validate(d: Data) -> None:
             if t.get("battle") == b:
                 offered |= set(t["weapons"])
         sides = {sd["name"] for sd in c.get("sides") or []}
+        mp = c.get("map")
+        if mp is not None:
+            bb = mp.get("bbox") if isinstance(mp, dict) else None
+            if not (isinstance(bb, list) and len(bb) == 4 and bb[0] < bb[2] and bb[1] < bb[3]
+                    and -180 <= bb[0] and bb[2] <= 180 and -90 <= bb[1] and bb[3] <= 90):
+                errors.append(f"conflicts.yaml: {b} map bbox must be [west, south, east, north] in degrees")
+            for site in (mp.get("sites") or []) if isinstance(mp, dict) else []:
+                if not (isinstance(site, dict) and site.get("name") and -90 <= float(site.get("lat", 999)) <= 90
+                        and -180 <= float(site.get("lon", 999)) <= 180):
+                    errors.append(f"conflicts.yaml: {b} map site {site} needs name, lat and lon")
         for sd in c.get("sides") or []:
             errors += look_errors(f"conflicts.yaml: {b} side {sd['name']}", sd.get("look"))
         for ex in c.get("examples") or []:
