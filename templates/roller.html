@@ -673,7 +673,7 @@ $("#mods").addEventListener("click", e => {
   renderMods(); shadeFigure(); renderTable();
 });
 function fillArmor(){
-  const groups = [["visby", "Visby 1361"], ["generic", "Medieval, generic"], ["musket", "Early modern (1600-1815)"], ["modern", "Modern"]];
+  const groups = [["visby", "Visby 1361"], ["roses", "Wars of the Roses (c.1460)"], ["generic", "Medieval, generic"], ["musket", "Early modern (1600-1815)"], ["modern", "Modern"]];
   $("#sel-armor").innerHTML = `<option value="none">Unarmoured</option>` + groups.map(([g, label]) =>
     `<optgroup label="${label}">${DATA.armor.kits.filter(k => k.group === g && k.id !== "none")
       .map(k => `<option value="${k.id}">${k.name}</option>`).join("")}</optgroup>`).join("");

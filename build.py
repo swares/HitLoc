@@ -117,7 +117,8 @@ def slot_text(d, v) -> str:
     return " / ".join(parts)
 
 
-KIT_GROUPS = (("visby", "Armour Kits: Visby 1361"), ("generic", "Armour Kits: Medieval, generic"),
+KIT_GROUPS = (("visby", "Armour Kits: Visby 1361"), ("roses", "Armour Kits: Wars of the Roses (c.1460)"),
+              ("generic", "Armour Kits: Medieval, generic"),
               ("musket", "Armour Kits: Early modern (1600-1815)"),
               ("modern", "Armour Kits: Modern (helmets, flak vests, Kevlar, plates)"))
 

@@ -1,0 +1,93 @@
+id: towton-1461-mass-grave
+order: 12
+name: "Towton 1461 - mass grave (bone evidence)"
+label: "Bone evidence: Towton Hall mass grave"
+battle: "Wars of the Roses"
+context: "Death wounds on the men buried at Towton Hall after the battle of 29 March 1461, most likely Lancastrians caught in the rout. Killed only."
+variant: evidence
+native: armed
+weapon_bias: sourced
+weapons: [sword, bill, poleaxe, dagger, longbow, bow]
+modifiers: [weapon_side, attacker_higher, attacker_lower, target_down, target_fleeing, flanked, target_warding]
+confidence: historical
+confidence_note: >
+  Counted wound by wound from the study's tables: 124 head wounds (79 blade, 32 blunt,
+  13 penetrating) on 31 skulls and 56 injured bones below the head (52 blade, 4 blunt). Head
+  wounds are counted per wound and body injuries per bone, as published, so the body is
+  slightly under-counted. Blade weapons roll on the blade wounds, the poleaxe on the blunt
+  ones and the dagger on the penetrating ones (arrow, bolt, dagger and poleaxe-spike wounds
+  to the skull). Bows use all the wounds together. Unsided skull wounds (frontal, occipital,
+  both parietals) are shared between left and right.
+armor_note: >
+  Armour is already in these numbers: the head wounds suggest many men had lost or taken off
+  their helmets in the rout, and the wounds fall where they were unprotected. Do not also subtract armour on this
+  table; use the all-hits table for play. This is bone evidence, so wounds to the chest and
+  belly that touched no bone left no mark, and arrows (which mostly wounded soft tissue) are
+  under-counted.
+sources:
+  - "Holst M. and Sutherland T., 'Towton Revisited - Analysis of the Human Remains from the Battle of Towton 1461', in Eickhoff S. and Schopper F. (eds), Schlachtfeld und Massengrab: Spektren interdisziplinärer Auswertung von Orten der Gewalt (Zossen 2014), pp. 97-129: Tab. 9 (post-cranial injuries) and Tab. 12 (peri-mortem cranial weapon trauma)."
+  - "Same chapter: 36% of the skeletons had peri-mortem injuries below the head (56 in all), mostly to the hands and forearms; the back of the skull, left parietal and left frontal took the most blade wounds. Its text gives 33 blunt (25%) and 13 penetrating (10%) head wounds; its table lists 124 head wounds, which this table follows."
+  - "Fiorato V., Boylston A. and Knüsel C. (eds), Blood Red Roses: the archaeology of a mass grave from the Battle of Towton AD 1461 (Oxbow, 2000; 2nd ed. 2007): the original excavation and analysis (Novak, 'Battle-related trauma')."
+  - "Wound-by-wound tally: data/sources/towton-1461-mass-grave.csv."
+status: >
+  Historical, from one grave of about 38 men killed in the rout after the battle. Their
+  wounds are extreme: one man (skeleton 32) had 14 head wounds, many blows fell on the
+  back of the skull and the neck, and the forearms and hands show defence wounds. It is a
+  picture of men cut down while fleeing or after they fell, not of the fighting in the line.
+regions:
+  - {label: "Face and jaw (26)", locs: [face], count: 26}
+  - {label: "Skull, left (48)", locs: [skull_l], count: 48}
+  - {label: "Skull, midline or both sides (21)", locs: [skull_l, skull_r], count: 21}
+  - {label: "Skull, right (29)", locs: [skull_r], count: 29}
+  - {label: "Foot, left (3)", locs: [foot_l], count: 3}
+  - {label: "Forearm, left (4)", locs: [forearm_l], count: 4}
+  - {label: "Forearm, right (5)", locs: [forearm_r], count: 5}
+  - {label: "Pelvis (1)", locs: [groin], count: 1}
+  - {label: "Hand, left (8)", locs: [hand_l], count: 8}
+  - {label: "Hand, side not recorded (1)", locs: [hand_l, hand_r], count: 1}
+  - {label: "Hand, right (13)", locs: [hand_r], count: 13}
+  - {label: "Knee, right (1)", locs: [knee_r], count: 1}
+  - {label: "Lower leg, left (2)", locs: [lower_leg_l], count: 2}
+  - {label: "Neck (cervical vertebrae) (9)", locs: [neck], count: 9}
+  - {label: "Shoulder, left (2)", locs: [shoulder_l], count: 2}
+  - {label: "Shoulder, right (1)", locs: [shoulder_r], count: 1}
+  - {label: "Thigh, left (1)", locs: [thigh_l], count: 1}
+  - {label: "Thigh, right (2)", locs: [thigh_r], count: 2}
+  - {label: "Upper arm, left (2)", locs: [upper_arm_l], count: 2}
+  - {label: "Upper arm, right (1)", locs: [upper_arm_r], count: 1}
+weapon_regions:
+  sword: &blade
+    - {label: "Face and jaw (15)", locs: [face], count: 15}
+    - {label: "Skull, left (29)", locs: [skull_l], count: 29}
+    - {label: "Skull, midline or both sides (15)", locs: [skull_l, skull_r], count: 15}
+    - {label: "Skull, right (20)", locs: [skull_r], count: 20}
+    - {label: "Foot, left (3)", locs: [foot_l], count: 3}
+    - {label: "Forearm, left (4)", locs: [forearm_l], count: 4}
+    - {label: "Forearm, right (4)", locs: [forearm_r], count: 4}
+    - {label: "Pelvis (1)", locs: [groin], count: 1}
+    - {label: "Hand, left (8)", locs: [hand_l], count: 8}
+    - {label: "Hand, side not recorded (1)", locs: [hand_l, hand_r], count: 1}
+    - {label: "Hand, right (12)", locs: [hand_r], count: 12}
+    - {label: "Knee, right (1)", locs: [knee_r], count: 1}
+    - {label: "Lower leg, left (1)", locs: [lower_leg_l], count: 1}
+    - {label: "Neck (cervical vertebrae) (8)", locs: [neck], count: 8}
+    - {label: "Shoulder, left (2)", locs: [shoulder_l], count: 2}
+    - {label: "Shoulder, right (1)", locs: [shoulder_r], count: 1}
+    - {label: "Thigh, left (1)", locs: [thigh_l], count: 1}
+    - {label: "Thigh, right (2)", locs: [thigh_r], count: 2}
+    - {label: "Upper arm, left (2)", locs: [upper_arm_l], count: 2}
+    - {label: "Upper arm, right (1)", locs: [upper_arm_r], count: 1}
+  bill: *blade
+  poleaxe:
+    - {label: "Face and jaw (11)", locs: [face], count: 11}
+    - {label: "Skull, left (13)", locs: [skull_l], count: 13}
+    - {label: "Skull, midline or both sides (4)", locs: [skull_l, skull_r], count: 4}
+    - {label: "Skull, right (4)", locs: [skull_r], count: 4}
+    - {label: "Forearm, right (1)", locs: [forearm_r], count: 1}
+    - {label: "Hand, right (1)", locs: [hand_r], count: 1}
+    - {label: "Lower leg, left (1)", locs: [lower_leg_l], count: 1}
+    - {label: "Neck (cervical vertebrae) (1)", locs: [neck], count: 1}
+  dagger:
+    - {label: "Skull, left (6)", locs: [skull_l], count: 6}
+    - {label: "Skull, midline or both sides (2)", locs: [skull_l, skull_r], count: 2}
+    - {label: "Skull, right (5)", locs: [skull_r], count: 5}

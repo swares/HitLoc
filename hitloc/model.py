@@ -12,12 +12,12 @@ MECHANISMS = ("cut", "pierce", "crush", "ballistic")
 THREATS = ("fragment", "pistol", "rifle", "rifle_ap")
 # Names the combatant figures can draw (templates/figure.js); build.py checks they exist there.
 FIG_NAMES = {
-    "helmet": ("kettle", "bascinet", "closed", "pot", "morion", "coif", "crested", "brodie", "adrian", "stahlhelm",
+    "helmet": ("kettle", "bascinet", "sallet", "closed", "pot", "morion", "coif", "crested", "brodie", "adrian", "stahlhelm",
                "fj", "m1", "japanese", "soviet", "pasgt", "ach", "cap"),
     "hat": ("none", "hood", "broad_hat", "tricorne", "bicorne", "shako", "bearskin", "mitre", "round_hat", "kepi",
             "slouch", "feather", "headband", "czapka", "field_cap", "winter_cap", "pith", "boonie", "turban",
             "shemagh", "balaclava", "beret", "police_cap", "kabalak"),
-    "icon": ("sword", "sabre", "dagger", "axe", "club", "spear", "lance", "bow", "crossbow", "sling", "long_gun",
+    "icon": ("sword", "sabre", "dagger", "axe", "club", "spear", "bill", "poleaxe", "lance", "bow", "crossbow", "sling", "long_gun",
              "bayonet_gun", "musket_butt", "modern_rifle", "machine_gun", "smg", "pistol", "launcher", "grenade",
              "stick_grenade", "device", "rammer", "stake", "spade", "fist"),
     "beard": ("none", "stubble", "moustache", "beard"),
