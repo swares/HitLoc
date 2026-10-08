@@ -19,6 +19,9 @@
 # tables), a chosen defender whose kit has no shield gets the No shield situation
 # automatically. Kits without the flag carry no shield.
 #
+# look.helmet: the helmet shape the combatant figures draw for this kit (templates/figure.js);
+# without it the shape follows the helm slot's material. An example can override it.
+#
 # Kit slots match body.yaml armour slots. A slot is:
 #   a material id                              - covers every hit there
 #   {material: id, cover: N}                   - d100 01-N meets armour, the rest is a gap
@@ -131,6 +134,7 @@ kits:
   - id: danish_maa
     name: "Danish man-at-arms (1361)"
     group: visby
+    look: {helmet: bascinet}
     shield: true
     slots: {helm: plate, gorget: mail, torso_upper: plates, torso_lower: plates, skirt: mail, pauldron: mail_padded,
             arm: mail_padded, gauntlet: plates, leg: mail_padded, greave: {material: plate, cover: 50}, sabaton: mail}
@@ -147,6 +151,7 @@ kits:
   - id: harquebusier_1630
     name: "Harquebusier: buff coat, breastplate, pot helmet"
     group: musket
+    look: {helmet: pot}
     slots: {helm: {material: plate, cover: 80}, torso_upper: [{material: cuirass, cover: 80}, {material: buff_coat}],
             torso_lower: buff_coat, skirt: buff_coat, pauldron: buff_coat, arm: buff_coat, gauntlet: {material: plate, cover: 50}, leg: {material: buff_coat, cover: 50}}
     notes: "Lighter cavalry of the Thirty Years' War and the English Civil War: 'lobster-tail' pot helmet, breast and back plate over a buff coat, a gauntlet on the bridle arm."
@@ -154,6 +159,7 @@ kits:
   - id: pikeman_1630
     name: "Pikeman: morion and corslet"
     group: musket
+    look: {helmet: morion}
     slots: {helm: {material: plate, cover: 85}, torso_upper: cuirass, torso_lower: {material: cuirass, cover: 60}, leg: {material: plate, cover: 35}}
     notes: "Open helmet, breast and back plates and short tassets. Many pikemen left the armour behind on campaign."
 
@@ -179,6 +185,7 @@ kits:
   - id: ww1_sentry
     name: "Steel helmet and Sappenpanzer (WWI German sentry)"
     group: modern
+    look: {helmet: stahlhelm}
     slots: {helm: steel_helmet, torso_upper: sappenpanzer, torso_lower: {material: sappenpanzer, cover: 70}}
     notes: "Heavy plate issued to sentries and machine gunners in static positions; too heavy for the attack."
 
@@ -225,6 +232,7 @@ kits:
   - id: interceptor
     name: "Interceptor vest, SAPI plates, ACH (2000s)"
     group: modern
+    look: {helmet: ach}
     slots: {helm: kevlar_helmet, gorget: {material: kevlar_soft, cover: 60},
             torso_upper: [{material: sapi, cover: 65}, {material: kevlar_soft}],
             torso_lower: {material: kevlar_soft, cover: 70}, skirt: {material: kevlar_soft, cover: 50},
@@ -234,6 +242,7 @@ kits:
   - id: plate_carrier
     name: "Plate carrier, ESAPI plates, helmet (2010s-)"
     group: modern
+    look: {helmet: ach}
     slots: {helm: kevlar_helmet, torso_upper: {material: esapi, cover: 65}, torso_lower: {material: kevlar_soft, cover: 25}}
     notes: "Lighter than a full vest: plates over the vital area, soft side panels only. Outside the plates is a gap."
 

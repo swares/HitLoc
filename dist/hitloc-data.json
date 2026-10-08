@@ -357,6 +357,7 @@
    "id": "sword",
    "name": "Sword (arming sword)",
    "short": "Sword",
+   "icon": "sword",
    "era": "medieval",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -386,6 +387,7 @@
    "id": "axe",
    "name": "Axe (hand or long-hafted)",
    "short": "Axe",
+   "icon": "axe",
    "era": "medieval",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -422,6 +424,7 @@
    "id": "spiked_club",
    "name": "Spiked club / morning star (knout)",
    "short": "Spiked club",
+   "icon": "club",
    "era": "medieval",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -457,6 +460,7 @@
    "id": "spear",
    "name": "Spear / lance",
    "short": "Spear",
+   "icon": "spear",
    "era": "medieval",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -494,6 +498,7 @@
    "id": "bow",
    "name": "Bow (war arrows)",
    "short": "Bow",
+   "icon": "bow",
    "era": "ancient-1880s",
    "mechanisms": {
     "pierce": 95,
@@ -521,6 +526,7 @@
    "id": "crossbow",
    "name": "Crossbow (bolts)",
    "short": "Crossbow",
+   "icon": "crossbow",
    "era": "medieval",
    "mechanisms": {
     "pierce": 100
@@ -549,6 +555,7 @@
    "id": "sling",
    "name": "Sling (stones, lead bullets)",
    "short": "Sling",
+   "icon": "sling",
    "era": "ancient-medieval",
    "mechanisms": {
     "crush": 100
@@ -577,6 +584,7 @@
    "id": "dagger",
    "name": "Dagger / knife",
    "short": "Dagger",
+   "icon": "dagger",
    "era": "any",
    "melee": "armed",
    "mechanisms": {
@@ -613,6 +621,7 @@
    "id": "bayonet",
    "name": "Bayonet (musket or rifle)",
    "short": "Bayonet",
+   "icon": "bayonet_gun",
    "era": "1700s-",
    "melee": "armed",
    "melee_table": "peninsular-1808-14-officers",
@@ -651,6 +660,7 @@
    "id": "entrenching_tool",
    "name": "Sharpened entrenching tool (spade)",
    "short": "Spade",
+   "icon": "spade",
    "era": "1915-",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -693,6 +703,7 @@
    "id": "saber",
    "name": "Sabre or broadsword",
    "short": "Sabre",
+   "icon": "sabre",
    "era": "1700s-1900s",
    "melee": "armed",
    "melee_table": "peninsular-1808-14-officers",
@@ -726,6 +737,7 @@
    "id": "lance",
    "name": "Cavalry lance",
    "short": "Lance",
+   "icon": "lance",
    "era": "1800s-1900s",
    "melee": "armed",
    "melee_table": "peninsular-1808-14-officers",
@@ -760,6 +772,7 @@
    "id": "musket_butt",
    "name": "Clubbed musket (butt stroke)",
    "short": "Musket butt",
+   "icon": "musket_butt",
    "era": "1700s-1900s",
    "melee": "armed",
    "melee_table": "visby-1361-adjusted",
@@ -790,6 +803,7 @@
    "id": "punch",
    "name": "Punch",
    "short": "Punch",
+   "icon": "fist",
    "era": "any",
    "melee": "unarmed",
    "mechanisms": {
@@ -815,6 +829,7 @@
    "id": "kick",
    "name": "Kick",
    "short": "Kick",
+   "icon": "fist",
    "era": "any",
    "melee": "unarmed",
    "mechanisms": {
@@ -840,6 +855,7 @@
    "id": "elbow_knee",
    "name": "Elbow or knee",
    "short": "Elbow/knee",
+   "icon": "fist",
    "era": "any",
    "melee": "unarmed",
    "mechanisms": {
@@ -872,6 +888,7 @@
    "id": "matchlock_musket",
    "name": "Matchlock musket",
    "short": "Matchlock",
+   "icon": "long_gun",
    "era": "1500s-1690s",
    "threat": "rifle",
    "mechanisms": {
@@ -893,6 +910,7 @@
    "id": "wheellock_pistol",
    "name": "Wheellock pistol or carbine (cavalry)",
    "short": "Pistol/carbine",
+   "icon": "pistol",
    "era": "1530s-1690s",
    "threat": "pistol",
    "mechanisms": {
@@ -914,6 +932,7 @@
    "id": "musket_smoothbore",
    "name": "Smoothbore musket (Brown Bess, Charleville)",
    "short": "Musket",
+   "icon": "long_gun",
    "era": "1700s-1850s",
    "threat": "rifle",
    "mechanisms": {
@@ -935,6 +954,7 @@
    "id": "rifle_flintlock",
    "name": "Flintlock rifle (Pennsylvania, Baker, J\u00e4ger)",
    "short": "Rifle",
+   "icon": "long_gun",
    "era": "1700s-1840s",
    "threat": "rifle",
    "mechanisms": {
@@ -959,6 +979,7 @@
    "id": "pistol_flintlock",
    "name": "Flintlock pistol",
    "short": "Pistol",
+   "icon": "pistol",
    "era": "1700s-1840s",
    "threat": "pistol",
    "mechanisms": {
@@ -980,6 +1001,7 @@
    "id": "artillery_smoothbore",
    "name": "Smoothbore artillery (round shot, canister, grape, shell)",
    "short": "Artillery",
+   "icon": "rammer",
    "era": "1700s-1850s",
    "threat": "fragment",
    "mechanisms": {
@@ -1008,6 +1030,7 @@
    "id": "rifle_musket",
    "name": "Rifle-musket (Minie ball)",
    "short": "Rifle-musket",
+   "icon": "long_gun",
    "era": "1860s",
    "threat": "rifle",
    "mechanisms": {
@@ -1029,6 +1052,7 @@
    "id": "artillery_acw",
    "name": "Artillery (canister, shell fragments)",
    "short": "Artillery",
+   "icon": "rammer",
    "era": "1860s",
    "threat": "fragment",
    "mechanisms": {
@@ -1060,6 +1084,7 @@
    "id": "revolver",
    "name": "Revolver",
    "short": "Revolver",
+   "icon": "pistol",
    "era": "1850s-",
    "threat": "pistol",
    "mechanisms": {
@@ -1081,6 +1106,7 @@
    "id": "rifle_service",
    "name": "Service rifle (bolt or semi-auto, 1914-53)",
    "short": "Rifle",
+   "icon": "long_gun",
    "era": "1914-1953",
    "threat": "rifle",
    "mechanisms": {
@@ -1102,6 +1128,7 @@
    "id": "rifle_assault",
    "name": "Assault rifle (M16, AK)",
    "short": "Assault rifle",
+   "icon": "modern_rifle",
    "era": "1960s-",
    "threat": "rifle",
    "mechanisms": {
@@ -1123,6 +1150,7 @@
    "id": "rifle_ap",
    "name": "Rifle, armour-piercing ammunition",
    "short": "AP rifle",
+   "icon": "modern_rifle",
    "era": "1990s-",
    "threat": "rifle_ap",
    "mechanisms": {
@@ -1144,6 +1172,7 @@
    "id": "machine_gun",
    "name": "Machine gun",
    "short": "MG",
+   "icon": "machine_gun",
    "era": "1914-",
    "threat": "rifle",
    "mechanisms": {
@@ -1168,6 +1197,7 @@
    "id": "pistol_smg",
    "name": "Pistol or submachine gun",
    "short": "Pistol/SMG",
+   "icon": "smg",
    "era": "1900s-",
    "threat": "pistol",
    "mechanisms": {
@@ -1189,6 +1219,7 @@
    "id": "hand_grenade",
    "name": "Hand grenade",
    "short": "Grenade",
+   "icon": "grenade",
    "era": "1914-",
    "threat": "fragment",
    "mechanisms": {
@@ -1220,6 +1251,7 @@
    "id": "mortar_artillery",
    "name": "Mortar, rocket or artillery",
    "short": "Mortar",
+   "icon": "device",
    "era": "1914-",
    "threat": "fragment",
    "mechanisms": {
@@ -1251,6 +1283,7 @@
    "id": "rpg",
    "name": "RPG (rocket-propelled grenade)",
    "short": "RPG",
+   "icon": "launcher",
    "era": "1960s-",
    "threat": "fragment",
    "mechanisms": {
@@ -1279,6 +1312,7 @@
    "id": "mine_ied",
    "name": "Mine, booby trap or IED",
    "short": "Mine/IED",
+   "icon": "device",
    "era": "1914-",
    "threat": "fragment",
    "mechanisms": {
@@ -1317,6 +1351,7 @@
    "id": "punji_stake",
    "name": "Punji stake",
    "short": "Punji",
+   "icon": "stake",
    "era": "Vietnam",
    "mechanisms": {
     "pierce": 100
@@ -1348,6 +1383,7 @@
    "id": "explosive_fragment",
    "name": "Fragments, unspecified (shell, grenade, mine)",
    "short": "Frags",
+   "icon": "grenade",
    "era": "1914-",
    "threat": "fragment",
    "mechanisms": {
@@ -15889,6 +15925,9 @@
     "id": "danish_maa",
     "name": "Danish man-at-arms (1361)",
     "group": "visby",
+    "look": {
+     "helmet": "bascinet"
+    },
     "shield": true,
     "slots": {
      "helm": "plate",
@@ -16090,6 +16129,9 @@
     "id": "harquebusier_1630",
     "name": "Harquebusier: buff coat, breastplate, pot helmet",
     "group": "musket",
+    "look": {
+     "helmet": "pot"
+    },
     "slots": {
      "helm": {
       "material": "plate",
@@ -16186,6 +16228,9 @@
     "id": "pikeman_1630",
     "name": "Pikeman: morion and corslet",
     "group": "musket",
+    "look": {
+     "helmet": "morion"
+    },
     "slots": {
      "helm": {
       "material": "plate",
@@ -16324,6 +16369,9 @@
     "id": "ww1_sentry",
     "name": "Steel helmet and Sappenpanzer (WWI German sentry)",
     "group": "modern",
+    "look": {
+     "helmet": "stahlhelm"
+    },
     "slots": {
      "helm": "steel_helmet",
      "torso_upper": "sappenpanzer",
@@ -16634,6 +16682,9 @@
     "id": "interceptor",
     "name": "Interceptor vest, SAPI plates, ACH (2000s)",
     "group": "modern",
+    "look": {
+     "helmet": "ach"
+    },
     "slots": {
      "helm": "kevlar_helmet",
      "gorget": {
@@ -16717,6 +16768,9 @@
     "id": "plate_carrier",
     "name": "Plate carrier, ESAPI plates, helmet (2010s-)",
     "group": "modern",
+    "look": {
+     "helmet": "ach"
+    },
     "slots": {
      "helm": "kevlar_helmet",
      "torso_upper": {
@@ -16803,12 +16857,22 @@
     {
      "name": "Danish army",
      "who": "Professional soldiers of Valdemar IV.",
-     "armour": "Mail, coats of plates and plate helmets; the best-equipped wore gauntlets and leg harness. Few of their dead are in the graves."
+     "armour": "Mail, coats of plates and plate helmets; the best-equipped wore gauntlets and leg harness. Few of their dead are in the graves.",
+     "look": {
+      "colour": "#8e2b2b",
+      "beard": "beard"
+     }
     },
     {
      "name": "Gotlandic levy",
      "who": "Farmers and freeholders of rural Gotland, called out to defend the island.",
-     "armour": "Uneven. Many wore mail coifs and padded coats; some had coats of plates and gauntlets; many had little or nothing on the legs, which took most of the blade wounds."
+     "armour": "Uneven. Many wore mail coifs and padded coats; some had coats of plates and gauntlets; many had little or nothing on the legs, which took most of the blade wounds.",
+     "look": {
+      "colour": "#8a7a5c",
+      "trousers": "#6b5d45",
+      "hat": "hood",
+      "beard": "beard"
+     }
     }
    ],
    "examples": [
@@ -16860,12 +16924,24 @@
     {
      "name": "Sweden and Protestant allies",
      "who": "Swedish and Finnish troops and many German and Scottish mercenaries in Swedish pay, with Saxony and other Protestant states.",
-     "armour": "Pikemen wore helmets and corslets when they kept them; musketeers wore none; cavalry rode in buff coats with helmets and breastplates."
+     "armour": "Pikemen wore helmets and corslets when they kept them; musketeers wore none; cavalry rode in buff coats with helmets and breastplates.",
+     "look": {
+      "colour": "#3b5a8c",
+      "trousers": "#4a4038",
+      "hat": "broad_hat",
+      "beard": "moustache"
+     }
     },
     {
      "name": "Imperial army and Catholic League",
      "who": "The Emperor's army under Wallenstein and Pappenheim, Bavaria and the Catholic League, and Croat light horse.",
-     "armour": "Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured."
+     "armour": "Cuirassiers in three-quarter plate, harquebusiers in buff coat and breastplate, pikemen in corslets; Croats and musketeers unarmoured.",
+     "look": {
+      "colour": "#9a8a6a",
+      "trousers": "#4a4038",
+      "hat": "broad_hat",
+      "beard": "moustache"
+     }
     }
    ],
    "examples": [
@@ -16874,7 +16950,10 @@
      "side": "Sweden and Protestant allies",
      "kit": "none",
      "weapon": "matchlock_musket",
-     "notes": "Matchlock and bandolier; clubs the musket in the press."
+     "notes": "Matchlock and bandolier; clubs the musket in the press.",
+     "look": {
+      "hat": "broad_hat"
+     }
     },
     {
      "name": "Swedish pikeman",
@@ -16924,27 +17003,53 @@
     {
      "name": "Continental Army and militia",
      "who": "Continental regulars, state militia, riflemen, light dragoons, and the Continental Navy and privateers.",
-     "armour": "None. Officers wore a small gorget as a mark of rank; light dragoons wore leather helmets."
+     "armour": "None. Officers wore a small gorget as a mark of rank; light dragoons wore leather helmets.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#e8e4d8",
+      "hat": "tricorne"
+     }
     },
     {
      "name": "British Army and Loyalists",
      "who": "British regulars and marines, Loyalist provincial regiments and rangers, and the Royal Navy.",
-     "armour": "None. Grenadiers' bearskin caps and light infantry caps gave no protection; light dragoons wore crested leather helmets."
+     "armour": "None. Grenadiers' bearskin caps and light infantry caps gave no protection; light dragoons wore crested leather helmets.",
+     "look": {
+      "colour": "#b3262b",
+      "trousers": "#e8e4d8",
+      "hat": "tricorne"
+     }
     },
     {
      "name": "German auxiliaries",
      "who": "Regiments hired from Hesse-Kassel, Brunswick and other German states ('Hessians'), including J\u00e4ger riflemen.",
-     "armour": "None; grenadiers wore brass-fronted mitre caps, which were not armour."
+     "armour": "None; grenadiers wore brass-fronted mitre caps, which were not armour.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#e3d9a8",
+      "hat": "tricorne",
+      "beard": "moustache"
+     }
     },
     {
      "name": "French forces",
      "who": "Rochambeau's expeditionary army and the French navy, from 1778; decisive at Yorktown in 1781.",
-     "armour": "None."
+     "armour": "None.",
+     "look": {
+      "colour": "#e8e4d8",
+      "trousers": "#e8e4d8",
+      "hat": "tricorne"
+     }
     },
     {
      "name": "Native nations",
      "who": "Warriors on both sides: most of the Mohawk, Seneca and Cherokee fought with Britain; the Oneida and Tuscarora with the Americans.",
-     "armour": "None. Musket, tomahawk and knife; raids and ambushes on the frontier."
+     "armour": "None. Musket, tomahawk and knife; raids and ambushes on the frontier.",
+     "look": {
+      "colour": "#9a7347",
+      "trousers": "#7d5530",
+      "hat": "feather"
+     }
     }
    ],
    "examples": [
@@ -16960,7 +17065,12 @@
      "side": "Continental Army and militia",
      "kit": "none",
      "weapon": "rifle_flintlock",
-     "notes": "Long rifle, slow to load, deadly at range; no bayonet."
+     "notes": "Long rifle, slow to load, deadly at range; no bayonet.",
+     "look": {
+      "colour": "#a99b72",
+      "trousers": "#a99b72",
+      "hat": "round_hat"
+     }
     },
     {
      "name": "Continental light dragoon",
@@ -16974,14 +17084,20 @@
      "side": "British Army and Loyalists",
      "kit": "none",
      "weapon": "bayonet",
-     "notes": "The bayonet charge was the British infantry's favoured tactic."
+     "notes": "The bayonet charge was the British infantry's favoured tactic.",
+     "look": {
+      "hat": "bearskin"
+     }
     },
     {
      "name": "Loyalist ranger",
      "side": "British Army and Loyalists",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Frontier raids alongside Native allies."
+     "notes": "Frontier raids alongside Native allies.",
+     "look": {
+      "colour": "#3f5a32"
+     }
     },
     {
      "name": "British light dragoon",
@@ -16995,14 +17111,21 @@
      "side": "German auxiliaries",
      "kit": "none",
      "weapon": "rifle_flintlock",
-     "notes": "German hunters' rifle, short and accurate."
+     "notes": "German hunters' rifle, short and accurate.",
+     "look": {
+      "colour": "#3f5a32",
+      "trousers": "#3f5a32"
+     }
     },
     {
      "name": "Hessian musketeer",
      "side": "German auxiliaries",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Line infantry; musket and bayonet."
+     "notes": "Line infantry; musket and bayonet.",
+     "look": {
+      "hat": "mitre"
+     }
     },
     {
      "name": "French fusilier",
@@ -17039,27 +17162,53 @@
     {
      "name": "French Empire and allies",
      "who": "French line and light infantry, cavalry and artillery, with Polish, German and Italian allies.",
-     "armour": "Cuirassiers and carabiniers wore steel breastplates and backplates and helmets; dragoons wore brass helmets; infantry wore none."
+     "armour": "Cuirassiers and carabiniers wore steel breastplates and backplates and helmets; dragoons wore brass helmets; infantry wore none.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#e8e4d8",
+      "hat": "shako",
+      "beard": "moustache"
+     }
     },
     {
      "name": "Britain and Peninsular allies",
      "who": "Wellington's British and Portuguese army (including the 95th Rifles), Spanish regular armies and guerrillas.",
-     "armour": "None for infantry; heavy and light dragoons wore helmets. British Household Cavalry wore cuirasses only after 1815."
+     "armour": "None for infantry; heavy and light dragoons wore helmets. British Household Cavalry wore cuirasses only after 1815.",
+     "look": {
+      "colour": "#b3262b",
+      "trousers": "#6b6f75",
+      "hat": "shako"
+     }
     },
     {
      "name": "United States (1812-15)",
      "who": "US regulars, state militia (including Kentucky riflemen), US Navy and Marines.",
-     "armour": "None; some light dragoons wore leather helmets."
+     "armour": "None; some light dragoons wore leather helmets.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#e8e4d8",
+      "hat": "shako"
+     }
     },
     {
      "name": "British North America (1812-15)",
      "who": "British regulars, Canadian fencibles and militia, the Royal Navy, and the Provincial Marine.",
-     "armour": "None."
+     "armour": "None.",
+     "look": {
+      "colour": "#b3262b",
+      "trousers": "#6b6f75",
+      "hat": "shako"
+     }
     },
     {
      "name": "Tecumseh's confederacy",
      "who": "Shawnee, Potawatomi, Kickapoo and other nations under Tecumseh, allied with Britain until his death at the Thames (1813).",
-     "armour": "None. Musket, rifle, tomahawk and war club."
+     "armour": "None. Musket, rifle, tomahawk and war club.",
+     "look": {
+      "colour": "#9a7347",
+      "trousers": "#7d5530",
+      "hat": "feather"
+     }
     }
    ],
    "examples": [
@@ -17082,7 +17231,11 @@
      "side": "French Empire and allies",
      "kit": "none",
      "weapon": "lance",
-     "notes": "Vistula Legion lancers, feared at Albuera (1811)."
+     "notes": "Vistula Legion lancers, feared at Albuera (1811).",
+     "look": {
+      "hat": "czapka",
+      "trousers": "#2f3f6e"
+     }
     },
     {
      "name": "British redcoat",
@@ -17096,35 +17249,57 @@
      "side": "Britain and Peninsular allies",
      "kit": "none",
      "weapon": "rifle_flintlock",
-     "notes": "Baker rifle; skirmisher and sniper."
+     "notes": "Baker rifle; skirmisher and sniper.",
+     "look": {
+      "colour": "#2f4a2a",
+      "trousers": "#2f4a2a"
+     }
     },
     {
      "name": "British heavy dragoon",
      "side": "Britain and Peninsular allies",
      "kit": "dragoon_helmet",
      "weapon": "saber",
-     "notes": "1796 heavy cavalry sword."
+     "notes": "1796 heavy cavalry sword.",
+     "look": {
+      "trousers": "#e8e4d8"
+     }
     },
     {
      "name": "Spanish guerrilla",
      "side": "Britain and Peninsular allies",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Ambushes of convoys and couriers."
+     "notes": "Ambushes of convoys and couriers.",
+     "look": {
+      "colour": "#7d5530",
+      "trousers": "#4a4038",
+      "hat": "broad_hat",
+      "beard": "beard"
+     }
     },
     {
      "name": "US regular, 1814",
      "side": "United States (1812-15)",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Chippawa and Lundy's Lane; Springfield musket."
+     "notes": "Chippawa and Lundy's Lane; Springfield musket.",
+     "look": {
+      "colour": "#8a8f96",
+      "trousers": "#8a8f96"
+     }
     },
     {
      "name": "Kentucky militia rifleman",
      "side": "United States (1812-15)",
      "kit": "none",
      "weapon": "rifle_flintlock",
-     "notes": "River Raisin, the Thames, New Orleans."
+     "notes": "River Raisin, the Thames, New Orleans.",
+     "look": {
+      "colour": "#a99b72",
+      "trousers": "#7d5530",
+      "hat": "round_hat"
+     }
     },
     {
      "name": "British regular, 1814",
@@ -17138,7 +17313,11 @@
      "side": "British North America (1812-15)",
      "kit": "none",
      "weapon": "musket_smoothbore",
-     "notes": "Sedentary or embodied militia."
+     "notes": "Sedentary or embodied militia.",
+     "look": {
+      "colour": "#4a4f55",
+      "hat": "round_hat"
+     }
     },
     {
      "name": "Shawnee warrior",
@@ -17160,12 +17339,23 @@
     {
      "name": "Union",
      "who": "US Regular Army and state volunteer regiments.",
-     "armour": "None issued. In 1862 private 'bullet-proof vests' (Atwater, G&D Cook) sold by the thousand; at about 8 lb most were thrown away on the march, and wearing one was thought unmanly."
+     "armour": "None issued. In 1862 private 'bullet-proof vests' (Atwater, G&D Cook) sold by the thousand; at about 8 lb most were thrown away on the march, and wearing one was thought unmanly.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#6f88b0",
+      "hat": "kepi"
+     }
     },
     {
      "name": "Confederacy",
      "who": "Confederate States Army and state troops.",
-     "armour": "None issued; private vests were rarer still."
+     "armour": "None issued; private vests were rarer still.",
+     "look": {
+      "colour": "#8a8f96",
+      "trousers": "#6b6f75",
+      "hat": "slouch",
+      "beard": "beard"
+     }
     }
    ],
    "examples": [
@@ -17188,7 +17378,10 @@
      "side": "Confederacy",
      "kit": "none",
      "weapon": "revolver",
-     "notes": "Revolver and sabre."
+     "notes": "Revolver and sabre.",
+     "look": {
+      "hat": "slouch"
+     }
     },
     {
      "name": "Confederate infantryman",
@@ -17202,7 +17395,10 @@
      "side": "Union",
      "kit": "none",
      "weapon": "saber",
-     "notes": "Sabre charge; carbine and revolver as well."
+     "notes": "Sabre charge; carbine and revolver as well.",
+     "look": {
+      "trousers": "#6f88b0"
+     }
     }
    ],
    "sources": [
@@ -17216,12 +17412,23 @@
     {
      "name": "US Army",
      "who": "Regular cavalry and infantry posted to frontier forts, with Indian scouts and civilian herders, teamsters and settlers.",
-     "armour": "None. Wool uniform; the cavalry fought mounted or dismounted with carbine, revolver and sabre."
+     "armour": "None. Wool uniform; the cavalry fought mounted or dismounted with carbine, revolver and sabre.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#6f88b0",
+      "hat": "slouch",
+      "beard": "moustache"
+     }
     },
     {
      "name": "Plains and Southwest nations",
      "who": "Lakota, Cheyenne, Arapaho, Kiowa, Comanche, Apache, Navajo and Lipan warriors, in raiding and war parties.",
-     "armour": "None worn. Many warriors carried a round shield of thick rawhide (buffalo hide on the Plains), which could turn an arrow or a glancing ball."
+     "armour": "None worn. Many warriors carried a round shield of thick rawhide (buffalo hide on the Plains), which could turn an arrow or a glancing ball.",
+     "look": {
+      "colour": "#9a7347",
+      "trousers": "#7d5530",
+      "hat": "feather"
+     }
     }
    ],
    "examples": [
@@ -17244,7 +17451,12 @@
      "side": "Plains and Southwest nations",
      "kit": "none",
      "weapon": "bow",
-     "notes": "Ambush from cover; hoop-iron arrowheads."
+     "notes": "Ambush from cover; hoop-iron arrowheads.",
+     "look": {
+      "colour": "#e8e4d8",
+      "trousers": "#9a7347",
+      "hat": "headband"
+     }
     },
     {
      "name": "US cavalry trooper",
@@ -17267,7 +17479,12 @@
      "side": "US Army",
      "kit": "none",
      "weapon": "bow",
-     "notes": "Several scouts in the reports were themselves hit by arrows."
+     "notes": "Several scouts in the reports were themselves hit by arrows.",
+     "look": {
+      "colour": "#2f3f6e",
+      "trousers": "#7d5530",
+      "hat": "headband"
+     }
     }
    ],
    "sources": [
@@ -17282,12 +17499,24 @@
     {
      "name": "Allies",
      "who": "French, British Empire, Russian, Italian and American armies.",
-     "armour": "Cloth caps and kepis in 1914. Steel helmets from 1915-16: the French Adrian, then the British Brodie. A little private-purchase body armour; Italian assault engineers used heavy plate."
+     "armour": "Cloth caps and kepis in 1914. Steel helmets from 1915-16: the French Adrian, then the British Brodie. A little private-purchase body armour; Italian assault engineers used heavy plate.",
+     "look": {
+      "colour": "#7a6e48",
+      "hat": "field_cap",
+      "helmet": "brodie",
+      "beard": "moustache"
+     }
     },
     {
      "name": "Central Powers",
      "who": "German, Austro-Hungarian, Ottoman and Bulgarian armies.",
-     "armour": "German Stahlhelm from 1916. Heavy Sappenpanzer breastplates for sentries and machine gunners in fixed positions."
+     "armour": "German Stahlhelm from 1916. Heavy Sappenpanzer breastplates for sentries and machine gunners in fixed positions.",
+     "look": {
+      "colour": "#6f7569",
+      "hat": "field_cap",
+      "helmet": "stahlhelm",
+      "beard": "moustache"
+     }
     }
    ],
    "examples": [
@@ -17296,7 +17525,12 @@
      "side": "Allies",
      "kit": "none",
      "weapon": "rifle_service",
-     "notes": "Kepi, no helmet yet."
+     "notes": "Kepi, no helmet yet.",
+     "look": {
+      "colour": "#3f4f7a",
+      "trousers": "#a3262b",
+      "hat": "kepi"
+     }
     },
     {
      "name": "British infantryman, 1916",
@@ -17324,21 +17558,32 @@
      "side": "Allies",
      "kit": "none",
      "weapon": "bayonet",
-     "notes": "Most Russian soldiers had no steel helmet; the army set great store by the bayonet."
+     "notes": "Most Russian soldiers had no steel helmet; the army set great store by the bayonet.",
+     "look": {
+      "colour": "#8a8458",
+      "hat": "field_cap"
+     }
     },
     {
      "name": "Italian Ardito, 1918",
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "hand_grenade",
-     "notes": "Assault trooper: Adrian helmet, grenades and dagger."
+     "notes": "Assault trooper: Adrian helmet, grenades and dagger.",
+     "look": {
+      "colour": "#6f7560",
+      "helmet": "adrian"
+     }
     },
     {
      "name": "American doughboy, 1918",
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "M1917 (Brodie-pattern) helmet, Springfield rifle."
+     "notes": "M1917 (Brodie-pattern) helmet, Springfield rifle.",
+     "look": {
+      "colour": "#6f6a48"
+     }
     },
     {
      "name": "German stormtrooper, 1918",
@@ -17352,21 +17597,32 @@
      "side": "Central Powers",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "Steel helmet from 1916-17; Mannlicher rifle."
+     "notes": "Steel helmet from 1916-17; Mannlicher rifle.",
+     "look": {
+      "colour": "#7f8a8c"
+     }
     },
     {
      "name": "Ottoman infantryman, Gallipoli",
      "side": "Central Powers",
      "kit": "none",
      "weapon": "rifle_service",
-     "notes": "Cloth headgear, no steel helmet; Mauser rifle."
+     "notes": "Cloth headgear, no steel helmet; Mauser rifle.",
+     "look": {
+      "colour": "#8a7a52",
+      "hat": "kabalak"
+     }
     },
     {
      "name": "Bulgarian infantryman",
      "side": "Central Powers",
      "kit": "none",
      "weapon": "rifle_service",
-     "notes": "Mostly without steel helmets; Mannlicher rifle."
+     "notes": "Mostly without steel helmets; Mannlicher rifle.",
+     "look": {
+      "colour": "#6f6a50",
+      "hat": "field_cap"
+     }
     }
    ],
    "sources": [
@@ -17380,12 +17636,20 @@
     {
      "name": "Allies",
      "who": "US Army and Marine Corps; British and Commonwealth armies in Italy; the Australian army, which took over Bougainville from late 1944.",
-     "armour": "Steel helmets (M1, Brodie) for all infantry, no body armour. Bomber crews wore steel-plate flak vests from 1943."
+     "armour": "Steel helmets (M1, Brodie) for all infantry, no body armour. Bomber crews wore steel-plate flak vests from 1943.",
+     "look": {
+      "colour": "#5d6449",
+      "helmet": "m1"
+     }
     },
     {
      "name": "Axis",
      "who": "Imperial Japanese Army; German Wehrmacht.",
-     "armour": "Steel helmets (Japanese Type 90, German Stahlhelm); no infantry body armour."
+     "armour": "Steel helmets (Japanese Type 90, German Stahlhelm); no infantry body armour.",
+     "look": {
+      "colour": "#6f7569",
+      "helmet": "stahlhelm"
+     }
     }
    ],
    "examples": [
@@ -17401,7 +17665,11 @@
      "side": "Axis",
      "kit": "ww2_rifleman",
      "weapon": "hand_grenade",
-     "notes": "Type 90 helmet; grenades and knee mortars at close range."
+     "notes": "Type 90 helmet; grenades and knee mortars at close range.",
+     "look": {
+      "colour": "#7d7448",
+      "helmet": "japanese"
+     }
     },
     {
      "name": "German MG gunner, Italy",
@@ -17422,21 +17690,32 @@
      "side": "Allies",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "Brodie helmet, Lee-Enfield; Eighth Army."
+     "notes": "Brodie helmet, Lee-Enfield; Eighth Army.",
+     "look": {
+      "colour": "#7a6e48",
+      "helmet": "brodie"
+     }
     },
     {
      "name": "Australian infantryman, Bougainville 1945",
      "side": "Allies",
      "kit": "none",
      "weapon": "pistol_smg",
-     "notes": "Often a slouch hat rather than a helmet in the jungle; Owen submachine gun."
+     "notes": "Often a slouch hat rather than a helmet in the jungle; Owen submachine gun.",
+     "look": {
+      "colour": "#5d6449",
+      "hat": "slouch"
+     }
     },
     {
      "name": "German paratrooper, Cassino",
      "side": "Axis",
      "kit": "ww2_rifleman",
      "weapon": "pistol_smg",
-     "notes": "Rimless paratrooper helmet, MP 40; fought as infantry."
+     "notes": "Rimless paratrooper helmet, MP 40; fought as infantry.",
+     "look": {
+      "helmet": "fj"
+     }
     }
    ],
    "sources": [
@@ -17450,12 +17729,20 @@
     {
      "name": "UN Command",
      "who": "US, South Korean, British Commonwealth and other UN forces.",
-     "armour": "Steel helmets. The US Marines fielded the M1951 vest with Doron plates; the Army's nylon M-1952 reached front-line troops in late 1952, in small numbers."
+     "armour": "Steel helmets. The US Marines fielded the M1951 vest with Doron plates; the Army's nylon M-1952 reached front-line troops in late 1952, in small numbers.",
+     "look": {
+      "colour": "#5d6449",
+      "helmet": "m1"
+     }
     },
     {
      "name": "North Korea and China",
      "who": "Korean People's Army; Chinese People's Volunteer Army.",
-     "armour": "No body armour; many Chinese soldiers had no steel helmet."
+     "armour": "No body armour; many Chinese soldiers had no steel helmet.",
+     "look": {
+      "colour": "#7a7448",
+      "hat": "field_cap"
+     }
     }
    ],
    "examples": [
@@ -17485,7 +17772,11 @@
      "side": "UN Command",
      "kit": "ww2_rifleman",
      "weapon": "rifle_service",
-     "notes": "Commonwealth brigade: steel helmet, Lee-Enfield."
+     "notes": "Commonwealth brigade: steel helmet, Lee-Enfield.",
+     "look": {
+      "colour": "#7a6e48",
+      "helmet": "brodie"
+     }
     },
     {
      "name": "North Korean infantryman, 1950",
@@ -17499,7 +17790,11 @@
      "side": "North Korea and China",
      "kit": "none",
      "weapon": "pistol_smg",
-     "notes": "Quilted uniform, PPSh submachine gun, grenades."
+     "notes": "Quilted uniform, PPSh submachine gun, grenades.",
+     "look": {
+      "colour": "#8a8a6a",
+      "hat": "winter_cap"
+     }
     }
    ],
    "sources": [
@@ -17513,12 +17808,21 @@
     {
      "name": "US and allies",
      "who": "South Vietnamese army (ARVN), US Army and Marine Corps, and Australian, New Zealand, South Korean and Thai contingents.",
-     "armour": "M1 steel helmet; Army M69 nylon vest, Marine M1955 vest with Doron plates. Both stopped fragments, not AK rounds, and in the heat they were often left behind on patrol."
+     "armour": "M1 steel helmet; Army M69 nylon vest, Marine M1955 vest with Doron plates. Both stopped fragments, not AK rounds, and in the heat they were often left behind on patrol.",
+     "look": {
+      "colour": "#4f5a3a",
+      "helmet": "m1",
+      "beard": "stubble"
+     }
     },
     {
      "name": "PAVN and Viet Cong",
      "who": "People's Army of Vietnam regulars; Viet Cong guerrillas.",
-     "armour": "None. The PAVN pith helmet gave no ballistic protection. They relied on concealment, mines and booby traps."
+     "armour": "None. The PAVN pith helmet gave no ballistic protection. They relied on concealment, mines and booby traps.",
+     "look": {
+      "colour": "#5f6b3a",
+      "hat": "pith"
+     }
     }
    ],
    "examples": [
@@ -17548,7 +17852,11 @@
      "side": "US and allies",
      "kit": "none",
      "weapon": "rifle_assault",
-     "notes": "Bush hat, no body armour; L1A1 SLR."
+     "notes": "Bush hat, no body armour; L1A1 SLR.",
+     "look": {
+      "colour": "#4f5a3a",
+      "hat": "boonie"
+     }
     },
     {
      "name": "South Korean marine",
@@ -17569,7 +17877,12 @@
      "side": "PAVN and Viet Cong",
      "kit": "none",
      "weapon": "mine_ied",
-     "notes": "Booby traps, mines and punji pits."
+     "notes": "Booby traps, mines and punji pits.",
+     "look": {
+      "colour": "#2b2b2b",
+      "trousers": "#2b2b2b",
+      "hat": "none"
+     }
     }
    ],
    "sources": [
@@ -17584,27 +17897,44 @@
     {
      "name": "Northern Ireland",
      "who": "British Army and RUC; Provisional IRA and other paramilitaries.",
-     "armour": "British patrols wore helmets and soft body armour; the IRA wore none and used rifles, snipers and bombs."
+     "armour": "British patrols wore helmets and soft body armour; the IRA wore none and used rifles, snipers and bombs.",
+     "look": {
+      "colour": "#6b6a4a"
+     }
     },
     {
      "name": "Falklands 1982",
      "who": "British paratroopers, Royal Marines and infantry; Argentine conscripts and marines.",
-     "armour": "Steel helmets on both sides; little body armour."
+     "armour": "Steel helmets on both sides; little body armour.",
+     "look": {
+      "colour": "#6b6a4a",
+      "helmet": "brodie"
+     }
     },
     {
      "name": "Gulf War 1991",
      "who": "US-led coalition; Iraqi army.",
-     "armour": "US troops in PASGT Kevlar helmets and vests (fragments and pistol rounds); Iraqi troops in steel helmets."
+     "armour": "US troops in PASGT Kevlar helmets and vests (fragments and pistol rounds); Iraqi troops in steel helmets.",
+     "look": {
+      "colour": "#c2ab7a"
+     }
     },
     {
      "name": "Somalia 1993",
      "who": "US Task Force Ranger; Somali National Alliance militia.",
-     "armour": "Rangers wore IIIA soft vests with a single ceramic front plate and no back plate; militia were unarmoured, with AKs and RPGs."
+     "armour": "Rangers wore IIIA soft vests with a single ceramic front plate and no back plate; militia were unarmoured, with AKs and RPGs.",
+     "look": {
+      "colour": "#a99b72"
+     }
     },
     {
      "name": "Chechnya",
      "who": "Russian army and interior troops; Chechen separatist fighters.",
-     "armour": "Russian helmets and body armour, unevenly issued; Chechen fighters largely unarmoured."
+     "armour": "Russian helmets and body armour, unevenly issued; Chechen fighters largely unarmoured.",
+     "look": {
+      "colour": "#5f6b3a",
+      "helmet": "soviet"
+     }
     }
    ],
    "examples": [
@@ -17613,14 +17943,23 @@
      "side": "Northern Ireland",
      "kit": "pasgt",
      "weapon": "rifle_assault",
-     "notes": "Soft body armour and helmet (PASGT used as the nearest kit)."
+     "notes": "Soft body armour and helmet (PASGT used as the nearest kit).",
+     "look": {
+      "helmet": "pasgt",
+      "hat": "beret"
+     }
     },
     {
      "name": "IRA sniper",
      "side": "Northern Ireland",
      "kit": "none",
      "weapon": "rifle_assault",
-     "notes": "Armalite, no armour."
+     "notes": "Armalite, no armour.",
+     "look": {
+      "colour": "#3a3a3a",
+      "trousers": "#2f3540",
+      "hat": "balaclava"
+     }
     },
     {
      "name": "British Guardsman, Tumbledown",
@@ -17634,14 +17973,21 @@
      "side": "Falklands 1982",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "Steel helmet, FN FAL."
+     "notes": "Steel helmet, FN FAL.",
+     "look": {
+      "colour": "#5d6449",
+      "helmet": "m1"
+     }
     },
     {
      "name": "US soldier, Desert Storm",
      "side": "Gulf War 1991",
      "kit": "pasgt",
      "weapon": "rifle_assault",
-     "notes": "PASGT helmet and vest, M16."
+     "notes": "PASGT helmet and vest, M16.",
+     "look": {
+      "helmet": "pasgt"
+     }
     },
     {
      "name": "British soldier, Desert Storm",
@@ -17655,7 +18001,11 @@
      "side": "Gulf War 1991",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "Steel helmet, AK-47."
+     "notes": "Steel helmet, AK-47.",
+     "look": {
+      "colour": "#6b6a4a",
+      "helmet": "m1"
+     }
     },
     {
      "name": "US Ranger, Mogadishu",
@@ -17669,21 +18019,34 @@
      "side": "Somalia 1993",
      "kit": "none",
      "weapon": "rpg",
-     "notes": "No armour; AK-47 and RPG-7."
+     "notes": "No armour; AK-47 and RPG-7.",
+     "look": {
+      "colour": "#d8d0b8",
+      "trousers": "#4a4f55",
+      "hat": "none"
+     }
     },
     {
      "name": "Russian conscript, Grozny 1995",
      "side": "Chechnya",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "Steel helmet; body armour often missing."
+     "notes": "Steel helmet; body armour often missing.",
+     "look": {
+      "helmet": "soviet"
+     }
     },
     {
      "name": "Chechen fighter, Grozny",
      "side": "Chechnya",
      "kit": "none",
      "weapon": "rpg",
-     "notes": "Urban ambush teams."
+     "notes": "Urban ambush teams.",
+     "look": {
+      "colour": "#3f4a3a",
+      "hat": "none",
+      "beard": "beard"
+     }
     }
    ],
    "sources": [
@@ -17698,17 +18061,30 @@
     {
      "name": "Coalition",
      "who": "US, British and other allied forces; the Afghan and new Iraqi security forces they trained.",
-     "armour": "Interceptor vests with SAPI rifle plates and Kevlar helmets from the start of the Iraq war; ESAPI plates against armour-piercing rounds by the mid-2000s; lighter plate carriers later, especially in Afghanistan."
+     "armour": "Interceptor vests with SAPI rifle plates and Kevlar helmets from the start of the Iraq war; ESAPI plates against armour-piercing rounds by the mid-2000s; lighter plate carriers later, especially in Afghanistan.",
+     "look": {
+      "colour": "#a69a74",
+      "beard": "stubble"
+     }
     },
     {
      "name": "Iraqi army, 2003",
      "who": "Iraqi regular army and Republican Guard during the invasion.",
-     "armour": "Steel helmets for some; little body armour."
+     "armour": "Steel helmets for some; little body armour.",
+     "look": {
+      "colour": "#6b6a4a"
+     }
     },
     {
      "name": "Insurgents and Taliban",
      "who": "Iraqi insurgents and militias; Taliban fighters.",
-     "armour": "Largely unarmoured. IEDs, RPGs, rifles and mortars."
+     "armour": "Largely unarmoured. IEDs, RPGs, rifles and mortars.",
+     "look": {
+      "colour": "#d8d0b8",
+      "trousers": "#cfc6ae",
+      "hat": "turban",
+      "beard": "beard"
+     }
     }
    ],
    "examples": [
@@ -17731,28 +18107,41 @@
      "side": "Coalition",
      "kit": "interceptor",
      "weapon": "rifle_assault",
-     "notes": "Osprey vest with plates (Interceptor used as the nearest kit)."
+     "notes": "Osprey vest with plates (Interceptor used as the nearest kit).",
+     "look": {
+      "colour": "#a39573"
+     }
     },
     {
      "name": "Afghan National Army soldier",
      "side": "Coalition",
      "kit": "pasgt",
      "weapon": "rifle_assault",
-     "notes": "Helmet and vest when issued (PASGT used as the nearest kit)."
+     "notes": "Helmet and vest when issued (PASGT used as the nearest kit).",
+     "look": {
+      "colour": "#6b6a4a",
+      "helmet": "pasgt"
+     }
     },
     {
      "name": "Iraqi soldier, 2003",
      "side": "Iraqi army, 2003",
      "kit": "ww2_rifleman",
      "weapon": "rifle_assault",
-     "notes": "Steel helmet, AK-47."
+     "notes": "Steel helmet, AK-47.",
+     "look": {
+      "helmet": "m1"
+     }
     },
     {
      "name": "Insurgent, Iraq",
      "side": "Insurgents and Taliban",
      "kit": "none",
      "weapon": "mine_ied",
-     "notes": "Roadside bombs."
+     "notes": "Roadside bombs.",
+     "look": {
+      "hat": "shemagh"
+     }
     },
     {
      "name": "Taliban fighter",
@@ -17776,21 +18165,33 @@
      "side": "-",
      "kit": "plate_carrier",
      "weapon": "rifle_assault",
-     "notes": "Plate carrier and helmet."
+     "notes": "Plate carrier and helmet.",
+     "look": {
+      "colour": "#a69a74"
+     }
     },
     {
      "name": "Police officer",
      "side": "-",
      "kit": "police_iiia",
      "weapon": "pistol_smg",
-     "notes": "Concealable IIIA vest."
+     "notes": "Concealable IIIA vest.",
+     "look": {
+      "colour": "#1d2433",
+      "trousers": "#1d2433",
+      "hat": "police_cap"
+     }
     },
     {
      "name": "Civilian",
      "side": "-",
      "kit": "none",
      "weapon": "pistol_smg",
-     "notes": "No armour."
+     "notes": "No armour.",
+     "look": {
+      "colour": "#5a6b7a",
+      "trousers": "#3a4250"
+     }
     }
    ],
    "comparison": {
@@ -17856,12 +18257,20 @@
     {
      "name": "Attacker",
      "who": "Single assailant with a knife.",
-     "armour": "None."
+     "armour": "None.",
+     "look": {
+      "colour": "#3a3a3a",
+      "trousers": "#2f3540"
+     }
     },
     {
      "name": "Victim",
      "who": "Usually unarmoured civilians; 41% had defensive wounds on the hands and arms.",
-     "armour": "None. Soft ballistic vests give little protection against a stab; plates stop one."
+     "armour": "None. Soft ballistic vests give little protection against a stab; plates stop one.",
+     "look": {
+      "colour": "#5a6b7a",
+      "trousers": "#3a4250"
+     }
     }
    ],
    "examples": [
@@ -17877,14 +18286,22 @@
      "side": "Victim",
      "kit": "police_iiia",
      "weapon": "dagger",
-     "notes": "IIIA vest: stops bullets, not knives."
+     "notes": "IIIA vest: stops bullets, not knives.",
+     "look": {
+      "colour": "#1d2433",
+      "trousers": "#1d2433",
+      "hat": "police_cap"
+     }
     },
     {
      "name": "Soldier in plates",
      "side": "Victim",
      "kit": "plate_carrier",
      "weapon": "bayonet",
-     "notes": "Plates stop most stabs to the chest."
+     "notes": "Plates stop most stabs to the chest.",
+     "look": {
+      "colour": "#a69a74"
+     }
     },
     {
      "name": "Civilian",
@@ -17905,7 +18322,11 @@
     {
      "name": "Fighters",
      "who": "Professional MMA fighters.",
-     "armour": "Gloves, mouthguard and groin cup only."
+     "armour": "Gloves, mouthguard and groin cup only.",
+     "look": {
+      "colour": "#2b2b2b",
+      "coat": "skin"
+     }
     }
    ],
    "examples": [
@@ -17921,7 +18342,10 @@
      "side": "Fighters",
      "kit": "none",
      "weapon": "kick",
-     "notes": "Low kicks to the lead leg."
+     "notes": "Low kicks to the lead leg.",
+     "look": {
+      "trousers": "#8e1b2c"
+     }
     }
    ],
    "sources": [

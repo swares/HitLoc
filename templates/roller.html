@@ -51,7 +51,7 @@ select,input[type=number],input[type=text]{width:100%;background:var(--bg);borde
 .sides li{border-left:3px solid var(--steel);padding-left:10px;font-size:.9rem}
 .sides b{font-family:var(--display);font-size:1rem}
 .examples{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.examples li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
+.examples li{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;border-top:1px dashed var(--line);padding-top:8px;font-size:.88rem}
 .examples .meta{color:var(--muted);font-size:.8rem}
 .wears{font-size:.8rem;color:var(--muted)}
 .roles{margin:0;font-size:.85rem;border-left:3px solid var(--line);padding:4px 0 4px 10px}
@@ -98,6 +98,9 @@ button.small{font-size:.8rem;padding:3px 8px}
 .char{border:1px solid var(--line);border-radius:4px;padding:10px;display:flex;flex-direction:column;gap:8px;background:var(--bg)}
 .char.active{border-color:var(--blood);box-shadow:inset 3px 0 0 var(--blood)}
 .charhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.charid{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:center}
+.charid svg,.exfig svg{display:block}
+.exfig{display:block;line-height:0}
 .charhead strong{font:700 1.05rem var(--display);flex:1;min-width:8em}
 .bar{height:10px;background:var(--line);border-radius:2px;overflow:hidden}
 .bar>i{display:block;height:100%;background:var(--blood);transition:width .3s}
@@ -239,6 +242,7 @@ tr.hitrow td:first-child{box-shadow:inset 3px 0 0 var(--blood)}
   </section>
 </div>
 
+<script>/*__FIGURE_JS__*/</script>
 <script>
 const DATA = /*__HITLOC_DATA__*/null;
 const $ = s => document.querySelector(s);
@@ -613,7 +617,7 @@ function renderHistory(){
       </div>
       <div style="display:flex;flex-direction:column;gap:8px">
         <div class="toolbar" style="justify-content:space-between"><strong>Example combatants</strong>${ex.length ? `<button type="button" class="small" data-ex="all">Add all to casualties</button>` : ""}</div>
-        ${ex.length ? `<ul class="examples">${ex.map((e, i) => `<li><span><b>${e.name}</b> <span class="meta">${e.side}</span><br>
+        ${ex.length ? `<ul class="examples">${ex.map((e, i) => `<li><span class="exfig">${exFigure(c, e, 64)}</span><span><b>${e.name}</b> <span class="meta">${e.side}</span><br>
           <span class="meta">Wears: ${kitName(e.kit)} · Fights with: ${DATA.weapons[e.weapon].name}${e.notes ? " · " + e.notes : ""}</span></span>
           <button type="button" class="small" data-ex="${i}">Add</button></li>`).join("")}</ul>
           <p class="muted" style="margin:0;font-size:.8rem">Selecting a casualty puts their armour on as the target armour (where the table allows armour).</p>`
@@ -627,7 +631,8 @@ $("#xera").addEventListener("click", e => {
 $("#hist").addEventListener("click", e => {
   const b = e.target.closest("button[data-ex]"); if (!b) return;
   const ex = DATA.conflicts[DATA.tables[S.table].battle].examples;
-  (b.dataset.ex === "all" ? ex : [ex[+b.dataset.ex]]).forEach(x => S.chars.push(newChar(x.name, x.kit, x.weapon)));
+  const conf = DATA.conflicts[DATA.tables[S.table].battle];
+  (b.dataset.ex === "all" ? ex : [ex[+b.dataset.ex]]).forEach(x => S.chars.push(newChar(x.name, x.kit, x.weapon, FIG.lookFor(conf, x))));
   selectChar(S.chars.length - 1);
 });
 
@@ -667,7 +672,11 @@ function syncArmor(){
 
 /* ---------- tracker ---------- */
 const bleedPerRound = b => b === 3 ? 3 : b === 2 ? 1 : b === 1 ? 0.1 : 0;
-function newChar(name, kit = "none", weapon = null){ return { id: S.seq++, name, kit, weapon, blood: TRK.blood_pool, rounds: 0, wounds: [] } }
+function newChar(name, kit = "none", weapon = null, look = {}){ return { id: S.seq++, name, kit, weapon, look, blood: TRK.blood_pool, rounds: 0, wounds: [] } }
+// Combatant figures (templates/figure.js): armour from the kit, weapon icon, side colours.
+const exFigure = (conflict, e, size) => FIG.svg({ kit: KITS[e.kit], weapon: DATA.weapons[e.weapon], look: FIG.lookFor(conflict, e), size, title: e.name });
+const charFigure = (c, size) => FIG.svg({ kit: KITS[c.kit || "none"], weapon: c.weapon ? DATA.weapons[c.weapon] : null, look: c.look || {}, size, title: c.name,
+  wounds: c.wounds.filter(w => !w.stopped).map(w => ({ loc: w.loc, sev: w.sev })) });
 function selectChar(i){            // make this casualty the defender
   S.active = i;
   if (S.attacker === i) S.attacker = -1;
@@ -775,8 +784,9 @@ function renderChars(){
         <button class="small" data-act="select" aria-pressed="${isDef}">${isDef ? "Defending" : "Defender"}</button>
         <button class="small" data-act="hand" title="Weapon hand">${(c.hand || "R") === "R" ? "Right-handed" : "Left-handed"}</button>
         <button class="small" data-act="remove">Remove</button></div>
-      <div class="wears">Wears: ${kitName(c.kit || "none")}${c.weapon ? " · Fights with: " + DATA.weapons[c.weapon].name : ""}</div>
-      ${penLine(penalties(c))}
+      <div class="charid">${charFigure(c, 104)}<div style="display:flex;flex-direction:column;gap:6px">
+        <div class="wears">Wears: ${kitName(c.kit || "none")}${c.weapon ? " · Fights with: " + DATA.weapons[c.weapon].name : ""}</div>
+        ${penLine(penalties(c))}</div></div>
       <div class="bar" title="Blood ${c.blood} of ${TRK.blood_pool}"><i style="width:${Math.max(0, st.frac * 100)}%"></i></div>
       <div class="stat"><span>Blood <b>${c.blood}</b>/${TRK.blood_pool}</span><span>Bleeding ${st.bleed.toFixed(1)}/round</span><span class="${painCls}">Pain −${Math.min(st.pain, TRK.pain_cap) * 10}%${st.pain > TRK.pain_cap ? " · shock check each round" : ""}</span></div>
       <div class="stat"><span class="${lethCls}">Worst untreated: ${st.worst}</span><span>${st.th ? st.th.effect : "Steady"}</span><span class="muted">${c.rounds} round${c.rounds === 1 ? "" : "s"} elapsed</span></div>
@@ -851,9 +861,9 @@ function init(){
 
   if (!restore()){
     // Example combatants from this conflict so the tracker shows what it does; remove them any time.
-    const ex = (DATA.conflicts[DATA.tables[S.table].battle] || {}).examples || [];
+    const conf = DATA.conflicts[DATA.tables[S.table].battle] || {}, ex = conf.examples || [];
     const pick = [ex[0], ex[ex.length - 1]].filter(Boolean);
-    S.chars = pick.map(x => newChar("Example: " + x.name, x.kit, x.weapon));
+    S.chars = pick.map(x => newChar("Example: " + x.name, x.kit, x.weapon, FIG.lookFor(conf, x)));
     if (S.chars.length){
       selectChar(0);
       if (S.chars.length > 1) setAttacker(S.chars.length - 1);

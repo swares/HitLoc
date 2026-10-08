@@ -8,6 +8,10 @@
 # zone_bias    - multipliers on a table's weights by body zone (default 1.0)
 # loc_bias     - optional per-location multipliers, applied after zone_bias
 # armor_defeat - armour protection steps this weapon ignores, by mechanism
+# icon         - how the combatant figures draw it (templates/figure.js): sword, sabre,
+#                dagger, axe, club, spear, lance, bow, crossbow, sling, long_gun,
+#                bayonet_gun, musket_butt, modern_rifle, machine_gun, smg, pistol, launcher,
+#                grenade, stick_grenade, device, rammer, stake, spade, fist
 # melee_table  - for a close-combat weapon: the table it rolls on whenever the current table
 #                is not its own (the table doesn't list it, or lists it but records another
 #                kind of fighting). Overrides melee_fallback below.
@@ -34,6 +38,7 @@ weapons:
   - id: sword
     name: "Sword (arming sword)"
     short: "Sword"
+    icon: sword
     era: medieval
     melee: armed
     melee_table: visby-1361-adjusted
@@ -45,6 +50,7 @@ weapons:
   - id: axe
     name: "Axe (hand or long-hafted)"
     short: "Axe"
+    icon: axe
     era: medieval
     melee: armed
     melee_table: visby-1361-adjusted
@@ -57,6 +63,7 @@ weapons:
   - id: spiked_club
     name: "Spiked club / morning star (knout)"
     short: "Spiked club"
+    icon: club
     era: medieval
     melee: armed
     melee_table: visby-1361-adjusted
@@ -69,6 +76,7 @@ weapons:
   - id: spear
     name: "Spear / lance"
     short: "Spear"
+    icon: spear
     era: medieval
     melee: armed
     melee_table: visby-1361-adjusted
@@ -82,6 +90,7 @@ weapons:
   - id: bow
     name: "Bow (war arrows)"
     short: "Bow"
+    icon: bow
     era: "ancient-1880s"
     mechanisms: {pierce: 95, cut: 5}
     zone_bias: {}
@@ -96,6 +105,7 @@ weapons:
   - id: crossbow
     name: "Crossbow (bolts)"
     short: "Crossbow"
+    icon: crossbow
     era: "medieval"
     mechanisms: {pierce: 100}
     zone_bias: {}
@@ -110,6 +120,7 @@ weapons:
   - id: sling
     name: "Sling (stones, lead bullets)"
     short: "Sling"
+    icon: sling
     era: "ancient-medieval"
     mechanisms: {crush: 100}
     zone_bias: {head: 1.5, torso: 1.0, arms: 0.9, legs: 0.8}
@@ -125,6 +136,7 @@ weapons:
   - id: dagger
     name: "Dagger / knife"
     short: "Dagger"
+    icon: dagger
     era: any
     melee: armed
     mechanisms: {pierce: 70, cut: 30}
@@ -136,6 +148,7 @@ weapons:
   - id: bayonet
     name: "Bayonet (musket or rifle)"
     short: "Bayonet"
+    icon: bayonet_gun
     era: "1700s-"
     melee: armed
     melee_table: peninsular-1808-14-officers
@@ -148,6 +161,7 @@ weapons:
   - id: entrenching_tool
     name: "Sharpened entrenching tool (spade)"
     short: "Spade"
+    icon: spade
     era: "1915-"
     melee: armed
     melee_table: visby-1361-adjusted
@@ -161,6 +175,7 @@ weapons:
   - id: saber
     name: "Sabre or broadsword"
     short: "Sabre"
+    icon: sabre
     era: "1700s-1900s"
     melee: armed
     melee_table: peninsular-1808-14-officers
@@ -172,6 +187,7 @@ weapons:
   - id: lance
     name: "Cavalry lance"
     short: "Lance"
+    icon: lance
     era: "1800s-1900s"
     melee: armed
     melee_table: peninsular-1808-14-officers
@@ -183,6 +199,7 @@ weapons:
   - id: musket_butt
     name: "Clubbed musket (butt stroke)"
     short: "Musket butt"
+    icon: musket_butt
     era: "1700s-1900s"
     melee: armed
     melee_table: visby-1361-adjusted
@@ -195,6 +212,7 @@ weapons:
   - id: punch
     name: "Punch"
     short: "Punch"
+    icon: fist
     era: any
     melee: unarmed
     mechanisms: {crush: 100}
@@ -205,6 +223,7 @@ weapons:
   - id: kick
     name: "Kick"
     short: "Kick"
+    icon: fist
     era: any
     melee: unarmed
     mechanisms: {crush: 100}
@@ -215,6 +234,7 @@ weapons:
   - id: elbow_knee
     name: "Elbow or knee"
     short: "Elbow/knee"
+    icon: fist
     era: any
     melee: unarmed
     mechanisms: {crush: 75, cut: 25}
@@ -226,6 +246,7 @@ weapons:
   - id: matchlock_musket
     name: "Matchlock musket"
     short: "Matchlock"
+    icon: long_gun
     era: "1500s-1690s"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -236,6 +257,7 @@ weapons:
   - id: wheellock_pistol
     name: "Wheellock pistol or carbine (cavalry)"
     short: "Pistol/carbine"
+    icon: pistol
     era: "1530s-1690s"
     threat: pistol
     mechanisms: {ballistic: 100}
@@ -247,6 +269,7 @@ weapons:
   - id: musket_smoothbore
     name: "Smoothbore musket (Brown Bess, Charleville)"
     short: "Musket"
+    icon: long_gun
     era: "1700s-1850s"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -257,6 +280,7 @@ weapons:
   - id: rifle_flintlock
     name: "Flintlock rifle (Pennsylvania, Baker, Jäger)"
     short: "Rifle"
+    icon: long_gun
     era: "1700s-1840s"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -267,6 +291,7 @@ weapons:
   - id: pistol_flintlock
     name: "Flintlock pistol"
     short: "Pistol"
+    icon: pistol
     era: "1700s-1840s"
     threat: pistol
     mechanisms: {ballistic: 100}
@@ -277,6 +302,7 @@ weapons:
   - id: artillery_smoothbore
     name: "Smoothbore artillery (round shot, canister, grape, shell)"
     short: "Artillery"
+    icon: rammer
     era: "1700s-1850s"
     threat: fragment
     mechanisms: {ballistic: 70, crush: 30}
@@ -288,6 +314,7 @@ weapons:
   - id: rifle_musket
     name: "Rifle-musket (Minie ball)"
     short: "Rifle-musket"
+    icon: long_gun
     era: "1860s"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -298,6 +325,7 @@ weapons:
   - id: artillery_acw
     name: "Artillery (canister, shell fragments)"
     short: "Artillery"
+    icon: rammer
     era: "1860s"
     threat: fragment
     mechanisms: {ballistic: 80, crush: 20}
@@ -308,6 +336,7 @@ weapons:
   - id: revolver
     name: "Revolver"
     short: "Revolver"
+    icon: pistol
     era: "1850s-"
     threat: pistol
     mechanisms: {ballistic: 100}
@@ -319,6 +348,7 @@ weapons:
   - id: rifle_service
     name: "Service rifle (bolt or semi-auto, 1914-53)"
     short: "Rifle"
+    icon: long_gun
     era: "1914-1953"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -329,6 +359,7 @@ weapons:
   - id: rifle_assault
     name: "Assault rifle (M16, AK)"
     short: "Assault rifle"
+    icon: modern_rifle
     era: "1960s-"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -339,6 +370,7 @@ weapons:
   - id: rifle_ap
     name: "Rifle, armour-piercing ammunition"
     short: "AP rifle"
+    icon: modern_rifle
     era: "1990s-"
     threat: rifle_ap
     mechanisms: {ballistic: 100}
@@ -349,6 +381,7 @@ weapons:
   - id: machine_gun
     name: "Machine gun"
     short: "MG"
+    icon: machine_gun
     era: "1914-"
     threat: rifle
     mechanisms: {ballistic: 100}
@@ -359,6 +392,7 @@ weapons:
   - id: pistol_smg
     name: "Pistol or submachine gun"
     short: "Pistol/SMG"
+    icon: smg
     era: "1900s-"
     threat: pistol
     mechanisms: {ballistic: 100}
@@ -369,6 +403,7 @@ weapons:
   - id: hand_grenade
     name: "Hand grenade"
     short: "Grenade"
+    icon: grenade
     era: "1914-"
     threat: fragment
     mechanisms: {ballistic: 85, crush: 15}
@@ -379,6 +414,7 @@ weapons:
   - id: mortar_artillery
     name: "Mortar, rocket or artillery"
     short: "Mortar"
+    icon: device
     era: "1914-"
     threat: fragment
     mechanisms: {ballistic: 85, crush: 15}
@@ -389,6 +425,7 @@ weapons:
   - id: rpg
     name: "RPG (rocket-propelled grenade)"
     short: "RPG"
+    icon: launcher
     era: "1960s-"
     threat: fragment
     mechanisms: {ballistic: 70, crush: 30}
@@ -399,6 +436,7 @@ weapons:
   - id: mine_ied
     name: "Mine, booby trap or IED"
     short: "Mine/IED"
+    icon: device
     era: "1914-"
     threat: fragment
     mechanisms: {ballistic: 60, crush: 40}
@@ -410,6 +448,7 @@ weapons:
   - id: punji_stake
     name: "Punji stake"
     short: "Punji"
+    icon: stake
     era: "Vietnam"
     mechanisms: {pierce: 100}
     zone_bias: {head: 0.0, torso: 0.0, arms: 0.0, legs: 1.0}
@@ -420,6 +459,7 @@ weapons:
   - id: explosive_fragment
     name: "Fragments, unspecified (shell, grenade, mine)"
     short: "Frags"
+    icon: grenade
     era: "1914-"
     threat: fragment
     mechanisms: {ballistic: 85, crush: 15}
