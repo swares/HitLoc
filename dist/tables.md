@@ -1,6 +1,6 @@
 # Hit Location & Wound Tables
 
-Generated 2026-10-08 from the data folder. Roll d100 (00 = 100).
+Generated 2026-10-09 from the data folder. Roll d100 (00 = 100).
 
 **Procedure:** 1) d100 location on the table for the fight and weapon (situation column if one applies; called shots roll twice). 2) d100 mechanism for the weapon. 3) Severity from your system's damage, or d100. 4) Armour (adjusted tables): lower severity by the material's steps. 5) Look up the wound by location class and severity, then apply the mechanism modifiers.
 
@@ -586,17 +586,14 @@ Sources:
 - Derived (tools/blend_tables.py): 53.5% revolution-1775-83-pensioners + 46.5% acw-1861-killed, location by location.
 - Killed share: Peckham, The Toll of Independence (1974), 7,174 Americans killed and 8,241 wounded in 1,331 land and 218 naval engagements (via Journal of the American Revolution, 'The 25 Deadliest Battles of the Revolutionary War', 2014).
 
-# Napoleonic era & War of 1812 (1803-1815)
+# Napoleonic Wars (1803-1815)
 
-France under Napoleon against shifting coalitions of Britain, Austria, Prussia, Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and Portuguese army under Wellington, with Spanish armies and guerrillas, drove the French out of Spain; the wound tables come from French officers' files of that war. At the same time (1812-1815) the United States fought Britain in North America, with the same weapons: smoothbore muskets and bayonets, rifles, sabres and smoothbore artillery. Many British regulars in the later War of 1812 were Peninsular veterans. No region-by-region wound count survives for the War of 1812, so it uses these tables.
+France under Napoleon against shifting coalitions of Britain, Austria, Prussia, Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and Portuguese army under Wellington, with Spanish armies and guerrillas, drove the French out of Spain; the wound tables come from French officers' files of that war. The War of 1812 in North America, fought with the same weapons, has its own entry, which borrows these records.
 
 | Side | Who | Armour |
 |---|---|---|
 | French Empire and allies | French line and light infantry, cavalry and artillery, with Polish, German and Italian allies. | Cuirassiers and carabiniers wore steel breastplates and backplates and helmets; dragoons wore brass helmets; infantry wore none. |
 | Britain and Peninsular allies | Wellington's British and Portuguese army (including the 95th Rifles), Spanish regular armies and guerrillas. | None for infantry; heavy and light dragoons wore helmets. British Household Cavalry wore cuirasses only after 1815. |
-| United States (1812-15) | US regulars, state militia (including Kentucky riflemen), US Navy and Marines. | None; some light dragoons wore leather helmets. |
-| British North America (1812-15) | British regulars, Canadian fencibles and militia, the Royal Navy, and the Provincial Marine. | None. |
-| Tecumseh's confederacy | Shawnee, Potawatomi, Kickapoo and other nations under Tecumseh, allied with Britain until his death at the Thames (1813). | None. Musket, rifle, tomahawk and war club. |
 
 **Example combatants**
 
@@ -609,11 +606,6 @@ France under Napoleon against shifting coalitions of Britain, Austria, Prussia, 
 | 95th rifleman | Britain and Peninsular allies | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | Baker rifle; skirmisher and sniper. | [Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812](https://commons.wikimedia.org/wiki/File:British_Riflemen.jpg) |
 | British heavy dragoon | Britain and Peninsular allies | Dragoon or light dragoon helmet | Sabre or broadsword | 1796 heavy cavalry sword. | [Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812](https://commons.wikimedia.org/wiki/File:Uniform_of_a_Private_of_the_3rd_or_Kings_Own_Dragoons.jpg) |
 | Spanish guerrilla | Britain and Peninsular allies | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Ambushes of convoys and couriers. | [Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)](https://commons.wikimedia.org/wiki/File:Goya-Guerra_%2802%29.jpg) |
-| US regular, 1814 | United States (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Chippawa and Lundy's Lane; Springfield musket. | [The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
-| Kentucky militia rifleman | United States (1812-15) | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | River Raisin, the Thames, New Orleans. | [Kentucky mounted volunteers at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
-| British regular, 1814 | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Often a Peninsular veteran. | [British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
-| Canadian militiaman | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Sedentary or embodied militia. |  |
-| Shawnee warrior | Tecumseh's confederacy | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. | [Tecumseh's warriors at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
 
 Sources: Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database). Sides, armour and dress: general historical knowledge, not from the wound data.
 
@@ -672,7 +664,7 @@ Source:
 
 **Reading it:** Almost no one wore body armour (cuirassiers and carabiniers had steel cuirasses, and dragoons and heavy cavalry helmets), so armour can be applied. The records are of men who survived far more often than of men killed (146 killed and 84 died of wounds against 4,129 wounded), so head and trunk hits from gunfire are under-counted: use the all-hits table for gunfire in play. Edged weapons rarely killed (8 deaths among 424 sword, bayonet and lance casualties), so their columns are close to every hit they made.
 
-**Status:** Historical. French officers, so mounted officers and men in the front rank are over-represented; the rank-and-file sample was hit in the head more often (24%). Tables 7 and 8 were read from the article's table images. War of 1812: no count of wounds by body region has been found for that war, so it uses this table and the all-hits table. The weapons were the same (smoothbore musket and bayonet, rifle, sabre, smoothbore cannon), and many British regulars were Peninsular veterans. What differs: no cuirassiers or lancers fought in North America, so leave armour off; riflemen and much woodland and skirmish fighting make 'behind cover' common; and for a tomahawk or war club use the axe or spiked club, which roll on the Visby close-combat data.
+**Status:** Historical. French officers, so mounted officers and men in the front rank are over-represented; the rank-and-file sample was hit in the head more often (24%). Tables 7 and 8 were read from the article's table images.
 
 Sources:
 - Planas Campos J. and Grajal de Blas A., 'Wounds & Weapons in the Napoleonic War: a database of the Peninsular War', British Journal for Military History 7(3), Nov 2021, pp. 117-127: Table 1 (weapons, 4,359 entries), Table 2 (locations, 3,995 events), Tables 6-8 (location by firearm, edged weapon and ordnance). Source registers: French Army officer files, SHD 2Yb.
@@ -681,7 +673,7 @@ Sources:
 
 ## Napoleonic era - all hits (gameplay)
 
-*Where musket balls and shot land on a man in the open, before survival sorts the records. Use for the Peninsula, Waterloo and the War of 1812.*
+*Where musket balls and shot land on a man in the open, before survival sorts the records. Use for the Peninsula and Waterloo; the War of 1812 has its own table, built from the same records.*
 
 Confidence: **Extrapolated - design estimate from analogous evidence** · Armour: **allowed**
 
@@ -716,13 +708,81 @@ Confidence: **Extrapolated - design estimate from analogous evidence** · Armour
 
 **Close combat:** Sabre, Bayonet, Lance: roll location on *Peninsular War 1808-14 - French officers' wounds*. Dagger: roll location on *Knife assault - stab wounds (forensic)*. Sword, Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
 
-**Reading it:** Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets). Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely killed, so those records already include nearly every edged hit. War of 1812: no armour was worn in North America (some light dragoons had leather helmets), so leave it off.
+**Reading it:** Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets). Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely killed, so those records already include nearly every edged hit.
 
-**Status:** Estimated. The Peninsular records hold only 146 killed outright (head and chest most often), too few to use, so the Civil War killed-in-action table (also soft lead balls) stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another. War of 1812: there is no wound-by-location record for that war; the same weapons and tactics make this the closest table, but it is borrowed, not measured.
+**Status:** Estimated. The Peninsular records hold only 146 killed outright (head and chest most often), too few to use, so the Civil War killed-in-action table (also soft lead balls) stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another.
 
 Sources:
 - Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers + 25.5% acw-1861-killed, location by location.
 - Killed share: about one killed for every three wounded in the Anglo-allied army at Waterloo (about 3,500 killed and 10,200 wounded; approximate, commonly cited totals).
+
+# War of 1812 (1812-1815)
+
+The United States fought Britain and its Canadian colonies, and Tecumseh's confederacy of Native nations, on the Great Lakes frontier, in the Chesapeake and at New Orleans. The weapons were those of the Napoleonic Wars: smoothbore muskets and bayonets, rifles, sabres and smoothbore artillery. Much of the fighting was in woods and from cover, riflemen were common on both sides, no one wore armour, and many British regulars of 1814-15 were Peninsular veterans. US forces lost about 2,260 killed in action and 4,505 wounded. No count of wounds by body region has been found for this war, so its table borrows the Peninsular War records; every place on the map is a hollow dot for that reason.
+
+| Side | Who | Armour |
+|---|---|---|
+| United States (1812-15) | US regulars, state militia (including Kentucky riflemen), US Navy and Marines. | None; some light dragoons wore leather helmets. |
+| British North America (1812-15) | British regulars, Canadian fencibles and militia, the Royal Navy, and the Provincial Marine. | None. |
+| Tecumseh's confederacy | Shawnee, Potawatomi, Kickapoo and other nations under Tecumseh, allied with Britain until his death at the Thames (1813). | None. Musket, rifle, tomahawk and war club. |
+
+**Example combatants**
+
+| Name | Side | Wears | Fights with | Notes | Picture |
+|---|---|---|---|---|---|
+| US regular, 1814 | United States (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Chippawa and Lundy's Lane; Springfield musket. | [The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
+| Kentucky militia rifleman | United States (1812-15) | Unarmoured | Flintlock rifle (Pennsylvania, Baker, Jäger) | River Raisin, the Thames, New Orleans. | [Kentucky mounted volunteers at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
+| British regular, 1814 | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Often a Peninsular veteran. | [British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte](https://commons.wikimedia.org/wiki/File:Battle_of_New_Orleans_Jean-Hyacinthe_Laclotte.jpg) |
+| Canadian militiaman | British North America (1812-15) | Unarmoured | Smoothbore musket (Brown Bess, Charleville) | Sedentary or embodied militia. |  |
+| Shawnee warrior | Tecumseh's confederacy | Unarmoured | Axe (hand or long-hafted) | Tomahawk and musket. | [Tecumseh's warriors at the Thames, 1813 (print of 1833)](https://commons.wikimedia.org/wiki/File:Battle_of_the_Thames_and_the_death_of_Tecumseh%2C_by_the_Kentucky_mounted_volunteers_led_by_Colonel_Richard_M._Johnson%2C_5th_Oct._1813_LCCN91790904.jpg) |
+
+Sources: No wound-by-location record found for the War of 1812; the table borrows the Peninsular War data (Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021). US losses of about 2,260 killed in action and 4,505 wounded: commonly cited totals (e.g. New World Encyclopedia, 'War of 1812'); British and Canadian losses are usually given only combined (about 4,400 killed or wounded). Sides, armour and dress: general historical knowledge, not from the wound data.
+
+## War of 1812 - all hits (gameplay, borrowed records)
+
+*Where musket balls, rifle balls and shot land on a man in the open or in the woods, before survival sorts the records. No wound count survives for this war; the table is built from the Peninsular War records.*
+
+Confidence: **Extrapolated - design estimate from analogous evidence** · Armour: **allowed**
+
+| Location | Musket | Rifle | Pistol | Artillery |
+|---|---|---|---|---|
+| Skull (left) | 01-07 | 01-07 | 01-07 | 01-07 |
+| Skull (right) | 08-14 | 08-14 | 08-14 | 08-14 |
+| Face | 15-20 | 15-20 | 15-20 | 15-20 |
+| Neck | 21-24 | 21-24 | 21-24 | 21-24 |
+| Chest (left) | 25-29 | 25-29 | 25-29 | 25-29 |
+| Chest (right) | 30-34 | 30-34 | 30-34 | 30-34 |
+| Abdomen | 35-39 | 35-39 | 35-39 | 35-39 |
+| Groin / pelvis | 40-43 | 40-43 | 40-43 | 40-43 |
+| Upper back | 44-45 | 44-45 | 44-45 | 44-45 |
+| Lower back | 46-48 | 46-48 | 46-48 | 46-48 |
+| Shoulder (left) | 49-51 | 49-51 | 49-51 | 49-51 |
+| Shoulder (right) | 52-54 | 52-54 | 52-54 | 52-54 |
+| Upper arm (left) | 55-60 | 55-60 | 55-60 | 55-60 |
+| Upper arm (right) | 61-66 | 61-66 | 61-66 | 61-66 |
+| Forearm (left) | 67 | 67 | 67 | 67 |
+| Forearm (right) | 68 | 68 | 68 | 68 |
+| Hand (left) | 69-70 | 69-70 | 69-70 | 69-70 |
+| Hand (right) | 71-72 | 71-72 | 71-72 | 71-72 |
+| Thigh (left) | 73-78 | 73-78 | 73-78 | 73-78 |
+| Thigh (right) | 79-84 | 79-84 | 79-84 | 79-84 |
+| Knee (left) | 85 | 85 | 85 | 85 |
+| Knee (right) | 86 | 86 | 86 | 86 |
+| Lower leg (left) | 87-91 | 87-91 | 87-91 | 87-91 |
+| Lower leg (right) | 92-96 | 92-96 | 92-96 | 92-96 |
+| Foot (left) | 97-98 | 97-98 | 97-98 | 97-98 |
+| Foot (right) | 99-00 | 99-00 | 99-00 | 99-00 |
+
+**Close combat:** Sabre, Bayonet: roll location on *Peninsular War 1808-14 - French officers' wounds*. Dagger: roll location on *Knife assault - stab wounds (forensic)*. Sword, Axe, Spiked club, Spear: roll location on *Visby 1361 - gameplay-adjusted*. Punch, Kick, Elbow/knee: roll location on *Unarmed - landed strikes (MMA)*.
+
+**Reading it:** Use this table for play. No armour was worn in North America (some light dragoons had leather helmets), so leave it off. For a tomahawk or war club use the axe or spiked club, which roll on the Visby close-combat data. Much woodland and skirmish fighting makes 'behind cover' common.
+
+**Status:** Estimated and borrowed. No count of wounds by body region has been found for the War of 1812. The weapons and drill were those of the Napoleonic Wars and many British regulars were Peninsular veterans, so the French officers' records stand in for the wounded and the Civil War killed-in-action table (also soft lead balls) for the dead. Edit the share in tools/blend_tables.py if you prefer another.
+
+Sources:
+- Derived (tools/blend_tables.py): 66.6% peninsular-1808-14-officers + 33.4% acw-1861-killed, location by location.
+- Killed share: US forces lost about 2,260 killed in action and 4,505 wounded (commonly cited totals; British and Canadian losses are usually given only combined).
+- Peninsular War records: Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021.
 
 # American Civil War (1861-1865)
 
@@ -2219,14 +2279,14 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 |---|---|---|---|
 | Attacker on target's shield side | facing | left side x1.8, right side x0.5 | Attacker works round to the target's left (shield) side. Tables: Sidon, mid-13th century, Visby 1361 |
 | Attacker on target's weapon side | facing | left side x0.5, right side x1.8 | Attacker is off the target's right (weapon-arm) side. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461 |
-| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Attacker higher (mounted, uphill, on a wall) | height | head x1.6, arms x1.2, legs x0.4, shoulder (left) x1.3, shoulder (right) x1.3 | Blows come down onto the head and shoulders; legs out of reach. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, War of 1812, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Attacker lower (in a ditch, kneeling, vs. rider) | height | head x0.5, legs x1.6, groin / pelvis x1.8, abdomen x1.3 | Blows come up into the legs, groin and belly. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, War of 1812, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
 | Target down (fallen, kneeling, helpless) | posture | head x2, torso x0.6, legs x0.6, upper back x3, lower back x2, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6, face x0.7 | Towton pattern: repeated blows to the head and back; arms raised to ward. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault, Unarmed |
-| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
-| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Indian Wars 1865-71, Knife assault |
+| Target fleeing (back turned) | posture | head x1.2, arms x0.6, legs x1.3, upper back x4, lower back x3, face x0.1, chest (left) x0.15, chest (right) x0.15, abdomen x0.15, groin / pelvis x0.2 | Rout: back, back of the head and legs exposed; front almost unreachable. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, War of 1812, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline, Knife assault |
+| Target flanked (two or more attackers) | - | legs x1.3, upper back x2.5, lower back x2.5, skull (left) x1.2, skull (right) x1.2 | Visby team-fighting: one engages the front while others strike from behind and low. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, War of 1812, Indian Wars 1865-71, Knife assault |
 | Target has no shield | - | head x1.1, torso x1.4, forearm (left) x0.7, hand (left) x0.7 | Tables assume a shield. Without one the body and head are more open. Tables: Sidon, mid-13th century, Visby 1361 |
 | Target warding with arms (unarmed or disarmed) | - | arms x1.5, forearm (left) x1.6, forearm (right) x1.6, hand (left) x1.6, hand (right) x1.6 | Defensive wounds: forearms and hands raised to block. Tables: Sidon, mid-13th century, Visby 1361, Towton 1461, Lützen 1632, Peninsular War 1808-14, Knife assault |
-| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Sidon, mid-13th century, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
+| Target behind cover (breastwork, wall, trench) | cover | head x1.5, torso x0.3, legs x0.05, shoulder (left) x1.5, shoulder (right) x1.5, abdomen x0.3, groin / pelvis x0.2, lower back x0.3 | Only head, shoulders and arms show over the parapet. Tables: Sidon, mid-13th century, Towton 1461, Lützen 1632, Thirty Years' War, American Revolution 1775-83, Peninsular War 1808-14, Napoleonic era, War of 1812, Civil War 1861-65, Indian Wars 1865-71, WWI 1914-18, WWII Italy 1944, Bougainville 1944, WWII 1941-45, Korea 1950-53, Vietnam 1965-70, Vietnam 1965-73, Northern Ireland, Falklands 1982, Gulf War 1991 (US), Gulf War 1991 (UK), Somalia 1993, Chechnya, Iraq & Afghanistan 2001-05, Baseline |
 
 **Called shot:** Roll the location twice; keep whichever result lands in the called zone. If both or neither do, keep the first. Your system sets any to-hit penalty.
 
@@ -3349,6 +3409,37 @@ Modifiers stack in the roller and CLI (one per group). Printed columns below sho
 | Lower leg (right) | 91-96 | 97-98 | 87-94 | 87-94 | 90-96 | - |
 | Foot (left) | 97-98 | 99 | 95-97 | 95-97 | 97-98 | - |
 | Foot (right) | 99-00 | 00 | 98-00 | 98-00 | 99-00 | - |
+
+### War of 1812 - all hits (gameplay, borrowed records) - Musket / Rifle / Pistol / Artillery
+
+| Location | Normal | Higher | Lower | Fleeing | Flanked | Cover |
+|---|---|---|---|---|---|---|
+| Skull (left) | 01-07 | 01-11 | 01-03 | 01-09 | 01-07 | 01-15 |
+| Skull (right) | 08-14 | 12-22 | 04-06 | 10-18 | 08-14 | 16-30 |
+| Face | 15-20 | 23-31 | 07-08 | 19 | 15-19 | 31-43 |
+| Neck | 21-24 | 32-36 | 09-10 | 20-23 | 20-22 | 44-51 |
+| Chest (left) | 25-29 | 37-41 | 11-15 | 24 | 23-26 | 52-53 |
+| Chest (right) | 30-34 | 42-46 | 16-20 | 25 | 27-30 | 54-55 |
+| Abdomen | 35-39 | 47-51 | 21-26 | 26 | 31-34 | 56 |
+| Groin / pelvis | 40-43 | 52-55 | 27-32 | 27 | 35-37 | - |
+| Upper back | 44-45 | 56-57 | 33-34 | 28-38 | 38-42 | 57 |
+| Lower back | 46-48 | 58-60 | 35-36 | 39-46 | 43-48 | - |
+| Shoulder (left) | 49-51 | 61-64 | 37-39 | 47-48 | 49-50 | 58-64 |
+| Shoulder (right) | 52-54 | 65-68 | 40-42 | 49-50 | 51-52 | 65-71 |
+| Upper arm (left) | 55-60 | 69-75 | 43-47 | 51-54 | 53-57 | 72-80 |
+| Upper arm (right) | 61-66 | 76-82 | 48-52 | 55-58 | 58-62 | 81-89 |
+| Forearm (left) | 67 | 83 | 53 | 59 | 63 | 90-91 |
+| Forearm (right) | 68 | 84 | 54 | 60 | 64 | 92 |
+| Hand (left) | 69-70 | 85-86 | 55-56 | 61 | 65-66 | 93-95 |
+| Hand (right) | 71-72 | 87-88 | 57-58 | 62 | 67-68 | 96-98 |
+| Thigh (left) | 73-78 | 89-90 | 59-67 | 63-70 | 69-75 | 99 |
+| Thigh (right) | 79-84 | 91-92 | 68-76 | 71-78 | 76-82 | 00 |
+| Knee (left) | 85 | 93 | 77-78 | 79-80 | 83 | - |
+| Knee (right) | 86 | 94 | 79-80 | 81-82 | 84 | - |
+| Lower leg (left) | 87-91 | 95-96 | 81-88 | 83-89 | 85-90 | - |
+| Lower leg (right) | 92-96 | 97-98 | 89-96 | 90-96 | 91-96 | - |
+| Foot (left) | 97-98 | 99 | 97-98 | 97-98 | 97-98 | - |
+| Foot (right) | 99-00 | 00 | 99-00 | 99-00 | 99-00 | - |
 
 ### Civil War 1861-65 - wounded (surgeon's records) - Rifle-musket / Artillery / Revolver
 
