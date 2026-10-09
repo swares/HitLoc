@@ -1,7 +1,7 @@
 # HitLoc - historical hit locations & wounds for RPGs
 
 Data-driven **d100 hit-location tables** weighted by real wound records - from the
-crusader mass graves at Sidon (13th century), the Visby skeletons of 1361, Towton (1461) and the Thirty Years' War through the American Revolution, the Napoleonic Wars, the Civil
+crusader mass graves at Sidon (13th century), the Visby skeletons of 1361, Towton (1461) and the Thirty Years' War through the American Revolution, the Napoleonic Wars and the War of 1812, the Civil
 War and the Indian Wars to both World Wars, Korea, Vietnam, Iraq and Afghanistan - with
 **system-agnostic wound effects**, armour, and wounded-fighter tracking for any tabletop
 RPG. All outputs are generated from the YAML files in `data/`, so the printed tables and
@@ -179,11 +179,10 @@ theatre countries; older wars show coastlines only, since modern borders would b
 for them. Nearby sites share one dot; hover a dot for its names.
 
 A solid dot is a place the wound records come from. A hollow dot is a place fought over in
-that war that the records do not cover. The Napoleonic map, for example, has two panels:
-the Peninsula (solid dots, where the officers' records come from) and the War of 1812
-(hollow dots: Queenston Heights, Lundy's Lane, Baltimore, New Orleans and others), since no
-region-by-region wound count survives for 1812. The Great Lakes and other large lakes are
-drawn as water.
+that war that the records do not cover. The War of 1812 map, for example, has only hollow
+dots (Queenston Heights, Lundy's Lane, Baltimore, New Orleans and others), since no
+region-by-region wound count survives for that war and its table borrows the Peninsular
+records. The Great Lakes and other large lakes are drawn as water.
 
 - The map spec is data: `map:` on each conflict in `conflicts.yaml` (`bbox`, `sites`,
   optional `borders` and `highlight`; a site with `context: true` gets a hollow dot). A
@@ -360,15 +359,18 @@ Firearms and explosives (any weapon with a `threat`) roll severity on the firear
   federal invalid pension lists of 1792-95 (344 men, 379 located wounds;
   `data/sources/revolution-invalid-pensions-1792-95.csv`). Survivors only. Plus an
   *all hits* blend (see below).
-- **Napoleonic era & War of 1812** - *Peninsular War 1808-14, French officers' wounds*
-  (3,995 wound events, with separate counts for musket, artillery, sword, bayonet and
-  lance), plus an *all hits* blend. No region count survives for the War of 1812 itself,
-  so its sides and examples use these tables (same weapons and tactics; many British
-  regulars were Peninsular veterans).
+- **Napoleonic Wars** - *Peninsular War 1808-14, French officers' wounds* (3,995 wound
+  events, with separate counts for musket, artillery, sword, bayonet and lance), plus an
+  *all hits* blend.
+- **War of 1812** - its own period, with its sides, examples and map, and an *all hits*
+  table. No region count survives for this war, so the table is built from the Peninsular
+  records (same weapons and tactics; many British regulars were Peninsular veterans) at
+  the war's own killed share. Leave armour off.
 - **All-hits blends (estimated)** - `tools/blend_tables.py` mixes each wounded table with
   the Civil War killed-in-action table (soft lead balls too) as a stand-in for the dead:
-  46.5% killed for the Revolution (Peckham: 7,174 killed, 8,241 wounded) and 25.5% for the
-  Napoleonic era (about 3,500 killed to 10,200 wounded in Wellington's army at Waterloo).
+  46.5% killed for the Revolution (Peckham: 7,174 killed, 8,241 wounded), 25.5% for the
+  Napoleonic Wars (about 3,500 killed to 10,200 wounded in Wellington's army at Waterloo)
+  and 33.4% for the War of 1812 (US forces: about 2,260 killed in action, 4,505 wounded).
   Edit the shares there and re-run it.
 - New weapons: smoothbore musket, flintlock rifle and pistol, smoothbore artillery, cavalry
   lance, clubbed musket. New armour: steel cuirass and cavalry helmet (kits: cuirassier,
@@ -441,6 +443,7 @@ Locations whose weight rounds to 0% are left off that d100 column.
 | American Revolution - all hits | adjusted | extrapolated | 53.5% pension table + 46.5% Civil War killed (Peckham's killed:wounded) |
 | Peninsular War 1808-14 - French officers | evidence, armour allowed | historical (per weapon) | Planas Campos & Grajal de Blas, BJMH 2021, 3,995 wound events |
 | Napoleonic era - all hits | adjusted | extrapolated | 74.5% Peninsular + 25.5% Civil War killed (Waterloo killed:wounded) |
+| War of 1812 - all hits | adjusted | extrapolated (borrowed) | 66.6% Peninsular + 33.4% Civil War killed (US killed:wounded); no 1812 wound count survives |
 | Civil War - wounded | evidence | historical (regions) | Medical and Surgical History of the War of the Rebellion, vol. 3 |
 | Civil War - killed in action | evidence | historical (regions) | same work, 1,173 KIA |
 | Civil War - all hits | adjusted | extrapolated | 4:1 blend of wounded and killed |

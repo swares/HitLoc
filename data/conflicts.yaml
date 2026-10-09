@@ -195,21 +195,16 @@ conflicts:
       - "Federal Revolutionary War Invalid Pension Claims, 1792-1795, Magazine of Early American Datasets (Penn, 2021)."
       - "Sides, alliances and dress: general historical knowledge, not from the pension data."
 
-  "Napoleonic era & War of 1812":
+  "Napoleonic Wars":
     period: "1803-1815"
-    map:
-      - {label: Peninsular War, bbox: [-10, 35.5, 4, 44.5], sites: [{name: Salamanca, lat: 40.97, lon: -5.66}, {name: Talavera, lat: 39.96, lon: -4.83}, {name: Albuera, lat: 38.72, lon: -6.82}, {name: Zaragoza, lat: 41.65, lon: -0.88}]}
-      - {label: War of 1812, bbox: [-92, 28.5, -70, 46.5], sites: [{name: Queenston Heights, lat: 43.16, lon: -79.05, context: true}, {name: Lundy's Lane, lat: 43.09, lon: -79.09, context: true}, {name: Fort Erie, lat: 42.90, lon: -78.92, context: true}, {name: River Raisin, lat: 41.91, lon: -83.40, context: true}, {name: The Thames, lat: 42.57, lon: -81.98, context: true}, {name: Bladensburg, lat: 38.94, lon: -76.94, context: true}, {name: Baltimore, lat: 39.26, lon: -76.58, context: true}, {name: New Orleans, lat: 29.94, lon: -90.05, context: true}]}
+    map: {bbox: [-10, 35.5, 4, 44.5], sites: [{name: Salamanca, lat: 40.97, lon: -5.66}, {name: Talavera, lat: 39.96, lon: -4.83}, {name: Albuera, lat: 38.72, lon: -6.82}, {name: Zaragoza, lat: 41.65, lon: -0.88}]}
     summary: >
       France under Napoleon against shifting coalitions of Britain, Austria, Prussia,
       Russia, Spain and Portugal. In the Peninsular War (1808-1814) a British and
       Portuguese army under Wellington, with Spanish armies and guerrillas, drove the French
-      out of Spain; the wound tables come from French officers' files of that war. At the
-      same time (1812-1815) the United States fought Britain in North America, with the
-      same weapons: smoothbore muskets and bayonets, rifles, sabres and smoothbore
-      artillery. Many British regulars in the later War of 1812 were Peninsular veterans.
-      No region-by-region wound count survives for the War of 1812, so it uses these
-      tables.
+      out of Spain; the wound tables come from French officers' files of that war. The War
+      of 1812 in North America, fought with the same weapons, has its own entry, which
+      borrows these records.
     sides:
       - name: "French Empire and allies"
         who: "French line and light infantry, cavalry and artillery, with Polish, German and Italian allies."
@@ -219,6 +214,32 @@ conflicts:
         who: "Wellington's British and Portuguese army (including the 95th Rifles), Spanish regular armies and guerrillas."
         armour: "None for infantry; heavy and light dragoons wore helmets. British Household Cavalry wore cuirasses only after 1815."
         look: {colour: "#b3262b", trousers: "#6b6f75", hat: shako}
+    examples:
+      - {name: "French line infantryman", side: "French Empire and allies", kit: none, weapon: musket_smoothbore, notes: "Charleville musket and bayonet.", image: {file: "Grande Armée - Infantry.jpg", caption: "French line infantry, from Carle Vernet's La Grande Armée de 1812"}}
+      - {name: "French cuirassier", side: "French Empire and allies", kit: cuirassier, weapon: saber, notes: "Heavy cavalry: straight sword, breastplate and helmet.", image: {file: "Cuirassier du 1er régiment en 1812.jpg", caption: "Cuirassier of the 1st Regiment, 1812, by Carle Vernet"}}
+      - {name: "Polish lancer", side: "French Empire and allies", kit: none, weapon: lance, notes: "Vistula Legion lancers, feared at Albuera (1811).", look: {hat: czapka, trousers: "#2f3f6e"}, image: {file: "Grande Armée - Polish Light Horse Lancers.jpg", caption: "Lancers of the 7th Chevau-légers (the former Vistula Legion lancers), by Carle Vernet, 1812"}}
+      - {name: "British redcoat", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Brown Bess and bayonet, firing in two-deep line.", image: {file: "Battalion Infantry 6th Regiment and 23rd (or Royal Welsh) Fusiliers.jpg", caption: "British line infantry, by Charles Hamilton Smith, 1815"}}
+      - {name: "95th rifleman", side: "Britain and Peninsular allies", kit: none, weapon: rifle_flintlock, notes: "Baker rifle; skirmisher and sniper.", look: {colour: "#2f4a2a", trousers: "#2f4a2a"}, image: {file: "British Riflemen.jpg", caption: "Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812"}}
+      - {name: "British heavy dragoon", side: "Britain and Peninsular allies", kit: dragoon_helmet, weapon: saber, notes: "1796 heavy cavalry sword.", look: {trousers: "#e8e4d8"}, image: {file: "Uniform of a Private of the 3rd or Kings Own Dragoons.jpg", caption: "Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812"}}
+      - {name: "Spanish guerrilla", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Ambushes of convoys and couriers.", look: {colour: "#7d5530", trousers: "#4a4038", hat: broad_hat, beard: beard}, image: {file: "Goya-Guerra (02).jpg", caption: "Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)"}}
+    sources:
+      - "Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database)."
+      - "Sides, armour and dress: general historical knowledge, not from the wound data."
+
+  "War of 1812":
+    period: "1812-1815"
+    map: {bbox: [-92, 28.5, -70, 46.5], sites: [{name: Queenston Heights, lat: 43.16, lon: -79.05, context: true}, {name: Lundy's Lane, lat: 43.09, lon: -79.09, context: true}, {name: Fort Erie, lat: 42.90, lon: -78.92, context: true}, {name: River Raisin, lat: 41.91, lon: -83.40, context: true}, {name: The Thames, lat: 42.57, lon: -81.98, context: true}, {name: Bladensburg, lat: 38.94, lon: -76.94, context: true}, {name: Baltimore, lat: 39.26, lon: -76.58, context: true}, {name: New Orleans, lat: 29.94, lon: -90.05, context: true}]}
+    summary: >
+      The United States fought Britain and its Canadian colonies, and Tecumseh's
+      confederacy of Native nations, on the Great Lakes frontier, in the Chesapeake and at
+      New Orleans. The weapons were those of the Napoleonic Wars: smoothbore muskets and
+      bayonets, rifles, sabres and smoothbore artillery. Much of the fighting was in woods
+      and from cover, riflemen were common on both sides, no one wore armour, and many
+      British regulars of 1814-15 were Peninsular veterans. US forces lost about 2,260
+      killed in action and 4,505 wounded. No count of wounds by body region has been found
+      for this war, so its table borrows the Peninsular War records; every place on the map
+      is a hollow dot for that reason.
+    sides:
       - name: "United States (1812-15)"
         who: "US regulars, state militia (including Kentucky riflemen), US Navy and Marines."
         armour: "None; some light dragoons wore leather helmets."
@@ -232,20 +253,14 @@ conflicts:
         armour: "None. Musket, rifle, tomahawk and war club."
         look: {colour: "#9a7347", trousers: "#7d5530", hat: feather}
     examples:
-      - {name: "French line infantryman", side: "French Empire and allies", kit: none, weapon: musket_smoothbore, notes: "Charleville musket and bayonet.", image: {file: "Grande Armée - Infantry.jpg", caption: "French line infantry, from Carle Vernet's La Grande Armée de 1812"}}
-      - {name: "French cuirassier", side: "French Empire and allies", kit: cuirassier, weapon: saber, notes: "Heavy cavalry: straight sword, breastplate and helmet.", image: {file: "Cuirassier du 1er régiment en 1812.jpg", caption: "Cuirassier of the 1st Regiment, 1812, by Carle Vernet"}}
-      - {name: "Polish lancer", side: "French Empire and allies", kit: none, weapon: lance, notes: "Vistula Legion lancers, feared at Albuera (1811).", look: {hat: czapka, trousers: "#2f3f6e"}, image: {file: "Grande Armée - Polish Light Horse Lancers.jpg", caption: "Lancers of the 7th Chevau-légers (the former Vistula Legion lancers), by Carle Vernet, 1812"}}
-      - {name: "British redcoat", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Brown Bess and bayonet, firing in two-deep line.", image: {file: "Battalion Infantry 6th Regiment and 23rd (or Royal Welsh) Fusiliers.jpg", caption: "British line infantry, by Charles Hamilton Smith, 1815"}}
-      - {name: "95th rifleman", side: "Britain and Peninsular allies", kit: none, weapon: rifle_flintlock, notes: "Baker rifle; skirmisher and sniper.", look: {colour: "#2f4a2a", trousers: "#2f4a2a"}, image: {file: "British Riflemen.jpg", caption: "Riflemen of the 5/60th and 95th, by Charles Hamilton Smith, c. 1812"}}
-      - {name: "British heavy dragoon", side: "Britain and Peninsular allies", kit: dragoon_helmet, weapon: saber, notes: "1796 heavy cavalry sword.", look: {trousers: "#e8e4d8"}, image: {file: "Uniform of a Private of the 3rd or Kings Own Dragoons.jpg", caption: "Private of the 3rd (King's Own) Dragoons, by Charles Hamilton Smith, 1812"}}
-      - {name: "Spanish guerrilla", side: "Britain and Peninsular allies", kit: none, weapon: musket_smoothbore, notes: "Ambushes of convoys and couriers.", look: {colour: "#7d5530", trousers: "#4a4038", hat: broad_hat, beard: beard}, image: {file: "Goya-Guerra (02).jpg", caption: "Spaniards attack French soldiers: Goya, The Disasters of War, plate 2 (1810s)"}}
       - {name: "US regular, 1814", side: "United States (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Chippawa and Lundy's Lane; Springfield musket.", look: {colour: "#8a8f96", trousers: "#8a8f96"}, image: {file: "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg", caption: "The American lines at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"}}
       - {name: "Kentucky militia rifleman", side: "United States (1812-15)", kit: none, weapon: rifle_flintlock, notes: "River Raisin, the Thames, New Orleans.", look: {colour: "#a99b72", trousers: "#7d5530", hat: round_hat}, image: {file: "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg", caption: "Kentucky mounted volunteers at the Thames, 1813 (print of 1833)"}}
       - {name: "British regular, 1814", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Often a Peninsular veteran.", image: {file: "Battle of New Orleans Jean-Hyacinthe Laclotte.jpg", caption: "British regulars attack at New Orleans, 8 January 1815, painted by an eyewitness, Hyacinthe Laclotte"}}
       - {name: "Canadian militiaman", side: "British North America (1812-15)", kit: none, weapon: musket_smoothbore, notes: "Sedentary or embodied militia.", look: {colour: "#4a4f55", hat: round_hat}}
       - {name: "Shawnee warrior", side: "Tecumseh's confederacy", kit: none, weapon: axe, notes: "Tomahawk and musket.", image: {file: "Battle of the Thames and the death of Tecumseh, by the Kentucky mounted volunteers led by Colonel Richard M. Johnson, 5th Oct. 1813 LCCN91790904.jpg", caption: "Tecumseh's warriors at the Thames, 1813 (print of 1833)"}}
     sources:
-      - "Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021 (Peninsular War wound database)."
+      - "No wound-by-location record found for the War of 1812; the table borrows the Peninsular War data (Planas Campos and Grajal de Blas, British Journal for Military History 7(3), 2021)."
+      - "US losses of about 2,260 killed in action and 4,505 wounded: commonly cited totals (e.g. New World Encyclopedia, 'War of 1812'); British and Canadian losses are usually given only combined (about 4,400 killed or wounded)."
       - "Sides, armour and dress: general historical knowledge, not from the wound data."
 
   "American Civil War":

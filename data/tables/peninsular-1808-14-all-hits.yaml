@@ -2,8 +2,8 @@ id: peninsular-1808-14-all-hits
 order: 19
 name: "Napoleonic era - all hits (gameplay)"
 label: "All hits: gameplay blend"
-battle: "Napoleonic era & War of 1812"
-context: "Where musket balls and shot land on a man in the open, before survival sorts the records. Use for the Peninsula, Waterloo and the War of 1812."
+battle: "Napoleonic Wars"
+context: "Where musket balls and shot land on a man in the open, before survival sorts the records. Use for the Peninsula and Waterloo; the War of 1812 has its own table, built from the same records."
 variant: adjusted
 armor: allowed
 weapon_bias: pooled
@@ -15,8 +15,6 @@ armor_note: >
   Use this table for play. Armour applies (cuirassiers' breastplates and cavalry helmets).
   Sabres, bayonets and lances roll on the Peninsular records, where edged weapons rarely
   killed, so those records already include nearly every edged hit.
-  War of 1812: no armour was worn in North America (some light dragoons had leather
-  helmets), so leave it off.
 sources:
   - "Derived (tools/blend_tables.py): 74.5% peninsular-1808-14-officers + 25.5% acw-1861-killed, location by location."
   - "Killed share: about one killed for every three wounded in the Anglo-allied army at Waterloo (about 3,500 killed and 10,200 wounded; approximate, commonly cited totals)."
@@ -24,8 +22,6 @@ status: >
   Estimated. The Peninsular records hold only 146 killed outright (head and chest most
   often), too few to use, so the Civil War killed-in-action table (also soft lead balls)
   stands in for the dead. Edit the share in tools/blend_tables.py if you prefer another.
-  War of 1812: there is no wound-by-location record for that war; the same weapons and
-  tactics make this the closest table, but it is borrowed, not measured.
 weights:
   skull_l: 6.454
   skull_r: 6.454
